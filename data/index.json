@@ -1,0 +1,35 @@
+{
+ "updated_at": "2026-10-23T09:54:10+08:00",
+ "days": [
+  {
+   "date": "2026-10-23",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 213
+   },
+   "total": 213
+  },
+  {
+   "date": "2026-10-22",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 226
+   },
+   "total": 226
+  },
+  {
+   "date": "2026-10-21",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 226
+   },
+   "total": 226
+  }
+ ]
+}

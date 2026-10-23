@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>信息雷达 · 每日技术趋势</title>
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --panel: #ffffff;
+    --ink: #14181f;
+    --ink-2: #4b5565;
+    --ink-3: #8b95a5;
+    --line: #e6e9ef;
+    --accent: #3355e8;
+    --accent-soft: #eef1ff;
+    --radius: 14px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                 "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  .wrap { max-width: 1320px; margin: 0 auto; padding: 0 20px 56px; }
+
+  /* ---------- hero ---------- */
+  .hero {
+    background: linear-gradient(135deg, #1b2440 0%, #26365f 48%, #33477d 100%);
+    color: #fff;
+    padding: 34px 0 30px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    right: -120px; top: -160px;
+    width: 420px; height: 420px;
+    background: radial-gradient(circle, rgba(102,138,255,.42) 0%, rgba(102,138,255,0) 68%);
+  }
+  .hero .wrap { position: relative; padding-bottom: 0; }
+  .hero-top { display: flex; align-items: flex-end; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
+  .title-row { display: flex; align-items: center; gap: 12px; }
+  .radar-dot {
+    width: 11px; height: 11px; border-radius: 50%;
+    background: #6ee7a8;
+    box-shadow: 0 0 0 4px rgba(110,231,168,.18);
+    animation: pulse 2.4s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 4px rgba(110,231,168,.18); }
+    50% { box-shadow: 0 0 0 9px rgba(110,231,168,.05); }
+  }
+  h1 { font-size: 25px; font-weight: 700; margin: 0; letter-spacing: .4px; }
+  .sub { color: rgba(255,255,255,.62); font-size: 13px; margin: 6px 0 0; }
+  .hero-meta { display: flex; gap: 26px; }
+  .stat-num { font-size: 22px; font-weight: 700; line-height: 1.2; }
+  .stat-lab { font-size: 11px; color: rgba(255,255,255,.58); letter-spacing: .6px; }
+
+  /* ---------- toolbar ---------- */
+  .toolbar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+  .dates { display: flex; gap: 8px; flex-wrap: wrap; }
+  .date-chip {
+    border: 1px solid var(--line); background: var(--panel); color: var(--ink-2);
+    border-radius: 999px; padding: 6px 14px; font-size: 12.5px; cursor: pointer;
+    transition: all .16s ease; display: inline-flex; align-items: center; gap: 7px;
+    font-family: inherit;
+  }
+  .date-chip:hover { border-color: #c9d1e6; color: var(--ink); }
+  .date-chip.on {
+    background: var(--accent); border-color: var(--accent); color: #fff;
+    box-shadow: 0 4px 12px rgba(51,85,232,.24);
+  }
+  .date-chip .cnt { opacity: .6; font-size: 11px; }
+  .spacer { flex: 1; }
+  .refresh {
+    border: 1px solid var(--line); background: var(--panel); color: var(--ink-2);
+    border-radius: 9px; padding: 7px 14px; font-size: 12.5px; cursor: pointer;
+    font-family: inherit; transition: all .16s ease;
+  }
+  .refresh:hover { border-color: #c9d1e6; color: var(--ink); }
+
+  /* ---------- category tabs ---------- */
+  .cats { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+  .cat-tab {
+    border: 1px solid var(--line); background: var(--panel); color: var(--ink-2);
+    border-radius: 10px; padding: 7px 15px; font-size: 13px; cursor: pointer;
+    font-family: inherit; transition: all .16s ease; display: inline-flex;
+    align-items: center; gap: 8px;
+  }
+  .cat-tab:hover { border-color: #c9d1e6; }
+  .cat-tab.on { background: #14181f; border-color: #14181f; color: #fff; }
+  .cat-tab .n {
+    font-size: 11px; padding: 0 6px; border-radius: 6px;
+    background: rgba(0,0,0,.07); color: var(--ink-3);
+  }
+  .cat-tab.on .n { background: rgba(255,255,255,.16); color: rgba(255,255,255,.8); }
+
+  /* ---------- 顶部速览卡片 ---------- */
+  .digest { margin: 0 0 22px; }
+  .digest-head {
+    display: flex; align-items: baseline; gap: 10px; margin: 0 0 10px 2px;
+  }
+  .digest-head .lab { font-size: 15px; font-weight: 700; letter-spacing: .3px; }
+  .digest-head .sub { font-size: 12px; color: var(--ink-3); }
+  .digest-grid {
+    display: grid; gap: 14px; align-items: stretch;
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+  }
+  .digest-card {
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 15px 16px 14px;
+    border-top: 3px solid var(--accent);
+  }
+  .digest-card.c1 { border-top-color: #3355e8; }
+  .digest-card.c2 { border-top-color: #0f9d76; }
+  .digest-card.c3 { border-top-color: #b8672a; }
+  .d-cat {
+    display: flex; align-items: center; gap: 8px; margin-bottom: 9px;
+  }
+  .d-cat .nm { font-size: 14px; font-weight: 700; }
+  .d-cat .cnt {
+    font-size: 11px; font-weight: 600; padding: 1px 7px; border-radius: 6px;
+    background: var(--accent-soft); color: var(--accent);
+  }
+  .d-top {
+    font-size: 12.5px; color: var(--ink); line-height: 1.6;
+    overflow-wrap: anywhere; font-weight: 600; margin-bottom: 7px;
+  }
+  .d-line {
+    font-size: 12px; color: var(--ink-2); line-height: 1.65;
+    overflow-wrap: anywhere;
+  }
+  .d-line + .d-line { margin-top: 3px; }
+  .d-srcs { font-size: 11.5px; color: var(--ink-3); margin-top: 8px; }
+  .d-kw { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+  .d-kw .kw {
+    font-size: 11px; padding: 1px 7px; border-radius: 6px;
+    background: #f2f5fa; color: var(--ink-2);
+  }
+  .d-empty { font-size: 12px; color: var(--ink-3); }
+
+  /* ---------- category block ---------- */
+  .cat-block { margin-bottom: 26px; }
+  .cat-head { display: flex; align-items: baseline; gap: 10px; margin: 0 0 12px 2px; }
+  .cat-name { font-size: 15px; font-weight: 700; letter-spacing: .3px; }
+  .cat-desc { font-size: 12px; color: var(--ink-3); }
+
+  .grid {
+    display: grid; gap: 16px; align-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .col {
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: var(--radius); overflow: hidden;
+  }
+  .col-head {
+    display: flex; align-items: center; gap: 9px;
+    padding: 14px 16px 12px; border-bottom: 1px solid var(--line);
+    background: #fbfcfe;
+  }
+  .logo-dot { width: 8px; height: 8px; border-radius: 50%; flex: none; }
+  .col-name { font-weight: 650; font-size: 14px; letter-spacing: .2px; }
+  .col-sub { font-size: 11.5px; color: var(--ink-3); margin-left: auto; }
+
+  .board + .board { border-top: 1px dashed var(--line); }
+  .board-head { display: flex; align-items: center; gap: 8px; padding: 10px 16px 6px; }
+  .badge {
+    font-size: 10.5px; font-weight: 600; letter-spacing: .5px;
+    padding: 2px 8px; border-radius: 6px;
+    background: var(--accent-soft); color: var(--accent);
+  }
+  .badge.week { background: #fff2e6; color: #b8672a; }
+  .badge.month { background: #eaf7ef; color: #268052; }
+  .badge.need { background: #f3ecff; color: #6b46c1; }
+  .board-count { font-size: 11px; color: var(--ink-3); }
+
+  .item {
+    display: flex; gap: 11px; padding: 9px 16px 10px;
+    border-bottom: 1px solid #f2f4f8; transition: background .14s ease;
+  }
+  .item:last-child { border-bottom: none; }
+  .item:hover { background: #fafbfe; }
+  .rank {
+    flex: none; width: 21px; height: 21px; border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 700; margin-top: 2px;
+    background: #f0f2f6; color: var(--ink-3);
+  }
+  .rank.r1 { background: #fff3d6; color: #a97400; }
+  .rank.r2 { background: #eef1f5; color: #5d6b7d; }
+  .rank.r3 { background: #fbeee5; color: #a25e2c; }
+  .it-body { min-width: 0; flex: 1; }
+  .it-title {
+    font-size: 13px; font-weight: 600; color: var(--ink);
+    display: block; overflow-wrap: anywhere; line-height: 1.45;
+  }
+  .it-title:hover { color: var(--accent); }
+  .it-desc {
+    font-size: 12px; color: var(--ink-2); margin-top: 2px;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+    overflow: hidden; overflow-wrap: anywhere;
+  }
+  .it-note {
+    font-size: 12.5px; color: #2c3a55; line-height: 1.65; margin-top: 6px;
+    background: #f6f8ff; border-left: 2px solid var(--accent);
+    padding: 6px 10px; border-radius: 0 7px 7px 0; overflow-wrap: anywhere;
+  }
+  .it-note .lab {
+    font-size: 10.5px; font-weight: 700; color: var(--accent); margin-right: 5px;
+    letter-spacing: .5px;
+  }
+  .it-scene {
+    display: inline-block; margin-top: 6px; font-size: 11px; color: var(--ink-2);
+    background: #f2f5fa; border-radius: 6px; padding: 2px 8px; overflow-wrap: anywhere;
+  }
+  .it-scene b { color: var(--ink-3); font-weight: 600; margin-right: 4px; }
+  .it-heat { font-size: 11px; color: var(--ink-3); margin-top: 4px; }
+  .it-heat .hl { color: #1f8a5b; font-weight: 600; }
+
+  .state { padding: 56px 24px; text-align: center; color: var(--ink-3); font-size: 13px; }
+  .state b { display: block; color: var(--ink-2); font-size: 14px; margin-bottom: 6px; font-weight: 600; }
+  .spin {
+    width: 22px; height: 22px; border-radius: 50%;
+    border: 2px solid #dfe3ec; border-top-color: var(--accent);
+    animation: rot .8s linear infinite; margin: 0 auto 12px;
+  }
+  @keyframes rot { to { transform: rotate(360deg); } }
+  /* ---------- history nav ---------- */
+  .nav-btn {
+    border: 1px solid var(--line); background: var(--panel); color: var(--ink-2);
+    border-radius: 9px; padding: 7px 12px; font-size: 12.5px; cursor: pointer;
+    font-family: inherit; transition: all .16s ease;
+  }
+  .nav-btn:hover:not(:disabled) { border-color: #c9d1e6; color: var(--ink); }
+  .nav-btn:disabled { opacity: .42; cursor: default; }
+  .date-input {
+    border: 1px solid var(--line); background: var(--panel); color: var(--ink);
+    border-radius: 9px; padding: 6px 10px; font-size: 12.5px; font-family: inherit;
+  }
+  .range-note { font-size: 12px; color: var(--ink-3); }
+  .dates-scroll { overflow-x: auto; padding-bottom: 4px; margin-bottom: 14px; }
+  .dates-scroll .dates { flex-wrap: nowrap; }
+
+  /* ---------- summary ---------- */
+  .cat-summary {
+    font-size: 12.5px; color: var(--ink-2); background: var(--accent-soft);
+    border: 1px solid #dfe4ff; border-radius: 10px;
+    padding: 9px 13px; margin: 0 0 14px 2px; line-height: 1.7; overflow-wrap: anywhere;
+  }
+  .cat-summary .lab { color: var(--accent); font-weight: 650; margin-right: 6px; }
+  .col-summary {
+    font-size: 11.5px; color: var(--ink-2); background: #f7f9fc;
+    border-bottom: 1px solid var(--line); padding: 8px 16px 9px;
+    line-height: 1.6; overflow-wrap: anywhere;
+  }
+  .col-summary .lab { color: var(--ink-3); margin-right: 5px; }
+
+  .foot { text-align: center; color: var(--ink-3); font-size: 11.5px; margin-top: 26px; line-height: 1.8; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-top">
+      <div>
+        <div class="title-row">
+          <span class="radar-dot"></span>
+          <h1>信息雷达</h1>
+        </div>
+        <p class="sub">6 个平台 · 热门产品 / 热门话题 / 项目需求，每日 08:00 自动更新</p>
+      </div>
+      <div class="hero-meta">
+        <div>
+          <div class="stat-num" id="statTotal">—</div>
+          <div class="stat-lab">当日收录</div>
+        </div>
+        <div>
+          <div class="stat-num" id="statSrc">—</div>
+          <div class="stat-lab">覆盖来源</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="toolbar">
+    <button class="nav-btn" id="prevDay" type="button">&larr; 更早一天</button>
+    <button class="nav-btn" id="nextDay" type="button">更晚一天 &rarr;</button>
+    <input type="date" id="datePick" class="date-input" aria-label="跳转到指定日期">
+    <span class="range-note" id="rangeNote">已加载最近 20 天</span>
+    <div class="spacer"></div>
+    <button class="refresh" id="moreBtn" type="button">加载更早 30 天</button>
+    <button class="refresh" id="refreshBtn" type="button">刷新</button>
+  </div>
+
+  <div class="dates-scroll">
+    <div class="dates" id="dateBar">
+      <button type="button" class="date-chip on">今天</button>
+    </div>
+  </div>
+
+  <div class="cats" id="catBar">
+    <button type="button" class="cat-tab on">全部<span class="n">—</span></button>
+    <button type="button" class="cat-tab">热门产品</button>
+    <button type="button" class="cat-tab">热门话题</button>
+    <button type="button" class="cat-tab">项目需求</button>
+  </div>
+
+  <div class="digest" id="digest"></div>
+
+  <div id="content">
+    <section class="cat-block">
+      <div class="cat-head">
+        <span class="cat-name">热门产品</span>
+        <span class="cat-desc">正在读取·</span>
+      </div>
+      <div class="cat-summary"><span class="lab">今日速览</span>正在生成…</div>
+      <div class="grid">
+      <section class="col">
+        <div class="col-head">
+          <span class="logo-dot" style="background:#3355e8"></span>
+          <span class="col-name">加载中</span>
+          <span class="col-sub"></span>
+        </div>
+        <div class="board">
+          <div class="board-head"><span class="badge">热榜</span></div>
+          <a class="item" href="#">
+            <span class="rank">1</span>
+            <div class="it-body">
+              <span class="it-title">正在读取榜单…</span>
+              <div class="it-note"><span class="lab">解读</span>正在生成…</div>
+              <div class="it-desc">—</div>
+              <div class="it-scene"><b>场景</b>—</div>
+              <div class="it-heat">—</div>
+            </div>
+          </a>
+        </div>
+      </section>
+      </div>
+    </section>
+  </div>
+
+  <div class="foot">
+    来源：GitHub · Product Hunt · Hugging Face · Hacker News · Chrome 应用商店 · Firefox 插件 · GreasyFork · App Store · 少数派 · 今日头条 · 百度热搜 · 哔哩哔哩 · 掘金 · Lobsters · V2EX · Stack Overflow · w2solo<br>
+    产品榜每日更新，周末追加周榜，月末追加月榜；插件榜每日从三大浏览器插件平台更新；中文热榜与开发者社区每日更新；需求榜从提问与点子社区更新；w2solo 每日抓作品、热议与点子需求
+  </div>
+</div>
+
+<script>
+(function () {
+  // 数据源：静态 JSON 文件，日期 + 周期（daily / weekly / monthly）为单位
+  //   data/index.json                 日期与周期清单
+  //   data/2026-10-21-daily.json      当天日榜 / 热榜 / 需求榜
+  //   data/2026-10-21-weekly.json     周末追加的周榜
+  //   data/2026-10-21-monthly.json    月末追加的月榜
+  var DATA_BASE = 'data/';
+  var F = {
+    title: 'title', date: 'date', source: 'source', board: 'board',
+    rank: 'rank', desc: 'desc', heat: 'heat', link: 'url', cat: 'category',
+    note: 'note', scene: 'scene'
+  };
+  // 源站简介里的占位文案，没有信息量，不展示
+  var PLACEHOLDER_DESC = ['Show HN 新品首发', '技术社区热帖', 'Hacker News 首页',
+                          'V2EX 热门讨论', 'V2EX 创意节点讨论', 'V2EX 创意', '社区提问'];
+  var CAT_ORDER = ['热门产品', '热门话题', '项目需求'];
+  var CAT_DESC = {
+    '热门产品': '正在被市场验证的新产品与模型',
+    '热门话题': '技术圈与开发者社区在聊什么',
+    '项目需求': '真实用户说出的「我想要一个…」'
+  };
+  var SOURCE_ORDER = ['GitHub', 'Product Hunt', 'Hugging Face', 'Hacker News',
+                      'Chrome 应用商店', 'Firefox 插件', 'GreasyFork',
+                      'App Store', '少数派',
+                      '今日头条', '百度热搜', '哔哩哔哩', '掘金',
+                      'Lobsters', 'V2EX', 'Stack Overflow', 'w2solo'];
+  // 已下线的来源：历史记录仍留在数据里，但页面不再展示
+  var HIDDEN_SOURCES = ['Reddit', 'Steam'];
+  var SOURCE_META = {
+    'GitHub':           { sub: '趋势仓库', color: '#24292f' },
+    'Product Hunt':     { sub: '新品投票', color: '#da552f' },
+    'Hugging Face':     { sub: '模型趋势', color: '#e0a300' },
+    'Hacker News':      { sub: '技术社区', color: '#ff6600' },
+    'Chrome 应用商店':   { sub: 'Chrome 扩展', color: '#4285f4' },
+    'Firefox 插件':      { sub: 'Firefox 扩展', color: '#ff7139' },
+    'GreasyFork':       { sub: '油猴脚本', color: '#5a8f3d' },
+    'App Store':        { sub: 'iOS 免费榜', color: '#007aff' },
+    '少数派':            { sub: '好物与效率', color: '#d0021b' },
+    '今日头条':          { sub: '中文热榜', color: '#f04142' },
+    '百度热搜':          { sub: '搜索热度', color: '#2932e1' },
+    '哔哩哔哩':          { sub: '热门视频', color: '#fb7299' },
+    '掘金':             { sub: '技术热文', color: '#1e80ff' },
+    'Lobsters':         { sub: '极客热帖', color: '#b3202c' },
+    'V2EX':             { sub: '中文社区', color: '#77808c' },
+    'Stack Overflow':   { sub: '开发者难题', color: '#f48024' },
+    'w2solo':           { sub: '独立开发者', color: '#f5a623' }
+  };
+  var BOARD_ORDER = ['日榜', '周榜', '月榜', '作品榜', '热榜', '需求榜'];
+
+  var state = { rows: [], dates: [], active: null, cat: '全部', range: 20, summaries: {},
+                loaded: {}, index: null };
+  var els = {
+    content: document.getElementById('content'),
+    dateBar: document.getElementById('dateBar'),
+    digest: document.getElementById('digest'),
+    catBar: document.getElementById('catBar'),
+    total: document.getElementById('statTotal'),
+    src: document.getElementById('statSrc'),
+    refresh: document.getElementById('refreshBtn'),
+    prev: document.getElementById('prevDay'),
+    next: document.getElementById('nextDay'),
+    pick: document.getElementById('datePick'),
+    more: document.getElementById('moreBtn'),
+    rangeNote: document.getElementById('rangeNote')
+  };
+
+  function pad(n) { return n < 10 ? '0' + n : '' + n; }
+
+  function isoDaysAgo(days) {
+    var d = new Date();
+    d.setDate(d.getDate() - days);
+    return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+  }
+
+  function dayOf(v) {
+    if (!v) return '';
+    var s = String(v);
+    return s.length >= 10 ? s.slice(0, 10) : s;
+  }
+
+  function fmtDate(iso) {
+    var p = iso.split('-');
+    if (p.length < 3) return iso;
+    var d = new Date(Number(p[0]), Number(p[1]) - 1, Number(p[2]));
+    var w = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'][d.getDay()];
+    var label = iso === isoDaysAgo(0) ? '今天'
+      : (iso === isoDaysAgo(1) ? '昨天' : (Number(p[1]) + '月' + Number(p[2]) + '日'));
+    return label + ' · ' + w;
+  }
+
+  function escapeHtml(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  // 字段文本已逐个 escapeHtml；此处再用 DOMParser 做结构白名单清洗（剔除 script、
+  // on* 事件属性、javascript: 协议），作为写入 DOM 前的最后一道防线。
+  function sanitizeHtml(str) {
+    var doc;
+    try {
+      doc = new DOMParser().parseFromString(str, 'text/html');
+    } catch (e) {
+      return '';
+    }
+    if (!doc || !doc.body) return '';
+    var blocked = doc.body.querySelectorAll('script,iframe,object,embed,style,link,meta');
+    for (var i = 0; i < blocked.length; i++) {
+      if (blocked[i].parentNode) blocked[i].parentNode.removeChild(blocked[i]);
+    }
+    var all = doc.body.querySelectorAll('*');
+    for (var j = 0; j < all.length; j++) {
+      var attrs = Array.prototype.slice.call(all[j].attributes || []);
+      for (var k = 0; k < attrs.length; k++) {
+        var name = String(attrs[k].name).toLowerCase();
+        var value = String(attrs[k].value || '').replace(/\s/g, '');
+        if (name.indexOf('on') === 0 || /^javascript:/i.test(value)) {
+          all[j].removeAttribute(attrs[k].name);
+        }
+      }
+    }
+    return doc.body.innerHTML;
+  }
+
+  // ---------------- data ----------------
+
+  function fetchJson(path) {
+    return fetch(path, { cache: 'no-cache' }).then(function (res) {
+      if (!res.ok) { throw new Error(path + ' HTTP ' + res.status); }
+      return res.json();
+    });
+  }
+
+  function dayFiles(dateStr, periods) {
+    var ps = periods && periods.length ? periods : ['daily'];
+    return ps.map(function (p) { return DATA_BASE + dateStr + '-' + p + '.json'; });
+  }
+
+  // 摘要：每个 JSON 文件自带 summaries（类别 / 来源 / 条数 / 文案）
+  function putSummaries(list, dateStr) {
+    (list || []).forEach(function (s) {
+      if (!s || !s.category) return;
+      state.summaries[dateStr + '|' + s.category + '|' + (s.source || '')] = s.text || '';
+    });
+  }
+
+  function putItems(list, dateStr) {
+    (list || []).forEach(function (it) {
+      if (!it) return;
+      if (HIDDEN_SOURCES.indexOf(it[F.source]) >= 0) return;  // 已下线来源不展示
+      it[F.date] = dateStr;
+      state.rows.push(it);
+    });
+  }
+
+  // 加载某一天的全部周期文件；已加载过则直接跳过
+  function loadDay(dateStr, periods) {
+    if (state.loaded[dateStr]) { return Promise.resolve(); }
+    state.loaded[dateStr] = true;
+    var files = dayFiles(dateStr, periods);
+    return Promise.all(files.map(function (f) {
+      return fetchJson(f).then(function (doc) {
+        putItems(doc.items, dateStr);
+        putSummaries(doc.summaries, dateStr);
+      }).catch(function (err) {
+        console.warn('[信息雷达] 跳过文件', err.message);
+      });
+    }));
+  }
+
+  // 读 index.json -> 取最近 range 天 -> 并发加载
+  function loadData() {
+    fetchJson(DATA_BASE + 'index.json').then(function (idx) {
+      state.index = idx;
+      var days = (idx.days || []).slice(0, state.range);
+      if (!days.length) { showState('暂无榜单数据', '还没有生成任何 JSON 数据文件。'); return; }
+      var queue = days.map(function (d) { return loadDay(d.date, d.periods); });
+      return Promise.all(queue).then(function () {
+        rebuildDates();
+        if (!state.active || state.dates.indexOf(state.active) < 0) {
+          state.active = state.dates.length ? state.dates[0] : null;
+        }
+        renderDates();
+        renderAll();
+      });
+    }).catch(function (err) {
+      console.error('[信息雷达] 索引读取失败', err);
+      showState('数据加载失败', '读取 data/index.json 失败，请稍后点击刷新重试。');
+    });
+  }
+
+  function rebuildDates() {
+    var map = {};
+    state.rows.forEach(function (r) {
+      var d = dayOf(r[F.date]);
+      if (d) map[d] = (map[d] || 0) + 1;
+    });
+    state.dates = Object.keys(map).sort().reverse();
+  }
+
+  // 跳到任意日期：读这一天的 JSON（文件不存在就是这天没抓）
+  function loadExactDate(iso) {
+    showState('正在读取 ' + iso + ' 的榜单…', '');
+    var periods = null;
+    if (state.index) {
+      (state.index.days || []).forEach(function (d) {
+        if (d.date === iso) { periods = d.periods; }
+      });
+    }
+    delete state.loaded[iso];
+    state.rows = state.rows.filter(function (r) { return dayOf(r[F.date]) !== iso; });
+    loadDay(iso, periods || ['daily', 'weekly', 'monthly']).then(function () {
+      rebuildDates();
+      state.active = iso;
+      renderDates();
+      renderAll();
+      var n = state.rows.filter(function (r) { return dayOf(r[F.date]) === iso; }).length;
+      if (!n) {
+        showState(iso + ' 没有记录', '这天没有抓取数据，换一个日期或点「加载更早」。');
+      }
+    });
+  }
+
+  function stepDay(delta) {
+    var i = state.dates.indexOf(state.active);
+    if (i < 0) return;
+    var j = i + delta;
+    if (j < 0 || j >= state.dates.length) return;
+    state.active = state.dates[j];
+    renderDates();
+    renderAll();
+  }
+
+  // 把「条数 · 榜首… · 高频：… · 覆盖 …」拆成结构化片段
+  function parseSummary(text) {
+    var parts = String(text || '').split(' · ').filter(function (x) { return x && x.trim(); });
+    var out = { count: '', top: '', kws: [], srcs: '', lines: [] };
+    parts.forEach(function (seg) {
+      var t = seg.trim();
+      if (!t) return;
+      if (!out.count && /^\d+\s*条$/.test(t)) { out.count = t; return; }
+      if (t.indexOf('覆盖') === 0) { out.srcs = t.replace(/^覆盖\s*/, ''); return; }
+      if (t.indexOf('高频') === 0) {
+        var body = t.replace(/^高频[：:]\s*/, '');
+        out.kws = body.split('、').filter(Boolean).slice(0, 6);
+        return;
+      }
+      if (t.indexOf('榜首') === 0) { out.top = t; return; }
+      out.lines.push(t);
+    });
+    return out;
+  }
+
+  function renderDigest(byCat) {
+    if (!els.digest) return;
+    var cats = CAT_ORDER.filter(function (c) { return byCat[c]; });
+    if (state.cat !== '全部') {
+      cats = cats.filter(function (c) { return c === state.cat; });
+    }
+    if (!cats.length) { els.digest.innerHTML = ''; return; }
+
+    var html = '<div class="digest-head"><span class="lab">'
+      + escapeHtml(fmtDate(state.active)) + ' 速览</span>'
+      + '<span class="sub">先看总结，再展开下面的明细榜单</span></div><div class="digest-grid">';
+
+    cats.forEach(function (cat, idx) {
+      var stored = state.summaries[state.active + '|' + cat + '|全部'] || '';
+      var info = parseSummary(stored || quickSummary(byCat, cat));
+      var n = countCat(byCat, cat);
+      var srcs = Object.keys(byCat[cat] || {});
+      html += '<div class="digest-card c' + (idx + 1) + '">'
+        + '<div class="d-cat"><span class="nm">' + escapeHtml(cat) + '</span>'
+        + '<span class="cnt">' + n + ' 条</span></div>'
+        + (info.top ? '<div class="d-top">' + escapeHtml(info.top) + '</div>'
+                    : '<div class="d-empty">暂无榜首信息</div>');
+      info.lines.forEach(function (ln) {
+        html += '<div class="d-line">' + escapeHtml(ln) + '</div>';
+      });
+      if (info.kws.length) {
+        html += '<div class="d-kw">';
+        info.kws.forEach(function (k) {
+          html += '<span class="kw">' + escapeHtml(k) + '</span>';
+        });
+        html += '</div>';
+      }
+      html += '<div class="d-srcs">来源：' + escapeHtml(info.srcs || srcs.join('、')) + '</div>'
+        + '</div>';
+    });
+
+    html += '</div>';
+    els.digest.innerHTML = sanitizeHtml(html);
+  }
+
+  function quickSummary(byCat, cat) {
+    var rows = [];
+    var srcs = Object.keys(byCat[cat] || {});
+    srcs.forEach(function (src) {
+      Object.keys(byCat[cat][src]).forEach(function (b) {
+        rows = rows.concat(byCat[cat][src][b]);
+      });
+    });
+    if (!rows.length) return '暂无数据';
+    var top = rows.slice().sort(function (a, b) {
+      return (a[F.rank] || 999) - (b[F.rank] || 999);
+    })[0];
+    return rows.length + ' 条 · 来自 ' + srcs.join('、')
+      + ' · 榜首「' + (top[F.title] || '') + '」' + (top[F.heat] || '');
+  }
+
+  function rowsForDate() {
+    return state.rows.filter(function (r) { return dayOf(r[F.date]) === state.active; });
+  }
+
+  // ---------------- render ----------------
+
+  function renderDates() {
+    if (!state.dates.length) { els.dateBar.innerHTML = ''; return; }
+    var html = '';
+    state.dates.forEach(function (d) {
+      var cnt = state.rows.filter(function (r) { return dayOf(r[F.date]) === d; }).length;
+      html += '<button type="button" class="date-chip' + (d === state.active ? ' on' : '')
+        + '" data-date="' + d + '">' + escapeHtml(fmtDate(d))
+        + '<span class="cnt">' + cnt + '</span></button>';
+    });
+    els.dateBar.innerHTML = sanitizeHtml(html);
+    Array.prototype.forEach.call(els.dateBar.querySelectorAll('.date-chip'), function (btn) {
+      btn.addEventListener('click', function () {
+        state.active = btn.getAttribute('data-date');
+        renderDates();
+        renderAll();
+      });
+    });
+    var i = state.dates.indexOf(state.active);
+    els.prev.disabled = i < 0 || i >= state.dates.length - 1;
+    els.next.disabled = i <= 0;
+    els.rangeNote.textContent = '共 ' + state.dates.length + ' 天 · 已加载最近 '
+      + state.range + ' 天';
+  }
+
+  function groupByCat(rows) {
+    var out = {};
+    rows.forEach(function (r) {
+      var cat = r[F.cat] || '热门产品';
+      var src = r[F.source] || '其他';
+      var board = r[F.board] || '热榜';
+      if (!out[cat]) out[cat] = {};
+      if (!out[cat][src]) out[cat][src] = {};
+      if (!out[cat][src][board]) out[cat][src][board] = [];
+      out[cat][src][board].push(r);
+    });
+    return out;
+  }
+
+  function countCat(byCat, cat) {
+    var n = 0;
+    Object.keys(byCat[cat] || {}).forEach(function (s) {
+      Object.keys(byCat[cat][s]).forEach(function (b) { n += byCat[cat][s][b].length; });
+    });
+    return n;
+  }
+
+  function renderCats(byCat) {
+    var total = 0;
+    CAT_ORDER.forEach(function (c) { if (byCat[c]) total += countCat(byCat, c); });
+    var html = '<button type="button" class="cat-tab' + (state.cat === '全部' ? ' on' : '')
+      + '" data-cat="全部">全部<span class="n">' + total + '</span></button>';
+    CAT_ORDER.filter(function (c) { return byCat[c]; }).forEach(function (c) {
+      html += '<button type="button" class="cat-tab' + (state.cat === c ? ' on' : '')
+        + '" data-cat="' + escapeHtml(c) + '">' + escapeHtml(c)
+        + '<span class="n">' + countCat(byCat, c) + '</span></button>';
+    });
+    els.catBar.innerHTML = sanitizeHtml(html);
+    Array.prototype.forEach.call(els.catBar.querySelectorAll('.cat-tab'), function (btn) {
+      btn.addEventListener('click', function () {
+        state.cat = btn.getAttribute('data-cat');
+        renderAll();
+      });
+    });
+  }
+
+  function heatHtml(text) {
+    if (!text) return '';
+    return String(text).split(' · ').map(function (part) {
+      if (/^\+\d/.test(part)) return '<span class="hl">' + escapeHtml(part) + '</span>';
+      return escapeHtml(part);
+    }).join(' · ');
+  }
+
+  function itemHtml(r, idx) {
+    var rank = r[F.rank] || idx + 1;
+    var cls = rank === 1 ? ' r1' : (rank === 2 ? ' r2' : (rank === 3 ? ' r3' : ''));
+    var lv = r[F.link];
+    if (Object.prototype.toString.call(lv) === '[object Array]') { lv = lv[0]; }
+    if (lv && typeof lv === 'object' && lv.link) { lv = lv.link; }
+    var link = (typeof lv === 'string' && lv) ? lv : '#';
+    var desc = r[F.desc] || '';
+    if (PLACEHOLDER_DESC.indexOf(desc) >= 0) { desc = ''; }
+    var note = r[F.note] || '';
+    var scene = r[F.scene] || '';
+    return '<a class="item" href="' + escapeHtml(link) + '" target="_blank" rel="noopener">'
+      + '<span class="rank' + cls + '">' + escapeHtml(rank) + '</span>'
+      + '<div class="it-body">'
+      + '<span class="it-title">'
+      + escapeHtml(r[F.title] || '') + '</span>'
+      + (note ? '<div class="it-note">'
+              + '<span class="lab">解读</span>' + escapeHtml(note) + '</div>' : '')
+      + (desc ? '<div class="it-desc">' + escapeHtml(desc) + '</div>' : '')
+      + (scene ? '<div class="it-scene">'
+               + '<b>场景</b>' + escapeHtml(scene) + '</div>' : '')
+      + (r[F.heat] ? '<div class="it-heat">' + heatHtml(r[F.heat]) + '</div>' : '')
+      + '</div></a>';
+  }
+
+  function sourceCol(src, boards, cat) {
+    var meta = SOURCE_META[src] || { sub: '', color: '#8b95a5' };
+    var keys = BOARD_ORDER.filter(function (b) { return boards[b] && boards[b].length; });
+    // 未知榜单（如「免费榜（中国）」「热销榜」）按出现顺序补在后面，避免数据被丢掉
+    Object.keys(boards).forEach(function (b) {
+      if (b && boards[b] && boards[b].length && keys.indexOf(b) < 0) { keys.push(b); }
+    });
+    var sum = state.summaries[state.active + '|' + (cat || '') + '|' + src] || '';
+    var html = '<section class="col"><div class="col-head">'
+      + '<span class="logo-dot" style="background:' + meta.color + '"></span>'
+      + '<span class="col-name">' + escapeHtml(src) + '</span>'
+      + '<span class="col-sub">' + escapeHtml(meta.sub) + '</span></div>'
+      + (sum ? '<div class="col-summary"><span class="lab">速览</span>'
+              + escapeHtml(sum) + '</div>' : '');
+    if (!keys.length) {
+      html += '<div class="state" style="padding:26px 16px">今日暂无数据</div>';
+    } else {
+      keys.forEach(function (b) {
+        var list = boards[b];
+        var bcls = b === '周榜' ? ' week' : (b === '月榜' ? ' month' : (b === '需求榜' ? ' need' : ''));
+        html += '<div class="board"><div class="board-head">'
+          + '<span class="badge' + bcls + '">' + escapeHtml(b) + '</span>'
+          + '<span class="board-count">' + list.length + ' 项</span></div>';
+        list.sort(function (a, c) { return (a[F.rank] || 999) - (c[F.rank] || 999); });
+        list.forEach(function (r, i) { html += itemHtml(r, i); });
+        html += '</div>';
+      });
+    }
+    return html + '</section>';
+  }
+
+  function renderAll() {
+    if (!state.active) {
+      showState('暂无榜单数据', '定时任务每天 08:00 抓取并写入，稍后刷新即可。');
+      return;
+    }
+    var rows = rowsForDate();
+    var byCat = groupByCat(rows);
+    renderCats(byCat);
+    renderDigest(byCat);
+
+    els.total.textContent = rows.length;
+    var srcSet = {};
+    rows.forEach(function (r) { if (r[F.source]) srcSet[r[F.source]] = 1; });
+    els.src.textContent = Object.keys(srcSet).length;
+
+    var cats = CAT_ORDER.filter(function (c) { return byCat[c]; });
+    if (state.cat !== '全部') {
+      cats = cats.filter(function (c) { return c === state.cat; });
+    }
+    if (!cats.length) {
+      showState('该分类今日暂无数据', '换一个日期或查看其他分类。');
+      return;
+    }
+
+    var html = '';
+    cats.forEach(function (cat) {
+      var srcs = Object.keys(byCat[cat]);
+      srcs.sort(function (a, b) {
+        return SOURCE_ORDER.indexOf(a) - SOURCE_ORDER.indexOf(b);
+      });
+      var catSum = state.summaries[state.active + '|' + cat + '|全部'] || quickSummary(byCat, cat);
+      html += '<section class="cat-block"><div class="cat-head">'
+        + '<span class="cat-name">' + escapeHtml(cat) + '</span>'
+        + '<span class="cat-desc">' + escapeHtml(CAT_DESC[cat] || '') + ' · '
+        + countCat(byCat, cat) + ' 条</span>'
+        + '</div>'
+        + '<div class="cat-summary"><span class="lab">今日速览</span>'
+        + escapeHtml(catSum) + '</div>'
+        + '<div class="grid">';
+      srcs.forEach(function (s) { html += sourceCol(s, byCat[cat][s], cat); });
+      html += '</div></section>';
+    });
+
+    els.content.innerHTML = sanitizeHtml(html);
+  }
+
+  function showState(title, hint) {
+    if (els.digest) els.digest.innerHTML = '';
+    els.content.innerHTML = sanitizeHtml('<div class="col"><div class="state"><b>'
+      + escapeHtml(title) + '</b>' + escapeHtml(hint || '') + '</div></div>');
+    els.total.textContent = '0';
+    els.src.textContent = '0';
+  }
+
+  // ---------------- boot ----------------
+
+  function boot() {
+    els.refresh.addEventListener('click', function () {
+      els.refresh.disabled = true;
+      els.refresh.textContent = '刷新中…';
+      state.rows = []; state.dates = []; state.active = null;
+      state.summaries = {}; state.loaded = {};
+      els.content.innerHTML = sanitizeHtml('<div class="col"><div class="state"><div class="spin"></div>正在读取榜单…</div></div>');
+      loadData();
+      setTimeout(function () {
+        els.refresh.disabled = false;
+        els.refresh.textContent = '刷新';
+      }, 1200);
+    });
+    els.prev.addEventListener('click', function () { stepDay(1); });
+    els.next.addEventListener('click', function () { stepDay(-1); });
+    els.pick.addEventListener('change', function () {
+      var v = els.pick.value;
+      if (v) loadExactDate(v);
+    });
+    els.more.addEventListener('click', function () {
+      if (state.range >= 365) { els.rangeNote.textContent = '已加载到上限 365 天'; return; }
+      state.range = Math.min(365, state.range + 30);
+      els.more.disabled = true;
+      els.more.textContent = '加载中…';
+      state.rows = []; state.dates = []; state.summaries = {}; state.loaded = {};
+      loadData();
+      setTimeout(function () {
+        els.more.disabled = false;
+        els.more.textContent = '加载更早 30 天';
+      }, 1500);
+    });
+    loadData();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', boot);
+  } else {
+    boot();
+  }
+})();
+</script>
+</body>
+</html>
