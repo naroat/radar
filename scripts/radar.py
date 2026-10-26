@@ -58,15 +58,25 @@ PERIOD_OF_BOARD = {BOARD_WEEK: "weekly", BOARD_MONTH: "monthly"}
 
 
 def _proxy_candidates():
-    """按优先级返回代理列表: 环境变量代理 -> 本机常见代理端口 -> 直连。"""
+    """按优先级返回代理列表: 环境变量代理 -> 本机常见代理端口 -> 直连。
+
+    CI（GitHub Actions 等境外 runner）上不需要本机代理端口探测，直接跳过，
+    避免无谓的连接失败与重试耗时；显式设置 INFO_RADAR_DIRECT=1 也可强制直连。
+    """
+    if os.environ.get("INFO_RADAR_DIRECT") == "1":
+        return [None]
+
     cands = []
     env_proxy = os.environ.get("HTTPS_PROXY") or os.environ.get("https_proxy")
     if env_proxy:
         cands.append(env_proxy)
-    for port in ("7897", "7890", "1087", "8080"):
-        p = "http://127.0.0.1:%s" % port
-        if p not in cands:
-            cands.append(p)
+
+    if sys.platform == "darwin":
+        for port in ("7897", "7890", "1087", "8080"):
+            p = "http://127.0.0.1:%s" % port
+            if p not in cands:
+                cands.append(p)
+
     cands.append(None)
     return cands
 

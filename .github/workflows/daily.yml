@@ -1,0 +1,98 @@
+name: 信息雷达每日抓取
+
+# 每天 08:00（Asia/Shanghai）自动跑：抓取 → 补解读 → 同步页面 → 提交数据 → 发布到 Pages
+# UTC 00:00 == 北京时间 08:00
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+    inputs:
+      skip_annotate:
+        description: 跳过 LLM 补解读（只用已有解读快速重发）
+        type: boolean
+        default: false
+  # 改了脚本或工作流时顺手跑一次验证；data/ 的提交不会触发，避免自我循环
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/daily.yml"
+      - "scripts/**"
+      - "web/**"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: info-radar-daily
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    env:
+      TZ: Asia/Shanghai
+      INFO_RADAR_DIRECT: "1"      # 境外 runner 直连，不探测本机代理端口
+      LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+      LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+      LLM_MODEL: ${{ vars.LLM_MODEL }}
+
+    steps:
+      - name: 拉取仓库
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 准备 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 抓取当日榜单
+        run: |
+          set -o pipefail
+          python scripts/radar.py | tee /tmp/radar.log
+
+      - name: 汇总抓取结果
+        if: always()
+        run: |
+          echo "### 抓取结果" >> "$GITHUB_STEP_SUMMARY"
+          echo '```json' >> "$GITHUB_STEP_SUMMARY"
+          sed -n '1p' /tmp/radar.log >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          sed -n '2p' /tmp/radar.log >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
+
+      - name: 用大模型补解读
+        if: ${{ inputs.skip_annotate != true }}
+        run: |
+          set -o pipefail
+          python scripts/annotate_llm.py | tee /tmp/annotate.log
+          echo "### 解读" >> "$GITHUB_STEP_SUMMARY"
+          echo '```json' >> "$GITHUB_STEP_SUMMARY"
+          cat /tmp/annotate.log >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+
+      - name: 同步页面与数据
+        run: python scripts/sync_site.py
+
+      - name: 提交数据变更
+        run: |
+          git config user.name  "info-radar-bot"
+          git config user.email "info-radar-bot@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "数据无变化，跳过提交"
+          else
+            git commit -m "data: $(date +%F) 榜单与解读"
+            git push
+          fi
+
+      - name: 发布到 GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./site
+          force_orphan: true
+          commit_message: "pages: ${{ github.run_id }}"

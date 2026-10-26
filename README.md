@@ -3,16 +3,21 @@
 每天早上抓取 17 个平台的热门产品、热门话题与项目需求，为每条记录生成「解读」和「适用场景」，
 产出一个可免登录访问的静态页面，并保留全部历史数据。
 
-- 线上页面：https://info-radar-18063.app.workbuddy.host/?sharecode=QMFTB4W3OB
+- 线上页面（固定链接）：https://naroat.github.io/radar/
+- 备份线路：https://info-radar-18063.app.workbuddy.host/?sharecode=QMFTB4W3OB
 - 数据源：本地 JSON 文件（每天一个），不使用任何数据库
+- 运行方式：GitHub Actions 每天 08:00 自动跑（不依赖本机开机），也可本地手动执行
 
 ## 目录结构
 
 ```
 radar/
+├── .github/workflows/
+│   └── daily.yml       每日 08:00 抓取→解读→同步→提交→发布 Pages
 ├── scripts/            所有脚本
 │   ├── radar.py              抓取（17 来源 / 23 板块）
-│   ├── annotate.py           为条目补「解读 / 场景」
+│   ├── annotate.py           为条目补「解读 / 场景」（人工/Agent 写回）
+│   ├── annotate_llm.py       为条目补「解读 / 场景」（调大模型，CI 用）
 │   ├── sync_site.py          把 web/ 与 data/ 同步到 site/
 │   ├── remove_source.py      下线某个来源并清理其历史数据
 │   └── test_render.js        jsdom 渲染自测
@@ -57,7 +62,25 @@ radar/
 
 **解读与场景是这个项目最有价值的部分**，由每日任务逐条生成，不是模板套话。
 
-## 日常使用
+## 云端定时运行（GitHub Actions）
+
+`.github/workflows/daily.yml` 每天 UTC 00:00（北京时间 08:00）跑一次，流程是
+抓取 → 用大模型补解读 → 同步页面 → 提交 `data/` 回 main → 把 `site/` 推到 `gh-pages`，
+由 GitHub Pages 以固定域名 `https://naroat.github.io/radar/` 对外提供。
+
+需要一次性配置（在仓库 Settings 里）：
+
+| 项目 | 位置 | 说明 |
+|---|---|---|
+| `LLM_API_KEY` | Secrets and variables → Actions → Secrets | 大模型 Key（默认走 DeepSeek，OpenAI 兼容） |
+| `LLM_BASE_URL` | 同上 → Variables（可选） | 默认 `https://api.deepseek.com/v1` |
+| `LLM_MODEL` | 同上 → Variables（可选） | 默认 `deepseek-chat` |
+| Pages 源 | Settings → Pages | Source 选 `Deploy from a branch`，分支 `gh-pages`，目录 `/ (root)` |
+
+没配 `LLM_API_KEY` 时不会报错：抓取和发布照常，只跳过解读（页面上那些条目就没有解读文案）。
+手动触发：Actions → 信息雷达每日抓取 → Run workflow。
+
+## 日常使用（本地）
 
 ```bash
 PY=/path/to/python3
@@ -75,6 +98,9 @@ $PY scripts/annotate.py --date 2026-10-23 --items '[
 
 # 4. 同步到发布目录
 $PY scripts/sync_site.py
+
+# 5.（可选）没配 Key 的环境想试大模型批量解读
+LLM_API_KEY=sk-xxx $PY scripts/annotate_llm.py --date 2026-10-23
 ```
 
 调试时只跑部分来源：
@@ -99,7 +125,8 @@ NODE_PATH=/path/to/node_modules node scripts/test_render.js
 
 ## 抓取要点（改代码前看一眼）
 
-- **代理链**：`fetch()` 会依次尝试直连与本地代理（127.0.0.1:7897 等），带重试。
+- **代理链**：`fetch()` 会依次尝试环境变量代理、本机代理端口（仅 macOS）、直连，带重试。
+  CI 上设 `INFO_RADAR_DIRECT=1` 强制直连，不做本机端口探测。
 - **去重**：按「类别 + 来源 + 榜单」分组，组内按来源自身热度排序取前 10。
 - **保留解读**：重跑同一天时，新数据会按 `(source, board, title)` 与旧数据合并，
   已写好的 `note` / `scene` 不会丢；榜单变化产生的新条目会缺解读，需要补。
