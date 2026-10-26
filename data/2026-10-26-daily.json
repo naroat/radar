@@ -805,8 +805,8 @@
    "source": "App Store",
    "board": "免费榜（美国）",
    "category": "热门产品",
-   "note": "Meta 推出的 AI 创作应用，主打用文字生成图像和社媒素材，和 Instagram 的分享链路打通。",
-   "scene": "做社媒内容的创作者"
+   "note": "",
+   "scene": ""
   },
   {
    "rank": 3,
@@ -1069,8 +1069,8 @@
    "source": "App Store",
    "board": "免费榜（美国）",
    "category": "热门产品",
-   "note": "OpenAI 官方客户端，支持语音对话、拍照识图和文件分析，是 ChatGPT 在移动端的主入口。",
-   "scene": "需要通用 AI 助手的用户"
+   "note": "",
+   "scene": ""
   },
   {
    "rank": 4,

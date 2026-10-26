@@ -7,10 +7,14 @@ annotate_llm.py —— 用大模型批量补「解读 / 场景」（CI 无人值
 这里走 OpenAI 兼容的 chat completions 接口，按类别口径批量生成，适合 GitHub Actions。
 
 配置（环境变量）：
-  LLM_API_KEY    必填；没有则跳过解读，只打印 skipped，退出码 0（不影响抓取与发布）
+  LLM_API_KEY    可选；填了就用你自己指定的供应商
   LLM_BASE_URL   默认 https://api.deepseek.com/v1
   LLM_MODEL      默认 deepseek-chat
   LLM_BATCH      每批条数，默认 20
+
+没填 LLM_API_KEY 时自动回退到 GitHub Models —— 用仓库自带的 GITHUB_TOKEN 调，
+不额外花钱也不需要申请 key（Actions 里要给 workflow 加 `models: read` 权限）。
+两条路都不通（同 Key 都没配）时只打印 skipped，不影响抓取与发布。
 
 用法:
   python3 scripts/annotate_llm.py                      # 补今天还缺解读的条目
@@ -39,6 +43,10 @@ import radar  # noqa: E402
 
 DEFAULT_BASE = "https://api.deepseek.com/v1"
 DEFAULT_MODEL = "deepseek-chat"
+
+# GitHub Models：用仓库自带的 GITHUB_TOKEN 就能调，免费额度够每天这一天量
+GH_MODELS_BASE = "https://models.github.ai/inference"
+GH_MODEL_CHAIN = ["openai/gpt-4.1-mini", "openai/gpt-4o-mini", "openai/gpt-4.1"]
 
 # 每一类写「解读」的口径，和人工写回时的标准保持一致
 CATEGORY_RULES = {
@@ -106,6 +114,7 @@ def _chat(base_url, model, api_key, user, timeout=180):
         data=body,
         headers={
             "Content-Type": "application/json",
+            "Accept": "application/json",
             "Authorization": "Bearer %s" % api_key,
         },
         method="POST",
@@ -113,6 +122,24 @@ def _chat(base_url, model, api_key, user, timeout=180):
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         data = json.loads(resp.read().decode("utf-8", "replace"))
     return data["choices"][0]["message"]["content"]
+
+
+def resolve_config():
+    """决定这次用谁：自己的 Key 优先，否则回退 GitHub Models（用 GITHUB_TOKEN）。"""
+    key = os.environ.get("LLM_API_KEY", "").strip()
+    if key:
+        return {
+            "provider": "custom",
+            "key": key,
+            "base": os.environ.get("LLM_BASE_URL", "").strip() or DEFAULT_BASE,
+            "models": [os.environ.get("LLM_MODEL", "").strip() or DEFAULT_MODEL],
+        }
+    gh = os.environ.get("GITHUB_TOKEN", "").strip()
+    if gh:
+        want = os.environ.get("LLM_MODEL", "").strip()
+        chain = [want] + [m for m in GH_MODEL_CHAIN if m != want] if want else list(GH_MODEL_CHAIN)
+        return {"provider": "github-models", "key": gh, "base": GH_MODELS_BASE, "models": chain}
+    return {"provider": "none", "key": "", "base": "", "models": []}
 
 
 def _parse_array(text):
@@ -139,9 +166,12 @@ def _clean_text(s, limit):
 
 def annotate_batch(category, batch, cfg, stats):
     user = _payload(category, batch)
-    for attempt in range(3):
+    attempts = 0
+    while attempts < 3 and cfg["models"]:
+        attempts += 1
+        model = cfg["models"][0]
         try:
-            raw = _chat(cfg["base"], cfg["model"], cfg["key"], user)
+            raw = _chat(cfg["base"], model, cfg["key"], user)
             arr = _parse_array(raw)
             if not arr:
                 raise ValueError("返回不是 JSON 数组")
@@ -167,10 +197,24 @@ def annotate_batch(category, batch, cfg, stats):
             stats["written"] += hit
             stats["failed"] += len(batch) - hit
             return
+        except urllib.error.HTTPError as e:
+            detail = ""
+            try:
+                detail = e.read().decode("utf-8", "replace")[:160]
+            except Exception:  # noqa: BLE001
+                pass
+            # 模型不存在/无权限：换链上的下一个，不消耗尝试次数
+            if e.code in (400, 403, 404) and len(cfg["models"]) > 1:
+                bad = cfg["models"].pop(0)
+                stats["errors"].append("模型 %s 不可用(HTTP %s)，改用 %s"
+                                       % (bad, e.code, cfg["models"][0]))
+                attempts -= 1
+                continue
+            stats["errors"].append("%s: HTTP %s %s" % (category, e.code, detail))
         except Exception as e:  # noqa: BLE001
-            stats["errors"].append("%s/%d: %s" % (category, attempt + 1, str(e)[:120]))
-            if attempt < 2:
-                time.sleep(3 * (attempt + 1))
+            stats["errors"].append("%s/%d: %s" % (category, attempts, str(e)[:120]))
+        if cfg["models"]:
+            time.sleep(3 * attempts)
     stats["failed"] += len(batch)
 
 
@@ -182,11 +226,7 @@ def main():
     args = ap.parse_args()
 
     date_str = args.date or __import__("datetime").date.today().isoformat()
-    cfg = {
-        "key": os.environ.get("LLM_API_KEY", "").strip(),
-        "base": os.environ.get("LLM_BASE_URL", "").strip() or DEFAULT_BASE,
-        "model": os.environ.get("LLM_MODEL", "").strip() or DEFAULT_MODEL,
-    }
+    cfg = resolve_config()
     batch_size = int(os.environ.get("LLM_BATCH") or 20)
 
     files = []
@@ -220,16 +260,16 @@ def main():
 
     if args.dry_run or not total_missing:
         print(json.dumps({"date": date_str, "missing": total_missing,
-                          "dry_run": args.dry_run,
-                          "has_key": bool(cfg["key"]), "model": cfg["model"]},
+                          "dry_run": args.dry_run, "provider": cfg["provider"],
+                          "model": (cfg["models"] or [""])[0]},
                          ensure_ascii=False))
         return 0
 
     if not cfg["key"]:
         print(json.dumps({
-            "date": date_str, "skipped": "no LLM_API_KEY",
+            "date": date_str, "skipped": "no_credentials",
             "missing": total_missing,
-            "hint": "在仓库 Settings → Secrets and variables → Actions 里加 LLM_API_KEY",
+            "hint": "既没有 LLM_API_KEY，也没有 GITHUB_TOKEN；前者自己配，后者在 Actions 里给 models: read 权限即可",
         }, ensure_ascii=False))
         return 0
 
@@ -252,7 +292,8 @@ def main():
         left += sum(1 for it in doc.get("items") or [] if not (it.get("note") or "").strip())
 
     print(json.dumps({
-        "date": date_str, "model": cfg["model"],
+        "date": date_str, "provider": cfg["provider"],
+        "model": (cfg["models"] or [""])[0],
         "written": stats["written"], "failed": stats["failed"],
         "still_missing": left, "errors": stats["errors"][:5],
     }, ensure_ascii=False))

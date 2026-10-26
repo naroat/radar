@@ -21,6 +21,8 @@ on:
 
 permissions:
   contents: write
+  # 没配 LLM_API_KEY 时用 GitHub Models 免费额度补解读
+  models: read
 
 concurrency:
   group: info-radar-daily
@@ -37,6 +39,8 @@ jobs:
       LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
       LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
       LLM_MODEL: ${{ vars.LLM_MODEL }}
+      # 兜底：没配 LLM_API_KEY 时脚本会拿这个调 GitHub Models（免费额度）
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: 拉取仓库
