@@ -80,6 +80,12 @@ radar/
 没配 `LLM_API_KEY` 时不会报错：抓取和发布照常，只跳过解读（页面上那些条目就没有解读文案）。
 手动触发：Actions → 信息雷达每日抓取 → Run workflow。
 
+> **关于免费额度**：GitHub Models（`models.github.ai`）已于 2026-07-30 下线，
+> 现在任何请求都返回 `200 OK` 的纯文本，不能当免费兜底；免密的第三方端点也不稳定
+> （实测提示词全被 reasoning 吃掉，正文为空）。所以解读必须有一把自己的 Key。
+> 想省钱可以用 DeepSeek（每天 200 多条约几分钱），或用 Groq / Gemini 的免费额度，
+> 都是 OpenAI 兼容接口，改 `LLM_BASE_URL` + `LLM_MODEL` 即可。
+
 ## 日常使用（本地）
 
 ```bash

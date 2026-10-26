@@ -7,14 +7,13 @@ annotate_llm.py —— 用大模型批量补「解读 / 场景」（CI 无人值
 这里走 OpenAI 兼容的 chat completions 接口，按类别口径批量生成，适合 GitHub Actions。
 
 配置（环境变量）：
-  LLM_API_KEY    可选；填了就用你自己指定的供应商
+  LLM_API_KEY    必填；没有则跳过解读，只打印 skipped，退出码 0（不影响抓取与发布）
   LLM_BASE_URL   默认 https://api.deepseek.com/v1
   LLM_MODEL      默认 deepseek-chat
   LLM_BATCH      每批条数，默认 20
 
-没填 LLM_API_KEY 时自动回退到 GitHub Models —— 用仓库自带的 GITHUB_TOKEN 调，
-不额外花钱也不需要申请 key（Actions 里要给 workflow 加 `models: read` 权限）。
-两条路都不通（同 Key 都没配）时只打印 skipped，不影响抓取与发布。
+注意：GitHub Models（models.github.ai）已于 2026-07-30 下线，现在任何请求都返回
+200 + text/plain "OK"，不能再当免费兜底，所以这里只认 LLM_API_KEY。
 
 用法:
   python3 scripts/annotate_llm.py                      # 补今天还缺解读的条目
@@ -43,10 +42,6 @@ import radar  # noqa: E402
 
 DEFAULT_BASE = "https://api.deepseek.com/v1"
 DEFAULT_MODEL = "deepseek-chat"
-
-# GitHub Models：用仓库自带的 GITHUB_TOKEN 就能调，免费额度够每天这一天量
-GH_MODELS_BASE = "https://models.github.ai/inference"
-GH_MODEL_CHAIN = ["openai/gpt-4.1-mini", "openai/gpt-4o-mini", "openai/gpt-4.1"]
 
 # 每一类写「解读」的口径，和人工写回时的标准保持一致
 CATEGORY_RULES = {
@@ -125,21 +120,16 @@ def _chat(base_url, model, api_key, user, timeout=180):
 
 
 def resolve_config():
-    """决定这次用谁：自己的 Key 优先，否则回退 GitHub Models（用 GITHUB_TOKEN）。"""
+    """只认自己的 Key；GitHub Models 已下线，不再兜底。"""
     key = os.environ.get("LLM_API_KEY", "").strip()
-    if key:
-        return {
-            "provider": "custom",
-            "key": key,
-            "base": os.environ.get("LLM_BASE_URL", "").strip() or DEFAULT_BASE,
-            "models": [os.environ.get("LLM_MODEL", "").strip() or DEFAULT_MODEL],
-        }
-    gh = os.environ.get("GITHUB_TOKEN", "").strip()
-    if gh:
-        want = os.environ.get("LLM_MODEL", "").strip()
-        chain = [want] + [m for m in GH_MODEL_CHAIN if m != want] if want else list(GH_MODEL_CHAIN)
-        return {"provider": "github-models", "key": gh, "base": GH_MODELS_BASE, "models": chain}
-    return {"provider": "none", "key": "", "base": "", "models": []}
+    if not key:
+        return {"provider": "none", "key": "", "base": "", "models": []}
+    return {
+        "provider": "custom",
+        "key": key,
+        "base": os.environ.get("LLM_BASE_URL", "").strip() or DEFAULT_BASE,
+        "models": [os.environ.get("LLM_MODEL", "").strip() or DEFAULT_MODEL],
+    }
 
 
 def _parse_array(text):
@@ -267,9 +257,9 @@ def main():
 
     if not cfg["key"]:
         print(json.dumps({
-            "date": date_str, "skipped": "no_credentials",
+            "date": date_str, "skipped": "no_LLM_API_KEY",
             "missing": total_missing,
-            "hint": "既没有 LLM_API_KEY，也没有 GITHUB_TOKEN；前者自己配，后者在 Actions 里给 models: read 权限即可",
+            "hint": "仓库 Settings → Secrets and variables → Actions 里加 LLM_API_KEY 才会自动写解读",
         }, ensure_ascii=False))
         return 0
 
