@@ -88,7 +88,15 @@ jobs:
           if git diff --cached --quiet; then
             echo "数据无变化，跳过提交"
           else
-            git commit -m "data: $(date +%F) 榜单与解读"
+            # commit message 里带上解读与抓取的运行结果，方便事后在 git log 里核对
+            {
+              echo "data: $(date +%F) 榜单与解读"
+              echo
+              echo "抓取：$(sed -n '1p' /tmp/radar.log 2>/dev/null)"
+              echo
+              echo "解读：$(cat /tmp/annotate.log 2>/dev/null || echo '未运行')"
+            } > /tmp/commitmsg.txt
+            git commit -F /tmp/commitmsg.txt
             git push
           fi
 
