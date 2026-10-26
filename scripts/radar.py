@@ -1130,6 +1130,30 @@ def build_summaries(records, date_str):
     return out
 
 
+def build_summaries_from_items(items, date_str):
+    """与 build_summaries 同口径，但直接读落盘条目，保证「沿用上次」的板块也被统计到。"""
+    groups = {}
+    for it in items:
+        groups.setdefault((it.get("category"), it.get("source")), []).append({
+            "rank": it.get("rank"),
+            "title": it.get("title"),
+            "desc": it.get("desc"),
+            "heat": it.get("heat"),
+        })
+    out = []
+    cats = {}
+    for (cat, src), rows in sorted(groups.items()):
+        cats.setdefault(cat, []).extend(rows)
+        out.append({"category": cat, "source": src,
+                    "count": len(rows), "text": summarize_group(rows)})
+    for cat in sorted(cats):
+        srcs = sorted({s for (c, s) in groups if c == cat})
+        text = summarize_group(cats[cat]) + " · 覆盖 " + "、".join(srcs)
+        out.append({"category": cat, "source": "全部",
+                    "count": len(cats[cat]), "text": text})
+    return out
+
+
 # ---------------------------------------------------------------- JSON 落盘
 #
 # 数据以 JSON 文件为唯一存储，命名：<日期>-<daily|weekly|monthly>.json，
@@ -1213,6 +1237,7 @@ def write_period_file(date_str, period, records, summary):
 
     old = load_day_file(path)
     kept = 0
+    carried = []
     if old and isinstance(old.get("items"), list):
         old_map = {}
         for it in old["items"]:
@@ -1227,6 +1252,16 @@ def write_period_file(date_str, period, records, summary):
                 if not it.get("scene") and prev.get("scene"):
                     it["scene"] = prev["scene"]
 
+        # 某个板块这次一条都没抓到（源抽风/被墙），沿用同日上一次的结果，避免越跑越少
+        have = set((it.get("source"), it.get("board")) for it in items)
+        for pair in sorted(set((i.get("source"), i.get("board"))
+                              for i in old["items"] if isinstance(i, dict)) - have):
+            rows = [i for i in old["items"]
+                    if isinstance(i, dict) and (i.get("source"), i.get("board")) == pair]
+            if rows:
+                items.extend(dict(r) for r in rows)
+                carried.append("%s/%s 沿用上次 %d 条" % (pair[0], pair[1], len(rows)))
+
     items.sort(key=lambda x: (x.get("rank") if isinstance(x.get("rank"), int) else 999))
     src_counts = {}
     for it in items:
@@ -1238,8 +1273,8 @@ def write_period_file(date_str, period, records, summary):
         "generated_at": datetime.datetime.now().astimezone().isoformat(timespec="seconds"),
         "count": len(items),
         "sources": src_counts,
-        "errors": summary.get("errors") or [],
-        "summaries": build_summaries(records, date_str),
+        "errors": (summary.get("errors") or []) + carried,
+        "summaries": build_summaries_from_items(items, date_str),
         "items": items,
     }
 
@@ -1247,7 +1282,8 @@ def write_period_file(date_str, period, records, summary):
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=1)
     os.replace(tmp, path)
-    return {"file": os.path.basename(path), "count": len(items), "kept_notes": kept}
+    return {"file": os.path.basename(path), "count": len(items),
+            "kept_notes": kept, "carried": carried}
 
 
 def rebuild_index():
