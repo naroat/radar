@@ -1,10 +1,11 @@
 name: 信息雷达每日抓取
 
-# 每天 08:00（Asia/Shanghai）自动跑：抓取 → 补解读 → 同步页面 → 提交数据 → 发布到 Pages
-# UTC 00:00 == 北京时间 08:00
+# 每天 08:15 左右（Asia/Shanghai）自动跑：抓取 → 补解读 → 同步页面 → 提交数据 → 发布到 Pages
+# UTC 15 == 北京时间 08:15；刻意错开整点，GitHub 在 UTC 00:00 等整点负载最高，
+# 定时任务经常被延迟几十分钟甚至直接丢弃（实测 10-27 的 00:00 触发就被丢了）
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "15 0 * * *"
   workflow_dispatch:
     inputs:
       skip_annotate:
