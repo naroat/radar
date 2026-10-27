@@ -292,3 +292,5 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+
+# 2026-10-27: LLM_API_KEY 已配置，此注释用于触发一次 CI 验证运行
