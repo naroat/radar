@@ -1,0 +1,148 @@
+{
+ "date": "2026-10-31",
+ "period": "monthly",
+ "generated_at": "2026-10-31T13:50:02+08:00",
+ "count": 10,
+ "sources": {
+  "GitHub": 10
+ },
+ "errors": [
+  "GreasyFork: 抓取失败 https://greasyfork.org/en/scripts?sort=hot (HTTP 403 (len=5722))"
+ ],
+ "summaries": [
+  {
+   "category": "热门产品",
+   "source": "GitHub",
+   "count": 10,
+   "text": "10 条 · 榜首「cloudflare/security-audit-skill」+30721 this month · 总计 54,344★ · JavaScript · 高频：claude(5)、code(4)、design(4)"
+  },
+  {
+   "category": "热门产品",
+   "source": "全部",
+   "count": 10,
+   "text": "10 条 · 榜首「cloudflare/security-audit-skill」+30721 this month · 总计 54,344★ · JavaScript · 高频：claude(5)、code(4)、design(4) · 覆盖 GitHub"
+  }
+ ],
+ "items": [
+  {
+   "rank": 1,
+   "title": "cloudflare/security-audit-skill",
+   "url": "https://github.com/cloudflare/security-audit-skill",
+   "desc": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+   "heat": "+30721 this month · 总计 54,344★ · JavaScript",
+   "source": "GitHub",
+   "board": "月榜",
+   "category": "热门产品",
+   "note": "给编码智能体加的一项安全审计技能，分阶段排查漏洞，每条发现都能被独立复核并以机器可读格式输出，方便接入流程。",
+   "scene": "需要给代码做安全体检的开发团队"
+  },
+  {
+   "rank": 2,
+   "title": "heygen-com/hyperframes",
+   "url": "https://github.com/heygen-com/hyperframes",
+   "desc": "Write HTML. Render video. Built for agents.",
+   "heat": "+22149 this month · 总计 76,141★ · TypeScript",
+   "source": "GitHub",
+   "board": "月榜",
+   "category": "热门产品",
+   "note": "用写 HTML 的方式生成视频，专为智能体设计，让 AI 直接产出可渲染的视频内容，省去传统剪辑工具的操作。",
+   "scene": "想让 AI 自动出视频的内容创作者"
+  },
+  {
+   "rank": 3,
+   "title": "anthropics/knowledge-work-plugins",
+   "url": "https://github.com/anthropics/knowledge-work-plugins",
+   "desc": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+   "heat": "+8279 this month · 总计 34,075★ · Python",
+   "source": "GitHub",
+   "board": "月榜",
+   "category": "热门产品",
+   "note": "面向知识工作者的开源插件集合，配合 Claude Cowork 使用，把日常办公任务交给插件处理，减少重复操作。",
+   "scene": "用 Claude 处理文档与办公事务的职场人"
+  },
+  {
+   "rank": 4,
+   "title": "pbakaus/impeccable",
+   "url": "https://github.com/pbakaus/impeccable",
+   "desc": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+   "heat": "+24624 this month · 总计 97,318★ · Rust",
+   "source": "GitHub",
+   "board": "月榜",
+   "category": "热门产品",
+   "note": "给编码智能体一套设计词汇，用 polish、bolder 等指令调整风格，用 critique、audit 做审查，在交付前拦下 AI 味的设计。",
+   "scene": "在意界面质感的独立开发者"
+  },
+  {
+   "rank": 5,
+   "title": "debpalash/VoiceStudio",
+   "url": "https://github.com/debpalash/VoiceStudio",
+   "desc": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+   "heat": "+49116 this month · 总计 95,950★ · Python",
+   "source": "GitHub",
+   "board": "月榜",
+   "category": "热门产品",
+   "note": "完全本地运行的开源语音工具，覆盖声音克隆、配音、听写、转写和有声书制作，支持六百多种语言，数据不出本机。",
+   "scene": "对隐私敏感的播客与有声书制作者"
+  },
+  {
+   "rank": 6,
+   "title": "earthtojake/text-to-cad",
+   "url": "https://github.com/earthtojake/text-to-cad",
+   "desc": "Design physical products with AI",
+   "heat": "+7976 this month · 总计 24,384★ · Python",
+   "source": "GitHub",
+   "board": "月榜",
+   "category": "热门产品",
+   "note": "从标题看，是借助 AI 把想法变成实体产品设计的工具，可能涉及建模或结构生成，让非专业者也能上手产品设计。",
+   "scene": "做硬件原型的产品设计师"
+  },
+  {
+   "rank": 7,
+   "title": "Nutlope/hallmark",
+   "url": "https://github.com/Nutlope/hallmark",
+   "desc": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+   "heat": "+13397 this month · 总计 43,170★ · CSS",
+   "source": "GitHub",
+   "board": "月榜",
+   "category": "热门产品",
+   "note": "针对 Claude Code、Cursor 等编码工具的反 AI 味设计技能，帮生成界面摆脱千篇一律的模板感，更接近真人设计。",
+   "scene": "用 AI 写前端界面的开发者"
+  },
+  {
+   "rank": 8,
+   "title": "mvschwarz/openrig",
+   "url": "https://github.com/mvschwarz/openrig",
+   "desc": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
+   "heat": "+6245 this month · 总计 8,401★ · TypeScript",
+   "source": "GitHub",
+   "board": "月榜",
+   "category": "热门产品",
+   "note": "把 Claude Code、Codex 等智能体组织成有角色分工、共享上下文、各自负责任务的持久团队，像搭一个小型协作网络。",
+   "scene": "同时调度多个智能体的开发者"
+  },
+  {
+   "rank": 9,
+   "title": "anthropics/claude-plugins-official",
+   "url": "https://github.com/anthropics/claude-plugins-official",
+   "desc": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+   "heat": "+8442 this month · 总计 45,468★ · Python",
+   "source": "GitHub",
+   "board": "月榜",
+   "category": "热门产品",
+   "note": "Anthropic 官方维护的 Claude Code 插件目录，集中收录经过筛选的高质量插件，省去到处翻找和甄别的时间。",
+   "scene": "刚上手 Claude Code 的新用户"
+  },
+  {
+   "rank": 10,
+   "title": "thedotmack/claude-mem",
+   "url": "https://github.com/thedotmack/claude-mem",
+   "desc": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+   "heat": "+11124 this month · 总计 106,599★ · TypeScript",
+   "source": "GitHub",
+   "board": "月榜",
+   "category": "热门产品",
+   "note": "给各类智能体加上跨会话记忆，自动记录每次操作、用 AI 压缩后把相关内容注入后续对话，换个会话也不丢上下文。",
+   "scene": "长期用智能体做项目的开发者"
+  }
+ ]
+}

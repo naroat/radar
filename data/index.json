@@ -1,6 +1,20 @@
 {
- "updated_at": "2026-10-30T17:49:55+08:00",
+ "updated_at": "2026-10-31T13:51:29+08:00",
  "days": [
+  {
+   "date": "2026-10-31",
+   "periods": [
+    "daily",
+    "weekly",
+    "monthly"
+   ],
+   "counts": {
+    "monthly": 10,
+    "daily": 204,
+    "weekly": 10
+   },
+   "total": 224
+  },
   {
    "date": "2026-10-30",
    "periods": [
