@@ -1,0 +1,148 @@
+{
+ "date": "2026-11-01",
+ "period": "weekly",
+ "generated_at": "2026-11-01T14:12:59+08:00",
+ "count": 10,
+ "sources": {
+  "GitHub": 10
+ },
+ "errors": [
+  "GreasyFork: 抓取失败 https://greasyfork.org/en/scripts?sort=hot (HTTP 403 (len=5722))"
+ ],
+ "summaries": [
+  {
+   "category": "热门产品",
+   "source": "GitHub",
+   "count": 10,
+   "text": "10 条 · 榜首「Nutlope/hallmark」+12062 this week · 总计 44,109★ · CSS · 高频：seo(5)、skills(4)、agent(3)"
+  },
+  {
+   "category": "热门产品",
+   "source": "全部",
+   "count": 10,
+   "text": "10 条 · 榜首「Nutlope/hallmark」+12062 this week · 总计 44,109★ · CSS · 高频：seo(5)、skills(4)、agent(3) · 覆盖 GitHub"
+  }
+ ],
+ "items": [
+  {
+   "rank": 1,
+   "title": "Nutlope/hallmark",
+   "url": "https://github.com/Nutlope/hallmark",
+   "desc": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+   "heat": "+12062 this week · 总计 44,109★ · CSS",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "给编码代理用的设计技能包，专门防止生成那种一眼假的 AI 风格页面，让产出更接近真人设计。",
+   "scene": "用 Claude Code 或 Cursor 写前端页面的开发者"
+  },
+  {
+   "rank": 2,
+   "title": "cloudflare/security-audit-skill",
+   "url": "https://github.com/cloudflare/security-audit-skill",
+   "desc": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+   "heat": "+11908 this week · 总计 55,548★ · JavaScript",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "给编码代理用的安全审计技能，分多个阶段检查代码安全问题，结论可机器读取且经过独立验证，减少误报。",
+   "scene": "需要给项目做安全体检的开发团队"
+  },
+  {
+   "rank": 3,
+   "title": "AgriciDaniel/claude-seo",
+   "url": "https://github.com/AgriciDaniel/claude-seo",
+   "desc": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
+   "heat": "+4814 this week · 总计 25,128★ · Python",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "给 Claude Code 用的通用 SEO 技能包，拆成二十多个子技能，覆盖技术 SEO、结构化数据、外链和报表等环节。",
+   "scene": "负责网站搜索排名的 SEO 从业者"
+  },
+  {
+   "rank": 4,
+   "title": "pbakaus/impeccable",
+   "url": "https://github.com/pbakaus/impeccable",
+   "desc": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+   "heat": "+12031 this week · 总计 98,505★ · Rust",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "给编码代理补设计词汇的工具，用打磨、更大胆、评审、审计等指令引导产出，在交付前拦下粗糙的 AI 味设计。",
+   "scene": "对界面质感有要求的独立开发者"
+  },
+  {
+   "rank": 5,
+   "title": "obra/superpowers",
+   "url": "https://github.com/obra/superpowers",
+   "desc": "An agentic skills framework & software development methodology that works.",
+   "heat": "+5636 this week · 总计 310,193★ · Shell",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "一套代理技能框架加开发方法论，把技能组织起来让编码代理按流程干活，强调实际可用而非概念。",
+   "scene": "想系统化使用编码代理的开发者"
+  },
+  {
+   "rank": 6,
+   "title": "multica-ai/andrej-karpathy-skills",
+   "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+   "desc": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+   "heat": "+4277 this week · 总计 227,615★",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "一个 CLAUDE.md 文件，把 Karpathy 对 LLM 写代码常见坑的观察整理成规则，直接放进项目就能约束 Claude Code 的行为。",
+   "scene": "用 Claude Code 写代码的开发者"
+  },
+  {
+   "rank": 7,
+   "title": "TauricResearch/TradingAgents",
+   "url": "https://github.com/TauricResearch/TradingAgents",
+   "desc": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+   "heat": "+5483 this week · 总计 119,131★ · Python",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "多代理协作的金融交易框架，让多个 LLM 代理分工分析市场并给出交易判断，属于研究性质的项目。",
+   "scene": "研究 AI 量化交易的研究者和开发者"
+  },
+  {
+   "rank": 8,
+   "title": "jakubkrehel/skills",
+   "url": "https://github.com/jakubkrehel/skills",
+   "desc": "A collection of agent skills that help you build great interfaces.",
+   "heat": "+1272 this week · 总计 9,658★ · Markdown",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "一组面向界面开发的代理技能，帮助编码代理做出更好的前端界面，具体技能清单需看仓库说明。",
+   "scene": "用代理辅助做前端界面的开发者"
+  },
+  {
+   "rank": 9,
+   "title": "Leonxlnx/taste-skill",
+   "url": "https://github.com/Leonxlnx/taste-skill",
+   "desc": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
+   "heat": "+4975 this week · 总计 107,196★ · JavaScript",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "给编码代理补审美的技能，通过艺术方向、参考图和浏览器检查，避免生成千篇一律的 AI 页面。",
+   "scene": "嫌 AI 生成页面太同质化的设计师和开发者"
+  },
+  {
+   "rank": 10,
+   "title": "pingdotgg/t3code",
+   "url": "https://github.com/pingdotgg/t3code",
+   "desc": "",
+   "heat": "+3718 this week · 总计 36,004★ · TypeScript",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "简介为空，从标题和来源看应是某个编码相关项目，具体用途无法判断，需查看仓库内容。",
+   "scene": "浏览 GitHub 新项目的开发者"
+  }
+ ]
+}
