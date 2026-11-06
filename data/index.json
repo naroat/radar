@@ -1,6 +1,16 @@
 {
- "updated_at": "2026-11-05T18:38:15+08:00",
+ "updated_at": "2026-11-06T14:54:25+08:00",
  "days": [
+  {
+   "date": "2026-11-06",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 206
+   },
+   "total": 206
+  },
   {
    "date": "2026-11-05",
    "periods": [
@@ -48,8 +58,8 @@
     "weekly"
    ],
    "counts": {
-    "daily": 204,
-    "weekly": 10
+    "weekly": 10,
+    "daily": 204
    },
    "total": 214
   },
