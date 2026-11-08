@@ -1,10 +1,9 @@
 {
  "date": "2026-11-08",
  "period": "daily",
- "generated_at": "2026-11-08T15:57:10+08:00",
- "count": 207,
+ "generated_at": "2026-11-08T18:03:03+08:00",
+ "count": 208,
  "sources": {
-  "GitHub": 10,
   "Hugging Face": 10,
   "Hacker News": 30,
   "Chrome 应用商店": 10,
@@ -16,12 +15,15 @@
   "哔哩哔哩": 10,
   "掘金": 10,
   "Lobsters": 10,
-  "V2EX": 17,
+  "V2EX": 18,
   "Stack Overflow": 10,
-  "w2solo": 30
+  "w2solo": 30,
+  "GitHub": 10
  },
  "errors": [
-  "GreasyFork: 抓取失败 https://greasyfork.org/en/scripts?sort=hot (HTTP 403 (len=5807))"
+  "GitHub: 抓取失败 https://github.com/trending?since=daily (HTTP 504 (len=92))",
+  "GreasyFork: 抓取失败 https://greasyfork.org/en/scripts?sort=hot (HTTP 403 (len=5807))",
+  "GitHub/日榜 沿用上次 10 条"
  ],
  "summaries": [
   {
@@ -52,43 +54,43 @@
    "category": "热门产品",
    "source": "Hacker News",
    "count": 10,
-   "text": "10 条 · 榜首「Show HN: Coldframe, a honeypot that poses as」223 points · 51 comments · 高频：website(4)、where(3)、built(2)"
+   "text": "10 条 · 榜首「Show HN: Coldframe, a honeypot that poses as」236 points · 58 comments · 高频：where(3)、built(2)、coldframe(2)"
   },
   {
    "category": "热门产品",
    "source": "Hugging Face",
    "count": 10,
-   "text": "10 条 · 榜首「speridlabs/idol」趋势 756 · 1.2k likes · 20.7k 下载 · idol / gaussian-splatting / 3d · 高频：image-text-to-text(3)"
+   "text": "10 条 · 榜首「speridlabs/idol」趋势 764 · 1.2k likes · 22.9k 下载 · idol / gaussian-splatting / 3d · 高频：image-text-to-text(3)"
   },
   {
    "category": "热门产品",
    "source": "w2solo",
    "count": 10,
-   "text": "10 条 · 榜首「video translate」14 浏览 · 新作品 · 高频：andywu(1)、claude(1)、coderlim(1)"
+   "text": "10 条 · 榜首「video translate」15 浏览 · 新作品 · 高频：andywu(1)、claude(1)、coderlim(1)"
   },
   {
    "category": "热门产品",
    "source": "少数派",
    "count": 10,
-   "text": "10 条 · 榜首「苹果产品那些不够颠覆，却值得被学习的细节」13 赞 · 高频：pro(5)、戴高乐之战(4)、iphone(3)"
+   "text": "10 条 · 榜首「苹果产品那些不够颠覆，却值得被学习的细节」14 赞 · 高频：pro(5)、戴高乐之战(4)、iphone(3)"
   },
   {
    "category": "热门话题",
    "source": "Hacker News",
    "count": 10,
-   "text": "10 条 · 榜首「Need for Speed Underground 2 online in the b」938 points · 247 comments · 高频：every(2)、linux(2)"
+   "text": "10 条 · 榜首「Need for Speed Underground 2 online in the b」990 points · 250 comments · 高频：claude(2)、every(2)、linux(2)"
   },
   {
    "category": "热门话题",
    "source": "Lobsters",
    "count": 10,
-   "text": "10 条 · 榜首「*sshole, or when are we finally going to get」34 points · 49 comments · security · 高频：web(3)、linux(2)、top(2)"
+   "text": "10 条 · 榜首「*sshole, or when are we finally going to get」37 points · 57 comments · security · 高频：web(3)、linux(2)、top(2)"
   },
   {
    "category": "热门话题",
    "source": "V2EX",
-   "count": 9,
-   "text": "9 条 · 榜首「[趁周末人少，回复就送永久激活码]Mac 专属应用 TouchX，自定义触控板动作」60 回复 · macOS · 高频：mac(2)、macbook(2)"
+   "count": 10,
+   "text": "10 条 · 榜首「[趁周末人少，回复就送永久激活码]Mac 专属应用 TouchX，自定义触控板动作」78 回复 · macOS · 高频：finalshell(4)、mac(3)、ssh(3)"
   },
   {
    "category": "热门话题",
@@ -100,25 +102,25 @@
    "category": "热门话题",
    "source": "今日头条",
    "count": 10,
-   "text": "10 条 · 榜首「秦皇岛居民称20年没见过这么大雪」热度 696万 · 高频：hot(5)、今日头条热榜事件(2)"
+   "text": "10 条 · 榜首「史诗级逆转！英博夺队史中超首冠」热度 733万 · 高频：hot(6)、今日头条热榜事件(2)"
   },
   {
    "category": "热门话题",
    "source": "哔哩哔哩",
    "count": 10,
-   "text": "10 条 · 榜首「《崩坏：星穹铁道》星神★阿哈角色PV——「让骰子飞」」196万 播放 · 20万 点赞 · 1.5万 评论 · 高频：手机游戏(2)"
+   "text": "10 条 · 榜首「《崩坏：星穹铁道》星神★阿哈角色PV——「让骰子飞」」287万 播放 · 25万 点赞 · 1.9万 评论 · 高频：手机游戏(2)"
   },
   {
    "category": "热门话题",
    "source": "掘金",
    "count": 10,
-   "text": "10 条 · 榜首「Claude Code 同需求写两版对比：装不装 frontend-design 差多远」热度 333 · 673 阅读 · 2 赞 · 高频：flutter(3)"
+   "text": "10 条 · 榜首「AI 还原 Figma 效果总达不到预期？先别急着让它写代码」热度 315 · 507 阅读 · 7 赞 · 高频：flutter(3)"
   },
   {
    "category": "热门话题",
    "source": "百度热搜",
    "count": 10,
-   "text": "10 条 · 榜首「总书记投下庄严一票」热搜第 1 名 · 高频：百度热搜实时热点(9)"
+   "text": "10 条 · 榜首「“信赖” 二字 重千钧」热搜第 1 名 · 高频：百度热搜(6)、百度热搜实时热点(4)、新上榜(3)"
   },
   {
    "category": "项目需求",
@@ -130,7 +132,7 @@
    "category": "项目需求",
    "source": "Stack Overflow",
    "count": 10,
-   "text": "10 条 · 榜首「What is the limit of the function?」16 浏览 · -2 赞 · 0 回答 · 高频：file(4)、function(4)、program(4)"
+   "text": "10 条 · 榜首「workingDirectoryFailed error in VS Code with」11 浏览 · -2 赞 · 0 回答 · 高频：code(4)、error(4)、function(4)"
   },
   {
    "category": "项目需求",
@@ -153,35 +155,23 @@
   {
    "category": "热门话题",
    "source": "全部",
-   "count": 79,
-   "text": "79 条 · 榜首「Need for Speed Underground 2 online in the b」938 points · 247 comments · 高频：掘金技术热文(10)、百度热搜实时热点(9)、hot(5) · 覆盖 Hacker News、Lobsters、V2EX、w2solo、今日头条、哔哩哔哩、掘金、百度热搜"
+   "count": 80,
+   "text": "80 条 · 榜首「Need for Speed Underground 2 online in the b」990 points · 250 comments · 高频：掘金技术热文(10)、hot(6)、百度热搜(6) · 覆盖 Hacker News、Lobsters、V2EX、w2solo、今日头条、哔哩哔哩、掘金、百度热搜"
   },
   {
    "category": "项目需求",
    "source": "全部",
    "count": 38,
-   "text": "38 条 · 榜首「Ask HN: What in the world is taking Ubuntu s」216 points · 138 comments · 高频：agent(6)、奇思妙想(6)、always-on(4) · 覆盖 Hacker News、Stack Overflow、V2EX、w2solo"
+   "text": "38 条 · 榜首「Ask HN: What in the world is taking Ubuntu s」216 points · 138 comments · 高频：agent(6)、奇思妙想(6)、stripe(5) · 覆盖 Hacker News、Stack Overflow、V2EX、w2solo"
   }
  ],
  "items": [
   {
    "rank": 1,
-   "title": "vercel-labs/agent-browser",
-   "url": "https://github.com/vercel-labs/agent-browser",
-   "desc": "Browser automation CLI for AI agents",
-   "heat": "+190 today · 总计 47,060★ · Rust",
-   "source": "GitHub",
-   "board": "日榜",
-   "category": "热门产品",
-   "note": "给 AI 智能体用的浏览器自动化命令行工具，让模型能自己操作网页，省去手写脚本的麻烦。",
-   "scene": "开发 AI 智能体、需要让模型自动操作网页的开发者"
-  },
-  {
-   "rank": 1,
    "title": "speridlabs/idol",
    "url": "https://huggingface.co/speridlabs/idol",
    "desc": "AI 模型 · image-to-3d",
-   "heat": "趋势 756 · 1.2k likes · 20.7k 下载 · idol / gaussian-splatting / 3d",
+   "heat": "趋势 764 · 1.2k likes · 22.9k 下载 · idol / gaussian-splatting / 3d",
    "source": "Hugging Face",
    "board": "热榜",
    "category": "热门产品",
@@ -193,7 +183,7 @@
    "title": "Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller",
    "url": "https://github.com/hedgerow-dev/coldframe",
    "desc": "I built Coldframe, a honeypot that pretends to be a supermarket refrigeration controller. Inspired by the events on industrial fridge installations in the past weeks, I w…",
-   "heat": "223 points · 51 comments",
+   "heat": "236 points · 58 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门产品",
@@ -205,7 +195,7 @@
    "title": "Need for Speed Underground 2 online in the browser",
    "url": "https://nfsu2.xyz/",
    "desc": "Hacker News 首页",
-   "heat": "938 points · 247 comments",
+   "heat": "990 points · 250 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门话题",
@@ -277,7 +267,7 @@
    "title": "苹果产品那些不够颠覆，却值得被学习的细节",
    "url": "https://sspai.com/post/118114",
    "desc": "Matrix首页推荐Matrix是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选Matrix最优质的文章，展示来自用户的最真实的体验和观点。文章代表作者个人观点 ...",
-   "heat": "13 赞",
+   "heat": "14 赞",
    "source": "少数派",
    "board": "热榜",
    "category": "热门产品",
@@ -286,34 +276,34 @@
   },
   {
    "rank": 1,
-   "title": "秦皇岛居民称20年没见过这么大雪",
-   "url": "https://www.toutiao.com/trending/7705276354253753875/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227705276354253753875%22%2C%22hot_board_impr_id%22%3A%22202611081556561A34F220C198CDDBD114%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%A7%A6%E7%9A%87%E5%B2%9B%E5%B1%85%E6%B0%91%E7%A7%B020%E5%B9%B4%E6%B2%A1%E8%A7%81%E8%BF%87%E8%BF%99%E4%B9%88%E5%A4%A7%E9%9B%AA%22%7D&rank=&style_id=40132&topic_id=7705276354253753875",
+   "title": "史诗级逆转！英博夺队史中超首冠",
+   "url": "https://www.toutiao.com/trending/7705266850749448233/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227705266850749448233%22%2C%22hot_board_impr_id%22%3A%2220261108180252766EF264A7C937C08C03%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%8F%B2%E8%AF%97%E7%BA%A7%E9%80%86%E8%BD%AC%EF%BC%81%E8%8B%B1%E5%8D%9A%E5%A4%BA%E9%98%9F%E5%8F%B2%E4%B8%AD%E8%B6%85%E9%A6%96%E5%86%A0%22%7D&rank=&style_id=40132&topic_id=7705266850749448233",
    "desc": "hot",
-   "heat": "热度 696万",
+   "heat": "热度 733万",
    "source": "今日头条",
    "board": "热榜",
    "category": "热门话题",
-   "note": "当地居民反映二十年未见如此大雪，极端天气对出行和日常生活的影响成为热议焦点。",
-   "scene": "关注极端天气与民生话题的普通网友"
+   "note": "大连英博在赛季末完成大逆转，拿下队史首个中超冠军，联赛格局由此改写，球迷和俱乐部都迎来历史性时刻。",
+   "scene": "关注中超联赛的球迷和体育媒体从业者"
   },
   {
    "rank": 1,
-   "title": "总书记投下庄严一票",
-   "url": "https://m.baidu.com/s?word=%E6%80%BB%E4%B9%A6%E8%AE%B0%E6%8A%95%E4%B8%8B%E5%BA%84%E4%B8%A5%E4%B8%80%E7%A5%A8&sa=fyb_news",
+   "title": "“信赖” 二字 重千钧",
+   "url": "https://m.baidu.com/s?word=%E2%80%9C%E4%BF%A1%E8%B5%96%E2%80%9D+%E4%BA%8C%E5%AD%97+%E9%87%8D%E5%8D%83%E9%92%A7&sa=fyb_news",
    "desc": "百度热搜实时热点",
    "heat": "热搜第 1 名",
    "source": "百度热搜",
    "board": "热榜",
    "category": "热门话题",
-   "note": "选举或会议场合中的投票环节被广泛关注，属于常规政治议程的公开报道。",
-   "scene": "关注时政新闻的普通读者"
+   "note": "热搜榜上出现「信赖」二字，从标题看更像一句价值表态，具体所指需结合上下文，暂不宜过度解读。",
+   "scene": "关注社会热点的普通网友"
   },
   {
    "rank": 1,
    "title": "《崩坏：星穹铁道》星神★阿哈角色PV——「让骰子飞」",
    "url": "https://www.bilibili.com/video/BV1tS4n6CEoJ",
    "desc": "崩坏星穹铁道 · 手机游戏",
-   "heat": "196万 播放 · 20万 点赞 · 1.5万 评论",
+   "heat": "287万 播放 · 25万 点赞 · 1.9万 评论",
    "source": "哔哩哔哩",
    "board": "热榜",
    "category": "热门话题",
@@ -322,22 +312,22 @@
   },
   {
    "rank": 1,
-   "title": "Claude Code 同需求写两版对比：装不装 frontend-design 差多远？",
-   "url": "https://juejin.cn/post/7704499167134335018",
+   "title": "AI 还原 Figma 效果总达不到预期？先别急着让它写代码",
+   "url": "https://juejin.cn/post/7704502089117368320",
    "desc": "掘金技术热文",
-   "heat": "热度 333 · 673 阅读 · 2 赞",
+   "heat": "热度 315 · 507 阅读 · 7 赞",
    "source": "掘金",
    "board": "热榜",
    "category": "热门话题",
-   "note": "同一需求下对比装与不装某前端设计能力时 AI 写代码的差异，给开发者提供实测参考。",
-   "scene": "使用 AI 辅助编程的前端开发者"
+   "note": "文章指出用 AI 还原设计稿效果不佳时，问题可能出在流程而非直接写代码环节。",
+   "scene": "用 AI 做设计还原的前端与设计从业者"
   },
   {
    "rank": 1,
    "title": "*sshole, or when are we finally going to get rid of C?",
    "url": "https://sunshowers.io/posts/sshole/",
    "desc": "技术社区热帖",
-   "heat": "34 points · 49 comments · security",
+   "heat": "37 points · 57 comments · security",
    "source": "Lobsters",
    "board": "热榜",
    "category": "热门话题",
@@ -349,7 +339,7 @@
    "title": "[趁周末人少，回复就送永久激活码]Mac 专属应用 TouchX，自定义触控板动作",
    "url": "https://www.v2ex.com/t/1255299",
    "desc": "外面今天一直在下雨，起了个早，没事干，故把这个小工具打包了下 自己每天都在用 mac ，但是懒得接鼠标，一个触控板搞定， 一直本地在用 它可以做什么呢 - **右侧双指轻点** → 复制 - **左侧双指轻点** → 粘贴 - **三指捏合** → 框选截图到剪贴板 - **三指下拉** → 刷新网页 - **四指轻点** → 保持屏幕常…",
-   "heat": "60 回复 · macOS",
+   "heat": "78 回复 · macOS",
    "source": "V2EX",
    "board": "热榜",
    "category": "热门话题",
@@ -370,22 +360,22 @@
   },
   {
    "rank": 1,
-   "title": "What is the limit of the function?",
-   "url": "https://stackoverflow.com/questions/80015450/what-is-the-limit-of-the-function",
-   "desc": "Let 0<q<1. What is the limit of the function f(n,q) = (1-q)*(1-q^2)…(1-q^n) as n tends to infinity? The limit exists because the function is monotonically decre…",
-   "heat": "16 浏览 · -2 赞 · 0 回答",
+   "title": "workingDirectoryFailed error in VS Code without using Claude Code",
+   "url": "https://stackoverflow.com/questions/80015458/workingdirectoryfailed-error-in-vs-code-without-using-claude-code",
+   "desc": "I am trying to use VS Code Copilot to ask a question, but I get this error: Error: (workingDirectoryFailed) This session couldn't be loaded because its working…",
+   "heat": "11 浏览 · -2 赞 · 0 回答",
    "source": "Stack Overflow",
    "board": "需求榜",
    "category": "项目需求",
-   "note": "想求一个无穷乘积在参数介于0和1之间时的极限值，本质是数学计算问题，需要给出推导或结论。",
-   "scene": "数学系学生或做分析题的人"
+   "note": "在 VS Code 里用 Copilot 提问时遇到工作目录加载失败，用户需要的是能定位并修复这个报错的具体排查步骤。",
+   "scene": "被编辑器插件报错卡住的开发者"
   },
   {
    "rank": 1,
    "title": "video translate",
    "url": "https://w2solo.com/topics/8694",
    "desc": "我的作品 · 作者 Claude",
-   "heat": "14 浏览 · 新作品",
+   "heat": "15 浏览 · 新作品",
    "source": "w2solo",
    "board": "作品榜",
    "category": "热门产品",
@@ -417,23 +407,23 @@
    "scene": "做亲子小工具的家长开发者"
   },
   {
-   "rank": 2,
-   "title": "cloudflare/security-audit-skill",
-   "url": "https://github.com/cloudflare/security-audit-skill",
-   "desc": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-   "heat": "+2085 today · 总计 66,103★ · JavaScript",
+   "rank": 1,
+   "title": "vercel-labs/agent-browser",
+   "url": "https://github.com/vercel-labs/agent-browser",
+   "desc": "Browser automation CLI for AI agents",
+   "heat": "+190 today · 总计 47,060★ · Rust",
    "source": "GitHub",
    "board": "日榜",
    "category": "热门产品",
-   "note": "给编码智能体用的安全审计技能，分阶段检查代码并输出可独立核验的机器可读结果。",
-   "scene": "用 AI 辅助做代码安全审计的开发者"
+   "note": "给 AI 智能体用的浏览器自动化命令行工具，让模型能自己操作网页，省去手写脚本的麻烦。",
+   "scene": "开发 AI 智能体、需要让模型自动操作网页的开发者"
   },
   {
    "rank": 2,
    "title": "moonshotai/Kimi-K3.1-Pro",
    "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
    "desc": "AI 模型 · image-text-to-text",
-   "heat": "趋势 536.5 · 1.7k likes · 22.6k 下载 · transformers / safetensors / kimi_k31",
+   "heat": "趋势 540 · 1.7k likes · 25.6k 下载 · transformers / safetensors / kimi_k31",
    "source": "Hugging Face",
    "board": "热榜",
    "category": "热门产品",
@@ -445,7 +435,7 @@
    "title": "Show HN: We compressed a 31B video+audio diffusion model to 14B, 6 steps, INT8",
    "url": "https://github.com/Video-Rebirth/hyperflow-h3-flash",
    "desc": "Show HN 新品首发",
-   "heat": "66 points · 12 comments",
+   "heat": "66 points · 13 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门产品",
@@ -457,7 +447,7 @@
    "title": "Every Mac comes with an (undocumented) family member classifier",
    "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
    "desc": "Hacker News 首页",
-   "heat": "693 points · 372 comments",
+   "heat": "725 points · 385 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门话题",
@@ -469,7 +459,7 @@
    "title": "Ask HN: How did you convince family and friends to join your XMPP/Matrix server?",
    "url": "https://news.ycombinator.com/item?id=50405250",
    "desc": "I love open-source software and open protocols, but my family and friends primarily communicate through SMS for exactly the reasons in https://xkcd.com/2365/ Whenever XMP…",
-   "heat": "84 points · 79 comments",
+   "heat": "84 points · 81 comments",
    "source": "Hacker News",
    "board": "需求榜",
    "category": "项目需求",
@@ -538,34 +528,34 @@
   },
   {
    "rank": 2,
-   "title": "沙特首都遇袭石油公司大楼受损",
-   "url": "https://www.toutiao.com/trending/7705691548922416678/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%225%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227705691548922416678%22%2C%22hot_board_impr_id%22%3A%22202611081556561A34F220C198CDDBD114%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%B2%99%E7%89%B9%E9%A6%96%E9%83%BD%E9%81%87%E8%A2%AD%E7%9F%B3%E6%B2%B9%E5%85%AC%E5%8F%B8%E5%A4%A7%E6%A5%BC%E5%8F%97%E6%8D%9F%22%7D&rank=&style_id=40132&topic_id=7705691548922416678",
+   "title": "大连雪大到转播镜头找不到球",
+   "url": "https://www.toutiao.com/trending/7705029059373465626/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227705029059373465626%22%2C%22hot_board_impr_id%22%3A%2220261108180252766EF264A7C937C08C03%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%A4%A7%E8%BF%9E%E9%9B%AA%E5%A4%A7%E5%88%B0%E8%BD%AC%E6%92%AD%E9%95%9C%E5%A4%B4%E6%89%BE%E4%B8%8D%E5%88%B0%E7%90%83%22%7D&rank=&style_id=40132&topic_id=7705029059373465626",
    "desc": "hot",
-   "heat": "热度 630万",
+   "heat": "热度 664万",
    "source": "今日头条",
    "board": "热榜",
    "category": "热门话题",
-   "note": "沙特首都一处石油公司大楼遇袭受损，涉及能源设施安全与地区局势，关注中东能源供应和国际油价的人会留意后续。",
-   "scene": "关注中东局势与国际油价的投资者"
+   "note": "大连降雪强度大到转播镜头都难以捕捉球的位置，比赛画面受影响，也侧面说明当地天气的极端程度。",
+   "scene": "关注极端天气和体育赛事的观众"
   },
   {
    "rank": 2,
-   "title": "月薪过万 社保缴费基数却是4000元",
-   "url": "https://m.baidu.com/s?word=%E6%9C%88%E8%96%AA%E8%BF%87%E4%B8%87+%E7%A4%BE%E4%BF%9D%E7%BC%B4%E8%B4%B9%E5%9F%BA%E6%95%B0%E5%8D%B4%E6%98%AF4000%E5%85%83&sa=fyb_news",
-   "desc": "百度热搜实时热点",
+   "title": "大连英博夺得中超冠军",
+   "url": "https://m.baidu.com/s?word=%E5%A4%A7%E8%BF%9E%E8%8B%B1%E5%8D%9A%E5%A4%BA%E5%BE%97%E4%B8%AD%E8%B6%85%E5%86%A0%E5%86%9B&sa=fyb_news",
+   "desc": "百度热搜 · 热度飙升",
    "heat": "热搜第 2 名",
    "source": "百度热搜",
    "board": "热榜",
    "category": "热门话题",
-   "note": "部分职工月薪过万但社保按四千元基数缴纳，折射出缴费基数与实际收入脱节的现象。",
-   "scene": "关注社保缴纳与劳动权益的职场人"
+   "note": "大连英博捧起中超冠军奖杯，这一结果在热搜上持续升温，成为本轮联赛最受关注的焦点。",
+   "scene": "关注中超争冠形势的球迷"
   },
   {
    "rank": 2,
    "title": "“这是给孩子的，不是给你的”",
    "url": "https://www.bilibili.com/video/BV1Wx4i6LEmf",
    "desc": "上邪aa · 音乐综合",
-   "heat": "288万 播放 · 8.8万 点赞 · 2251 评论",
+   "heat": "329万 播放 · 10万 点赞 · 2404 评论",
    "source": "哔哩哔哩",
    "board": "热榜",
    "category": "热门话题",
@@ -574,22 +564,22 @@
   },
   {
    "rank": 2,
-   "title": "AI 还原 Figma 效果总达不到预期？先别急着让它写代码",
-   "url": "https://juejin.cn/post/7704502089117368320",
+   "title": "她是世界上第一位程序员，写下了人类第一行代码，但却因偏执的信任数学计算而早逝",
+   "url": "https://juejin.cn/post/7704626540621971471",
    "desc": "掘金技术热文",
-   "heat": "热度 288 · 477 阅读 · 6 赞",
+   "heat": "热度 279 · 495 阅读 · 7 赞",
    "source": "掘金",
    "board": "热榜",
    "category": "热门话题",
-   "note": "文章指出用 AI 还原设计稿效果不佳时，问题可能出在流程而非直接写代码环节。",
-   "scene": "用 AI 做设计还原的前端与设计从业者"
+   "note": "讲述被认作世界上第一位程序员的人物写下首行代码的经历，以及她因过度信任数学计算而早逝的故事。",
+   "scene": "对计算机史和人物故事感兴趣的开发者"
   },
   {
    "rank": 2,
    "title": "How are you dealing with all the negative side effects of AI on the web?",
    "url": "https://lobste.rs/s/ipplhe",
    "desc": "It seems to me that the AI hype killed the web for good, but not for the reasons we immediately associate with it. Search engines now rank links full of slop at the top,…",
-   "heat": "64 points · 58 comments · ask / web",
+   "heat": "70 points · 63 comments · ask / web",
    "source": "Lobsters",
    "board": "热榜",
    "category": "热门话题",
@@ -601,7 +591,7 @@
    "title": "现在还有必要花大量时间学习编程吗？",
    "url": "https://www.v2ex.com/t/1255305",
    "desc": "AI 写代码越来越强，写代码当聊天的时代。 在这种情况下，学习数据结构、算法、计算机原理这些基础知识，还有多大价值？",
-   "heat": "39 回复 · 职场话题",
+   "heat": "48 回复 · 职场话题",
    "source": "V2EX",
    "board": "热榜",
    "category": "热门话题",
@@ -622,15 +612,15 @@
   },
   {
    "rank": 2,
-   "title": "How to get the location of a bash script",
-   "url": "https://stackoverflow.com/questions/80015446/how-to-get-the-location-of-a-bash-script",
-   "desc": "How do I get the location of a random script in bash? For example, let's say I am building a react native app and want to know exactly what \"expo start\" does an…",
-   "heat": "15 浏览 · -3 赞 · 0 回答",
+   "title": "How to optimize this IVF code for vectors in C++?",
+   "url": "https://stackoverflow.com/questions/80015454/how-to-optimize-this-ivf-code-for-vectors-in-c",
+   "desc": "I'm dealing with a task to use IVF to split vectors into clusters with kmeans. However, I get time limit exceeded in 2 tests, so it needs more optimization, I w…",
+   "heat": "30 浏览 · -1 赞 · 0 回答",
    "source": "Stack Overflow",
    "board": "需求榜",
    "category": "项目需求",
-   "note": "想在 bash 里拿到当前脚本自身的路径，方便脚本内部定位资源或调试第三方命令。",
-   "scene": "写自动化脚本的开发者"
+   "note": "用 IVF 加 kmeans 做向量聚类时有两组测试超时，用户想要的是能通过时限的优化思路或代码改法。",
+   "scene": "刷算法题或做向量检索的 C++ 开发者"
   },
   {
    "rank": 2,
@@ -669,23 +659,23 @@
    "scene": "找短期兼职的开发者"
   },
   {
-   "rank": 3,
-   "title": "google/skills",
-   "url": "https://github.com/google/skills",
-   "desc": "Agent Skills for Google products and technologies",
-   "heat": "+443 today · 总计 23,550★ · Python",
+   "rank": 2,
+   "title": "cloudflare/security-audit-skill",
+   "url": "https://github.com/cloudflare/security-audit-skill",
+   "desc": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+   "heat": "+2085 today · 总计 66,103★ · JavaScript",
    "source": "GitHub",
    "board": "日榜",
    "category": "热门产品",
-   "note": "谷歌官方整理的智能体技能集，让 AI 能调用谷歌各项产品和技术。",
-   "scene": "基于谷歌技术栈开发 AI 智能体的开发者"
+   "note": "给编码智能体用的安全审计技能，分阶段检查代码并输出可独立核验的机器可读结果。",
+   "scene": "用 AI 辅助做代码安全审计的开发者"
   },
   {
    "rank": 3,
    "title": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
    "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
    "desc": "AI 模型 · text-generation",
-   "heat": "趋势 506 · 597 likes · 1.4k 下载 · transformers / safetensors / qwen3_5",
+   "heat": "趋势 536 · 638 likes · 7.1k 下载 · transformers / safetensors / qwen3_5",
    "source": "Hugging Face",
    "board": "热榜",
    "category": "热门产品",
@@ -697,7 +687,7 @@
    "title": "Show HN: Where Were We",
    "url": "https://wherewerewe.app/",
    "desc": "A little web game I made as an anniversary present for my wife. Upload vacation photos and make them into a game. WWW uses EXIF to determine where and when the photo was…",
-   "heat": "41 points · 16 comments",
+   "heat": "44 points · 16 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门产品",
@@ -709,7 +699,7 @@
    "title": "What I run on my $10 USD OpenStick homelab",
    "url": "https://blog.bosscher.ch/posts/openstick/",
    "desc": "Hacker News 首页",
-   "heat": "529 points · 101 comments",
+   "heat": "583 points · 110 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门话题",
@@ -781,7 +771,7 @@
    "title": "本周看什么 | 最近值得一看的 9 部作品",
    "url": "https://sspai.com/post/118623",
    "desc": "📅本周新预告《戴高乐之战》确认引进11月2日，电影《戴高乐之战》确认引进。该系列分为《戴高乐之战：淬炼时代》《戴高乐之战：我写下你的名字》上下两部曲。由法国百代公司出品，制作成本高达7520万欧元。作 ...",
-   "heat": "11 赞",
+   "heat": "12 赞",
    "source": "少数派",
    "board": "热榜",
    "category": "热门产品",
@@ -792,8 +782,8 @@
    "rank": 3,
    "title": "驰而不息正风肃纪",
    "url": "https://www.toutiao.com/article/7705403944717140522",
-   "desc": "new",
-   "heat": "热度 570万",
+   "desc": "今日头条热榜事件",
+   "heat": "热度 601万",
    "source": "今日头条",
    "board": "热榜",
    "category": "热门话题",
@@ -804,7 +794,7 @@
    "rank": 3,
    "title": "多地延迟到校取消早读 家长发声",
    "url": "https://m.baidu.com/s?word=%E5%A4%9A%E5%9C%B0%E5%BB%B6%E8%BF%9F%E5%88%B0%E6%A0%A1%E5%8F%96%E6%B6%88%E6%97%A9%E8%AF%BB+%E5%AE%B6%E9%95%BF%E5%8F%91%E5%A3%B0&sa=fyb_news",
-   "desc": "百度热搜实时热点",
+   "desc": "百度热搜 · 热议",
    "heat": "热搜第 3 名",
    "source": "百度热搜",
    "board": "热榜",
@@ -817,7 +807,7 @@
    "title": "人类饲养指南",
    "url": "https://www.bilibili.com/video/BV1Cn4n6YE29",
    "desc": "抽象生活先生 · 绘画",
-   "heat": "123万 播放 · 14万 点赞 · 1353 评论",
+   "heat": "149万 播放 · 16万 点赞 · 1560 评论",
    "source": "哔哩哔哩",
    "board": "热榜",
    "category": "热门话题",
@@ -826,39 +816,39 @@
   },
   {
    "rank": 3,
-   "title": "她是世界上第一位程序员，写下了人类第一行代码，但却因偏执的信任数学计算而早逝",
-   "url": "https://juejin.cn/post/7704626540621971471",
+   "title": "神级 Skill，让 AI 用 HTML 代替 Markdown 回复",
+   "url": "https://juejin.cn/post/7704902910831853587",
    "desc": "掘金技术热文",
-   "heat": "热度 279 · 486 阅读 · 7 赞",
+   "heat": "热度 270 · 453 阅读 · 8 赞",
    "source": "掘金",
    "board": "热榜",
    "category": "热门话题",
-   "note": "讲述被认作世界上第一位程序员的人物写下首行代码的经历，以及她因过度信任数学计算而早逝的故事。",
-   "scene": "对计算机史和人物故事感兴趣的开发者"
+   "note": "有人做了个技巧，让 AI 改用 HTML 而不是 Markdown 来回复，排版和展示效果可能更丰富，值得常和 AI 对话的人留意。",
+   "scene": "关注 AI 输出格式与提示词技巧的开发者"
   },
   {
    "rank": 3,
-   "title": "Meridian — an experimental web browser built on Servo and GPUI",
-   "url": "https://op.tngl.io/meridian/",
+   "title": "I’m not a fan of Deno’s security model (2024)",
+   "url": "https://goldstein.lol/posts/deno-security/",
    "desc": "技术社区热帖",
-   "heat": "48 points · 7 comments · browsers / rust",
+   "heat": "15 points · 3 comments · security",
    "source": "Lobsters",
    "board": "热榜",
    "category": "热门话题",
-   "note": "一款基于 Servo 渲染引擎和 GPUI 构建的实验性浏览器，属于浏览器底层技术的探索尝试，离日常使用还有距离。",
-   "scene": "关注浏览器引擎与 Rust 生态的技术爱好者"
+   "note": "作者对 Deno 运行时的安全模型提出质疑，属于技术社区里关于权限与安全设计取舍的讨论。",
+   "scene": "关注 JavaScript 运行时与安全设计的开发者"
   },
   {
    "rank": 3,
-   "title": "在 agent 时代，深度还是广度更重要？",
-   "url": "https://www.v2ex.com/t/1255253",
-   "desc": "指知识、经验与技能的深度与广度。以及，如果只能选一个的话，什么是最重要的领域？",
-   "heat": "30 回复 · 程序员",
+   "title": "这大环境看来是很差了",
+   "url": "https://www.v2ex.com/t/1255285",
+   "desc": "前两天入职了一家公司，干的广州黄埔某国企外包深圳融创项目，新入职的一共几个人。早上开完会，下午去现场，这边一个叶姓领导去联系那边领路开门。 / 到了门口等了十几分钟门没开，电话里问他到底联系对地方没有、确认下情况，结果这哥们张嘴就 TMTM 地说话。 / 我反驳了几句，让他就事论事，不要拿情绪说话。我才第一天进来，就见过一眼，这哥们就搁那…",
+   "heat": "32 回复 · 职场话题",
    "source": "V2EX",
    "board": "热榜",
    "category": "热门话题",
-   "note": "讨论在 AI agent 普及的当下，人的知识该往深处钻还是往宽处铺，以及只能选一个时该押注什么领域。",
-   "scene": "思考职业方向的程序员与知识工作者"
+   "note": "发帖者讲述入职首日与项目方人员沟通不畅的经历，借此感慨当下就业大环境，属于个人职场吐槽。",
+   "scene": "关注职场环境与外包生态的从业者"
   },
   {
    "rank": 3,
@@ -874,15 +864,15 @@
   },
   {
    "rank": 3,
-   "title": "How to make the transition for li not glitch out on hover",
-   "url": "https://stackoverflow.com/questions/80015435/how-to-make-the-transition-for-li-not-glitch-out-on-hover",
-   "desc": "I know it is because the hover is only for the , although I'm not really sure what would be the best way to increase the hover area without messing with the bac…",
-   "heat": "65 浏览 · -1 赞 · 0 回答",
+   "title": "500 Internal Server Error using stripe for CheckoutForm in Nextjs",
+   "url": "https://stackoverflow.com/questions/80015451/500-internal-server-error-using-stripe-for-checkoutform-in-nextjs",
+   "desc": "I am following a tutorial to create an e-commerce website . I try to use stripe for creating a checkout form, but I get a runtime error. I do not know how to so…",
+   "heat": "26 浏览 · 0 赞 · 0 回答",
    "source": "Stack Overflow",
    "board": "需求榜",
    "category": "项目需求",
-   "note": "鼠标悬停时列表项过渡动画出现闪烁，想扩大触发区域又不破坏原有背景效果。",
-   "scene": "做前端交互细节的网页开发者"
+   "note": "照着教程在 Next.js 里接 Stripe 结账表单却报 500，用户需要的是找出服务端出错原因并让支付流程跑通。",
+   "scene": "跟着教程做电商项目的入门开发者"
   },
   {
    "rank": 3,
@@ -901,7 +891,7 @@
    "title": "上线 37 天，Bing 给了我 4500 次点击，Google 给了 4 次",
    "url": "https://w2solo.com/topics/8672",
    "desc": "心得总结 · 作者 椰林",
-   "heat": "72 浏览 · 1 回复 · 社区热议",
+   "heat": "73 浏览 · 1 回复 · 社区热议",
    "source": "w2solo",
    "board": "热榜",
    "category": "热门话题",
@@ -921,23 +911,23 @@
    "scene": "关注 AI 行业现象的观察者"
   },
   {
-   "rank": 4,
-   "title": "mattpocock/skills",
-   "url": "https://github.com/mattpocock/skills",
-   "desc": "Skills for Real Engineers. Straight from my .agents directory.",
-   "heat": "+1100 today · 总计 317,990★ · Shell",
+   "rank": 3,
+   "title": "google/skills",
+   "url": "https://github.com/google/skills",
+   "desc": "Agent Skills for Google products and technologies",
+   "heat": "+443 today · 总计 23,550★ · Python",
    "source": "GitHub",
    "board": "日榜",
    "category": "热门产品",
-   "note": "把作者自己 .agents 目录里的技能整理成公开仓库，供工程师直接取用。",
-   "scene": "使用 AI 编程代理的开发者"
+   "note": "谷歌官方整理的智能体技能集，让 AI 能调用谷歌各项产品和技术。",
+   "scene": "基于谷歌技术栈开发 AI 智能体的开发者"
   },
   {
    "rank": 4,
    "title": "ccore/Qwen3.5-4B-3D-Coder",
    "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
    "desc": "AI 模型 · 模型",
-   "heat": "趋势 415 · 883 likes · 221.5k 下载 · safetensors / gguf / qwen3_5",
+   "heat": "趋势 412 · 890 likes · 254.1k 下载 · safetensors / gguf / qwen3_5",
    "source": "Hugging Face",
    "board": "热榜",
    "category": "热门产品",
@@ -958,15 +948,15 @@
   },
   {
    "rank": 4,
-   "title": "The end of Microsoft Research's AI Frontiers group",
-   "url": "https://hunch.net/?p=13764006",
-   "desc": "https://archive.is/AaY5O https://businessexaminer.ca/victoria-articles/item/microsoft...",
-   "heat": "444 points · 265 comments",
+   "title": "Apple’s grey list: Words and phrases your iPhone won’t help you spell",
+   "url": "https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you",
+   "desc": "Hacker News 首页",
+   "heat": "462 points · 292 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门话题",
-   "note": "有消息称微软研究院旗下 AI Frontiers 团队走向终结，反映大厂 AI 研究布局的调整，具体原因尚待更多信息。",
-   "scene": "关注大厂 AI 研究动向的从业者"
+   "note": "有文章整理 iPhone 输入法不会主动帮你拼写的词和短语，形成一份所谓的灰色名单，涉及系统词库的取舍。",
+   "scene": "关注苹果系统细节与隐私的用户"
   },
   {
    "rank": 4,
@@ -1042,15 +1032,15 @@
   },
   {
    "rank": 4,
-   "title": "大三男生做AI漫剧营收超300万",
-   "url": "https://www.toutiao.com/trending/7705633703178879514/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2215%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227705633703178879514%22%2C%22hot_board_impr_id%22%3A%22202611081556561A34F220C198CDDBD114%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%A4%A7%E4%B8%89%E7%94%B7%E7%94%9F%E5%81%9AAI%E6%BC%AB%E5%89%A7%E8%90%A5%E6%94%B6%E8%B6%85300%E4%B8%87%22%7D&rank=&style_id=40132&topic_id=7705633703178879514",
-   "desc": "new",
-   "heat": "热度 515万",
+   "title": "蓉城众将瘫倒在地 门将面无表情",
+   "url": "https://www.toutiao.com/trending/7705256250326040586/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227705256250326040586%22%2C%22hot_board_impr_id%22%3A%2220261108180252766EF264A7C937C08C03%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E8%93%89%E5%9F%8E%E4%BC%97%E5%B0%86%E7%98%AB%E5%80%92%E5%9C%A8%E5%9C%B0+%E9%97%A8%E5%B0%86%E9%9D%A2%E6%97%A0%E8%A1%A8%E6%83%85%22%7D&rank=&style_id=40132&topic_id=7705256250326040586",
+   "desc": "hot",
+   "heat": "热度 543万",
    "source": "今日头条",
    "board": "热榜",
    "category": "热门话题",
-   "note": "一名大三学生用AI制作漫剧，营收超过300万，说明AI内容生产已能变现，关注副业和内容创业的年轻人会感兴趣。",
-   "scene": "关注AI内容创业的年轻人"
+   "note": "成都蓉城球员在错失冠军后瘫坐草地，门将神情木然，画面传递出球队与冠军擦肩而过的失落。",
+   "scene": "关注成都蓉城赛季表现的球迷"
   },
   {
    "rank": 4,
@@ -1069,7 +1059,7 @@
    "title": "【独家】牧神记 第108集 相逢何必曾相识",
    "url": "https://www.bilibili.com/video/BV1xt476wEp7",
    "desc": "哔哩哔哩国创 · 国产动画",
-   "heat": "116万 播放 · 2.2万 点赞 · 788 评论",
+   "heat": "147万 播放 · 2.5万 点赞 · 905 评论",
    "source": "哔哩哔哩",
    "board": "热榜",
    "category": "热门话题",
@@ -1078,39 +1068,39 @@
   },
   {
    "rank": 4,
-   "title": "神级 Skill，让 AI 用 HTML 代替 Markdown 回复",
-   "url": "https://juejin.cn/post/7704902910831853587",
+   "title": "程序员 1v1 访谈系列第十二期：普通人没有核心竞争力",
+   "url": "https://juejin.cn/post/7704557568358170624",
    "desc": "掘金技术热文",
-   "heat": "热度 261 · 432 阅读 · 8 赞",
+   "heat": "热度 243 · 342 阅读 · 9 赞",
    "source": "掘金",
    "board": "热榜",
    "category": "热门话题",
-   "note": "有人做了个技巧，让 AI 改用 HTML 而不是 Markdown 来回复，排版和展示效果可能更丰富，值得常和 AI 对话的人留意。",
-   "scene": "关注 AI 输出格式与提示词技巧的开发者"
+   "note": "访谈系列聊到普通人缺乏核心竞争力这一话题，属于程序员职业成长方向的讨论。",
+   "scene": "关注职业发展的程序员"
   },
   {
    "rank": 4,
-   "title": "Libghostty 1.0",
-   "url": "https://mitchellh.com/writing/libghostty-1-0",
+   "title": "Meridian — an experimental web browser built on Servo and GPUI",
+   "url": "https://op.tngl.io/meridian/",
    "desc": "技术社区热帖",
-   "heat": "160 points · 7 comments · c / release / zig",
+   "heat": "49 points · 7 comments · browsers / rust",
    "source": "Lobsters",
    "board": "热榜",
    "category": "热门话题",
-   "note": "Libghostty 发布 1.0 版本，属于技术社区关注的开源项目动态，具体功能需看项目本身。",
-   "scene": "关注开源终端与系统工具的技术用户"
+   "note": "一款基于 Servo 渲染引擎和 GPUI 构建的实验性浏览器，属于浏览器底层技术的探索尝试，离日常使用还有距离。",
+   "scene": "关注浏览器引擎与 Rust 生态的技术爱好者"
   },
   {
    "rank": 4,
-   "title": "请问大佬们买 Macbook 各种系列 24GB 以上的都是什么需求",
-   "url": "https://www.v2ex.com/t/1255251",
-   "desc": "能理解每个人的需求都差异很大，对于我来说，我也买过几台 pro ，不过都是好多年前了，现在都是买最轻便的 Air ，包括最近一直用的是上古的 Macbook 12 寸+Omarchy ， 看看网页，ssh ，wechat ，vibe coding 各种 CLI ， 基本上内存很少超过 5GB 所以很好奇，做视频处理的应该是少数吧，要那么大…",
-   "heat": "29 回复 · MacBook Pro",
+   "title": "卖软件这个事情在未来可能是伪命题了",
+   "url": "https://www.v2ex.com/t/1255327",
+   "desc": "刷到孟岩关于 AI 做软件开发的一个观点，随着 AI 能力的增强，未来人人都能通过嘴炮来做个 app 覆盖自己日常的需求，而不用等到大公司为了符合大多数人群而做的一个通用版本。这意味着，想通过做 app 来获得收益变得更难。 大家认可这个观点吗，产品经理，程序员，设计师这种软件开发领域上传统的角色，是否会慢慢消失？ 未来该是怎样的一个变化…",
+   "heat": "31 回复 · 程序员",
    "source": "V2EX",
    "board": "热榜",
    "category": "热门话题",
-   "note": "用户好奇买高内存 MacBook 的人到底用来做什么，引发对配置需求差异的讨论。",
-   "scene": "准备选购 MacBook 的潜在买家"
+   "note": "有人提出AI普及后人人能靠嘴做App，卖软件可能不再成立，讨论传统开发岗位是否会被削弱。",
+   "scene": "程序员、产品经理与设计师"
   },
   {
    "rank": 4,
@@ -1126,15 +1116,15 @@
   },
   {
    "rank": 4,
-   "title": "Java.lang.RuntimeException and Maxent",
-   "url": "https://stackoverflow.com/questions/80015439/java-lang-runtimeexception-and-maxent",
-   "desc": "I am trying to run Maxent with all 19 Bioclim layers. I have the csv file of locations and I have clipped the Bioclim layers to the relevant area. I have conver…",
-   "heat": "31 浏览 · -2 赞 · 0 回答",
+   "title": "How to get the location of a bash script",
+   "url": "https://stackoverflow.com/questions/80015446/how-to-get-the-location-of-a-bash-script",
+   "desc": "How do I get the location of a random script in bash? For example, let's say I am building a react native app and want to know exactly what \"expo start\" does an…",
+   "heat": "40 浏览 · -4 赞 · 0 回答",
    "source": "Stack Overflow",
    "board": "需求榜",
    "category": "项目需求",
-   "note": "用全部气候图层跑 Maxent 时抛出运行时异常，需要定位是数据、内存还是配置问题。",
-   "scene": "做物种分布建模的研究者"
+   "note": "想在 bash 里拿到当前脚本自身的路径，方便脚本内部定位资源或调试第三方命令。",
+   "scene": "写自动化脚本的开发者"
   },
   {
    "rank": 4,
@@ -1173,23 +1163,23 @@
    "scene": "接维修单的技术人员"
   },
   {
-   "rank": 5,
-   "title": "anthropics/skills",
-   "url": "https://github.com/anthropics/skills",
-   "desc": "Public repository for Agent Skills",
-   "heat": "+390 today · 总计 188,980★ · Python",
+   "rank": 4,
+   "title": "mattpocock/skills",
+   "url": "https://github.com/mattpocock/skills",
+   "desc": "Skills for Real Engineers. Straight from my .agents directory.",
+   "heat": "+1100 today · 总计 317,990★ · Shell",
    "source": "GitHub",
    "board": "日榜",
    "category": "热门产品",
-   "note": "Anthropic 公开的代理技能仓库，汇集可供 AI 代理调用的技能集合。",
-   "scene": "搭建 AI 代理的开发者"
+   "note": "把作者自己 .agents 目录里的技能整理成公开仓库，供工程师直接取用。",
+   "scene": "使用 AI 编程代理的开发者"
   },
   {
    "rank": 5,
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
    "desc": "AI 模型 · image-to-video",
-   "heat": "趋势 390 · 11.0k likes · 2.6m 下载 · diffusion-single-file / image-to-video / text-to-video",
+   "heat": "趋势 390 · 11.0k likes · 2.7m 下载 · diffusion-single-file / image-to-video / text-to-video",
    "source": "Hugging Face",
    "board": "热榜",
    "category": "热门产品",
@@ -1198,27 +1188,27 @@
   },
   {
    "rank": 5,
-   "title": "Show HN: Logo Deal – Logos anyone can edit with text",
-   "url": "https://logo.deal/",
+   "title": "Show HN: Maple – Sub-2-BPW Moe Pruning to Run Gemma 4 26B at 45 TPS on a 6GB GPU",
+   "url": "https://github.com/AmSach/maple",
    "desc": "Show HN 新品首发",
-   "heat": "9 points · 3 comments",
+   "heat": "10 points · 4 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门产品",
-   "note": "生成的标志可以直接用文字编辑修改，省去反复找设计师改稿的环节。",
-   "scene": "需要快速做标志的小团队和创业者"
+   "note": "通过剪枝压缩混合专家模型，让较大模型能在显存很小的显卡上跑出不错的生成速度。",
+   "scene": "显卡显存有限的本地模型玩家"
   },
   {
    "rank": 5,
-   "title": "Apple’s grey list: Words and phrases your iPhone won’t help you spell",
-   "url": "https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you",
-   "desc": "Hacker News 首页",
-   "heat": "443 points · 280 comments",
+   "title": "The end of Microsoft Research's AI Frontiers group",
+   "url": "https://hunch.net/?p=13764006",
+   "desc": "https://archive.is/AaY5O https://businessexaminer.ca/victoria-articles/item/microsoft...",
+   "heat": "456 points · 276 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门话题",
-   "note": "有文章整理 iPhone 输入法不会主动帮你拼写的词和短语，形成一份所谓的灰色名单，涉及系统词库的取舍。",
-   "scene": "关注苹果系统细节与隐私的用户"
+   "note": "有消息称微软研究院旗下 AI Frontiers 团队走向终结，反映大厂 AI 研究布局的调整，具体原因尚待更多信息。",
+   "scene": "关注大厂 AI 研究动向的从业者"
   },
   {
    "rank": 5,
@@ -1258,15 +1248,15 @@
   },
   {
    "rank": 5,
-   "title": "国家网络身份认证",
-   "url": "https://apps.apple.com/cn/app/%E5%9B%BD%E5%AE%B6%E7%BD%91%E7%BB%9C%E8%BA%AB%E4%BB%BD%E8%AE%A4%E8%AF%81/id1588080869",
-   "desc": "中华人民共和国公安部",
+   "title": "豆包 - 生活工作 AI 助手",
+   "url": "https://apps.apple.com/cn/app/%E8%B1%86%E5%8C%85-%E7%94%9F%E6%B4%BB%E5%B7%A5%E4%BD%9C-ai-%E5%8A%A9%E6%89%8B/id6459478672",
+   "desc": "Beijing Chuntian Zhiyun Technology Co., Ltd.",
    "heat": "免费榜 第 5 名",
    "source": "App Store",
    "board": "免费榜（中国）",
    "category": "热门产品",
-   "note": "公安部推出的网络身份认证应用，从来源看用于线上身份核验相关场景。",
-   "scene": "需要在网上办理实名认证的国内用户"
+   "note": "字节系的生活工作类 AI 助手，提供对话问答等日常辅助功能。",
+   "scene": "想用 AI 处理日常事务的普通用户"
   },
   {
    "rank": 5,
@@ -1294,46 +1284,46 @@
   },
   {
    "rank": 5,
-   "title": "杨瀚森两双 开拓者惨败马刺",
-   "url": "https://www.toutiao.com/trending/7705670981439720998/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%225%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227705670981439720998%22%2C%22hot_board_impr_id%22%3A%22202611081556561A34F220C198CDDBD114%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%9D%A8%E7%80%9A%E6%A3%AE%E4%B8%A4%E5%8F%8C+%E5%BC%80%E6%8B%93%E8%80%85%E6%83%A8%E8%B4%A5%E9%A9%AC%E5%88%BA%22%7D&rank=&style_id=40132&topic_id=7705670981439720998",
+   "title": "成都蓉城7失冠军点无缘夺冠",
+   "url": "https://www.toutiao.com/trending/7704831444702629411/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227704831444702629411%22%2C%22hot_board_impr_id%22%3A%2220261108180252766EF264A7C937C08C03%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%88%90%E9%83%BD%E8%93%89%E5%9F%8E7%E5%A4%B1%E5%86%A0%E5%86%9B%E7%82%B9%E6%97%A0%E7%BC%98%E5%A4%BA%E5%86%A0%22%7D&rank=&style_id=40132&topic_id=7704831444702629411",
    "desc": "hot",
-   "heat": "热度 466万",
+   "heat": "热度 492万",
    "source": "今日头条",
    "board": "热榜",
    "category": "热门话题",
-   "note": "杨瀚森拿到两双，但开拓者大比分输给马刺，个人数据亮眼难掩球队整体失利。",
-   "scene": "关注杨瀚森和 NBA 的中国篮球球迷"
+   "note": "成都蓉城第七次错失冠军点，最终无缘夺冠，连续把握不住机会成为这个赛季最遗憾的注脚。",
+   "scene": "关注中超争冠走势的体育爱好者"
   },
   {
    "rank": 5,
-   "title": "中国县城消费崛起",
-   "url": "https://m.baidu.com/s?word=%E4%B8%AD%E5%9B%BD%E5%8E%BF%E5%9F%8E%E6%B6%88%E8%B4%B9%E5%B4%9B%E8%B5%B7&sa=fyb_news",
-   "desc": "百度热搜实时热点",
+   "title": "成都蓉城错失第七个冠军点",
+   "url": "https://m.baidu.com/s?word=%E6%88%90%E9%83%BD%E8%93%89%E5%9F%8E%E9%94%99%E5%A4%B1%E7%AC%AC%E4%B8%83%E4%B8%AA%E5%86%A0%E5%86%9B%E7%82%B9&sa=fyb_news",
+   "desc": "百度热搜 · 新上榜",
    "heat": "热搜第 5 名",
    "source": "百度热搜",
    "board": "热榜",
    "category": "热门话题",
-   "note": "县城消费被讨论为新的增长点，反映下沉市场的购买力变化，做零售和品牌渠道的人会关注。",
-   "scene": "关注下沉市场的零售与品牌从业者"
+   "note": "成都蓉城在争冠关键战中再度失手，第七个冠军点落空，球队与冠军的距离被再次拉远。",
+   "scene": "关注成都蓉城争冠进程的球迷"
   },
   {
    "rank": 5,
-   "title": "【2026全球总决赛】11月8日 IG vs GEN",
-   "url": "https://www.bilibili.com/video/BV1ua4W6XEJd",
-   "desc": "哔哩哔哩英雄联盟赛事 · 电子竞技",
-   "heat": "279万 播放 · 9029 点赞 · 2.5万 评论",
+   "title": "S赛怀旧金曲《BLG带带我》",
+   "url": "https://www.bilibili.com/video/BV1mK4E6NE82",
+   "desc": "九夜听风 · 日常",
+   "heat": "112万 播放 · 6.0万 点赞 · 4006 评论",
    "source": "哔哩哔哩",
    "board": "热榜",
    "category": "热门话题",
-   "note": "英雄联盟全球总决赛IG对阵GEN，是电竞赛事焦点战，关注LPL战队表现的玩家会守着看。",
-   "scene": "英雄联盟赛事观众与电竞爱好者"
+   "note": "一首以BLG为主题的怀旧改编歌曲在站内流传，借老歌调侃战队，属于电竞圈常见的二创娱乐内容。",
+   "scene": "关注英雄联盟赛事和电竞二创的观众"
   },
   {
    "rank": 5,
    "title": "一个人就是一支工程队：AI 时代超级个体的 90 天变现 SOP",
    "url": "https://juejin.cn/post/7704589926880411684",
    "desc": "掘金技术热文",
-   "heat": "热度 225 · 351 阅读 · 6 赞",
+   "heat": "热度 234 · 369 阅读 · 6 赞",
    "source": "掘金",
    "board": "热榜",
    "category": "热门话题",
@@ -1342,27 +1332,27 @@
   },
   {
    "rank": 5,
-   "title": "Scriptable GeoDNS: leaving AWS for Bunny",
-   "url": "https://vincent.bernat.ch/en/blog/2026-bunny-geodns",
+   "title": "Dear Open Source Developers: It's OK not to embargo",
+   "url": "https://opensourcesecurity.io/2026/10-embargo/",
    "desc": "技术社区热帖",
-   "heat": "25 points · 11 comments · performance / web",
+   "heat": "15 points · 2 comments · security",
    "source": "Lobsters",
    "board": "热榜",
    "category": "热门话题",
-   "note": "分享用可脚本化的 GeoDNS 方案从 AWS 迁移到 Bunny 的经历，涉及 DNS 与成本取舍。",
-   "scene": "负责基础设施与 DNS 架构的运维工程师"
+   "note": "有开发者主张开源项目不必对安全漏洞强行禁言，讨论披露节奏与用户知情权之间的取舍。",
+   "scene": "关注开源安全披露流程的开发者"
   },
   {
    "rank": 5,
-   "title": "这大环境看来是很差了",
-   "url": "https://www.v2ex.com/t/1255285",
-   "desc": "前两天入职了一家公司，干的广州黄埔某国企外包深圳融创项目，新入职的一共几个人。早上开完会，下午去现场，这边一个叶姓领导去联系那边领路开门。 / 到了门口等了十几分钟门没开，电话里问他到底联系对地方没有、确认下情况，结果这哥们张嘴就 TMTM 地说话。 / 我反驳了几句，让他就事论事，不要拿情绪说话。我才第一天进来，就见过一眼，这哥们就搁那…",
-   "heat": "25 回复 · 职场话题",
+   "title": "请问大佬们买 Macbook 各种系列 24GB 以上的都是什么需求",
+   "url": "https://www.v2ex.com/t/1255251",
+   "desc": "能理解每个人的需求都差异很大，对于我来说，我也买过几台 pro ，不过都是好多年前了，现在都是买最轻便的 Air ，包括最近一直用的是上古的 Macbook 12 寸+Omarchy ， 看看网页，ssh ，wechat ，vibe coding 各种 CLI ， 基本上内存很少超过 5GB 所以很好奇，做视频处理的应该是少数吧，要那么大…",
+   "heat": "30 回复 · MacBook Pro",
    "source": "V2EX",
    "board": "热榜",
    "category": "热门话题",
-   "note": "发帖者讲述入职首日与项目方人员沟通不畅的经历，借此感慨当下就业大环境，属于个人职场吐槽。",
-   "scene": "关注职场环境与外包生态的从业者"
+   "note": "用户好奇买高内存 MacBook 的人到底用来做什么，引发对配置需求差异的讨论。",
+   "scene": "准备选购 MacBook 的潜在买家"
   },
   {
    "rank": 5,
@@ -1378,15 +1368,15 @@
   },
   {
    "rank": 5,
-   "title": "Build a static dispatch table of non-static methods in C#",
-   "url": "https://stackoverflow.com/questions/80015429/build-a-static-dispatch-table-of-non-static-methods-in-c",
-   "desc": "In C#, I have the following methods: private async Task FooHandleEventAsync(Client client, EventArgs args) { // ... } private async Task BarHandleEventAsync(Cli…",
-   "heat": "103 浏览 · 2 赞 · 1 回答",
+   "title": "What is the limit of the function?",
+   "url": "https://stackoverflow.com/questions/80015450/what-is-the-limit-of-the-function",
+   "desc": "Let 0<q<1. What is the limit of the function f(n,q) = (1-q)*(1-q^2)…(1-q^n) as n tends to infinity? The limit exists because the function is monotonically decre…",
+   "heat": "48 浏览 · -6 赞 · 0 回答",
    "source": "Stack Overflow",
    "board": "需求榜",
    "category": "项目需求",
-   "note": "在 C# 里为多个非静态异步方法构建静态分发表，想找到既能统一调度又不破坏实例状态的实现方式。",
-   "scene": "写 C# 事件处理的开发者"
+   "note": "想求一个无穷乘积在参数介于0和1之间时的极限值，本质是数学计算问题，需要给出推导或结论。",
+   "scene": "数学系学生或做分析题的人"
   },
   {
    "rank": 5,
@@ -1425,23 +1415,23 @@
    "scene": "找产品机会的独立开发者"
   },
   {
-   "rank": 6,
-   "title": "meta/astryx",
-   "url": "https://github.com/meta/astryx",
-   "desc": "An open source design system that's fully customizable and agent ready",
-   "heat": "+96 today · 总计 14,809★ · TypeScript",
+   "rank": 5,
+   "title": "anthropics/skills",
+   "url": "https://github.com/anthropics/skills",
+   "desc": "Public repository for Agent Skills",
+   "heat": "+390 today · 总计 188,980★ · Python",
    "source": "GitHub",
    "board": "日榜",
    "category": "热门产品",
-   "note": "开源设计系统，强调可深度定制，并面向 AI 代理使用场景做了适配。",
-   "scene": "搭建产品界面、需要统一设计规范的前端团队"
+   "note": "Anthropic 公开的代理技能仓库，汇集可供 AI 代理调用的技能集合。",
+   "scene": "搭建 AI 代理的开发者"
   },
   {
    "rank": 6,
    "title": "ricursiveAI/Ripple-65B-Preview",
    "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
    "desc": "AI 模型 · 模型",
-   "heat": "趋势 368 · 378 likes · 3.8k 下载 · safetensors / ricursive / custom_code",
+   "heat": "趋势 369 · 379 likes · 5.1k 下载 · safetensors / ricursive / custom_code",
    "source": "Hugging Face",
    "board": "热榜",
    "category": "热门产品",
@@ -1450,27 +1440,27 @@
   },
   {
    "rank": 6,
-   "title": "Show HN: An online shop where your friends can hurry the courier",
-   "url": "https://www.dopaminechic.com/",
-   "desc": "I built an emulator of a flash-sale fashion outlet with no registration and fake checkout that never takes money. You can browse items that are on sale, watch in real tim…",
-   "heat": "6 points · 3 comments",
+   "title": "Show HN: Logo Deal – Logos anyone can edit with text",
+   "url": "https://logo.deal/",
+   "desc": "Show HN 新品首发",
+   "heat": "9 points · 3 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门产品",
-   "note": "一个模拟限时抢购的假网店，不用注册、结账是假的也不收钱，朋友还能催单，纯属娱乐。",
-   "scene": "想和朋友玩购物模拟、图个乐的人"
+   "note": "生成的标志可以直接用文字编辑修改，省去反复找设计师改稿的环节。",
+   "scene": "需要快速做标志的小团队和创业者"
   },
   {
    "rank": 6,
-   "title": "Asahi Linux Progress Linux 7.3",
-   "url": "https://asahilinux.org/2026/11/progress-report-7-3/",
+   "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+   "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
    "desc": "Hacker News 首页",
-   "heat": "364 points · 306 comments",
+   "heat": "392 points · 270 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门话题",
-   "note": "Asahi Linux 是让 Linux 能在苹果自研芯片 Mac 上运行的项目，这次进展更新意味着这类设备装 Linux 的兼容性又往前走了一步。",
-   "scene": "关注 Linux 与苹果硬件兼容性的开发者"
+   "note": "Claude Code 的「不再询问」选项会把密码等信息写进公开的 GitHub 文件，已有上千个文件受影响，提醒开发者留意配置泄露。",
+   "scene": "使用 AI 编程工具的开发者"
   },
   {
    "rank": 6,
@@ -1510,15 +1500,15 @@
   },
   {
    "rank": 6,
-   "title": "豆包 - 生活工作 AI 助手",
-   "url": "https://apps.apple.com/cn/app/%E8%B1%86%E5%8C%85-%E7%94%9F%E6%B4%BB%E5%B7%A5%E4%BD%9C-ai-%E5%8A%A9%E6%89%8B/id6459478672",
-   "desc": "Beijing Chuntian Zhiyun Technology Co., Ltd.",
+   "title": "国家网络身份认证",
+   "url": "https://apps.apple.com/cn/app/%E5%9B%BD%E5%AE%B6%E7%BD%91%E7%BB%9C%E8%BA%AB%E4%BB%BD%E8%AE%A4%E8%AF%81/id1588080869",
+   "desc": "中华人民共和国公安部",
    "heat": "免费榜 第 6 名",
    "source": "App Store",
    "board": "免费榜（中国）",
    "category": "热门产品",
-   "note": "字节系的生活工作类 AI 助手，提供对话问答等日常辅助功能。",
-   "scene": "想用 AI 处理日常事务的普通用户"
+   "note": "公安部推出的网络身份认证应用，从来源看用于线上身份核验相关场景。",
+   "scene": "需要在网上办理实名认证的国内用户"
   },
   {
    "rank": 6,
@@ -1546,75 +1536,75 @@
   },
   {
    "rank": 6,
-   "title": "最后一位开国将军王扶之逝世",
-   "url": "https://www.toutiao.com/trending/7705619349179993636/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%225%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227705619349179993636%22%2C%22hot_board_impr_id%22%3A%22202611081556561A34F220C198CDDBD114%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%9C%80%E5%90%8E%E4%B8%80%E4%BD%8D%E5%BC%80%E5%9B%BD%E5%B0%86%E5%86%9B%E7%8E%8B%E6%89%B6%E4%B9%8B%E9%80%9D%E4%B8%96%22%7D&rank=&style_id=40132&topic_id=7705619349179993636",
+   "title": "秦皇岛居民称20年没见过这么大雪",
+   "url": "https://www.toutiao.com/trending/7705276354253753875/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227705276354253753875%22%2C%22hot_board_impr_id%22%3A%2220261108180252766EF264A7C937C08C03%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%A7%A6%E7%9A%87%E5%B2%9B%E5%B1%85%E6%B0%91%E7%A7%B020%E5%B9%B4%E6%B2%A1%E8%A7%81%E8%BF%87%E8%BF%99%E4%B9%88%E5%A4%A7%E9%9B%AA%22%7D&rank=&style_id=40132&topic_id=7705276354253753875",
    "desc": "hot",
-   "heat": "热度 422万",
+   "heat": "热度 445万",
    "source": "今日头条",
    "board": "热榜",
    "category": "热门话题",
-   "note": "最后一位开国将军王扶之逝世，标志着一个历史群体全部谢幕，属于人物讣闻类消息。",
-   "scene": "关注历史人物与军事史的读者"
+   "note": "当地居民反映二十年未见如此大雪，极端天气对出行和日常生活的影响成为热议焦点。",
+   "scene": "关注极端天气与民生话题的普通网友"
   },
   {
    "rank": 6,
-   "title": "“最强”厄尔尼诺来了 今年是暖冬吗",
-   "url": "https://m.baidu.com/s?word=%E2%80%9C%E6%9C%80%E5%BC%BA%E2%80%9D%E5%8E%84%E5%B0%94%E5%B0%BC%E8%AF%BA%E6%9D%A5%E4%BA%86+%E4%BB%8A%E5%B9%B4%E6%98%AF%E6%9A%96%E5%86%AC%E5%90%97&sa=fyb_news",
-   "desc": "百度热搜实时热点",
+   "title": "大连18分大逆转载入史册",
+   "url": "https://m.baidu.com/s?word=%E5%A4%A7%E8%BF%9E18%E5%88%86%E5%A4%A7%E9%80%86%E8%BD%AC%E8%BD%BD%E5%85%A5%E5%8F%B2%E5%86%8C&sa=fyb_news",
+   "desc": "百度热搜 · 新上榜",
    "heat": "热搜第 6 名",
    "source": "百度热搜",
    "board": "热榜",
    "category": "热门话题",
-   "note": "有说法称最强厄尔尼诺将至，公众关心今年是否暖冬，涉及气候预测和日常生活安排。",
-   "scene": "关注气候与天气变化的普通读者"
+   "note": "大连英博在积分落后18分的情况下完成翻盘夺冠，这一逆转幅度被视作联赛历史上的罕见案例。",
+   "scene": "关注中超历史纪录的体育媒体人"
   },
   {
    "rank": 6,
-   "title": "地平线6这样漂能上首页吗",
-   "url": "https://www.bilibili.com/video/BV1GS4i6fEww",
-   "desc": "帆江海FJH · 日常",
-   "heat": "116万 播放 · 9.9万 点赞 · 803 评论",
+   "title": "？？？？？？？？？",
+   "url": "https://www.bilibili.com/video/BV1gP4E6qEWv",
+   "desc": "三金啊GC · 搞笑",
+   "heat": "122万 播放 · 4.2万 点赞 · 461 评论",
    "source": "哔哩哔哩",
    "board": "热榜",
    "category": "热门话题",
-   "note": "一条游戏日常视频，展示在《地平线》系列里漂移的操作，属于玩家分享的娱乐内容。",
-   "scene": "喜欢赛车游戏的玩家"
+   "note": "标题只有一串问号，内容指向不明，从简介看属于搞笑类投稿，具体看点需点开视频才能判断。",
+   "scene": "喜欢搞笑短视频的B站用户"
   },
   {
    "rank": 6,
-   "title": "程序员 1v1 访谈系列第十二期：普通人没有核心竞争力",
-   "url": "https://juejin.cn/post/7704557568358170624",
+   "title": "LobeHub 是真的夯，简直 Super-Agent 最佳实现。",
+   "url": "https://juejin.cn/post/7704864028610773027",
    "desc": "掘金技术热文",
-   "heat": "热度 225 · 333 阅读 · 8 赞",
+   "heat": "热度 207 · 313 阅读 · 7 赞",
    "source": "掘金",
    "board": "热榜",
    "category": "热门话题",
-   "note": "访谈系列聊到普通人缺乏核心竞争力这一话题，属于程序员职业成长方向的讨论。",
-   "scene": "关注职业发展的程序员"
+   "note": "作者认为 LobeHub 在超级智能体方向上的实现很扎实，分享了对这类 AI 应用框架的使用评价。",
+   "scene": "关注 AI Agent 框架的开发者"
   },
   {
    "rank": 6,
-   "title": "OpenBSD top(1) adds flag to show chroot, pledge and unveil status",
-   "url": "https://undeadly.org/cgi?action=article;sid=20261106104957",
+   "title": "Libghostty 1.0",
+   "url": "https://mitchellh.com/writing/libghostty-1-0",
    "desc": "技术社区热帖",
-   "heat": "22 points · 1 comments · openbsd / security",
+   "heat": "162 points · 7 comments · c / release / zig",
    "source": "Lobsters",
    "board": "热榜",
    "category": "热门话题",
-   "note": "OpenBSD 的系统监控命令 top 新增参数，可直接查看进程的 chroot、pledge 和 unveil 状态，方便排查安全限制。",
-   "scene": "使用 OpenBSD 的系统管理员"
+   "note": "Libghostty 发布 1.0 版本，属于技术社区关注的开源项目动态，具体功能需看项目本身。",
+   "scene": "关注开源终端与系统工具的技术用户"
   },
   {
    "rank": 6,
-   "title": "卖软件这个事情在未来可能是伪命题了",
-   "url": "https://www.v2ex.com/t/1255327",
-   "desc": "刷到孟岩关于 AI 做软件开发的一个观点，随着 AI 能力的增强，未来人人都能通过嘴炮来做个 app 覆盖自己日常的需求，而不用等到大公司为了符合大多数人群而做的一个通用版本。这意味着，想通过做 app 来获得收益变得更难。 大家认可这个观点吗，产品经理，程序员，设计师这种软件开发领域上传统的角色，是否会慢慢消失？ 未来该是怎样的一个变化…",
-   "heat": "24 回复 · 程序员",
+   "title": "在 agent 时代，深度还是广度更重要？",
+   "url": "https://www.v2ex.com/t/1255253",
+   "desc": "指知识、经验与技能的深度与广度。以及，如果只能选一个的话，什么是最重要的领域？",
+   "heat": "30 回复 · 程序员",
    "source": "V2EX",
    "board": "热榜",
    "category": "热门话题",
-   "note": "有人提出AI普及后人人能靠嘴做App，卖软件可能不再成立，讨论传统开发岗位是否会被削弱。",
-   "scene": "程序员、产品经理与设计师"
+   "note": "讨论在 AI agent 普及的当下，人的知识该往深处钻还是往宽处铺，以及只能选一个时该押注什么领域。",
+   "scene": "思考职业方向的程序员与知识工作者"
   },
   {
    "rank": 6,
@@ -1630,15 +1620,15 @@
   },
   {
    "rank": 6,
-   "title": "PyVista plotting running slowly, resetting box size and causing collisions",
-   "url": "https://stackoverflow.com/questions/80015428/pyvista-plotting-running-slowly-resetting-box-size-and-causing-collisions",
-   "desc": "I managed to fix (hopefully) the rest of the issues with my MD simulation, but I just can't seem to get the hang of PyVista. I created this rough loop below and…",
-   "heat": "36 浏览 · 0 赞 · 1 回答",
+   "title": "How to make the transition for li not glitch out on hover",
+   "url": "https://stackoverflow.com/questions/80015435/how-to-make-the-transition-for-li-not-glitch-out-on-hover",
+   "desc": "I know it is because the hover is only for the , although I'm not really sure what would be the best way to increase the hover area without messing with the bac…",
+   "heat": "80 浏览 · -2 赞 · 1 回答",
    "source": "Stack Overflow",
    "board": "需求榜",
    "category": "项目需求",
-   "note": "PyVista 绘图循环跑得慢，还会重置包围盒导致碰撞，属于科学可视化性能与参数控制的调试问题。",
-   "scene": "做分子模拟可视化的科研人员"
+   "note": "鼠标悬停时列表项过渡动画出现闪烁，想扩大触发区域又不破坏原有背景效果。",
+   "scene": "做前端交互细节的网页开发者"
   },
   {
    "rank": 6,
@@ -1677,23 +1667,23 @@
    "scene": "上班摸鱼想搞点副业的打工人"
   },
   {
-   "rank": 7,
-   "title": "prometheus/prometheus",
-   "url": "https://github.com/prometheus/prometheus",
-   "desc": "The Prometheus monitoring system and time series database.",
-   "heat": "+322 today · 总计 67,502★ · Go",
+   "rank": 6,
+   "title": "meta/astryx",
+   "url": "https://github.com/meta/astryx",
+   "desc": "An open source design system that's fully customizable and agent ready",
+   "heat": "+96 today · 总计 14,809★ · TypeScript",
    "source": "GitHub",
    "board": "日榜",
    "category": "热门产品",
-   "note": "老牌开源监控系统与时序数据库，用来采集指标、观察服务运行状态。",
-   "scene": "负责运维和监控告警的工程师"
+   "note": "开源设计系统，强调可深度定制，并面向 AI 代理使用场景做了适配。",
+   "scene": "搭建产品界面、需要统一设计规范的前端团队"
   },
   {
    "rank": 7,
    "title": "burner22/numbat",
    "url": "https://huggingface.co/burner22/numbat",
    "desc": "AI 模型 · 模型",
-   "heat": "趋势 346 · 383 likes · 9.2k 下载 · safetensors / numbat / custom_code",
+   "heat": "趋势 345 · 383 likes · 10.2k 下载 · safetensors / numbat / custom_code",
    "source": "Hugging Face",
    "board": "热榜",
    "category": "热门产品",
@@ -1702,27 +1692,27 @@
   },
   {
    "rank": 7,
-   "title": "Show HN: Maple – Sub-2-BPW Moe Pruning to Run Gemma 4 26B at 45 TPS on a 6GB GPU",
-   "url": "https://github.com/AmSach/maple",
+   "title": "Show HN: LLM weight editing tool made by a 15-year-old",
+   "url": "https://github.com/Miyamoto-Renya/LaplacesScissors",
    "desc": "Show HN 新品首发",
-   "heat": "5 points · 1 comments",
+   "heat": "8 points · 0 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门产品",
-   "note": "通过剪枝压缩混合专家模型，让较大模型能在显存很小的显卡上跑出不错的生成速度。",
-   "scene": "显卡显存有限的本地模型玩家"
+   "note": "一个15岁开发者做的工具，能直接编辑大模型的权重参数，而不是靠微调重新训练，从标题看是想让模型调整变得更轻量。",
+   "scene": "想动手改模型行为、又不想跑完整训练流程的AI爱好者和独立开发者"
   },
   {
    "rank": 7,
-   "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
-   "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+   "title": "Asahi Linux Progress Linux 7.3",
+   "url": "https://asahilinux.org/2026/11/progress-report-7-3/",
    "desc": "Hacker News 首页",
-   "heat": "345 points · 231 comments",
+   "heat": "380 points · 329 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门话题",
-   "note": "Claude Code 的「不再询问」选项会把密码等信息写进公开的 GitHub 文件，已有上千个文件受影响，提醒开发者留意配置泄露。",
-   "scene": "使用 AI 编程工具的开发者"
+   "note": "Asahi Linux 是让 Linux 能在苹果自研芯片 Mac 上运行的项目，这次进展更新意味着这类设备装 Linux 的兼容性又往前走了一步。",
+   "scene": "关注 Linux 与苹果硬件兼容性的开发者"
   },
   {
    "rank": 7,
@@ -1798,75 +1788,75 @@
   },
   {
    "rank": 7,
-   "title": "陪看中超：蓉城封王还是黑马逆袭",
-   "url": "https://webcast-open.douyin.com/open/media_live/808207714751",
-   "desc": "new",
-   "heat": "热度 382万",
+   "title": "蓉城外援痛哭流涕",
+   "url": "https://www.toutiao.com/trending/7704831444702596643/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227704831444702596643%22%2C%22hot_board_impr_id%22%3A%2220261108180252766EF264A7C937C08C03%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E8%93%89%E5%9F%8E%E5%A4%96%E6%8F%B4%E7%97%9B%E5%93%AD%E6%B5%81%E6%B6%95%22%7D&rank=&style_id=40132&topic_id=7704831444702596643",
+   "desc": "hot",
+   "heat": "热度 403万",
    "source": "今日头条",
    "board": "热榜",
    "category": "热门话题",
-   "note": "中超焦点战蓉城能否封王还是黑马逆袭，牵动争冠格局，球迷关注比赛走向。",
-   "scene": "中超球迷与足球赛事观众"
+   "note": "成都蓉城的外援在错失冠军后情绪失控落泪，球员的失落反应成为赛后讨论的一部分。",
+   "scene": "关注中超球员状态的球迷"
   },
   {
    "rank": 7,
-   "title": "“战争之王”内塔尼亚胡被抛弃了",
-   "url": "https://m.baidu.com/s?word=%E2%80%9C%E6%88%98%E4%BA%89%E4%B9%8B%E7%8E%8B%E2%80%9D%E5%86%85%E5%A1%94%E5%B0%BC%E4%BA%9A%E8%83%A1%E8%A2%AB%E6%8A%9B%E5%BC%83%E4%BA%86&sa=fyb_news",
+   "title": "男子公寓坠亡 房东被判赔76万元",
+   "url": "https://m.baidu.com/s?word=%E7%94%B7%E5%AD%90%E5%85%AC%E5%AF%93%E5%9D%A0%E4%BA%A1+%E6%88%BF%E4%B8%9C%E8%A2%AB%E5%88%A4%E8%B5%9476%E4%B8%87%E5%85%83&sa=fyb_news",
    "desc": "百度热搜实时热点",
    "heat": "热搜第 7 名",
    "source": "百度热搜",
    "board": "热榜",
    "category": "热门话题",
-   "note": "热搜话题讨论以色列总理内塔尼亚胡的政治处境，涉及国际局势的解读性内容。",
-   "scene": "关注中东局势与国际新闻的读者"
+   "note": "一名男子在公寓坠亡，法院判定房东承担赔偿责任，判赔76万元，案件涉及出租房屋的安全责任划分。",
+   "scene": "关注租房安全与法律判例的读者"
   },
   {
    "rank": 7,
-   "title": "居里家族400年传奇：原来智商真的会遗传？",
-   "url": "https://www.bilibili.com/video/BV1iU4B6MEzT",
-   "desc": "洋哥在德国 · 家居房产",
-   "heat": "85万 播放 · 4.0万 点赞 · 985 评论",
+   "title": "出现在餐桌上的清明上河图",
+   "url": "https://www.bilibili.com/video/BV1so4E6cEGi",
+   "desc": "小馒头的面食面艺 · 美食制作",
+   "heat": "76万 播放 · 7.4万 点赞 · 715 评论",
    "source": "哔哩哔哩",
    "board": "热榜",
    "category": "热门话题",
-   "note": "从居里家族四百年经历聊智商是否遗传，属于科普向话题，对家族与天赋好奇的人会点开。",
-   "scene": "对科普与遗传话题感兴趣的读者"
+   "note": "有人用面食复刻出《清明上河图》的场景，把传统名画搬上餐桌，属于美食手工类的创意作品。",
+   "scene": "喜欢美食制作和手工创意的观众"
   },
   {
    "rank": 7,
-   "title": "LobeHub 是真的夯，简直 Super-Agent 最佳实现。",
-   "url": "https://juejin.cn/post/7704864028610773027",
+   "title": "没有写一行代码：我用 Codex 制作 了一个 3D 智慧展厅可视化大屏",
+   "url": "https://juejin.cn/post/7704594117820596260",
    "desc": "掘金技术热文",
-   "heat": "热度 198 · 297 阅读 · 7 赞",
+   "heat": "热度 198 · 404 阅读 · 2 赞",
    "source": "掘金",
    "board": "热榜",
    "category": "热门话题",
-   "note": "作者认为 LobeHub 在超级智能体方向上的实现很扎实，分享了对这类 AI 应用框架的使用评价。",
-   "scene": "关注 AI Agent 框架的开发者"
+   "note": "有人没写一行代码，用Codex做出3D智慧展厅可视化大屏，展示AI编程工具的实际产出能力。",
+   "scene": "关注AI编程工具的前端与全栈开发者"
   },
   {
    "rank": 7,
-   "title": "I’m not a fan of Deno’s security model (2024)",
-   "url": "https://goldstein.lol/posts/deno-security/",
+   "title": "Nspawn 3.0: A Docker-compatible Engine API for systemd-nspawn containers",
+   "url": "https://blog.nspawn.org/posts/nspawn-3-0-a-docker-compatible-engine-api-for-systemd-nspawn-containers/",
    "desc": "技术社区热帖",
-   "heat": "11 points · 1 comments · security",
+   "heat": "3 points · 2 comments · release",
    "source": "Lobsters",
    "board": "热榜",
    "category": "热门话题",
-   "note": "作者对 Deno 运行时的安全模型提出质疑，属于技术社区里关于权限与安全设计取舍的讨论。",
-   "scene": "关注 JavaScript 运行时与安全设计的开发者"
+   "note": "有开发者推出面向systemd-nspawn容器的引擎接口，兼容Docker用法，为容器管理提供另一种技术路径。",
+   "scene": "关注容器与系统运维技术的开发者"
   },
   {
    "rank": 7,
-   "title": "现在农村还有住草房窝棚的吗？",
-   "url": "https://www.v2ex.com/t/1255269",
-   "desc": "我东大都 top2 了，草房窝棚应该已经被消灭了吧？",
-   "heat": "21 回复 · 问与答",
+   "title": "倒霉呀，买官翻扫地机器人翻车了",
+   "url": "https://www.v2ex.com/t/1255303",
+   "desc": "之前至少有 3 个 身边的人买官翻都没啥问题，官翻也确实便宜。 型号是追觅 s30pro ，型号有点老，想着应该是库存机什么的，借着官翻卖低价。真想多了，买来还没用一次就发现清洁液的那个盒子漏水，这个型号所有盒子都是一体的没办法卸下来看看情况，反正不是下水口那个地方漏的，应该就是别人退货的机器，根本没做检测和维修，直接放出来卖的。 关键买…",
+   "heat": "23 回复 · 生活",
    "source": "V2EX",
    "board": "热榜",
    "category": "热门话题",
-   "note": "有人发问农村是否还有草房窝棚，触及城乡差距和农村居住现状，引发对基层实情的讨论。",
-   "scene": "关注农村现状与城乡差距的网友"
+   "note": "有人买官翻扫地机器人遇到漏水，怀疑是退货机未检测就出售，提醒关注官翻商品的质检问题。",
+   "scene": "考虑购买官翻家电的消费者"
   },
   {
    "rank": 7,
@@ -1882,22 +1872,22 @@
   },
   {
    "rank": 7,
-   "title": "GCC and EDG rejects valid program involving calling a function template with empty braces",
-   "url": "https://stackoverflow.com/questions/80015377/gcc-and-edg-rejects-valid-program-involving-calling-a-function-template-with-emp",
-   "desc": "The following program valid program(afaik) is rejected by both gcc and edg but accepted by clang and msvc. Demo . template void f1(const int (&)[N]) {} int main…",
-   "heat": "116 浏览 · 3 赞 · 2 回答",
+   "title": "Java.lang.RuntimeException and Maxent",
+   "url": "https://stackoverflow.com/questions/80015439/java-lang-runtimeexception-and-maxent",
+   "desc": "I am trying to run Maxent with all 19 Bioclim layers. I have the csv file of locations and I have clipped the Bioclim layers to the relevant area. I have conver…",
+   "heat": "45 浏览 · -4 赞 · 0 回答",
    "source": "Stack Overflow",
    "board": "需求榜",
    "category": "项目需求",
-   "note": "一段涉及空花括号调用函数模板的代码，GCC 和 EDG 拒绝编译而 Clang 和 MSVC 接受，需要判断谁对谁错。",
-   "scene": "写跨编译器 C++ 模板代码的开发者"
+   "note": "用全部气候图层跑 Maxent 时抛出运行时异常，需要定位是数据、内存还是配置问题。",
+   "scene": "做物种分布建模的研究者"
   },
   {
    "rank": 7,
    "title": "AI Photo Editor",
    "url": "https://w2solo.com/topics/8687",
    "desc": "我的作品 · 作者 CoderLim",
-   "heat": "27 浏览 · 新作品",
+   "heat": "28 浏览 · 新作品",
    "source": "w2solo",
    "board": "作品榜",
    "category": "热门产品",
@@ -1909,7 +1899,7 @@
    "title": "一张照片，12 秒，一扇亮着的窗：给「Window Dance」这个 TikTok 趋势做了个生成器",
    "url": "https://w2solo.com/topics/8669",
    "desc": "产品手记 · 作者 Tiny Desk AI",
-   "heat": "62 浏览 · 1 回复 · 社区热议",
+   "heat": "63 浏览 · 1 回复 · 社区热议",
    "source": "w2solo",
    "board": "热榜",
    "category": "热门话题",
@@ -1929,23 +1919,23 @@
    "scene": "需要美化二维码的商家和运营人员"
   },
   {
-   "rank": 8,
-   "title": "sherlock-project/sherlock",
-   "url": "https://github.com/sherlock-project/sherlock",
-   "desc": "Hunt down social media accounts by username across social networks",
-   "heat": "+1766 today · 总计 101,210★ · Python",
+   "rank": 7,
+   "title": "prometheus/prometheus",
+   "url": "https://github.com/prometheus/prometheus",
+   "desc": "The Prometheus monitoring system and time series database.",
+   "heat": "+322 today · 总计 67,502★ · Go",
    "source": "GitHub",
    "board": "日榜",
    "category": "热门产品",
-   "note": "输入一个用户名，就能在多个社交平台上批量查找对应账号，省去一个个平台手动搜索的麻烦。",
-   "scene": "做账号排查或背景调查的人"
+   "note": "老牌开源监控系统与时序数据库，用来采集指标、观察服务运行状态。",
+   "scene": "负责运维和监控告警的工程师"
   },
   {
    "rank": 8,
    "title": "FusionCow/Sulphur-3",
    "url": "https://huggingface.co/FusionCow/Sulphur-3",
    "desc": "AI 模型 · 模型",
-   "heat": "趋势 342 · 407 likes · 997 下载 · minimax-h3",
+   "heat": "趋势 343 · 408 likes · 1.0k 下载 · minimax-h3",
    "source": "Hugging Face",
    "board": "热榜",
    "category": "热门产品",
@@ -1954,22 +1944,22 @@
   },
   {
    "rank": 8,
-   "title": "Show HN: We made a new theme to increase engagement on our website",
-   "url": "https://zenmemes.com/threads/thread-20261107173646-27caa60f/",
-   "desc": "Backstory: We run an old-internet-style website called ZenMemes. Recently, end-user testing has shown that many users find this site disorienting, because there is no coo…",
-   "heat": "5 points · 4 comments",
+   "title": "Show HN: An online shop where your friends can hurry the courier",
+   "url": "https://www.dopaminechic.com/",
+   "desc": "I built an emulator of a flash-sale fashion outlet with no registration and fake checkout that never takes money. You can browse items that are on sale, watch in real tim…",
+   "heat": "6 points · 3 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门产品",
-   "note": "作者给自家老互联网风格网站做了新主题，起因是用户觉得原站缺少引导、容易迷路。",
-   "scene": "关注网站设计与用户留存的独立开发者"
+   "note": "一个模拟限时抢购的假网店，不用注册、结账是假的也不收钱，朋友还能催单，纯属娱乐。",
+   "scene": "想和朋友玩购物模拟、图个乐的人"
   },
   {
    "rank": 8,
    "title": "Every Windows 11 app should kill Electron, and Discord just showed why",
    "url": "https://www.windowslatest.com/2026/11/06/every-windows-11-app-should-kill-electron-and-discord-just-showed-why-no-starting-screen-and-70-less-ram-even-with-two-accounts-signed-in/",
    "desc": "Hacker News 首页",
-   "heat": "297 points · 259 comments",
+   "heat": "325 points · 300 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门话题",
@@ -2014,15 +2004,15 @@
   },
   {
    "rank": 8,
-   "title": "芒果TV",
-   "url": "https://apps.apple.com/cn/app/%E8%8A%92%E6%9E%9Ctv/id629774477",
-   "desc": "快乐阳光",
+   "title": "云闪付-银行业统一移动支付App",
+   "url": "https://apps.apple.com/cn/app/%E4%BA%91%E9%97%AA%E4%BB%98-%E9%93%B6%E8%A1%8C%E4%B8%9A%E7%BB%9F%E4%B8%80%E7%A7%BB%E5%8A%A8%E6%94%AF%E4%BB%98app/id600273928",
+   "desc": "中国银联",
    "heat": "免费榜 第 8 名",
    "source": "App Store",
    "board": "免费榜（中国）",
    "category": "热门产品",
-   "note": "芒果TV 官方客户端，提供综艺、剧集等视频内容，支持在线观看和会员服务。",
-   "scene": "追综艺和国产剧的观众"
+   "note": "中国银联推出的银行业统一移动支付应用，把多家银行卡和支付功能集中管理，用于扫码付款、转账等日常操作。和单一银行App比，它覆盖多家银行。",
+   "scene": "持有多张银行卡、需要统一管理支付和账单的用户"
   },
   {
    "rank": 8,
@@ -2050,75 +2040,75 @@
   },
   {
    "rank": 8,
-   "title": "男子被裁后成功追缴社保17万",
-   "url": "https://www.toutiao.com/trending/7705625637112889882/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2215%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227705625637112889882%22%2C%22hot_board_impr_id%22%3A%22202611081556561A34F220C198CDDBD114%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%94%B7%E5%AD%90%E8%A2%AB%E8%A3%81%E5%90%8E%E6%88%90%E5%8A%9F%E8%BF%BD%E7%BC%B4%E7%A4%BE%E4%BF%9D17%E4%B8%87%22%7D&rank=&style_id=40132&topic_id=7705625637112889882",
-   "desc": "今日头条热榜事件",
-   "heat": "热度 346万",
+   "title": "杨瀚森给裁判秀单手抓球",
+   "url": "https://www.toutiao.com/trending/7704815886804353066/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227704815886804353066%22%2C%22hot_board_impr_id%22%3A%2220261108180252766EF264A7C937C08C03%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%9D%A8%E7%80%9A%E6%A3%AE%E7%BB%99%E8%A3%81%E5%88%A4%E7%A7%80%E5%8D%95%E6%89%8B%E6%8A%93%E7%90%83%22%7D&rank=&style_id=40132&topic_id=7704815886804353066",
+   "desc": "new",
+   "heat": "热度 364万",
    "source": "今日头条",
    "board": "热榜",
    "category": "热门话题",
-   "note": "一名男子被裁员后通过法律途径成功追缴社保约 17 万元，涉及劳动者社保权益的维权路径。",
-   "scene": "关注劳动权益与社保纠纷的职场人"
+   "note": "杨瀚森在比赛中向裁判展示单手抓球，这一细节被镜头捕捉，成为赛场外的轻松话题。",
+   "scene": "关注篮球赛事和球员动态的球迷"
   },
   {
    "rank": 8,
-   "title": "陪看中超收官战",
-   "url": "https://m.baidu.com/s?word=%E9%99%AA%E7%9C%8B%E4%B8%AD%E8%B6%85%E6%94%B6%E5%AE%98%E6%88%98&sa=fyb_news",
-   "desc": "百度热搜 · 直播中 / 新上榜",
+   "title": "成都蓉城 史诗级掉链子",
+   "url": "https://m.baidu.com/s?word=%E6%88%90%E9%83%BD%E8%93%89%E5%9F%8E+%E5%8F%B2%E8%AF%97%E7%BA%A7%E6%8E%89%E9%93%BE%E5%AD%90&sa=fyb_news",
+   "desc": "百度热搜 · 新上榜",
    "heat": "热搜第 8 名",
    "source": "百度热搜",
    "board": "热榜",
    "category": "热门话题",
-   "note": "中超收官战直播，赛季排名和保级悬念集中揭晓，球迷会蹲守结果。",
-   "scene": "中超球迷与体育直播观众"
+   "note": "成都蓉城在争冠关键节点连续失手，被网友形容为史诗级掉链子，相关讨论在热搜上快速聚集。",
+   "scene": "关注中超争冠话题的网友"
   },
   {
    "rank": 8,
-   "title": "农村大片! 大战外星人! 好莱坞都不敢这么拍",
-   "url": "https://www.bilibili.com/video/BV11S4z6xEpc",
-   "desc": "神奇的老皮 · 日常",
-   "heat": "138万 播放 · 9.4万 点赞 · 1357 评论",
+   "title": "《鸣潮》共鸣者战斗演示 | 莉莉",
+   "url": "https://www.bilibili.com/video/BV1xK4x6EETN",
+   "desc": "鸣潮 · 手机游戏",
+   "heat": "66万 播放 · 3.3万 点赞 · 4119 评论",
    "source": "哔哩哔哩",
    "board": "热榜",
    "category": "热门话题",
-   "note": "创作者用农村场景拍了一部对抗外星人的短片，靠土味特效和脑洞制造反差喜感。",
-   "scene": "喜欢搞笑创意短片的观众"
+   "note": "手游鸣潮公布新共鸣者莉莉的战斗演示，面向玩家展示角色技能，是版本更新的预热内容。",
+   "scene": "鸣潮玩家与二次元手游爱好者"
   },
   {
    "rank": 8,
-   "title": "没有写一行代码：我用 Codex 制作 了一个 3D 智慧展厅可视化大屏",
-   "url": "https://juejin.cn/post/7704594117820596260",
+   "title": "Flutter 双端热更新新方案：基于 Dart 官方动态模块的 flutter_patcher 1.0.0",
+   "url": "https://juejin.cn/post/7704594117821693988",
    "desc": "掘金技术热文",
-   "heat": "热度 180 · 385 阅读 · 1 赞",
+   "heat": "热度 189 · 244 阅读 · 9 赞",
    "source": "掘金",
    "board": "热榜",
    "category": "热门话题",
-   "note": "有人没写一行代码，用Codex做出3D智慧展厅可视化大屏，展示AI编程工具的实际产出能力。",
-   "scene": "关注AI编程工具的前端与全栈开发者"
+   "note": "基于 Dart 官方动态模块的 flutter_patcher 发布 1.0.0，给 Flutter 双端热更新提供了一条新思路。",
+   "scene": "研究 Flutter 热更新方案的移动端开发者"
   },
   {
    "rank": 8,
-   "title": "Progress Report: Linux 7.3 - Asahi Linux",
-   "url": "https://asahilinux.org/2026/11/progress-report-7-3/",
+   "title": "Scriptable GeoDNS: leaving AWS for Bunny",
+   "url": "https://vincent.bernat.ch/en/blog/2026-bunny-geodns",
    "desc": "技术社区热帖",
-   "heat": "52 points · 7 comments · linux / mac",
+   "heat": "25 points · 11 comments · performance / web",
    "source": "Lobsters",
    "board": "热榜",
    "category": "热门话题",
-   "note": "Asahi Linux 团队公布 Linux 7.3 适配进展，苹果芯片上跑 Linux 的兼容性又往前推了一步，用 Mac 装 Linux 的人值得留意。",
-   "scene": "关注苹果芯片 Linux 适配的开源开发者"
+   "note": "分享用可脚本化的 GeoDNS 方案从 AWS 迁移到 Bunny 的经历，涉及 DNS 与成本取舍。",
+   "scene": "负责基础设施与 DNS 架构的运维工程师"
   },
   {
    "rank": 8,
-   "title": "一加手机这个来电震动太弱鸡了，安卓阵营有比肩苹果的吗？",
-   "url": "https://www.v2ex.com/t/1255234",
-   "desc": "V2EX 热门讨论",
-   "heat": "19 回复 · Android",
+   "title": "现在农村还有住草房窝棚的吗？",
+   "url": "https://www.v2ex.com/t/1255269",
+   "desc": "我东大都 top2 了，草房窝棚应该已经被消灭了吧？",
+   "heat": "22 回复 · 问与答",
    "source": "V2EX",
    "board": "热榜",
    "category": "热门话题",
-   "note": "用户吐槽一加手机来电震动太弱，顺带问安卓里有没有比肩苹果的，是手机体验的日常讨论。",
-   "scene": "安卓手机用户与数码爱好者"
+   "note": "有人发问农村是否还有草房窝棚，触及城乡差距和农村居住现状，引发对基层实情的讨论。",
+   "scene": "关注农村现状与城乡差距的网友"
   },
   {
    "rank": 8,
@@ -2134,22 +2124,22 @@
   },
   {
    "rank": 8,
-   "title": "How to resolve odd escape behavior with strings in DuckDB Lisp Binding (uses PostgreSQL parser)",
-   "url": "https://stackoverflow.com/questions/80015427/how-to-resolve-odd-escape-behavior-with-strings-in-duckdb-lisp-binding-uses-pos",
-   "desc": "Would love your thoughts on the following: I am using DuckDB in my program (Common Lisp, with the CFFI interface to the C DuckDB binding), and want to execute t…",
-   "heat": "21 浏览 · 0 赞 · 1 回答",
+   "title": "Build a static dispatch table of non-static methods in C#",
+   "url": "https://stackoverflow.com/questions/80015429/build-a-static-dispatch-table-of-non-static-methods-in-c",
+   "desc": "In C#, I have the following methods: private async Task FooHandleEventAsync(Client client, EventArgs args) { // ... } private async Task BarHandleEventAsync(Cli…",
+   "heat": "124 浏览 · 3 赞 · 1 回答",
    "source": "Stack Overflow",
    "board": "需求榜",
    "category": "项目需求",
-   "note": "DuckDB 的 Lisp 绑定经 PostgreSQL 解析器处理字符串时转义行为异常，想弄清原因并正确执行查询。",
-   "scene": "用 Lisp 接数据库的开发者"
+   "note": "在 C# 里为多个非静态异步方法构建静态分发表，想找到既能统一调度又不破坏实例状态的实现方式。",
+   "scene": "写 C# 事件处理的开发者"
   },
   {
    "rank": 8,
    "title": "Openbroca",
    "url": "https://w2solo.com/topics/8644",
    "desc": "我的作品 · 作者 Timothy Lau",
-   "heat": "112 浏览 · 4 回复 · 1 赞 · 新作品",
+   "heat": "113 浏览 · 4 回复 · 1 赞 · 新作品",
    "source": "w2solo",
    "board": "作品榜",
    "category": "热门产品",
@@ -2161,7 +2151,7 @@
    "title": "几个挺有意思的网页小测试：测反应、练瞄准、挑战注意力",
    "url": "https://w2solo.com/topics/8661",
    "desc": "聊天讨论 · 作者 Funny",
-   "heat": "61 浏览 · 1 回复 · 社区热议",
+   "heat": "62 浏览 · 1 回复 · 社区热议",
    "source": "w2solo",
    "board": "热榜",
    "category": "热门话题",
@@ -2181,23 +2171,23 @@
    "scene": "需要快速出证件照的求职者和学生"
   },
   {
-   "rank": 9,
-   "title": "milind-soni/OpenMausBot",
-   "url": "https://github.com/milind-soni/OpenMausBot",
-   "desc": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-   "heat": "+1955 today · 总计 17,387★ · TypeScript",
+   "rank": 8,
+   "title": "sherlock-project/sherlock",
+   "url": "https://github.com/sherlock-project/sherlock",
+   "desc": "Hunt down social media accounts by username across social networks",
+   "heat": "+1766 today · 总计 101,210★ · Python",
    "source": "GitHub",
    "board": "日榜",
    "category": "热门产品",
-   "note": "开源的机器人项目，给机器人配了一台可操作的虚拟机，思路类似 Grok Bot 的替代方案。",
-   "scene": "想自建自动化机器人的开发者"
+   "note": "输入一个用户名，就能在多个社交平台上批量查找对应账号，省去一个个平台手动搜索的麻烦。",
+   "scene": "做账号排查或背景调查的人"
   },
   {
    "rank": 9,
    "title": "Qwen/Qwen3.8-27B",
    "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
    "desc": "AI 模型 · image-text-to-text",
-   "heat": "趋势 310 · 19.4k likes · 7.8m 下载 · transformers / safetensors / qwen3_5",
+   "heat": "趋势 311 · 19.4k likes · 7.7m 下载 · transformers / safetensors / qwen3_5",
    "source": "Hugging Face",
    "board": "热榜",
    "category": "热门产品",
@@ -2206,22 +2196,22 @@
   },
   {
    "rank": 9,
-   "title": "Show HN: I made a guardrail against AI outreach slop (API/MCP)",
-   "url": "https://maildignity.com/",
-   "desc": "Show HN 新品首发",
-   "heat": "5 points · 0 comments",
+   "title": "Show HN: We made a new theme to increase engagement on our website",
+   "url": "https://zenmemes.com/threads/thread-20261107173646-27caa60f/",
+   "desc": "Backstory: We run an old-internet-style website called ZenMemes. Recently, end-user testing has shown that many users find this site disorienting, because there is no coo…",
+   "heat": "5 points · 4 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门产品",
-   "note": "针对 AI 群发骚扰信息做的拦截工具，以接口形式提供，帮产品挡住机器生成的垃圾外联内容。",
-   "scene": "被 AI 营销邮件轰炸的产品团队"
+   "note": "作者给自家老互联网风格网站做了新主题，起因是用户觉得原站缺少引导、容易迷路。",
+   "scene": "关注网站设计与用户留存的独立开发者"
   },
   {
    "rank": 9,
    "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
    "url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
    "desc": "Hacker News 首页",
-   "heat": "285 points · 78 comments",
+   "heat": "309 points · 83 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门话题",
@@ -2302,46 +2292,46 @@
   },
   {
    "rank": 9,
-   "title": "中国球员NBA常规赛两双仅3人",
-   "url": "https://www.toutiao.com/trending/7704884584676491283/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227704884584676491283%22%2C%22hot_board_impr_id%22%3A%22202611081556561A34F220C198CDDBD114%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E5%9B%BD%E7%90%83%E5%91%98NBA%E5%B8%B8%E8%A7%84%E8%B5%9B%E4%B8%A4%E5%8F%8C%E4%BB%853%E4%BA%BA%22%7D&rank=&style_id=40132&topic_id=7704884584676491283",
-   "desc": "hot",
-   "heat": "热度 313万",
+   "title": "河北秦皇岛暴雪致多趟列车停运晚点",
+   "url": "https://www.toutiao.com/trending/7705720482535837226/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%225%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227705720482535837226%22%2C%22hot_board_impr_id%22%3A%2220261108180252766EF264A7C937C08C03%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%B2%B3%E5%8C%97%E7%A7%A6%E7%9A%87%E5%B2%9B%E6%9A%B4%E9%9B%AA%E8%87%B4%E5%A4%9A%E8%B6%9F%E5%88%97%E8%BD%A6%E5%81%9C%E8%BF%90%E6%99%9A%E7%82%B9%22%7D&rank=&style_id=40132&topic_id=7705720482535837226",
+   "desc": "new",
+   "heat": "热度 330万",
    "source": "今日头条",
    "board": "热榜",
    "category": "热门话题",
-   "note": "盘点中国球员NBA常规赛拿两双的仅3人，用数据回看中国球员在NBA的表现。",
-   "scene": "关注中国球员与NBA的篮球迷"
+   "note": "河北秦皇岛遭遇暴雪，多趟列车出现停运和晚点，出行受影响，旅客需留意铁路部门的最新通知。",
+   "scene": "关注天气与出行信息的旅客"
   },
   {
    "rank": 9,
-   "title": "中国顶级豪车亮相 镶137颗宝石",
-   "url": "https://m.baidu.com/s?word=%E4%B8%AD%E5%9B%BD%E9%A1%B6%E7%BA%A7%E8%B1%AA%E8%BD%A6%E4%BA%AE%E7%9B%B8+%E9%95%B6137%E9%A2%97%E5%AE%9D%E7%9F%B3&sa=fyb_news",
-   "desc": "百度热搜实时热点",
+   "title": "大麦哥涨粉超700万 一条视频报价12万",
+   "url": "https://m.baidu.com/s?word=%E5%A4%A7%E9%BA%A6%E5%93%A5%E6%B6%A8%E7%B2%89%E8%B6%85700%E4%B8%87+%E4%B8%80%E6%9D%A1%E8%A7%86%E9%A2%91%E6%8A%A5%E4%BB%B712%E4%B8%87&sa=fyb_news",
+   "desc": "百度热搜 · 热度飙升",
    "heat": "热搜第 9 名",
    "source": "百度热搜",
    "board": "热榜",
    "category": "热门话题",
-   "note": "一款镶137颗宝石的国产顶级豪车亮相，主打奢华定位，关注国产高端车的人会讨论。",
-   "scene": "关注国产豪车与汽车市场的消费者"
+   "note": "被称为大麦哥的博主粉丝增长超过700万，单条视频报价达12万，反映出短视频账号商业价值的快速攀升。",
+   "scene": "关注短视频变现的创作者和营销从业者"
   },
   {
    "rank": 9,
-   "title": "《鸣潮》共鸣者战斗演示 | 莉莉",
-   "url": "https://www.bilibili.com/video/BV1xK4x6EETN",
-   "desc": "鸣潮 · 手机游戏",
-   "heat": "46万 播放 · 2.5万 点赞 · 3238 评论",
+   "title": "农村大片! 大战外星人! 好莱坞都不敢这么拍",
+   "url": "https://www.bilibili.com/video/BV11S4z6xEpc",
+   "desc": "神奇的老皮 · 日常",
+   "heat": "156万 播放 · 10万 点赞 · 1493 评论",
    "source": "哔哩哔哩",
    "board": "热榜",
    "category": "热门话题",
-   "note": "手游鸣潮公布新共鸣者莉莉的战斗演示，面向玩家展示角色技能，是版本更新的预热内容。",
-   "scene": "鸣潮玩家与二次元手游爱好者"
+   "note": "创作者用农村场景拍了一部对抗外星人的短片，靠土味特效和脑洞制造反差喜感。",
+   "scene": "喜欢搞笑创意短片的观众"
   },
   {
    "rank": 9,
    "title": "Flutter Impeller Vulkan 内存持续上涨，问题没想到是文字阴影",
    "url": "https://juejin.cn/post/7704580987242872847",
    "desc": "掘金技术热文",
-   "heat": "热度 180 · 323 阅读 · 3 赞",
+   "heat": "热度 180 · 329 阅读 · 3 赞",
    "source": "掘金",
    "board": "热榜",
    "category": "热门话题",
@@ -2350,39 +2340,39 @@
   },
   {
    "rank": 9,
-   "title": "Dear Open Source Developers: It's OK not to embargo",
-   "url": "https://opensourcesecurity.io/2026/10-embargo/",
+   "title": "OpenBSD top(1) adds flag to show chroot, pledge and unveil status",
+   "url": "https://undeadly.org/cgi?action=article;sid=20261106104957",
    "desc": "技术社区热帖",
-   "heat": "9 points · 1 comments · security",
+   "heat": "22 points · 1 comments · openbsd / security",
    "source": "Lobsters",
    "board": "热榜",
    "category": "热门话题",
-   "note": "有开发者主张开源项目不必对安全漏洞强行禁言，讨论披露节奏与用户知情权之间的取舍。",
-   "scene": "关注开源安全披露流程的开发者"
+   "note": "OpenBSD 的系统监控命令 top 新增参数，可直接查看进程的 chroot、pledge 和 unveil 状态，方便排查安全限制。",
+   "scene": "使用 OpenBSD 的系统管理员"
   },
   {
    "rank": 9,
-   "title": "倒霉呀，买官翻扫地机器人翻车了",
-   "url": "https://www.v2ex.com/t/1255303",
-   "desc": "之前至少有 3 个 身边的人买官翻都没啥问题，官翻也确实便宜。 型号是追觅 s30pro ，型号有点老，想着应该是库存机什么的，借着官翻卖低价。真想多了，买来还没用一次就发现清洁液的那个盒子漏水，这个型号所有盒子都是一体的没办法卸下来看看情况，反正不是下水口那个地方漏的，应该就是别人退货的机器，根本没做检测和维修，直接放出来卖的。 关键买…",
-   "heat": "19 回复 · 生活",
+   "title": "FinalShell 开源了？类 FinalShell 的 SSH 客户端 —— FinallyShell",
+   "url": "https://www.v2ex.com/t/1255296",
+   "desc": "相信这里很多人都用过 FinalShell ，我自己也很喜欢，一直觉得它是最顺手的 ssh 工具。不过现在是 2026 年了，客户端还是 Java 写的，Mac 上的体验也一直挺差... 趁周末 token 重置之前，我用 Opus 5.5 神力对着 FinalShell 复刻了一个出来，换了 go 来写，UI 用的是最近中文推上挺火的…",
+   "heat": "20 回复 · 分享创造",
    "source": "V2EX",
    "board": "热榜",
    "category": "热门话题",
-   "note": "有人买官翻扫地机器人遇到漏水，怀疑是退货机未检测就出售，提醒关注官翻商品的质检问题。",
-   "scene": "考虑购买官翻家电的消费者"
+   "note": "有开发者用Go语言复刻了SSH客户端FinalShell，并尝试开源，起因是原工具在Mac上的体验不佳。",
+   "scene": "常用SSH工具的运维和开发人员"
   },
   {
    "rank": 9,
-   "title": "Kaspersky klhk.sys - How to get file?",
-   "url": "https://stackoverflow.com/questions/80015423/kaspersky-klhk-sys-how-to-get-file",
-   "desc": "I am trying to locate the Kaspersky driver file `klhk.sys` inside my drivers folder (`C:\\Windows\\System32\\drivers`) on Windows 11, but the file is missing. I do…",
-   "heat": "40 浏览 · -5 赞 · 0 回答",
+   "title": "PyVista plotting running slowly, resetting box size and causing collisions",
+   "url": "https://stackoverflow.com/questions/80015428/pyvista-plotting-running-slowly-resetting-box-size-and-causing-collisions",
+   "desc": "I managed to fix (hopefully) the rest of the issues with my MD simulation, but I just can't seem to get the hang of PyVista. I created this rough loop below and…",
+   "heat": "51 浏览 · 0 赞 · 1 回答",
    "source": "Stack Overflow",
    "board": "需求榜",
    "category": "项目需求",
-   "note": "在 Windows 驱动目录找不到卡巴斯基的 klhk.sys 文件，想定位或获取该驱动，属于系统排查问题。",
-   "scene": "排查系统驱动的用户"
+   "note": "PyVista 绘图循环跑得慢，还会重置包围盒导致碰撞，属于科学可视化性能与参数控制的调试问题。",
+   "scene": "做分子模拟可视化的科研人员"
   },
   {
    "rank": 9,
@@ -2421,23 +2411,23 @@
    "scene": "找外包活干的开发者"
   },
   {
-   "rank": 10,
-   "title": "astral-sh/ruff",
-   "url": "https://github.com/astral-sh/ruff",
-   "desc": "An extremely fast Python linter and code formatter, written in Rust.",
-   "heat": "+350 today · 总计 51,045★ · Rust",
+   "rank": 9,
+   "title": "milind-soni/OpenMausBot",
+   "url": "https://github.com/milind-soni/OpenMausBot",
+   "desc": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+   "heat": "+1955 today · 总计 17,387★ · TypeScript",
    "source": "GitHub",
    "board": "日榜",
    "category": "热门产品",
-   "note": "用 Rust 写的 Python 代码检查和格式化工具，主打速度极快。",
-   "scene": "写 Python 的开发者"
+   "note": "开源的机器人项目，给机器人配了一台可操作的虚拟机，思路类似 Grok Bot 的替代方案。",
+   "scene": "想自建自动化机器人的开发者"
   },
   {
    "rank": 10,
    "title": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
    "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
    "desc": "AI 模型 · image-text-to-text",
-   "heat": "趋势 295 · 2.7k likes · 1.5m 下载 · gguf / unsloth / fine tune",
+   "heat": "趋势 295 · 2.7k likes · 1.6m 下载 · gguf / unsloth / fine tune",
    "source": "Hugging Face",
    "board": "热榜",
    "category": "热门产品",
@@ -2446,27 +2436,27 @@
   },
   {
    "rank": 10,
-   "title": "Show HN: I'm 15 and my personal website looks like iMessage",
-   "url": "https://apanda.dev/",
-   "desc": "Hi HN! I'm Adi, I'm 15, and I live in Arizona. I made this website: https://apanda.dev/ . I'm looking for feedback on how to make it better. Harsh feedback welcome :)",
-   "heat": "4 points · 2 comments",
+   "title": "Show HN: I made a guardrail against AI outreach slop (API/MCP)",
+   "url": "https://maildignity.com/",
+   "desc": "Show HN 新品首发",
+   "heat": "5 points · 0 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门产品",
-   "note": "一个15岁美国少年做的个人网站，界面模仿苹果iMessage的聊天样式，他在论坛发帖求改进建议。和常见个人主页比，它把自我介绍做成了对话形式。",
-   "scene": "想参考创意个人主页做法的前端学习者和独立开发者"
+   "note": "针对 AI 群发骚扰信息做的拦截工具，以接口形式提供，帮产品挡住机器生成的垃圾外联内容。",
+   "scene": "被 AI 营销邮件轰炸的产品团队"
   },
   {
    "rank": 10,
-   "title": "Running a law firm on Free software",
-   "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/",
+   "title": "Goodbye Claude, Hello Pi",
+   "url": "https://caleb.software/posts/claude-to-pi.html",
    "desc": "Hacker News 首页",
-   "heat": "264 points · 126 comments",
+   "heat": "303 points · 175 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门话题",
-   "note": "有人分享用自由软件撑起一家律所的实践，说明开源工具在专业办公场景也能跑通。",
-   "scene": "关注开源软件办公落地的技术人"
+   "note": "技术社区出现一篇告别Claude、转向Pi的文章，从标题看是作者对AI工具选择的个人转向记录。",
+   "scene": "关注AI编程工具动态的开发者"
   },
   {
    "rank": 10,
@@ -2485,7 +2475,7 @@
    "title": "Toby: Tab Manager & Session Saver",
    "url": "https://chromewebstore.google.com/detail/toby-tab-manager-session/hddnkoipeenegfoeaoibdmnaalmgkpip",
    "desc": "Too many tabs? Save them in one click, organize them into collections, and restore any session later, on any device.",
-   "heat": "30万 用户 · ★3.6",
+   "heat": "★3.6",
    "source": "Chrome 应用商店",
    "board": "热榜",
    "category": "热门产品",
@@ -2506,15 +2496,15 @@
   },
   {
    "rank": 10,
-   "title": "云闪付-银行业统一移动支付App",
-   "url": "https://apps.apple.com/cn/app/%E4%BA%91%E9%97%AA%E4%BB%98-%E9%93%B6%E8%A1%8C%E4%B8%9A%E7%BB%9F%E4%B8%80%E7%A7%BB%E5%8A%A8%E6%94%AF%E4%BB%98app/id600273928",
-   "desc": "中国银联",
+   "title": "芒果TV",
+   "url": "https://apps.apple.com/cn/app/%E8%8A%92%E6%9E%9Ctv/id629774477",
+   "desc": "快乐阳光",
    "heat": "免费榜 第 10 名",
    "source": "App Store",
    "board": "免费榜（中国）",
    "category": "热门产品",
-   "note": "中国银联推出的银行业统一移动支付应用，把多家银行卡和支付功能集中管理，用于扫码付款、转账等日常操作。和单一银行App比，它覆盖多家银行。",
-   "scene": "持有多张银行卡、需要统一管理支付和账单的用户"
+   "note": "芒果TV 官方客户端，提供综艺、剧集等视频内容，支持在线观看和会员服务。",
+   "scene": "追综艺和国产剧的观众"
   },
   {
    "rank": 10,
@@ -2542,34 +2532,34 @@
   },
   {
    "rank": 10,
-   "title": "方程豹钛9车型月底上市",
-   "url": "https://www.toutiao.com/trending/7704879172175134730/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227704879172175134730%22%2C%22hot_board_impr_id%22%3A%22202611081556561A34F220C198CDDBD114%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%96%B9%E7%A8%8B%E8%B1%B9%E9%92%9B9%E8%BD%A6%E5%9E%8B%E6%9C%88%E5%BA%95%E4%B8%8A%E5%B8%82%22%7D&rank=&style_id=40132&topic_id=7704879172175134730",
+   "title": "大三男生做AI漫剧营收超300万",
+   "url": "https://www.toutiao.com/trending/7705633703178879514/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2215%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227705633703178879514%22%2C%22hot_board_impr_id%22%3A%2220261108180252766EF264A7C937C08C03%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%A4%A7%E4%B8%89%E7%94%B7%E7%94%9F%E5%81%9AAI%E6%BC%AB%E5%89%A7%E8%90%A5%E6%94%B6%E8%B6%85300%E4%B8%87%22%7D&rank=&style_id=40132&topic_id=7705633703178879514",
    "desc": "今日头条热榜事件",
-   "heat": "热度 283万",
+   "heat": "热度 298万",
    "source": "今日头条",
    "board": "热榜",
    "category": "热门话题",
-   "note": "方程豹钛9车型定于月底上市，是比亚迪旗下品牌的新车动作，关注新能源越野车的人会留意。",
-   "scene": "关注新能源车型的购车人群"
+   "note": "一名大三学生用AI制作漫剧，营收超过300万，说明AI内容生产已能变现，关注副业和内容创业的年轻人会感兴趣。",
+   "scene": "关注AI内容创业的年轻人"
   },
   {
    "rank": 10,
-   "title": "12分10篮板！杨瀚森NBA生涯首次两双",
-   "url": "https://m.baidu.com/s?word=12%E5%88%8610%E7%AF%AE%E6%9D%BF%EF%BC%81%E6%9D%A8%E7%80%9A%E6%A3%AENBA%E7%94%9F%E6%B6%AF%E9%A6%96%E6%AC%A1%E4%B8%A4%E5%8F%8C&sa=fyb_news",
+   "title": "凤凰传奇演唱会遇大雨变落汤鸡",
+   "url": "https://m.baidu.com/s?word=%E5%87%A4%E5%87%B0%E4%BC%A0%E5%A5%87%E6%BC%94%E5%94%B1%E4%BC%9A%E9%81%87%E5%A4%A7%E9%9B%A8%E5%8F%98%E8%90%BD%E6%B1%A4%E9%B8%A1&sa=fyb_news",
    "desc": "百度热搜实时热点",
    "heat": "热搜第 10 名",
    "source": "百度热搜",
    "board": "热榜",
    "category": "热门话题",
-   "note": "杨瀚森在 NBA 生涯首次拿到两双，12 分 10 篮板，是中国球员在海外联赛的一个节点。",
-   "scene": "关注中国球员 NBA 表现的篮球迷"
+   "note": "凤凰传奇演唱会遭遇大雨，现场观众和歌手都被淋透，这类突发天气状况常成为演出体验和应急保障的讨论点。",
+   "scene": "关注演出行业与现场活动应急管理的从业者"
   },
   {
    "rank": 10,
    "title": "【纪录片】威尔史密斯的极地纵横 06中配版 北极点",
    "url": "https://www.bilibili.com/video/BV1oUn26mEHP",
    "desc": "哔哩哔哩纪录片 · 科学·探索·自然",
-   "heat": "53万 播放 · 899 点赞 · 52 评论",
+   "heat": "53万 播放 · 914 点赞 · 56 评论",
    "source": "哔哩哔哩",
    "board": "热榜",
    "category": "热门话题",
@@ -2578,39 +2568,51 @@
   },
   {
    "rank": 10,
-   "title": "Flutter 双端热更新新方案：基于 Dart 官方动态模块的 flutter_patcher 1.0.0",
-   "url": "https://juejin.cn/post/7704594117821693988",
+   "title": "公交App上“还有2站，约5分钟”怎么实现？90%的人答错这道大厂面试题：GPS漂移、ETA不准、10万QPS热点读全拆透（附完整代码）",
+   "url": "https://juejin.cn/post/7704562619551072298",
    "desc": "掘金技术热文",
-   "heat": "热度 171 · 233 阅读 · 8 赞",
+   "heat": "热度 180 · 328 阅读 · 3 赞",
    "source": "掘金",
    "board": "热榜",
    "category": "热门话题",
-   "note": "基于 Dart 官方动态模块的 flutter_patcher 发布 1.0.0，给 Flutter 双端热更新提供了一条新思路。",
-   "scene": "研究 Flutter 热更新方案的移动端开发者"
+   "note": "公交到站预测看似简单，背后要处理定位漂移、时间预估偏差和高并发读取，这篇拆解了常见面试题的完整思路。",
+   "scene": "准备技术面试或做出行类应用的开发者"
   },
   {
    "rank": 10,
-   "title": "The Port That Does Not Exist",
-   "url": "https://acid.vegas/blog/the-port-that-does-not-exist/",
+   "title": "Progress Report: Linux 7.3 - Asahi Linux",
+   "url": "https://asahilinux.org/2026/11/progress-report-7-3/",
    "desc": "技术社区热帖",
-   "heat": "58 points · 6 comments · networking",
+   "heat": "55 points · 7 comments · linux / mac",
    "source": "Lobsters",
    "board": "热榜",
    "category": "热门话题",
-   "note": "一篇讲某个「不存在的端口」的技术文章，从标题看是在聊网络端口相关的冷知识或排查经历。",
-   "scene": "对网络底层细节感兴趣的技术读者"
+   "note": "Asahi Linux 团队公布 Linux 7.3 适配进展，苹果芯片上跑 Linux 的兼容性又往前推了一步，用 Mac 装 Linux 的人值得留意。",
+   "scene": "关注苹果芯片 Linux 适配的开源开发者"
   },
   {
    "rank": 10,
-   "title": "How do I show svelte-check errors in a GitLab merge request?",
-   "url": "https://stackoverflow.com/questions/80015417/how-do-i-show-svelte-check-errors-in-a-gitlab-merge-request",
-   "desc": "My SvelteKit project runs svelte-check in GitLab CI: check: image: node:24-alpine script: - npm ci - npx svelte-kit sync - npx svelte-check When the job fails,…",
-   "heat": "49 浏览 · 0 赞 · 2 回答",
+   "title": "40 岁老登，最近看一部 AI 漫剧上头",
+   "url": "https://www.v2ex.com/t/1255314",
+   "desc": "最近先在抖音刷到一部 AI 漫剧《重生螳螂：无限吞噬进化》，没想到还挺上头。 想问问 V 站有没有已经在做 AI 漫画、AI 漫剧的佬？ 目前制作一部 AI 漫剧，花费时间和生成成本大概有多高？用什么模型较多。 40 岁老登不想再写代码了...",
+   "heat": "20 回复 · 问与答",
+   "source": "V2EX",
+   "board": "热榜",
+   "category": "热门话题",
+   "note": "一位四十岁程序员刷到AI漫剧后上了头，想了解制作成本和常用模型，透露出对转行做AI内容的兴趣。",
+   "scene": "关注AI内容创作与职业转型的技术从业者"
+  },
+  {
+   "rank": 10,
+   "title": "GCC and EDG rejects valid program involving calling a function template with empty braces",
+   "url": "https://stackoverflow.com/questions/80015377/gcc-and-edg-rejects-valid-program-involving-calling-a-function-template-with-emp",
+   "desc": "The following program valid program(afaik) is rejected by both gcc and edg but accepted by clang and msvc. Demo . template void f1(const int (&)[N]) {} int main…",
+   "heat": "124 浏览 · 3 赞 · 2 回答",
    "source": "Stack Overflow",
    "board": "需求榜",
    "category": "项目需求",
-   "note": "在 GitLab CI 里跑 svelte-check 失败后，想把检查错误直接显示在合并请求里，方便评审时看到具体问题。",
-   "scene": "用 SvelteKit 和 GitLab CI 的前端团队"
+   "note": "一段涉及空花括号调用函数模板的代码，GCC 和 EDG 拒绝编译而 Clang 和 MSVC 接受，需要判断谁对谁错。",
+   "scene": "写跨编译器 C++ 模板代码的开发者"
   },
   {
    "rank": 10,
@@ -2647,6 +2649,18 @@
    "category": "项目需求",
    "note": "做了一个 Chrome 插件，选中文字右键就能在多个搜索引擎间切换搜索，方便比价和查资料。",
    "scene": "经常多平台搜索查资料的浏览器用户"
+  },
+  {
+   "rank": 10,
+   "title": "astral-sh/ruff",
+   "url": "https://github.com/astral-sh/ruff",
+   "desc": "An extremely fast Python linter and code formatter, written in Rust.",
+   "heat": "+350 today · 总计 51,045★ · Rust",
+   "source": "GitHub",
+   "board": "日榜",
+   "category": "热门产品",
+   "note": "用 Rust 写的 Python 代码检查和格式化工具，主打速度极快。",
+   "scene": "写 Python 的开发者"
   }
  ]
 }
