@@ -1,0 +1,148 @@
+{
+ "date": "2026-11-14",
+ "period": "weekly",
+ "generated_at": "2026-11-14T18:00:09+08:00",
+ "count": 10,
+ "sources": {
+  "GitHub": 10
+ },
+ "errors": [
+  "GreasyFork: 抓取失败 https://greasyfork.org/en/scripts?sort=hot (HTTP 403 (len=5807))"
+ ],
+ "summaries": [
+  {
+   "category": "热门产品",
+   "source": "GitHub",
+   "count": 10,
+   "text": "10 条 · 榜首「sherlock-project/sherlock」+13364 this week · 总计 111,411★ · Python · 高频：skills(5)、agents(3)、agent(2)"
+  },
+  {
+   "category": "热门产品",
+   "source": "全部",
+   "count": 10,
+   "text": "10 条 · 榜首「sherlock-project/sherlock」+13364 this week · 总计 111,411★ · Python · 高频：skills(5)、agents(3)、agent(2) · 覆盖 GitHub"
+  }
+ ],
+ "items": [
+  {
+   "rank": 1,
+   "title": "sherlock-project/sherlock",
+   "url": "https://github.com/sherlock-project/sherlock",
+   "desc": "Hunt down social media accounts by username across social networks",
+   "heat": "+13364 this week · 总计 111,411★ · Python",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "输入一个用户名，就能在多个社交平台上排查对应账号是否存在，常用于找人或者核查身份。",
+   "scene": "做账号溯源、背景核查的调查或安全人员"
+  },
+  {
+   "rank": 2,
+   "title": "anthropics/skills",
+   "url": "https://github.com/anthropics/skills",
+   "desc": "Public repository for Agent Skills",
+   "heat": "+6169 this week · 总计 194,312★ · Python",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "Anthropic 公开的 Agent 技能仓库，收集了一批可复用的技能定义，供智能体调用完成具体任务。",
+   "scene": "搭建 AI 智能体、想复用现成技能的开发者"
+  },
+  {
+   "rank": 3,
+   "title": "milind-soni/OpenMausBot",
+   "url": "https://github.com/milind-soni/OpenMausBot",
+   "desc": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+   "heat": "+7763 this week · 总计 22,430★ · TypeScript",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "开源的 Grok 机器人替代方案，给机器人配了一台可操作的虚拟机，让它在里面执行任务。",
+   "scene": "想自建带执行环境的 AI 机器人的开发者"
+  },
+  {
+   "rank": 4,
+   "title": "vercel-labs/agent-browser",
+   "url": "https://github.com/vercel-labs/agent-browser",
+   "desc": "Browser automation CLI for AI agents",
+   "heat": "+4360 this week · 总计 50,893★ · Rust",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "给 AI 智能体用的浏览器自动化命令行工具，让智能体能按指令操作网页，完成点击、填表这类动作。",
+   "scene": "开发网页自动化或智能体操作的工程师"
+  },
+  {
+   "rank": 5,
+   "title": "google/elephant-goldfish-model",
+   "url": "https://github.com/google/elephant-goldfish-model",
+   "desc": "Open-source plugin for designing and reviewing software with agents",
+   "heat": "+5560 this week · 总计 18,788★ · Python",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "谷歌开源的一款插件，让智能体参与软件的设计和评审环节，从标题看是辅助开发流程的工具。",
+   "scene": "想把 AI 智能体接入设计评审流程的研发团队"
+  },
+  {
+   "rank": 6,
+   "title": "ZhuLinsen/daily_stock_analysis",
+   "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+   "desc": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+   "heat": "+3778 this week · 总计 72,003★ · Python",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "用大模型做多市场股票分析，汇总行情和新闻，生成决策看板并自动推送，还能零成本定时跑。",
+   "scene": "关注多市场行情、想自动化跟踪的散户投资者"
+  },
+  {
+   "rank": 7,
+   "title": "NVIDIA/auto-ontology",
+   "url": "https://github.com/NVIDIA/auto-ontology",
+   "desc": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+   "heat": "+4108 this week · 总计 12,672★ · Python",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "在数据之上构建语义图谱推理层的 Python 框架，让大模型和智能体的查询更确定、结果更可解释。",
+   "scene": "做知识图谱或智能体推理层的 AI 工程师"
+  },
+  {
+   "rank": 8,
+   "title": "google-deepmind/mujoco",
+   "url": "https://github.com/google-deepmind/mujoco",
+   "desc": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+   "heat": "+1764 this week · 总计 17,920★ · C++",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "DeepMind 开源的通用物理仿真器，能模拟多关节物体之间的接触动力学，常用于机器人研究。",
+   "scene": "做机器人控制或物理仿真研究的开发者"
+  },
+  {
+   "rank": 9,
+   "title": "mattpocock/skills",
+   "url": "https://github.com/mattpocock/skills",
+   "desc": "Skills for Real Engineers. Straight from my .agents directory.",
+   "heat": "+7599 this week · 总计 324,071★ · Shell",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "一位工程师把自己 .agents 目录里的技能整理公开，面向实际工程场景，可直接拿来给编码智能体用。",
+   "scene": "用 AI 编码助手、想补充实用技能的前端工程师"
+  },
+  {
+   "rank": 10,
+   "title": "addyosmani/agent-skills",
+   "url": "https://github.com/addyosmani/agent-skills",
+   "desc": "Production-grade engineering skills for AI coding agents.",
+   "heat": "+3502 this week · 总计 117,296★ · JavaScript",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "面向 AI 编码智能体的生产级工程技能集合，由知名开发者整理，帮智能体按工程规范写代码。",
+   "scene": "把 AI 智能体用于正式项目开发的工程团队"
+  }
+ ]
+}
