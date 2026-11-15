@@ -1,0 +1,148 @@
+{
+ "date": "2026-11-15",
+ "period": "weekly",
+ "generated_at": "2026-11-15T14:40:59+08:00",
+ "count": 10,
+ "sources": {
+  "GitHub": 10
+ },
+ "errors": [
+  "GreasyFork: 抓取失败 https://greasyfork.org/en/scripts?sort=hot (HTTP 403 (len=5807))"
+ ],
+ "summaries": [
+  {
+   "category": "热门产品",
+   "source": "GitHub",
+   "count": 10,
+   "text": "10 条 · 榜首「meta/astryx」+13660 this week · 总计 28,299★ · TypeScript · 高频：agents(4)、skills(3)、agent(2)"
+  },
+  {
+   "category": "热门产品",
+   "source": "全部",
+   "count": 10,
+   "text": "10 条 · 榜首「meta/astryx」+13660 this week · 总计 28,299★ · TypeScript · 高频：agents(4)、skills(3)、agent(2) · 覆盖 GitHub"
+  }
+ ],
+ "items": [
+  {
+   "rank": 1,
+   "title": "meta/astryx",
+   "url": "https://github.com/meta/astryx",
+   "desc": "An open source design system that's fully customizable and agent ready",
+   "heat": "+13660 this week · 总计 28,299★ · TypeScript",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "开源设计系统，强调可深度定制，并针对智能体使用做了适配。",
+   "scene": "搭建产品界面的前端与设计团队"
+  },
+  {
+   "rank": 2,
+   "title": "sherlock-project/sherlock",
+   "url": "https://github.com/sherlock-project/sherlock",
+   "desc": "Hunt down social media accounts by username across social networks",
+   "heat": "+12401 this week · 总计 111,926★ · Python",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "通过用户名在多个社交平台上批量查找对应账号，常用于追踪同一人的网络足迹。",
+   "scene": "做开源情报调查和安全研究的人"
+  },
+  {
+   "rank": 3,
+   "title": "anthropics/skills",
+   "url": "https://github.com/anthropics/skills",
+   "desc": "Public repository for Agent Skills",
+   "heat": "+6220 this week · 总计 194,722★ · Python",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "Anthropic 公开的智能体技能仓库，收集可供 AI 代理调用的能力模块。",
+   "scene": "开发 AI 代理应用的工程师"
+  },
+  {
+   "rank": 4,
+   "title": "vercel-labs/agent-browser",
+   "url": "https://github.com/vercel-labs/agent-browser",
+   "desc": "Browser automation CLI for AI agents",
+   "heat": "+4601 this week · 总计 51,308★ · Rust",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "面向 AI 智能体的浏览器自动化命令行工具，让代理能操作网页完成任务。",
+   "scene": "做网页自动化与代理开发的程序员"
+  },
+  {
+   "rank": 5,
+   "title": "google/elephant-goldfish-model",
+   "url": "https://github.com/google/elephant-goldfish-model",
+   "desc": "Open-source plugin for designing and reviewing software with agents",
+   "heat": "+5539 this week · 总计 19,301★ · Python",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "谷歌开源的一款插件，用于借助智能体来设计和评审软件。",
+   "scene": "想把 AI 引入开发流程的软件团队"
+  },
+  {
+   "rank": 6,
+   "title": "milind-soni/OpenMausBot",
+   "url": "https://github.com/milind-soni/OpenMausBot",
+   "desc": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+   "heat": "+6413 this week · 总计 22,901★ · TypeScript",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "开源的 Grok 机器人替代方案，附带一个可供机器人使用的虚拟机环境。",
+   "scene": "想自建 AI 机器人并动手实验的开发者"
+  },
+  {
+   "rank": 7,
+   "title": "ZhuLinsen/daily_stock_analysis",
+   "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+   "desc": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+   "heat": "+4526 this week · 总计 72,306★ · Python",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "由大模型驱动的多市场股票分析系统，汇总行情与新闻，生成看板并自动推送，还能零成本定时运行。",
+   "scene": "关注多市场行情且想省成本的个人投资者"
+  },
+  {
+   "rank": 8,
+   "title": "google-deepmind/mujoco",
+   "url": "https://github.com/google-deepmind/mujoco",
+   "desc": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+   "heat": "+1859 this week · 总计 18,005★ · C++",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "通用物理仿真引擎，能模拟多关节运动与接触碰撞，常用于机器人和强化学习研究。",
+   "scene": "做机器人或物理仿真的研究人员"
+  },
+  {
+   "rank": 9,
+   "title": "backnotprop/plannotator",
+   "url": "https://github.com/backnotprop/plannotator",
+   "desc": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+   "heat": "+818 this week · 总计 11,347★ · TypeScript",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "面向智能体协作的工作台，可规划、标注、审查代码，并把反馈一键回传给代理。",
+   "scene": "与 AI 代理协同写代码的开发者"
+  },
+  {
+   "rank": 10,
+   "title": "addyosmani/agent-skills",
+   "url": "https://github.com/addyosmani/agent-skills",
+   "desc": "Production-grade engineering skills for AI coding agents.",
+   "heat": "+3670 this week · 总计 117,658★ · JavaScript",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "为 AI 编码代理准备的一套工程技能集合，按生产级标准整理，供代理直接调用。",
+   "scene": "用 AI 代理写生产代码的工程师"
+  }
+ ]
+}
