@@ -2,23 +2,23 @@
  "date": "2026-10-29",
  "period": "daily",
  "generated_at": "2026-10-29T13:53:02+08:00",
- "count": 203,
+ "count": 156,
  "sources": {
-  "GitHub": 10,
-  "Hugging Face": 10,
+  "Hugging Face": 5,
   "Hacker News": 30,
   "Chrome 应用商店": 10,
-  "Firefox 插件": 10,
-  "App Store": 20,
-  "少数派": 10,
+  "App Store": 17,
+  "少数派": 5,
   "今日头条": 10,
   "百度热搜": 10,
   "哔哩哔哩": 10,
-  "掘金": 10,
-  "Lobsters": 10,
-  "V2EX": 13,
+  "掘金": 7,
+  "Lobsters": 9,
+  "V2EX": 12,
   "Stack Overflow": 10,
-  "w2solo": 30
+  "w2solo": 16,
+  "Firefox 插件": 3,
+  "GitHub": 2
  },
  "errors": [
   "GreasyFork: 抓取失败 https://greasyfork.org/en/scripts?sort=hot (HTTP 403 (len=5722))"
@@ -27,8 +27,8 @@
   {
    "category": "热门产品",
    "source": "App Store",
-   "count": 20,
-   "text": "20 条 · 榜首「抖音商城-下单返积分、退货包运费」免费榜 第 1 名 · 高频：ltd.(8)、technology(7)、co.(6)"
+   "count": 17,
+   "text": "17 条 · 榜首「抖音商城-下单返积分、退货包运费」免费榜 第 1 名 · 高频：ltd.(8)、co.(6)、technology(6)"
   },
   {
    "category": "热门产品",
@@ -39,14 +39,14 @@
   {
    "category": "热门产品",
    "source": "Firefox 插件",
-   "count": 10,
-   "text": "10 条 · 榜首「Ferz Wallet」日均用户 655 · 周下载 0 · ★3.5 · 高频：wallet(4)、comments(3)、gif(3)"
+   "count": 3,
+   "text": "3 条 · 榜首「Saifu - Crypto Wallet」日均用户 182 · 周下载 1 · ★2.0 · 高频：pendo(2)、wallet(2)"
   },
   {
    "category": "热门产品",
    "source": "GitHub",
-   "count": 10,
-   "text": "10 条 · 榜首「JetBrains/thinkrail」+1068 today · 总计 5,324★ · TypeScript · 高频：agent(2)、claude(2)、code(2)"
+   "count": 2,
+   "text": "2 条 · 榜首「macro-inc/macro」+117 today · 总计 5,527★ · Rust · 高频：agents(1)、calls(1)、chat(1)"
   },
   {
    "category": "热门产品",
@@ -57,20 +57,20 @@
   {
    "category": "热门产品",
    "source": "Hugging Face",
-   "count": 10,
-   "text": "10 条 · 榜首「deepseek-ai/DeepSeek-V4.1-Flash-1017」趋势 884 · 3.6k likes · 116.8k 下载 · transformers / safetensors / deepseek_v41 · 高频：text-generation(5)、image-text-to-text(2)"
+   "count": 5,
+   "text": "5 条 · 榜首「deepseek-ai/DeepSeek-V4.1-Flash-1017」趋势 884 · 3.6k likes · 116.8k 下载 · transformers / safetensors / deepseek_v41 · 高频：black-forest-labs(1)、deepseek-ai(1)、deepseek-v4.1-flash-1017(1)"
   },
   {
    "category": "热门产品",
    "source": "w2solo",
-   "count": 10,
-   "text": "10 条 · 榜首「Openbroca」40 浏览 · 1 回复 · 1 赞 · 新作品 · 高频：jeman(2)"
+   "count": 2,
+   "text": "2 条 · 榜首「Nekot」28 浏览 · 1 回复 · 1 赞 · 新作品 · 高频：nekot(1)、netlink(1)"
   },
   {
    "category": "热门产品",
    "source": "少数派",
-   "count": 10,
-   "text": "10 条 · 榜首「让 Agent 读懂你的身体：数据处理篇」1 赞 · 高频：apple(4)、agent(3)、ups(3)"
+   "count": 5,
+   "text": "5 条 · 榜首「让 Agent 读懂你的身体：数据处理篇」1 赞 · 高频：agent(3)、apple(2)、影之刃零(2)"
   },
   {
    "category": "热门话题",
@@ -81,8 +81,8 @@
   {
    "category": "热门话题",
    "source": "Lobsters",
-   "count": 10,
-   "text": "10 条 · 榜首「Apple's git still trusts the compromised eMu」95 points · 19 comments · cryptography / mac · 高频：aes(1)、affects(1)、alpinebsd(1)"
+   "count": 9,
+   "text": "9 条 · 榜首「Apple's git still trusts the compromised eMu」95 points · 19 comments · cryptography / mac · 高频：aes(1)、affects(1)、alpinebsd(1)"
   },
   {
    "category": "热门话题",
@@ -93,8 +93,8 @@
   {
    "category": "热门话题",
    "source": "w2solo",
-   "count": 10,
-   "text": "10 条 · 榜首「上线 30 天的独立开发导航站：哪些渠道真的带人，哪些是我想多了」192 浏览 · 1 回复 · 1 赞 · 社区热议 · 高频：聊天讨论(5)、心得总结(3)"
+   "count": 4,
+   "text": "4 条 · 榜首「上线 30 天的独立开发导航站：哪些渠道真的带人，哪些是我想多了」192 浏览 · 1 回复 · 1 赞 · 社区热议 · 高频：聊天讨论(2)"
   },
   {
    "category": "热门话题",
@@ -111,8 +111,8 @@
   {
    "category": "热门话题",
    "source": "掘金",
-   "count": 10,
-   "text": "10 条 · 榜首「Python 面向对象编程：类、继承、多态与组合」热度 5373 · 1.2万 阅读 · 1 赞 · 高频：blender(1)、codex(1)、console.log(1)"
+   "count": 7,
+   "text": "7 条 · 榜首「Python 面向对象编程：类、继承、多态与组合」热度 5373 · 1.2万 阅读 · 1 赞 · 高频：blender(1)、codex(1)、console.log(1)"
   },
   {
    "category": "热门话题",
@@ -135,8 +135,8 @@
   {
    "category": "项目需求",
    "source": "V2EX",
-   "count": 4,
-   "text": "4 条 · 榜首「有没有禁止“100%ai\"内容的 app？」19 回复 · V2EX 创意 · 高频：ios(2)"
+   "count": 3,
+   "text": "3 条 · 榜首「有没有禁止“100%ai\"内容的 app？」19 回复 · V2EX 创意 · 高频：ios(2)"
   },
   {
    "category": "项目需求",
@@ -147,35 +147,23 @@
   {
    "category": "热门产品",
    "source": "全部",
-   "count": 90,
-   "text": "90 条 · 榜首「抖音商城-下单返积分、退货包运费」免费榜 第 1 名 · 高频：我的作品(10)、ltd.(8)、tab(8) · 覆盖 App Store、Chrome 应用商店、Firefox 插件、GitHub、Hacker News、Hugging Face、w2solo、少数派"
+   "count": 54,
+   "text": "54 条 · 榜首「抖音商城-下单返积分、退货包运费」免费榜 第 1 名 · 高频：ltd.(8)、tab(8)、co.(6) · 覆盖 App Store、Chrome 应用商店、Firefox 插件、GitHub、Hacker News、Hugging Face、w2solo、少数派"
   },
   {
    "category": "热门话题",
    "source": "全部",
-   "count": 79,
-   "text": "79 条 · 榜首「Apple's git still trusts the compromised eMu」1089 points · 385 comments · 高频：掘金技术热文(10)、百度热搜实时热点(8)、今日头条热榜事件(6) · 覆盖 Hacker News、Lobsters、V2EX、w2solo、今日头条、哔哩哔哩、掘金、百度热搜"
+   "count": 69,
+   "text": "69 条 · 榜首「Apple's git still trusts the compromised eMu」1089 points · 385 comments · 高频：百度热搜实时热点(8)、掘金技术热文(7)、今日头条热榜事件(6) · 覆盖 Hacker News、Lobsters、V2EX、w2solo、今日头条、哔哩哔哩、掘金、百度热搜"
   },
   {
    "category": "项目需求",
    "source": "全部",
-   "count": 34,
-   "text": "34 条 · 榜首「Tell HN: I'm going on strike this November」54 points · 67 comments · 高频：奇思妙想(6)、code(4)、there(4) · 覆盖 Hacker News、Stack Overflow、V2EX、w2solo"
+   "count": 33,
+   "text": "33 条 · 榜首「Tell HN: I'm going on strike this November」54 points · 67 comments · 高频：奇思妙想(6)、code(4)、there(4) · 覆盖 Hacker News、Stack Overflow、V2EX、w2solo"
   }
  ],
  "items": [
-  {
-   "rank": 1,
-   "title": "JetBrains/thinkrail",
-   "url": "https://github.com/JetBrains/thinkrail",
-   "desc": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
-   "heat": "+1068 today · 总计 5,324★ · TypeScript",
-   "source": "GitHub",
-   "board": "日榜",
-   "category": "热门产品",
-   "note": "JetBrains 出的轻量 IDE，会按你的工作习惯自我调整，主打边聊边写代码的体验。",
-   "scene": "习惯用 AI 对话辅助写代码的开发者"
-  },
   {
    "rank": 1,
    "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
@@ -235,18 +223,6 @@
    "category": "热门产品",
    "note": "把网页截图和其他图片一键存进 Pinterest，还能顺手做视觉搜索、列出页面里可收藏的图。",
    "scene": "常逛 Pinterest 找灵感的人"
-  },
-  {
-   "rank": 1,
-   "title": "Ferz Wallet",
-   "url": "https://addons.mozilla.org/en-US/firefox/addon/ferz-wallet/",
-   "desc": "Decentralised, crypto wallet powered by Thorchain protocol. Instantly swap supported assets.",
-   "heat": "日均用户 655 · 周下载 0 · ★3.5",
-   "source": "Firefox 插件",
-   "board": "热榜",
-   "category": "热门产品",
-   "note": "基于 Thorchain 协议的去中心化加密钱包，支持即时兑换其支持的资产。",
-   "scene": "持有多种加密资产并想跨链兑换的用户"
   },
   {
    "rank": 1,
@@ -382,18 +358,6 @@
   },
   {
    "rank": 1,
-   "title": "Openbroca",
-   "url": "https://w2solo.com/topics/8644",
-   "desc": "我的作品 · 作者 Timothy Lau",
-   "heat": "40 浏览 · 1 回复 · 1 赞 · 新作品",
-   "source": "w2solo",
-   "board": "作品榜",
-   "category": "热门产品",
-   "note": "个人开发者作品，从标题看是一个叫 Openbroca 的项目，具体功能简介未说明。",
-   "scene": "关注独立开发者新项目的尝鲜者"
-  },
-  {
-   "rank": 1,
    "title": "上线 30 天的独立开发导航站：哪些渠道真的带人，哪些是我想多了",
    "url": "https://w2solo.com/topics/8611",
    "desc": "心得总结 · 作者 kolbyzhu5",
@@ -415,30 +379,6 @@
    "category": "项目需求",
    "note": "作者给孩子做了个奥特曼识别小程序，结果在家长圈里传开，说明这类趣味识别小工具有真实需求。",
    "scene": "想给孩子做趣味小工具的家长型开发者"
-  },
-  {
-   "rank": 2,
-   "title": "elayadesign/ai-design-skills",
-   "url": "https://github.com/elayadesign/ai-design-skills",
-   "desc": "",
-   "heat": "+2139 today · 总计 11,378★",
-   "source": "GitHub",
-   "board": "日榜",
-   "category": "热门产品",
-   "note": "一个 AI 设计技能相关的开源仓库，简介为空，从标题看是给 AI 用的设计能力集合。",
-   "scene": "探索 AI 辅助设计工作流的从业者"
-  },
-  {
-   "rank": 2,
-   "title": "Nanbeige/Nanbeige4.3-33B",
-   "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
-   "desc": "AI 模型 · text-generation",
-   "heat": "趋势 727 · 737 likes · 7.4k 下载 · transformers / safetensors / llama",
-   "source": "Hugging Face",
-   "board": "热榜",
-   "category": "热门产品",
-   "note": "南北阁发布的 33B 参数文本生成模型，属于开源大模型系列的新版本。",
-   "scene": "需要本地部署中文文本生成模型的开发者"
   },
   {
    "rank": 2,
@@ -574,18 +514,6 @@
   },
   {
    "rank": 2,
-   "title": "尤雨溪 : Vue 4 已经在规划中了！",
-   "url": "https://juejin.cn/post/7700803425820049434",
-   "desc": "掘金技术热文",
-   "heat": "热度 1746 · 3339 阅读 · 17 赞",
-   "source": "掘金",
-   "board": "热榜",
-   "category": "热门话题",
-   "note": "尤雨溪透露 Vue 4 已在规划中，前端开发者开始关心新版本会带来哪些变化和迁移成本。",
-   "scene": "Vue 前端开发者"
-  },
-  {
-   "rank": 2,
    "title": "AlpineBSD",
    "url": "https://wiki.alpinebsd.org/",
    "desc": "技术社区热帖",
@@ -670,30 +598,6 @@
   },
   {
    "rank": 3,
-   "title": "obra/superpowers",
-   "url": "https://github.com/obra/superpowers",
-   "desc": "An agentic skills framework & software development methodology that works.",
-   "heat": "+1095 today · 总计 307,639★ · Shell",
-   "source": "GitHub",
-   "board": "日榜",
-   "category": "热门产品",
-   "note": "一套面向 AI 智能体的技能框架和开发方法论，强调实际可用。",
-   "scene": "搭建 AI 智能体工作流的开发者"
-  },
-  {
-   "rank": 3,
-   "title": "RecursiveSI/flint",
-   "url": "https://huggingface.co/RecursiveSI/flint",
-   "desc": "AI 模型 · text-generation",
-   "heat": "趋势 694 · 1.2k likes · 14.0k 下载 · transformers / safetensors / flint",
-   "source": "Hugging Face",
-   "board": "热榜",
-   "category": "热门产品",
-   "note": "Hugging Face 上的文本生成模型，从标题看属于 flint 系列，具体能力简介未展开。",
-   "scene": "寻找开源文本生成模型的开发者"
-  },
-  {
-   "rank": 3,
    "title": "Show HN: Achive – 12y/O built commitment app, 95% of failed stakes to hospice",
    "url": "https://achive-app.vercel.app/",
    "desc": "Show HN 新品首发",
@@ -739,18 +643,6 @@
    "category": "热门产品",
    "note": "不用打开 Gmail 网页，在浏览器里就能收提醒、读邮件、听邮件甚至删邮件，还能同时管多个账号。",
    "scene": "同时挂着多个邮箱的办公族"
-  },
-  {
-   "rank": 3,
-   "title": "AnyDownload",
-   "url": "https://addons.mozilla.org/en-US/firefox/addon/anydownload/",
-   "desc": "Download media from almost any site, entirely inside your browser.",
-   "heat": "日均用户 532 · 周下载 15",
-   "source": "Firefox 插件",
-   "board": "热榜",
-   "category": "热门产品",
-   "note": "在浏览器内部就能把几乎任何网站上的音视频下载下来，不用装额外软件或跳转外部工具。",
-   "scene": "想保存网页视频素材的用户"
   },
   {
    "rank": 3,
@@ -862,18 +754,6 @@
   },
   {
    "rank": 3,
-   "title": "有什么比较火的 AI 算命软件吗？",
-   "url": "https://www.v2ex.com/t/1250772",
-   "desc": "想做个小程序玩玩，先学习一下竞品",
-   "heat": "3 回复 · V2EX 创意",
-   "source": "V2EX",
-   "board": "需求榜",
-   "category": "项目需求",
-   "note": "用户想做个AI算命小程序，先打听市面上哪些同类产品火，打算研究竞品再动手。",
-   "scene": "想做轻量娱乐小程序的独立开发者"
-  },
-  {
-   "rank": 3,
    "title": "How to obtain Google's written consent for using Drive API to back up mobile app data?",
    "url": "https://stackoverflow.com/questions/80013270/how-to-obtain-googles-written-consent-for-using-drive-api-to-back-up-mobile-app",
    "desc": "We are developing a mobile application for iOS and Android that manages vehicle inspection records. Users can create folders for vehicles and clients, containin…",
@@ -922,30 +802,6 @@
   },
   {
    "rank": 4,
-   "title": "HKUDS/DeepTutor",
-   "url": "https://github.com/HKUDS/DeepTutor",
-   "desc": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/ .",
-   "heat": "+2371 today · 总计 48,467★ · Python",
-   "source": "GitHub",
-   "board": "日榜",
-   "category": "热门产品",
-   "note": "港大团队做的长期个性化辅导工具，从标题看想让 AI 陪着你持续学，而不是一次性问答。",
-   "scene": "需要长期陪学辅导的学生"
-  },
-  {
-   "rank": 4,
-   "title": "XHToken/Spark-X2.6-4B",
-   "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
-   "desc": "AI 模型 · text-generation",
-   "heat": "趋势 495 · 872 likes · 8.2k 下载 · transformers / safetensors / spark2_5",
-   "source": "Hugging Face",
-   "board": "热榜",
-   "category": "热门产品",
-   "note": "一个文本生成方向的 AI 模型，从标题看是 Spark-X2.6 的 4B 参数版本。",
-   "scene": "想本地跑文本模型的开发者"
-  },
-  {
-   "rank": 4,
    "title": "Show HN: Open Source CS2 Skins Marketplace (early stage)",
    "url": "https://github.com/getopenfloat/openfloat",
    "desc": "Show HN 新品首发",
@@ -991,18 +847,6 @@
    "category": "热门产品",
    "note": "一键批量开关 Chrome 扩展，装了一堆插件又嫌管理麻烦时，用它快速启用或停用。",
    "scene": "装了很多浏览器插件的人"
-  },
-  {
-   "rank": 4,
-   "title": "Vorphine",
-   "url": "https://addons.mozilla.org/en-US/firefox/addon/vorphine/",
-   "desc": "Free access to blocked websites with one button. The extension picks the route itself; Russian services open directly. 10 GB per 30 days, no sign-up, no ads.",
-   "heat": "日均用户 181 · 周下载 769 · ★5.0",
-   "source": "Firefox 插件",
-   "board": "热榜",
-   "category": "热门产品",
-   "note": "一键访问被屏蔽的网站，自动选线路，俄罗斯服务直连，每月 10GB 免注册无广告。",
-   "scene": "需要临时访问受限网站的用户"
   },
   {
    "rank": 4,
@@ -1078,30 +922,6 @@
   },
   {
    "rank": 4,
-   "title": "AI 越强，失业越严重",
-   "url": "https://juejin.cn/post/7700627964494168106",
-   "desc": "掘金技术热文",
-   "heat": "热度 783 · 1407 阅读 · 9 赞",
-   "source": "掘金",
-   "board": "热榜",
-   "category": "热门话题",
-   "note": "文章讨论 AI 能力提升与就业压力之间的关系，把技术替代的焦虑摆上台面，值得职场人关注自身岗位的可替代性。",
-   "scene": "担心被 AI 替代的技术从业者与职场人"
-  },
-  {
-   "rank": 4,
-   "title": "This is not sustainable",
-   "url": "https://www.netmeister.org/blog/defense-ddos.html",
-   "desc": "技术社区热帖",
-   "heat": "127 points · 32 comments · security",
-   "source": "Lobsters",
-   "board": "热榜",
-   "category": "热门话题",
-   "note": "技术社区一篇讨论可持续性的热帖，标题指向某种做法难以为继，具体所指需看原文，属于行业反思类话题。",
-   "scene": "关注技术行业长期发展的从业者"
-  },
-  {
-   "rank": 4,
    "title": "拿到华为 od 口头 offer 了，值不值得去",
    "url": "https://www.v2ex.com/t/1252542",
    "desc": "现在这家公司也是外包，入职也快两个月了，工作内容和预期差别有点大，虽然这些工作都能让 ai 完成。 并且入职前华为 od 的机考就过了，后续也在各种周末把后续面试流程走完了，今天华为 od 的对接人说通过了，对比现在华为 od 固定 1 ，2 ，4 加班，薪资也会高个 2k ，如果开车的话通勤会近很多 ，并且试用期不打折，直接冲吗？",
@@ -1138,30 +958,6 @@
   },
   {
    "rank": 4,
-   "title": "TokenRa-一折 AI 大模型 API",
-   "url": "https://w2solo.com/topics/8647",
-   "desc": "我的作品 · 作者 luwei42768",
-   "heat": "39 浏览 · 新作品",
-   "source": "w2solo",
-   "board": "作品榜",
-   "category": "热门产品",
-   "note": "作者 luwei42768 的作品，从标题看是打折卖 AI 大模型 API 调用的服务。",
-   "scene": "想低价调用大模型 API 的开发者"
-  },
-  {
-   "rank": 4,
-   "title": "二维码生成小工具，聊聊上线两周的数据与复盘",
-   "url": "https://w2solo.com/topics/8615",
-   "desc": "心得总结 · 作者 eureka",
-   "heat": "78 浏览 · 1 回复 · 1 赞 · 社区热议",
-   "source": "w2solo",
-   "board": "热榜",
-   "category": "热门话题",
-   "note": "作者复盘二维码生成工具上线两周的数据，分享小工具从开发到获客的实际经验，对独立开发者有参考价值。",
-   "scene": "做小工具产品的独立开发者"
-  },
-  {
-   "rank": 4,
    "title": "电脑系统维修的委托单 价格 150",
    "url": "https://w2solo.com/topics/4898",
    "desc": "外包零活 · 作者 zhang",
@@ -1183,18 +979,6 @@
    "category": "热门产品",
    "note": "把邮件、聊天、文档、任务、CRM 等团队工具塞进一个工作台，靠共享 AI 记忆串起来。",
    "scene": "想减少工具切换的团队"
-  },
-  {
-   "rank": 5,
-   "title": "MiniMaxAI/MiniMax-M3.1-Flash",
-   "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
-   "desc": "AI 模型 · image-text-to-text",
-   "heat": "趋势 412 · 467 likes · 13.2k 下载 · transformers / safetensors / minimax_m3_vl",
-   "source": "Hugging Face",
-   "board": "热榜",
-   "category": "热门产品",
-   "note": "MiniMax 出的多模态模型，从标题看能同时处理图像和文本输入并生成文本。",
-   "scene": "做图文理解应用的开发者"
   },
   {
    "rank": 5,
@@ -1243,18 +1027,6 @@
    "category": "热门产品",
    "note": "把浏览器新标签页换成一张好看的图配一句激励语，让人打开浏览器时更平静也更专注。",
    "scene": "想提升专注力的浏览器用户"
-  },
-  {
-   "rank": 5,
-   "title": "Adblock",
-   "url": "https://addons.mozilla.org/en-US/firefox/addon/no-more-ads-in-page/",
-   "desc": "浏览网页时，屏蔽广告、追踪器和页面杂乱内容。筛选列表、元素工具和简洁的控制面板，让网站保持干净快速。",
-   "heat": "日均用户 464 · 周下载 292 · ★3.7",
-   "source": "Firefox 插件",
-   "board": "热榜",
-   "category": "热门产品",
-   "note": "装到浏览器里就能挡掉广告、追踪器和页面杂项，靠筛选列表和元素工具手动清理，让网页更干净、加载更快。",
-   "scene": "被弹窗和追踪脚本烦扰的日常上网用户"
   },
   {
    "rank": 5,
@@ -1378,30 +1150,6 @@
   },
   {
    "rank": 5,
-   "title": "信鸽 pigeon",
-   "url": "https://w2solo.com/topics/8646",
-   "desc": "我的作品 · 作者 martin",
-   "heat": "38 浏览 · 1 回复 · 1 赞 · 新作品",
-   "source": "w2solo",
-   "board": "作品榜",
-   "category": "热门产品",
-   "note": "作者 martin 分享的个人作品，从标题看是一款叫「信鸽」的小工具，具体功能简介里没细说。",
-   "scene": "喜欢尝鲜独立开发者作品的用户"
-  },
-  {
-   "rank": 5,
-   "title": "gpt-image-2.5 凭啥直登生图宝座？APi 如何快速接入",
-   "url": "https://w2solo.com/topics/8619",
-   "desc": "聊天讨论 · 作者 Allen",
-   "heat": "68 浏览 · 社区热议",
-   "source": "w2solo",
-   "board": "热榜",
-   "category": "热门话题",
-   "note": "讨论某图像生成模型为何表现突出，以及如何通过 API 接入，面向想用生图能力的开发者。",
-   "scene": "需要接入图像生成 API 的开发者"
-  },
-  {
-   "rank": 5,
    "title": "用 AI 搓了一个奇怪的工具：帮我寻找 “评分低、用户多” 的浏览器插件",
    "url": "https://w2solo.com/topics/7243",
    "desc": "奇思妙想 · 作者 zhangxh1023",
@@ -1411,18 +1159,6 @@
    "category": "项目需求",
    "note": "作者用AI做了个工具，专门找评分低但用户多的浏览器插件，用来发现被低估或体验差的产品。",
    "scene": "研究浏览器插件市场的独立开发者"
-  },
-  {
-   "rank": 6,
-   "title": "Nutlope/hallmark",
-   "url": "https://github.com/Nutlope/hallmark",
-   "desc": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-   "heat": "+2110 today · 总计 41,001★ · CSS",
-   "source": "GitHub",
-   "board": "日榜",
-   "category": "热门产品",
-   "note": "给 Claude Code、Cursor 等编程助手用的设计技能，专门防止生成那种一眼假的 AI 味界面。",
-   "scene": "用 AI 写前端、在意界面质感的开发者"
   },
   {
    "rank": 6,
@@ -1486,18 +1222,6 @@
   },
   {
    "rank": 6,
-   "title": "GIF Comments for YouTube",
-   "url": "https://addons.mozilla.org/en-US/firefox/addon/gif-comments-for-youtube/",
-   "desc": "Adds a GIF button to YouTube comments on desktop. Search Tenor and post real GIF comments that everyone can see.",
-   "heat": "日均用户 189 · 周下载 485",
-   "source": "Firefox 插件",
-   "board": "热榜",
-   "category": "热门产品",
-   "note": "给 YouTube 桌面版评论区加一个 GIF 按钮，能搜 Tenor 动图并发出所有人可见的 GIF 评论。",
-   "scene": "爱在 YouTube 评论区斗图的用户"
-  },
-  {
-   "rank": 6,
    "title": "汽水音乐 - 随时听好歌",
    "url": "https://apps.apple.com/cn/app/%E6%B1%BD%E6%B0%B4%E9%9F%B3%E4%B9%90-%E9%9A%8F%E6%97%B6%E5%90%AC%E5%A5%BD%E6%AD%8C/id1605585211",
    "desc": "Beijing Douyin Technology Co., Ltd.",
@@ -1519,18 +1243,6 @@
    "category": "热门产品",
    "note": "Anthropic 推出的 Claude 官方手机应用，从标题看可在手机上直接和 Claude 对话。",
    "scene": "习惯用手机和 AI 对话的人"
-  },
-  {
-   "rank": 6,
-   "title": "怀旧手记｜坚果 Pro2 与 R1：当「理想」和「现实」碰撞会发生什么？",
-   "url": "https://sspai.com/post/115533",
-   "desc": "短短几年，罗永浩和锤子科技在国产手机的红海中留下了浓墨重彩的一笔。",
-   "heat": "32 赞",
-   "source": "少数派",
-   "board": "热榜",
-   "category": "热门产品",
-   "note": "回顾坚果 Pro2 和 R1 两款手机，讲罗永浩和锤子科技在激烈竞争里理想与现实的碰撞。",
-   "scene": "关注国产手机历史和锤子科技的人"
   },
   {
    "rank": 6,
@@ -1570,18 +1282,6 @@
   },
   {
    "rank": 6,
-   "title": "掀桌子了！Kimi K3.1 Pro 这效果也太离谱了。",
-   "url": "https://juejin.cn/post/7700627964493365290",
-   "desc": "掘金技术热文",
-   "heat": "热度 621 · 1167 阅读 · 8 赞",
-   "source": "掘金",
-   "board": "热榜",
-   "category": "热门话题",
-   "note": "技术社区热文讨论 Kimi 新模型的实际表现，作者用夸张口吻形容效果超出预期。反映国产大模型的能力竞争。",
-   "scene": "关注国产大模型进展的开发者"
-  },
-  {
-   "rank": 6,
    "title": "EMACS turns 50",
    "url": "https://www.technologyreview.com/2026/10/20/1145399/emacs-turns-50/",
    "desc": "技术社区热帖",
@@ -1618,30 +1318,6 @@
   },
   {
    "rank": 6,
-   "title": "Git 中英对照速查表（含 Panic Card）",
-   "url": "https://w2solo.com/topics/8634",
-   "desc": "我的作品 · 作者 Yingli Lab",
-   "heat": "45 浏览 · 1 回复 · 1 赞 · 新作品",
-   "source": "w2solo",
-   "board": "作品榜",
-   "category": "热门产品",
-   "note": "把常用 Git 命令做成中英对照速查表，还附了应急用的 Panic Card，方便临时查。",
-   "scene": "刚上手 Git、常忘命令的开发者"
-  },
-  {
-   "rank": 6,
-   "title": "小公司官网怎么做比较省事",
-   "url": "https://w2solo.com/topics/8623",
-   "desc": "聊天讨论 · 作者 jian chen",
-   "heat": "67 浏览 · 1 回复 · 1 赞 · 社区热议",
-   "source": "w2solo",
-   "board": "热榜",
-   "category": "热门话题",
-   "note": "小公司官网如何低成本搭建的讨论帖，参与者交流建站方案与省事做法。适合缺技术团队的小微企业参考。",
-   "scene": "需要自建官网的小公司经营者"
-  },
-  {
-   "rank": 6,
    "title": "上班煎熬，于是。。。。",
    "url": "https://w2solo.com/topics/5593",
    "desc": "奇思妙想 · 作者 llbm",
@@ -1651,18 +1327,6 @@
    "category": "项目需求",
    "note": "上班太煎熬，想找个出口或做点自己的东西，从标题看更像情绪吐槽而非明确产品需求。",
    "scene": "对上班状态不满、想折腾点副业的上班族"
-  },
-  {
-   "rank": 7,
-   "title": "pbakaus/impeccable",
-   "url": "https://github.com/pbakaus/impeccable",
-   "desc": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
-   "heat": "+1472 today · 总计 93,319★ · Rust",
-   "source": "GitHub",
-   "board": "日榜",
-   "category": "热门产品",
-   "note": "给编程助手准备的一套设计词汇，用 polish、critique 等指令引导和审查产出，提前拦住 AI 味设计。",
-   "scene": "用 AI 辅助写界面、想把控设计质量的开发者"
   },
   {
    "rank": 7,
@@ -1726,18 +1390,6 @@
   },
   {
    "rank": 7,
-   "title": "Escorp Browser Automation",
-   "url": "https://addons.mozilla.org/en-US/firefox/addon/escorp-browser-automation/",
-   "desc": "Automation bridge for Escorp runtime (Firefox)",
-   "heat": "日均用户 287 · 周下载 0",
-   "source": "Firefox 插件",
-   "board": "热榜",
-   "category": "热门产品",
-   "note": "Firefox 上的自动化桥接插件，用来连接 Escorp 运行时，从标题看是给自动化脚本用的。",
-   "scene": "做浏览器自动化的开发者"
-  },
-  {
-   "rank": 7,
    "title": "电子税务局",
    "url": "https://apps.apple.com/cn/app/%E7%94%B5%E5%AD%90%E7%A8%8E%E5%8A%A1%E5%B1%80/id6468941332",
    "desc": "State Administration of Taxation",
@@ -1759,18 +1411,6 @@
    "category": "热门产品",
    "note": "TikTok 母公司出的短剧 App，主打海外竖屏短剧，和国内短剧平台相比更偏向国际用户。",
    "scene": "爱刷海外短剧的观众"
-  },
-  {
-   "rank": 7,
-   "title": "派早报：Apple 发布 M6 版 iMac 和 MacBook Pro 等",
-   "url": "https://sspai.com/post/117684",
-   "desc": "小米发布 REDMI K100 等新品，广电总局发布有线电视与 IPTV 运营服务新规等。",
-   "heat": "18 赞",
-   "source": "少数派",
-   "board": "热榜",
-   "category": "热门产品",
-   "note": "汇总当天科技圈要闻：苹果发布 M6 版 iMac 和 MacBook Pro，小米、广电总局也有新消息。",
-   "scene": "想快速了解科技动态的人"
   },
   {
    "rank": 7,
@@ -1858,30 +1498,6 @@
   },
   {
    "rank": 7,
-   "title": "阿里云 / 腾讯云国际站账号买卖，24 小时自助开户充值",
-   "url": "https://w2solo.com/topics/8645",
-   "desc": "我的作品 · 作者 杯云",
-   "heat": "25 浏览 · 新作品",
-   "source": "w2solo",
-   "board": "作品榜",
-   "category": "热门产品",
-   "note": "提供阿里云、腾讯云国际站账号的买卖和自助开户充值服务，省去自己注册的流程。",
-   "scene": "需要海外云账号的开发者"
-  },
-  {
-   "rank": 7,
-   "title": "Lunar New Year",
-   "url": "https://w2solo.com/topics/8629",
-   "desc": "聊天讨论 · 作者 weiyong",
-   "heat": "62 浏览 · 2 回复 · 1 赞 · 社区热议",
-   "source": "w2solo",
-   "board": "热榜",
-   "category": "热门话题",
-   "note": "社区闲聊帖，标题为农历新年，内容偏节日问候与日常交流。属于轻量社交话题。",
-   "scene": "参与独立开发者社区闲聊的人"
-  },
-  {
-   "rank": 7,
    "title": "AI 证件照生成",
    "url": "https://w2solo.com/topics/6353",
    "desc": "奇思妙想 · 作者 eureka",
@@ -1891,18 +1507,6 @@
    "category": "项目需求",
    "note": "想做个能自动生成证件照的工具，从标题看核心是把普通照片处理成合规证件照。",
    "scene": "做图像处理小工具的独立开发者"
-  },
-  {
-   "rank": 8,
-   "title": "makecindy/cindy",
-   "url": "https://github.com/makecindy/cindy",
-   "desc": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
-   "heat": "+728 today · 总计 8,264★ · TypeScript",
-   "source": "GitHub",
-   "board": "日榜",
-   "category": "热门产品",
-   "note": "开源、开箱即用的 AI Agent，主打想到就能做到，省去自己搭环境配流程的麻烦。",
-   "scene": "想快速上手 AI 自动化的开发者"
   },
   {
    "rank": 8,
@@ -1990,30 +1594,6 @@
   },
   {
    "rank": 8,
-   "title": "Kalshi: Trade Sports & Events",
-   "url": "https://apps.apple.com/us/app/kalshi-trade-sports-events/id1632713844",
-   "desc": "KalshiEX LLC",
-   "heat": "免费榜 第 8 名",
-   "source": "App Store",
-   "board": "免费榜（美国）",
-   "category": "热门产品",
-   "note": "Kalshi 出品的应用，让用户就体育赛事和各类事件的结果进行交易，类似事件预测市场。",
-   "scene": "对体育和事件预测感兴趣的人"
-  },
-  {
-   "rank": 8,
-   "title": "社区速递 163 | 金豪 59 调整版钢笔与九月派友剁手清单",
-   "url": "https://sspai.com/post/117633",
-   "desc": "除了首页时间流和侧栏的精选展位，少数派Matrix社区还有很多优秀内容因条件所限无法得到有效曝光，因此我们决定重启Matrix周报，并在此基础上添加更多社区内容、作者投稿新玩意呈现给大家。上周社区速递 ...",
-   "heat": "14 赞",
-   "source": "少数派",
-   "board": "热榜",
-   "category": "热门产品",
-   "note": "少数派 Matrix 社区的周报，汇总社区优秀内容和派友投稿，弥补首页曝光不足。",
-   "scene": "关注少数派社区内容的读者"
-  },
-  {
-   "rank": 8,
    "title": "Hello Kitty深夜致歉",
    "url": "https://www.toutiao.com/trending/7700202788881747499/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227700202788881747499%22%2C%22hot_board_impr_id%22%3A%2220261029135251A7A1912D8C975FCC117F%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22Hello+Kitty%E6%B7%B1%E5%A4%9C%E8%87%B4%E6%AD%89%22%7D&rank=&style_id=40132&topic_id=7700202788881747499",
    "desc": "今日头条热榜事件",
@@ -2098,30 +1678,6 @@
   },
   {
    "rank": 8,
-   "title": "Virtual Classroom Market",
-   "url": "https://w2solo.com/topics/8643",
-   "desc": "我的作品 · 作者 akankshs Bhoie",
-   "heat": "25 浏览 · 新作品",
-   "source": "w2solo",
-   "board": "作品榜",
-   "category": "热门产品",
-   "note": "作者在 w2solo 发布的作品，从标题看与虚拟课堂市场相关，具体功能简介未展开。",
-   "scene": "关注在线教育产品的人"
-  },
-  {
-   "rank": 8,
-   "title": "CSV 报错修好之后，怎样确认数据没有被 “修坏”？一个可复现的小练习",
-   "url": "https://w2solo.com/topics/8612",
-   "desc": "资源 · 作者 刘能",
-   "heat": "58 浏览 · 1 回复 · 1 赞 · 社区热议",
-   "source": "w2solo",
-   "board": "热榜",
-   "category": "热门话题",
-   "note": "讲 CSV 报错修好后怎么验证数据没被改坏，给了一个能照着复现的小练习。",
-   "scene": "常处理表格数据的分析师和开发者"
-  },
-  {
-   "rank": 8,
    "title": "我做了个二维码美化平台，给想要做出美化二维码的用户提供工具，下一步添加案例模板",
    "url": "https://w2solo.com/topics/6824",
    "desc": "奇思妙想 · 作者 kajian",
@@ -2131,30 +1687,6 @@
    "category": "项目需求",
    "note": "做了个二维码美化工具，帮用户生成好看的二维码，接下来想加案例模板方便直接套用。",
    "scene": "做二维码美化类工具的独立开发者"
-  },
-  {
-   "rank": 9,
-   "title": "nightly-labs/openbot",
-   "url": "https://github.com/nightly-labs/openbot",
-   "desc": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
-   "heat": "+1054 today · 总计 3,416★ · TypeScript",
-   "source": "GitHub",
-   "board": "日榜",
-   "category": "热门产品",
-   "note": "本地优先的桌面工作台，让 Codex、Claude、Grok 等 AI 各自在独立空间里跑任务、共享文件并互相协作。",
-   "scene": "同时用多个 AI 助手的开发者"
-  },
-  {
-   "rank": 9,
-   "title": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-   "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-   "desc": "AI 模型 · text-generation",
-   "heat": "趋势 401 · 451 likes · 1.4m 下载 · gguf / gsq / rco",
-   "source": "Hugging Face",
-   "board": "热榜",
-   "category": "热门产品",
-   "note": "DeepSeek 系列模型的 GGUF 量化版本，方便在本地或低配设备上跑文本生成。",
-   "scene": "想在本地部署大模型的用户"
   },
   {
    "rank": 9,
@@ -2218,18 +1750,6 @@
   },
   {
    "rank": 9,
-   "title": "WorkBuddy - AI 办公我帮你",
-   "url": "https://apps.apple.com/cn/app/workbuddy-ai-%E5%8A%9E%E5%85%AC%E6%88%91%E5%B8%AE%E4%BD%A0/id6761374913",
-   "desc": "Tencent Technology (Shanghai) Company Limited",
-   "heat": "免费榜 第 9 名",
-   "source": "App Store",
-   "board": "免费榜（中国）",
-   "category": "热门产品",
-   "note": "腾讯推出的 AI 办公助手，从标题看是帮用户处理日常办公事务的工具。",
-   "scene": "想用 AI 提效的上班族"
-  },
-  {
-   "rank": 9,
    "title": "Google Gemini",
    "url": "https://apps.apple.com/us/app/google-gemini/id6477489729",
    "desc": "Google",
@@ -2239,18 +1759,6 @@
    "category": "热门产品",
    "note": "谷歌自家的 AI 助手应用，提供对话问答和生成能力，与自家生态打通。",
    "scene": "日常用谷歌服务的用户"
-  },
-  {
-   "rank": 9,
-   "title": "Apple Sports：不看新闻、不聊球，只看我关心的比赛",
-   "url": "https://sspai.com/post/117557",
-   "desc": "作为一个从小看CCTV-5体育频道下饭的「体育迷」，在互联网时代我一般都看新浪门户网站的体育板块来获取最新的体育资讯，在智能手机逐渐普及后，百度贴吧、虎扑、懂球帝等平台又是我获取体育资讯以及和网友们吹 ...",
-   "heat": "16 赞",
-   "source": "少数派",
-   "board": "热榜",
-   "category": "热门产品",
-   "note": "作者分享用 Apple Sports 只看自己关心比赛的心得，不刷新闻不聊球，聚焦赛果本身。",
-   "scene": "只想看比分结果的体育迷"
   },
   {
    "rank": 9,
@@ -2335,18 +1843,6 @@
    "category": "项目需求",
    "note": "用 Next.js 做网页时，想阻止谷歌翻译改动品牌名等特定内容，需要找到局部屏蔽翻译的办法。",
    "scene": "做多语言网页的前端开发者"
-  },
-  {
-   "rank": 9,
-   "title": "回想册 · Idea Rewind",
-   "url": "https://w2solo.com/topics/8640",
-   "desc": "我的作品 · 作者 IndieShade",
-   "heat": "50 浏览 · 2 回复 · 1 赞 · 新作品",
-   "source": "w2solo",
-   "board": "作品榜",
-   "category": "热门产品",
-   "note": "从标题看，这是一个把想法和灵感集中记录、方便日后回看的个人作品，解决念头散落各处、想不起来的问题。",
-   "scene": "习惯随手记灵感、需要定期回顾整理的人"
   },
   {
    "rank": 9,
@@ -2446,18 +1942,6 @@
   },
   {
    "rank": 10,
-   "title": "EXT — Faceit Intelligence",
-   "url": "https://addons.mozilla.org/en-US/firefox/addon/ext-faceit-intelligence/",
-   "desc": "玩家做给玩家的 Faceit 比赛房间分析：获胜概率、EXT Rating、hidden pool 检测，完全免费。",
-   "heat": "日均用户 191 · 周下载 238",
-   "source": "Firefox 插件",
-   "board": "热榜",
-   "category": "热门产品",
-   "note": "玩家自制的 Faceit 对局分析工具，给出胜率、评分和隐藏池检测，免费使用，帮人赛前摸清局势。",
-   "scene": "常打 Faceit 排位、想提前判断对局质量的玩家"
-  },
-  {
-   "rank": 10,
    "title": "学信网",
    "url": "https://apps.apple.com/cn/app/%E5%AD%A6%E4%BF%A1%E7%BD%91/id1488854568",
    "desc": "中国高等教育学生信息网(学信网)",
@@ -2467,30 +1951,6 @@
    "category": "热门产品",
    "note": "中国高等教育学生信息网的官方应用，用于查询学籍学历等教育信息，是学生和毕业生的常用入口。",
    "scene": "需要查学籍学历的高校学生与毕业生"
-  },
-  {
-   "rank": 10,
-   "title": "Threads",
-   "url": "https://apps.apple.com/us/app/threads/id6446901002",
-   "desc": "Instagram, Inc.",
-   "heat": "免费榜 第 10 名",
-   "source": "App Store",
-   "board": "免费榜（美国）",
-   "category": "热门产品",
-   "note": "Instagram 推出的文字社交应用，以短文字和讨论为主，和图片为主的 Instagram 形成区分。",
-   "scene": "想用文字发帖、参与话题讨论的社交用户"
-  },
-  {
-   "rank": 10,
-   "title": "一日一技｜NAS 作为 UPS 总控，实现局域网多设备断电自动关机",
-   "url": "https://sspai.com/post/115855",
-   "desc": "借助 NUT 网络 UPS 协议，我们只需要一台 UPS，就可以驱动局域网中多台设备协同断电保护。",
-   "heat": "27 赞",
-   "source": "少数派",
-   "board": "热榜",
-   "category": "热门产品",
-   "note": "借助 NUT 协议让一台 UPS 统筹局域网内多台设备，断电时统一自动关机，省去每台设备各配一台 UPS。",
-   "scene": "家里有多台 NAS 和设备的自建服务器用户"
   },
   {
    "rank": 10,
@@ -2566,30 +2026,6 @@
   },
   {
    "rank": 10,
-   "title": "AI 味检测与去除",
-   "url": "https://w2solo.com/topics/8628",
-   "desc": "我的作品 · 作者 Marena",
-   "heat": "95 浏览 · 2 回复 · 新作品",
-   "source": "w2solo",
-   "board": "作品榜",
-   "category": "热门产品",
-   "note": "从标题看，这是一个检测文本里 AI 生成痕迹并尝试去除的工具，针对内容被判定为机器写作的困扰。",
-   "scene": "担心文案被判为 AI 生成的内容创作者"
-  },
-  {
-   "rank": 10,
-   "title": "把网页保存下来，就能离线用吗？一次单文件工具的断网检查",
-   "url": "https://w2solo.com/topics/8605",
-   "desc": "心得总结 · 作者 刘能",
-   "heat": "51 浏览 · 社区热议",
-   "source": "w2solo",
-   "board": "热榜",
-   "category": "热门话题",
-   "note": "探讨把网页保存成单文件后能否真正离线使用，并做了一次断网环境下的实际检查。",
-   "scene": "关注网页存档与离线工具的用户"
-  },
-  {
-   "rank": 10,
    "title": "Chrome 插件 “右键多搜”，欢迎试用",
    "url": "https://w2solo.com/topics/3169",
    "desc": "开坑 · 作者 潇湘",
@@ -2600,5 +2036,10 @@
    "note": "做了个 Chrome 插件，选中文字右键可跳多个搜索引擎，目前处于试用推广阶段。",
    "scene": "做浏览器插件的独立开发者"
   }
- ]
+ ],
+ "dedupe": {
+  "window_days": 7,
+  "removed": 47,
+  "backfilled": true
+ }
 }

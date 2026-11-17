@@ -1215,6 +1215,80 @@ def item_key(it):
     return (it.get("source") or "", it.get("board") or "", it.get("title") or "")
 
 
+# ---------------------------------------------------------------- 增量去重
+# 同一个榜单每天都会出现大量老面孔（GitHub trending 尤其明显）。写入当天数据前，
+# 先跟最近若干天的同类周期文件比对，把出现过的条目剔除，只留「今天新上榜的」。
+
+DEDUPE_DAYS = {"daily": 7, "weekly": 28, "monthly": 90}   # CLI 可覆盖
+
+
+def _norm_url(u):
+    if isinstance(u, list):
+        u = u[0] if u else ""
+    if not isinstance(u, str):
+        return ""
+    u = u.strip().lower()
+    u = re.sub(r"^https?://", "", u)
+    u = re.sub(r"^www\.", "", u)
+    u = u.split("#", 1)[0].split("?", 1)[0]
+    return u.rstrip("/")
+
+
+def _item_sig(it):
+    """去重签名：优先用归一化链接，没有链接再用「标题」兜底。"""
+    u = _norm_url(it.get("url"))
+    if u:
+        return "u:" + u
+    title = re.sub(r"\s+", "", (it.get("title") or "")).lower()
+    return "t:" + title if title else ""
+
+
+def _recent_sigs(date_str, period, window_days):
+    """扫描同周期、最近 window_days 天内（不含当天）的历史条目签名。"""
+    sigs = {}
+    if window_days <= 0 or not os.path.isdir(DATA_DIR):
+        return sigs
+    try:
+        today = datetime.date.fromisoformat(date_str)
+    except ValueError:
+        return sigs
+    start = today - datetime.timedelta(days=window_days)
+    for name in os.listdir(DATA_DIR):
+        m = re.match(r"^(\d{4}-\d{2}-\d{2})-(daily|weekly|monthly)\.json$", name)
+        if not m or m.group(2) != period:
+            continue
+        try:
+            d = datetime.date.fromisoformat(m.group(1))
+        except ValueError:
+            continue
+        if not (start <= d < today):
+            continue
+        doc = load_day_file(os.path.join(DATA_DIR, name)) or {}
+        for it in doc.get("items") or []:
+            if not isinstance(it, dict):
+                continue
+            sig = _item_sig(it)
+            if sig:
+                sigs[sig] = m.group(1)
+    return sigs
+
+
+def dedupe_items(items, date_str, period):
+    """剔除最近窗口内已出现过的条目，返回 (保留条目, 统计信息)。"""
+    window = DEDUPE_DAYS.get(period, 7)
+    sigs = _recent_sigs(date_str, period, window)
+    if not sigs:
+        return items, {"window_days": window, "checked": len(sigs), "removed": 0}
+    kept, removed = [], 0
+    for it in items:
+        sig = _item_sig(it)
+        if sig and sig in sigs:
+            removed += 1
+            continue
+        kept.append(it)
+    return kept, {"window_days": window, "checked": len(sigs), "removed": removed}
+
+
 def period_of(board):
     return PERIOD_OF_BOARD.get(board, "daily")
 
@@ -1234,6 +1308,8 @@ def write_period_file(date_str, period, records, summary):
     os.makedirs(DATA_DIR, exist_ok=True)
     path = os.path.join(DATA_DIR, "%s-%s.json" % (date_str, period))
     items = [record_to_item(r) for r in records]
+    # 增量：剔除最近窗口内已上榜过的条目，只留今天的新面孔
+    items, dedupe_info = dedupe_items(items, date_str, period)
 
     old = load_day_file(path)
     kept = 0
@@ -1273,6 +1349,7 @@ def write_period_file(date_str, period, records, summary):
         "generated_at": datetime.datetime.now().astimezone().isoformat(timespec="seconds"),
         "count": len(items),
         "sources": src_counts,
+        "dedupe": dedupe_info,
         "errors": (summary.get("errors") or []) + carried,
         "summaries": build_summaries_from_items(items, date_str),
         "items": items,
@@ -1283,7 +1360,8 @@ def write_period_file(date_str, period, records, summary):
         json.dump(payload, f, ensure_ascii=False, indent=1)
     os.replace(tmp, path)
     return {"file": os.path.basename(path), "count": len(items),
-            "kept_notes": kept, "carried": carried}
+            "kept_notes": kept, "carried": carried,
+            "dedupe_removed": dedupe_info.get("removed", 0)}
 
 
 def rebuild_index():
@@ -1348,6 +1426,8 @@ def main():
     ap.add_argument("--out", help="额外把原始记录 JSON 写到文件")
     ap.add_argument("--no-save", action="store_true", help="不写 data/ 目录下的 JSON")
     ap.add_argument("--top", type=int, default=TOP_N)
+    ap.add_argument("--dedupe-days", type=int, default=7,
+                    help="增量去重窗口（天）：只保留最近 N 天没出现过的条目；0 表示不去重")
     ap.add_argument("--only", default="", help="只跑指定来源：github,producthunt,huggingface,"
                                                "hackernews,chrome,firefox,greasyfork,appstore,"
                                                "sspai,toutiao,baidu,bilibili,juejin,"
@@ -1355,6 +1435,9 @@ def main():
     args = ap.parse_args()
 
     TOP_N = args.top
+    DEDUPE_DAYS["daily"] = args.dedupe_days
+    DEDUPE_DAYS["weekly"] = max(0, args.dedupe_days * 4)
+    DEDUPE_DAYS["monthly"] = max(0, args.dedupe_days * 12)
     only = set(x.strip() for x in args.only.split(",") if x.strip()) or None
 
     records, summary = build_records(only=only)

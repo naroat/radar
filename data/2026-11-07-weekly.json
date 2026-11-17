@@ -2,9 +2,9 @@
  "date": "2026-11-07",
  "period": "weekly",
  "generated_at": "2026-11-07T17:50:47+08:00",
- "count": 10,
+ "count": 6,
  "sources": {
-  "GitHub": 10
+  "GitHub": 6
  },
  "errors": [
   "GreasyFork: 抓取失败 https://greasyfork.org/en/scripts?sort=hot (HTTP 403 (len=5807))"
@@ -13,14 +13,14 @@
   {
    "category": "热门产品",
    "source": "GitHub",
-   "count": 10,
-   "text": "10 条 · 榜首「thedotmack/claude-mem」+8726 this week · 总计 114,184★ · TypeScript · 高频：agent(4)、skills(4)、claude(3)"
+   "count": 6,
+   "text": "6 条 · 榜首「thedotmack/claude-mem」+8726 this week · 总计 114,184★ · TypeScript · 高频：agent(4)、skills(3)、claude(2)"
   },
   {
    "category": "热门产品",
    "source": "全部",
-   "count": 10,
-   "text": "10 条 · 榜首「thedotmack/claude-mem」+8726 this week · 总计 114,184★ · TypeScript · 高频：agent(4)、skills(4)、claude(3) · 覆盖 GitHub"
+   "count": 6,
+   "text": "6 条 · 榜首「thedotmack/claude-mem」+8726 this week · 总计 114,184★ · TypeScript · 高频：agent(4)、skills(3)、claude(2) · 覆盖 GitHub"
   }
  ],
  "items": [
@@ -49,18 +49,6 @@
    "scene": "想用 AI 辅助做游戏的小团队"
   },
   {
-   "rank": 3,
-   "title": "pingdotgg/t3code",
-   "url": "https://github.com/pingdotgg/t3code",
-   "desc": "",
-   "heat": "+16782 this week · 总计 50,318★ · TypeScript",
-   "source": "GitHub",
-   "board": "周榜",
-   "category": "热门产品",
-   "note": "简介为空，从仓库名看是 pingdotgg 名下的一个代码项目，具体用途无法判断。",
-   "scene": "关注开源项目的开发者"
-  },
-  {
    "rank": 4,
    "title": "max-sixty/worktrunk",
    "url": "https://github.com/max-sixty/worktrunk",
@@ -71,18 +59,6 @@
    "category": "热门产品",
    "note": "管理 Git worktree 的命令行工具，专为多个 AI 代理并行干活设计，避免互相踩脚。",
    "scene": "同时跑多个 AI 代理的开发者"
-  },
-  {
-   "rank": 5,
-   "title": "Nutlope/hallmark",
-   "url": "https://github.com/Nutlope/hallmark",
-   "desc": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-   "heat": "+6900 this week · 总计 49,840★ · CSS",
-   "source": "GitHub",
-   "board": "周榜",
-   "category": "热门产品",
-   "note": "给 Claude Code、Cursor 等编程代理用的设计技能，专门防止生成千篇一律的 AI 味界面。",
-   "scene": "用 AI 写前端界面的开发者"
   },
   {
    "rank": 6,
@@ -109,30 +85,6 @@
    "scene": "想自建 AI 机器人环境的用户"
   },
   {
-   "rank": 8,
-   "title": "pbakaus/impeccable",
-   "url": "https://github.com/pbakaus/impeccable",
-   "desc": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
-   "heat": "+8172 this week · 总计 105,060★ · Rust",
-   "source": "GitHub",
-   "board": "周榜",
-   "category": "热门产品",
-   "note": "给编程代理补上设计词汇，用 polish、critique 等指令引导打磨和审查，在交付前拦住 AI 味。",
-   "scene": "用 AI 代理做设计的开发者"
-  },
-  {
-   "rank": 9,
-   "title": "obra/superpowers",
-   "url": "https://github.com/obra/superpowers",
-   "desc": "An agentic skills framework & software development methodology that works.",
-   "heat": "+4577 this week · 总计 313,793★ · Shell",
-   "source": "GitHub",
-   "board": "周榜",
-   "category": "热门产品",
-   "note": "一套面向 AI 代理的技能框架和软件开发方法论，强调实际可用。",
-   "scene": "探索 AI 代理开发流程的团队"
-  },
-  {
    "rank": 10,
    "title": "HKUDS/DeepTutor",
    "url": "https://github.com/HKUDS/DeepTutor",
@@ -144,5 +96,10 @@
    "note": "港大团队做的个性化辅导系统，主打长期陪伴式学习，根据个人情况持续调整教学。",
    "scene": "需要长期个性化学习辅导的学生"
   }
- ]
+ ],
+ "dedupe": {
+  "window_days": 28,
+  "removed": 4,
+  "backfilled": true
+ }
 }

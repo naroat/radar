@@ -43,7 +43,13 @@ def main():
 
     site_data = os.path.join(args.site, "data")
     os.makedirs(site_data, exist_ok=True)
-    shutil.copy2(args.page, os.path.join(args.site, "index.html"))
+
+    # 复制 web/ 下全部页面（index.html、monitor.html 等）
+    pages = []
+    web_dir = os.path.dirname(args.page)
+    for f in sorted(glob.glob(os.path.join(web_dir, "*.html"))):
+        shutil.copy2(f, os.path.join(args.site, os.path.basename(f)))
+        pages.append(os.path.basename(f))
 
     copied = []
     for f in sorted(glob.glob(os.path.join(DATA_DIR, "*.json"))):
@@ -54,7 +60,7 @@ def main():
 
     print(json.dumps({
         "site": args.site,
-        "page": os.path.basename(args.page),
+        "pages": pages,
         "data_files": copied,
         "data_count": len([c for c in copied if c != "index.json"]),
     }, ensure_ascii=False, indent=1))

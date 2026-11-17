@@ -16,3 +16,6 @@ venv/
 # 临时文件
 *.tmp
 *.log
+
+# 数据监控凭据（OAuth client_secret / refresh_token），不入库
+scripts/monitor_config.json

@@ -1,0 +1,18 @@
+{
+  "_说明": "复制本文件为 monitor_config.json 并填入真实凭据（monitor_config.json 已 gitignore，不会入库）。CI 环境则改用 Secrets/Variables：CWS_CLIENT_ID / CWS_CLIENT_SECRET / CWS_REFRESH_TOKEN / CWS_PUBLISHER / CWS_EXTENSIONS",
+  "_获取方式": [
+    "1. Google Cloud Console 创建 OAuth 客户端（类型：桌面应用或其他）",
+    "2. OAuth 同意屏幕需添加 scope: https://www.googleapis.com/auth/chromewebstore.readonly",
+    "3. 用 OAuth playground 或自建流程拿 refresh_token（离线访问）",
+    "4. publisher ID 在 Chrome Web Store 开发者信息页；插件 ID 在开发者后台每条目下可见"
+  ],
+  "publisher": "publishers/你的发布者ID",
+  "extensions": [
+    { "id": "你的插件ID", "name": "插件名称" }
+  ],
+  "oauth": {
+    "client_id": "xxxx.apps.googleusercontent.com",
+    "client_secret": "GOCSPX-xxxx",
+    "refresh_token": "1//0gxxxx"
+  }
+}

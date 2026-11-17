@@ -35,64 +35,79 @@ w.console.error = (...a) => { errors.push('console.error: ' + a.join(' ')); orig
 });
 
 const snap = (d) => ({
-  items: d.querySelectorAll('.item').length,
-  cols: d.querySelectorAll('.col').length,
+  items: d.querySelectorAll('.row-item').length,
+  blocks: d.querySelectorAll('.src-block').length,
   chips: [...d.querySelectorAll('.date-chip')].map((c) => c.textContent),
-  sources: [...d.querySelectorAll('.col-name')].map((b) => b.textContent),
+  sources: [...d.querySelectorAll('.src-name')].map((b) => b.textContent),
   total: d.getElementById('statTotal').textContent,
+  totalLab: d.getElementById('statTotalLab').textContent,
   srcCount: d.getElementById('statSrc').textContent,
-  catBlocks: [...d.querySelectorAll('.cat-block .cat-name')].map((e) => e.textContent),
   catTabs: [...d.querySelectorAll('.cat-tab')].map((e) => e.textContent),
-  catSummaries: d.querySelectorAll('.cat-summary').length,
-  digestCards: [...d.querySelectorAll('.digest-card')].map((e) => ({
-    cat: e.querySelector('.d-cat .nm') ? e.querySelector('.d-cat .nm').textContent : null,
-    cnt: e.querySelector('.d-cat .cnt') ? e.querySelector('.d-cat .cnt').textContent : null,
-    top: e.querySelector('.d-top') ? e.querySelector('.d-top').textContent.slice(0, 70) : null,
-    kws: [...e.querySelectorAll('.kw')].map((k) => k.textContent),
-  })),
+  activeCat: d.querySelector('.cat-tab.on') ? d.querySelector('.cat-tab.on').textContent : null,
+  activeView: d.querySelector('.view-btn.on') ? d.querySelector('.view-btn.on').textContent : null,
   digestHead: d.querySelector('.digest-head .lab') ? d.querySelector('.digest-head .lab').textContent : null,
-  notes: d.querySelectorAll('.it-note').length,
-  scenes: d.querySelectorAll('.it-scene').length,
-  sampleNote: d.querySelector('.it-note') ? d.querySelector('.it-note').textContent.slice(0, 80) : null,
-  sampleScene: d.querySelector('.it-scene') ? d.querySelector('.it-scene').textContent.slice(0, 60) : null,
-  colSummaries: d.querySelectorAll('.col-summary').length,
-  rangeNote: d.getElementById('rangeNote').textContent,
+  digestBody: d.querySelector('.digest-body') ? d.querySelector('.digest-body').textContent.slice(0, 80) : null,
+  notes: d.querySelectorAll('.ri-note').length,
+  scenes: d.querySelectorAll('.ri-scene').length,
+  srcSummaries: d.querySelectorAll('.src-summary').length,
+  viewHint: d.getElementById('viewHint').textContent,
   prevDisabled: d.getElementById('prevDay').disabled,
   nextDisabled: d.getElementById('nextDay').disabled,
-  firstTitle: d.querySelector('.it-title') ? d.querySelector('.it-title').textContent : null,
-  firstLink: d.querySelector('.item') ? d.querySelector('.item').getAttribute('href') : null,
-  boards: [...d.querySelectorAll('.badge')].map((b) => b.textContent),
+  firstTitle: d.querySelector('.ri-title') ? d.querySelector('.ri-title').textContent : null,
+  firstLink: d.querySelector('.row-item') ? d.querySelector('.row-item').getAttribute('href') : null,
+  boards: [...d.querySelectorAll('.board-tag')].map((b) => b.textContent),
+  moreBtns: d.querySelectorAll('.more-btn').length,
 });
 
-setTimeout(() => {
-  const d = w.document;
-  const first = snap(d);
+const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 
-  // 模拟用日期选择器跳到没有数据的一天
+(async () => {
+  await wait(500);
+  const d = w.document;
+  const day = snap(d);
+
+  // 切到周视图
+  const weekBtn = [...d.querySelectorAll('.view-btn')].find((b) => b.getAttribute('data-view') === 'week');
+  weekBtn.click();
+  await wait(400);
+  const week = snap(d);
+
+  // 切到月视图
+  const monthBtn = [...d.querySelectorAll('.view-btn')].find((b) => b.getAttribute('data-view') === 'month');
+  monthBtn.click();
+  await wait(500);
+  const month = snap(d);
+
+  // 点开第一个「展开其余」按钮
+  const moreBtn = d.querySelector('.more-btn');
+  if (moreBtn) moreBtn.click();
+  await wait(300);
+  const expanded = { items: d.querySelectorAll('.row-item').length,
+                     moreBtns: d.querySelectorAll('.more-btn').length };
+
+  // 切到第二个分类
+  const tabs = [...d.querySelectorAll('.cat-tab')];
+  if (tabs[1]) tabs[1].click();
+  await wait(300);
+  const cat2 = snap(d);
+
+  // 跳到没有数据的一天
   const pick = d.getElementById('datePick');
   pick.value = '2026-10-01';
   pick.dispatchEvent(new w.Event('change'));
+  await wait(400);
+  const emptyState = d.querySelector('.state') ? d.querySelector('.state').textContent : null;
 
-  setTimeout(() => {
-    const emptyState = d.querySelector('.state') ? d.querySelector('.state').textContent : null;
+  // 再跳回有数据的一天
+  pick.value = '2026-10-21';
+  pick.dispatchEvent(new w.Event('change'));
+  await wait(400);
+  const back = {
+    items: d.querySelectorAll('.row-item').length,
+    activeChip: d.querySelector('.date-chip.on') ? d.querySelector('.date-chip.on').textContent : null,
+    total: d.getElementById('statTotal').textContent,
+  };
 
-    // 再跳回有数据的一天
-    pick.value = '2026-10-21';
-    pick.dispatchEvent(new w.Event('change'));
-
-    setTimeout(() => {
-      console.log(JSON.stringify({
-        first,
-        emptyState,
-        back: {
-          items: d.querySelectorAll('.item').length,
-          catSummaries: d.querySelectorAll('.cat-summary').length,
-          colSummaries: d.querySelectorAll('.col-summary').length,
-          activeChip: d.querySelector('.date-chip.on') ? d.querySelector('.date-chip.on').textContent : null,
-        },
-        errors,
-      }, null, 1));
-      process.exit(errors.length ? 1 : 0);
-    }, 300);
-  }, 300);
-}, 400);
+  console.log(JSON.stringify({ day, week, month, expanded, cat2, emptyState, back, errors }, null, 1));
+  process.exit(errors.length ? 1 : 0);
+})();

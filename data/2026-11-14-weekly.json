@@ -2,9 +2,9 @@
  "date": "2026-11-14",
  "period": "weekly",
  "generated_at": "2026-11-14T18:00:09+08:00",
- "count": 10,
+ "count": 8,
  "sources": {
-  "GitHub": 10
+  "GitHub": 8
  },
  "errors": [
   "GreasyFork: 抓取失败 https://greasyfork.org/en/scripts?sort=hot (HTTP 403 (len=5807))"
@@ -13,14 +13,14 @@
   {
    "category": "热门产品",
    "source": "GitHub",
-   "count": 10,
-   "text": "10 条 · 榜首「sherlock-project/sherlock」+13364 this week · 总计 111,411★ · Python · 高频：skills(5)、agents(3)、agent(2)"
+   "count": 8,
+   "text": "8 条 · 榜首「sherlock-project/sherlock」+13364 this week · 总计 111,411★ · Python · 高频：agents(3)、skills(3)、analysis(2)"
   },
   {
    "category": "热门产品",
    "source": "全部",
-   "count": 10,
-   "text": "10 条 · 榜首「sherlock-project/sherlock」+13364 this week · 总计 111,411★ · Python · 高频：skills(5)、agents(3)、agent(2) · 覆盖 GitHub"
+   "count": 8,
+   "text": "8 条 · 榜首「sherlock-project/sherlock」+13364 this week · 总计 111,411★ · Python · 高频：agents(3)、skills(3)、analysis(2) · 覆盖 GitHub"
   }
  ],
  "items": [
@@ -35,30 +35,6 @@
    "category": "热门产品",
    "note": "输入一个用户名，就能在多个社交平台上排查对应账号是否存在，常用于找人或者核查身份。",
    "scene": "做账号溯源、背景核查的调查或安全人员"
-  },
-  {
-   "rank": 2,
-   "title": "anthropics/skills",
-   "url": "https://github.com/anthropics/skills",
-   "desc": "Public repository for Agent Skills",
-   "heat": "+6169 this week · 总计 194,312★ · Python",
-   "source": "GitHub",
-   "board": "周榜",
-   "category": "热门产品",
-   "note": "Anthropic 公开的 Agent 技能仓库，收集了一批可复用的技能定义，供智能体调用完成具体任务。",
-   "scene": "搭建 AI 智能体、想复用现成技能的开发者"
-  },
-  {
-   "rank": 3,
-   "title": "milind-soni/OpenMausBot",
-   "url": "https://github.com/milind-soni/OpenMausBot",
-   "desc": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-   "heat": "+7763 this week · 总计 22,430★ · TypeScript",
-   "source": "GitHub",
-   "board": "周榜",
-   "category": "热门产品",
-   "note": "开源的 Grok 机器人替代方案，给机器人配了一台可操作的虚拟机，让它在里面执行任务。",
-   "scene": "想自建带执行环境的 AI 机器人的开发者"
   },
   {
    "rank": 4,
@@ -144,5 +120,10 @@
    "note": "面向 AI 编码智能体的生产级工程技能集合，由知名开发者整理，帮智能体按工程规范写代码。",
    "scene": "把 AI 智能体用于正式项目开发的工程团队"
   }
- ]
+ ],
+ "dedupe": {
+  "window_days": 28,
+  "removed": 2,
+  "backfilled": true
+ }
 }
