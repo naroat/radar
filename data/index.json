@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-17T18:14:59+08:00",
+ "updated_at": "2026-11-17T18:22:20+08:00",
  "days": [
   {
    "date": "2026-11-17",
@@ -7,9 +7,9 @@
     "daily"
    ],
    "counts": {
-    "daily": 161
+    "daily": 149
    },
-   "total": 161
+   "total": 149
   },
   {
    "date": "2026-11-16",
@@ -102,8 +102,8 @@
     "weekly"
    ],
    "counts": {
-    "daily": 156,
-    "weekly": 2
+    "weekly": 2,
+    "daily": 156
    },
    "total": 158
   },
