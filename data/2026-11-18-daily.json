@@ -2,7 +2,7 @@
  "date": "2026-11-18",
  "period": "daily",
  "generated_at": "2026-11-18T09:49:39+08:00",
- "count": 77,
+ "count": 75,
  "sources": {
   "Product Hunt": 10,
   "Hacker News": 18,
@@ -12,15 +12,14 @@
   "Stack Overflow": 10,
   "w2solo": 6,
   "哔哩哔哩": 5,
-  "Firefox 插件": 1,
   "V2EX": 5,
-  "App Store": 3,
+  "App Store": 2,
   "Hugging Face": 1
  },
  "dedupe": {
-  "window_days": 7,
-  "checked": 673,
-  "removed": 138
+  "window_days": 30,
+  "removed": 2,
+  "backfilled": true
  },
  "errors": [
   "GreasyFork: 抓取失败 https://greasyfork.org/en/scripts?sort=hot (HTTP 403 (len=5807))"
@@ -29,14 +28,8 @@
   {
    "category": "热门产品",
    "source": "App Store",
-   "count": 3,
-   "text": "3 条 · 榜首「Capital One Shopping: Save Now」免费榜 第 6 名 · 高频：microsoft(2)"
-  },
-  {
-   "category": "热门产品",
-   "source": "Firefox 插件",
-   "count": 1,
-   "text": "1 条 · 榜首「ChatGPT in Sidebar」日均用户 348 · 周下载 237 · ★5.0 · 高频：firefox(1)、sidebar(1)、使用快捷键或工具栏按钮(1)"
+   "count": 2,
+   "text": "2 条 · 榜首「Capital One Shopping: Save Now」免费榜 第 6 名 · 高频：authenticator(1)、capital(1)、corporation(1)"
   },
   {
    "category": "热门产品",
@@ -113,8 +106,8 @@
   {
    "category": "热门产品",
    "source": "全部",
-   "count": 27,
-   "text": "27 条 · 榜首「Show HN: TrnRT – An open-source LLM inferenc」45 points · 5 comments · 高频：agent(4)、aws(4)、iphone(3) · 覆盖 App Store、Firefox 插件、Hacker News、Hugging Face、Product Hunt、w2solo、少数派"
+   "count": 25,
+   "text": "25 条 · 榜首「Show HN: TrnRT – An open-source LLM inferenc」45 points · 5 comments · 高频：agent(4)、aws(4)、iphone(3) · 覆盖 App Store、Hacker News、Hugging Face、Product Hunt、w2solo、少数派"
   },
   {
    "category": "热门话题",
@@ -453,18 +446,6 @@
    "category": "热门话题",
    "note": "据路透报道，美国高度机密的国家安全通信网络出现中断，具体原因和影响尚待披露。",
    "scene": "关注国际安全与通信基础设施的读者"
-  },
-  {
-   "rank": 4,
-   "title": "ChatGPT in Sidebar",
-   "url": "https://addons.mozilla.org/en-US/firefox/addon/sidebar-chatgpt/",
-   "desc": "在 Firefox 侧边栏面板中打开 ChatGPT。使用快捷键或工具栏按钮，即可快速进行 AI 聊天，无需离开当前标签页。",
-   "heat": "日均用户 348 · 周下载 237 · ★5.0",
-   "source": "Firefox 插件",
-   "board": "热榜",
-   "category": "热门产品",
-   "note": "在 Firefox 侧边栏里直接打开 ChatGPT，用快捷键或按钮就能聊天，不用切换标签页。相比单独开网页，它更省来回切换。",
-   "scene": "用 Firefox 浏览器、常边查资料边问 AI 的人"
   },
   {
    "rank": 4,
@@ -993,18 +974,6 @@
    "category": "热门话题",
    "note": "讨论Claude Code团队如何设计代码验证环节，涉及AI编程工具的质量保障思路，开发者可参考。",
    "scene": "使用AI编程工具的开发者与工程团队"
-  },
-  {
-   "rank": 10,
-   "title": "剪映 - 抖音官方AI创作神器",
-   "url": "https://apps.apple.com/cn/app/%E5%89%AA%E6%98%A0-%E6%8A%96%E9%9F%B3%E5%AE%98%E6%96%B9ai%E5%88%9B%E4%BD%9C%E7%A5%9E%E5%99%A8/id1458072671",
-   "desc": "深圳市脸萌科技有限公司",
-   "heat": "免费榜 第 10 名",
-   "source": "App Store",
-   "board": "免费榜（中国）",
-   "category": "热门产品",
-   "note": "抖音官方出品的手机剪辑工具，主打 AI 辅助创作，从标题看面向短视频内容生产。",
-   "scene": "做短视频、需要快速出片的普通创作者"
   },
   {
    "rank": 10,
