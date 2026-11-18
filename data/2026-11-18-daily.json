@@ -1,36 +1,38 @@
 {
  "date": "2026-11-18",
  "period": "daily",
- "generated_at": "2026-11-18T15:34:43+08:00",
- "count": 199,
+ "generated_at": "2026-11-18T17:04:46+08:00",
+ "count": 201,
  "sources": {
   "Product Hunt": 10,
-  "Hacker News": 30,
+  "Hacker News": 29,
   "Chrome 应用商店": 10,
   "Firefox 插件": 3,
   "App Store": 18,
-  "少数派": 4,
+  "少数派": 5,
   "今日头条": 10,
   "百度热搜": 10,
-  "哔哩哔哩": 7,
+  "哔哩哔哩": 8,
   "Lobsters": 8,
   "V2EX": 16,
   "Stack Overflow": 10,
   "w2solo": 17,
   "36氪": 10,
   "虎嗅": 10,
-  "Betalist": 10,
   "Uneed": 10,
-  "Hugging Face": 5,
+  "Betalist": 10,
+  "Hugging Face": 6,
   "GitHub": 1
  },
  "dedupe": {
   "window_days": 7,
   "checked": 601,
-  "removed": 58
+  "removed": 55
  },
  "errors": [
   "GreasyFork: 抓取失败 https://greasyfork.org/en/scripts?sort=hot (HTTP 403 (len=5807))",
+  "Betalist: 抓取失败 https://betalist.com/ (HTTP 403 (len=5712))",
+  "Betalist/新品榜 沿用上次 10 条",
   "w2solo/需求榜 沿用上次 10 条"
  ],
  "summaries": [
@@ -62,67 +64,67 @@
    "category": "热门产品",
    "source": "GitHub",
    "count": 1,
-   "text": "1 条 · 榜首「obra/superpowers」+1917 today · 总计 319,557★ · Shell · 高频：agentic(1)、development(1)、framework(1)"
+   "text": "1 条 · 榜首「obra/superpowers」+1917 today · 总计 319,612★ · Shell · 高频：agentic(1)、development(1)、framework(1)"
   },
   {
    "category": "热门产品",
    "source": "Hacker News",
-   "count": 10,
-   "text": "10 条 · 榜首「Show HN: SSH into DOS: I wrote an x86 (IBM P」17 points · 3 comments · 高频：agents(2)、build(2)、multi-player(2)"
+   "count": 9,
+   "text": "9 条 · 榜首「Show HN: SSH into DOS: I wrote an x86 (IBM P」18 points · 3 comments · 高频：agents(2)、build(2)、multi-player(2)"
   },
   {
    "category": "热门产品",
    "source": "Hugging Face",
-   "count": 5,
-   "text": "5 条 · 榜首「Qwen/Qwen3.8-27B」趋势 521 · 20.5k likes · 6.9m 下载 · transformers / safetensors / qwen3_5 · 高频：image-text-to-text(3)"
+   "count": 6,
+   "text": "6 条 · 榜首「Qwen/Qwen3.8-27B」趋势 521 · 20.5k likes · 6.9m 下载 · transformers / safetensors / qwen3_5 · 高频：image-text-to-text(3)"
   },
   {
    "category": "热门产品",
    "source": "Product Hunt",
    "count": 10,
-   "text": "10 条 · 榜首「Retriever」发布于 11-16 · 高频：agent(4)、aws(2)、camera(2)"
+   "text": "10 条 · 榜首「AssemblyAI-STT-3.7」发布于 11-17 · 高频：agents(5)、cloud(2)、coding(2)"
   },
   {
    "category": "热门产品",
    "source": "Uneed",
    "count": 10,
-   "text": "10 条 · 榜首「ProspectAPIs」76 票 · Funding / API & Data · Uneed · 高频：email(2)、sdk(2)"
+   "text": "10 条 · 榜首「Lexington Themes」46 票 · Tailwindcss / Templates · Uneed · 高频：themes(2)"
   },
   {
    "category": "热门产品",
    "source": "w2solo",
    "count": 3,
-   "text": "3 条 · 榜首「DomainRating」14 浏览 · 新作品 · 高频：quirk(2)"
+   "text": "3 条 · 榜首「DomainRating」15 浏览 · 新作品 · 高频：quirk(2)"
   },
   {
    "category": "热门产品",
    "source": "少数派",
-   "count": 4,
-   "text": "4 条 · 榜首「App+1｜NodLink：AirPods 变鼠标，动动脑就能操作电脑」3 赞 · 高频：pico(2)"
+   "count": 5,
+   "text": "5 条 · 榜首「10 月音乐精选：音乐丰收季，必听这 7 张新专辑」编辑推荐 · 高频：pico(2)"
   },
   {
    "category": "热门话题",
    "source": "36氪",
    "count": 10,
-   "text": "10 条 · 榜首「抖音生活服务负责人调整：浦燕子转任公司顾问，莫少君接任｜独家」20 收藏 · 肖思佳 · 36氪 · 高频：amd(1)、anthropic(1)、astra(1)"
+   "text": "10 条 · 榜首「抖音生活服务负责人调整：浦燕子转任公司顾问，莫少君接任｜独家」22 收藏 · 肖思佳 · 36氪 · 高频：amd(1)、anthropic(1)、astra(1)"
   },
   {
    "category": "热门话题",
    "source": "Hacker News",
    "count": 10,
-   "text": "10 条 · 榜首「GPT‑6.2 Astra and Sol」1229 points · 762 comments · 高频：code(2)、down(2)"
+   "text": "10 条 · 榜首「GPT‑6.2 Astra and Sol」1260 points · 778 comments · 高频：code(2)"
   },
   {
    "category": "热门话题",
    "source": "Lobsters",
    "count": 8,
-   "text": "8 条 · 榜首「Actual curl rewrites in rust」87 points · 53 comments · rust · 高频：rust(2)"
+   "text": "8 条 · 榜首「Actual curl rewrites in rust」87 points · 54 comments · rust · 高频：rust(2)"
   },
   {
    "category": "热门话题",
    "source": "V2EX",
    "count": 9,
-   "text": "9 条 · 榜首「马克思的按需分配，能实现吗」183 回复 · 随想 · 高频：mac(4)、claude(3)、fotilo(3)"
+   "text": "9 条 · 榜首「马克思的按需分配，能实现吗」206 回复 · 随想 · 高频：claude(3)、fotilo(3)、mac(3)"
   },
   {
    "category": "热门话题",
@@ -134,25 +136,25 @@
    "category": "热门话题",
    "source": "今日头条",
    "count": 10,
-   "text": "10 条 · 榜首「深圳机场停满各国领导人专机」热度 3931万 · 高频：hot(6)"
+   "text": "10 条 · 榜首「台湾岛内震撼：全世界焦点都在深圳」热度 4211万 · 高频：hot(5)、今日头条热榜事件(4)"
   },
   {
    "category": "热门话题",
    "source": "哔哩哔哩",
-   "count": 7,
-   "text": "7 条 · 榜首「在普罗米厄的怀抱下」125万 播放 · 7.0万 点赞 · 8763 评论 · 高频：鬼畜剧场(3)、幽明志(2)"
+   "count": 8,
+   "text": "8 条 · 榜首「在普罗米厄的怀抱下」147万 播放 · 7.7万 点赞 · 9182 评论 · 高频：鬼畜剧场(3)、幽明志(2)、遗忘之海(2)"
   },
   {
    "category": "热门话题",
    "source": "百度热搜",
    "count": 10,
-   "text": "10 条 · 榜首「元首外交“深圳时间”开启」热搜第 1 名 · 高频：百度热搜实时热点(8)、热度飙升(2)、百度热搜(2)"
+   "text": "10 条 · 榜首「习近平会见韩国总统李在明」热搜第 1 名 · 高频：百度热搜实时热点(6)、百度热搜(4)、apec(2)"
   },
   {
    "category": "热门话题",
    "source": "虎嗅",
    "count": 10,
-   "text": "10 条 · 榜首「航班、微软、NSA接连故障，万斯澄清有关美国将遭遇90天大停电传言，并回应“需要囤食物和」虎嗅 · 高频：万余元(4)、同比去年(3)、月同期下降(3)"
+   "text": "10 条 · 榜首「华为麒麟9050系列更多信息公开」1 赞 · 虎嗅 · 高频：apec(2)、明年小米汽车正式出海(2)、第三季度收入同比增长(2)"
   },
   {
    "category": "项目需求",
@@ -164,7 +166,7 @@
    "category": "项目需求",
    "source": "Stack Overflow",
    "count": 10,
-   "text": "10 条 · 榜首「How is internal silicon testing performed on」47 浏览 · -2 赞 · 0 回答 · 高频：career(3)、however(3)、issue(3)"
+   "text": "10 条 · 榜首「Why does filtering an INT64 field named iso 」21 浏览 · 0 赞 · 0 回答 · 高频：career(3)、however(3)、issue(3)"
   },
   {
    "category": "项目需求",
@@ -181,41 +183,41 @@
   {
    "category": "热门产品",
    "source": "全部",
-   "count": 84,
-   "text": "84 条 · 榜首「抖音商城-下单返积分、退货包运费」免费榜 第 1 名 · 高频：tab(8)、ltd.(7)、agent(6) · 覆盖 App Store、Betalist、Chrome 应用商店、Firefox 插件、GitHub、Hacker News、Hugging Face、Product Hunt、Uneed、w2solo、少数派"
+   "count": 85,
+   "text": "85 条 · 榜首「抖音商城-下单返积分、退货包运费」免费榜 第 1 名 · 高频：agents(9)、tab(8)、ltd.(7) · 覆盖 App Store、Betalist、Chrome 应用商店、Firefox 插件、GitHub、Hacker News、Hugging Face、Product Hunt、Uneed、w2solo、少数派"
   },
   {
    "category": "热门话题",
    "source": "全部",
-   "count": 78,
-   "text": "78 条 · 榜首「抖音生活服务负责人调整：浦燕子转任公司顾问，莫少君接任｜独家」20 收藏 · 肖思佳 · 36氪 · 高频：氪商业科技热文(10)、百度热搜实时热点(8)、hot(6) · 覆盖 36氪、Hacker News、Lobsters、V2EX、w2solo、今日头条、哔哩哔哩、百度热搜、虎嗅"
+   "count": 79,
+   "text": "79 条 · 榜首「抖音生活服务负责人调整：浦燕子转任公司顾问，莫少君接任｜独家」22 收藏 · 肖思佳 · 36氪 · 高频：氪商业科技热文(10)、百度热搜实时热点(6)、apec(5) · 覆盖 36氪、Hacker News、Lobsters、V2EX、w2solo、今日头条、哔哩哔哩、百度热搜、虎嗅"
   },
   {
    "category": "项目需求",
    "source": "全部",
    "count": 37,
-   "text": "37 条 · 榜首「Ask HN: Stripe closed us after one $1,500 in」180 points · 92 comments · 高频：agent(6)、奇思妙想(6)、one(4) · 覆盖 Hacker News、Stack Overflow、V2EX、w2solo"
+   "text": "37 条 · 榜首「Ask HN: Stripe closed us after one $1,500 in」180 points · 92 comments · 高频：agent(6)、奇思妙想(6)、outage(4) · 覆盖 Hacker News、Stack Overflow、V2EX、w2solo"
   }
  ],
  "items": [
   {
    "rank": 1,
-   "title": "Retriever",
-   "url": "https://www.producthunt.com/products/retriever-4",
-   "desc": "Search your phone's photos, documents and videos privately",
-   "heat": "发布于 11-16",
+   "title": "AssemblyAI-STT-3.7",
+   "url": "https://www.producthunt.com/products/assemblyai",
+   "desc": "Speech-to-Text for live calls, voice agents, and recordings",
+   "heat": "发布于 11-17",
    "source": "Product Hunt",
    "board": "日榜",
    "category": "热门产品",
-   "note": "在手机本地搜索照片、文档和视频，不上传云端，主打隐私保护。和常见云相册搜索相比，它更强调数据留在设备上。",
-   "scene": "手机里存了大量照片文档、又在意隐私的普通用户"
+   "note": "把语音转文字能力做给实时通话、语音助手和录音场景用，从标题看是这类识别服务的迭代版本。",
+   "scene": "做语音客服或会议转写的开发者"
   },
   {
    "rank": 1,
    "title": "Show HN: SSH into DOS: I wrote an x86 (IBM PC) emulator",
    "url": "https://www.dialup.net/farcall/",
    "desc": "Show HN 新品首发",
-   "heat": "17 points · 3 comments",
+   "heat": "18 points · 3 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门产品",
@@ -227,7 +229,7 @@
    "title": "GPT‑6.2 Astra and Sol",
    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
    "desc": "Hacker News 首页",
-   "heat": "1229 points · 762 comments",
+   "heat": "1260 points · 778 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门话题",
@@ -296,46 +298,46 @@
   },
   {
    "rank": 1,
-   "title": "App+1｜NodLink：AirPods 变鼠标，动动脑就能操作电脑",
-   "url": "https://sspai.com/post/118732",
-   "desc": "转头移动光标，歪头点击，开口说指令。不用摄像头，也不用另外戴什么设备。",
-   "heat": "3 赞",
+   "title": "10 月音乐精选：音乐丰收季，必听这 7 张新专辑",
+   "url": "https://sspai.com/post/118985",
+   "desc": "编者注：2026年我们将重启少数派音乐推荐栏目FM3.14，特邀资深音乐从业者及爱好者为大家推荐优质的华语独立、流行音乐，今年我们也很荣幸邀请到老朋友飞傲，为本栏目冠名。飞傲目前拥有品牌以音乐发烧友为 ...",
+   "heat": "编辑推荐",
    "source": "少数派",
    "board": "热榜",
    "category": "热门产品",
-   "note": "把 AirPods 变成操作电脑的输入设备，靠转头、歪头和语音控制光标与点击，不用摄像头也不用额外设备。",
-   "scene": "手不方便用鼠标键盘、想解放双手操作电脑的人"
+   "note": "一份华语独立与流行音乐的新专辑推荐清单，由资深从业者和爱好者挑选，帮人省去自己淘歌的功夫。",
+   "scene": "想找新歌的华语音乐爱好者"
   },
   {
    "rank": 1,
-   "title": "深圳机场停满各国领导人专机",
-   "url": "https://www.toutiao.com/trending/7709090624632327721/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227709090624632327721%22%2C%22hot_board_impr_id%22%3A%222026111815342848590C2507C1BCC9BF8B%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%B7%B1%E5%9C%B3%E6%9C%BA%E5%9C%BA%E5%81%9C%E6%BB%A1%E5%90%84%E5%9B%BD%E9%A2%86%E5%AF%BC%E4%BA%BA%E4%B8%93%E6%9C%BA%22%7D&rank=&style_id=40132&topic_id=7709090624632327721",
+   "title": "台湾岛内震撼：全世界焦点都在深圳",
+   "url": "https://www.toutiao.com/trending/7709418503715094571/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227709418503715094571%22%2C%22hot_board_impr_id%22%3A%22202611181704151F1DE5A7098256CD8E9A%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%8F%B0%E6%B9%BE%E5%B2%9B%E5%86%85%E9%9C%87%E6%92%BC%EF%BC%9A%E5%85%A8%E4%B8%96%E7%95%8C%E7%84%A6%E7%82%B9%E9%83%BD%E5%9C%A8%E6%B7%B1%E5%9C%B3%22%7D&rank=&style_id=40132&topic_id=7709418503715094571",
    "desc": "hot",
-   "heat": "热度 3931万",
+   "heat": "热度 4211万",
    "source": "今日头条",
    "board": "热榜",
    "category": "热门话题",
-   "note": "多国领导人专机集中停放深圳，通常对应高规格国际会议或外交活动，反映中国与亚太地区互动升温，值得关注区域合作动向的人留意。",
-   "scene": "关注国际外交与区域合作动态的时政观察者"
+   "note": "台湾岛内舆论把目光投向深圳，可能与当地举办的重要国际活动有关；这类关注折射出两岸信息互动和区域热点走向。",
+   "scene": "关注两岸动态与区域热点的时政观察者"
   },
   {
    "rank": 1,
-   "title": "元首外交“深圳时间”开启",
-   "url": "https://m.baidu.com/s?word=%E5%85%83%E9%A6%96%E5%A4%96%E4%BA%A4%E2%80%9C%E6%B7%B1%E5%9C%B3%E6%97%B6%E9%97%B4%E2%80%9D%E5%BC%80%E5%90%AF&sa=fyb_news",
+   "title": "习近平会见韩国总统李在明",
+   "url": "https://m.baidu.com/s?word=%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%BC%9A%E8%A7%81%E9%9F%A9%E5%9B%BD%E6%80%BB%E7%BB%9F%E6%9D%8E%E5%9C%A8%E6%98%8E&sa=fyb_news",
    "desc": "百度热搜实时热点",
    "heat": "热搜第 1 名",
    "source": "百度热搜",
    "board": "热榜",
    "category": "热门话题",
-   "note": "深圳进入亚太经合组织会议时间，多场元首外交活动在此展开，涉及区域合作议程，普通人的关注点在于会议成果与城市变化。",
-   "scene": "关注时政外交与城市动态的新闻读者"
+   "note": "中韩领导人会晤通常涉及双边关系与地区议题，是观察两国互动走向的重要窗口，值得关注外交动向的人留意。",
+   "scene": "关注中韩关系与东北亚外交的从业者"
   },
   {
    "rank": 1,
    "title": "在普罗米厄的怀抱下",
    "url": "https://www.bilibili.com/video/BV16Bs26FEAM",
    "desc": "鸣潮 · 手机游戏",
-   "heat": "125万 播放 · 7.0万 点赞 · 8763 评论",
+   "heat": "147万 播放 · 7.7万 点赞 · 9182 评论",
    "source": "哔哩哔哩",
    "board": "热榜",
    "category": "热门话题",
@@ -347,12 +349,24 @@
    "title": "Actual curl rewrites in rust",
    "url": "https://daniel.haxx.se/blog/2026/11/17/actual-curl-rewrites-in-rust/",
    "desc": "技术社区热帖",
-   "heat": "87 points · 53 comments · rust",
+   "heat": "87 points · 54 comments · rust",
    "source": "Lobsters",
    "board": "热榜",
    "category": "热门话题",
    "note": "技术社区在讨论用 Rust 重写 curl 的实际案例，涉及网络工具的语言迁移与实现取舍。",
    "scene": "做系统工具和网络编程的开发者"
+  },
+  {
+   "rank": 1,
+   "title": "马克思的按需分配，能实现吗",
+   "url": "https://www.v2ex.com/t/1257906",
+   "desc": "最近读马克思，说社会主义制度下，一切都是按需分配的，不会有人多拿多占么； 有人说是因为物质基础决定人的道德；不知道怎么理解",
+   "heat": "206 回复 · 随想",
+   "source": "V2EX",
+   "board": "热榜",
+   "category": "热门话题",
+   "note": "网友讨论马克思设想的按需分配能否落地，焦点在物质条件与人的道德之间的关系，属于理论层面的思辨话题。",
+   "scene": "对政治经济学理论感兴趣的讨论者"
   },
   {
    "rank": 1,
@@ -368,22 +382,22 @@
   },
   {
    "rank": 1,
-   "title": "How is internal silicon testing performed on SWD-only MCUs (like ATSAMC21N18A) if JTAG pins are absent?",
-   "url": "https://stackoverflow.com/questions/80017340/how-is-internal-silicon-testing-performed-on-swd-only-mcus-like-atsamc21n18a-i",
-   "desc": "I am working with a microcontroller that features only Serial Wire Debug (SWD) support, such as the Microchip ATSAMC21N18A (ARM Cortex-M0+). However, looking at…",
-   "heat": "47 浏览 · -2 赞 · 0 回答",
+   "title": "Why does filtering an INT64 field named iso fail in MilvusClient.query()?",
+   "url": "https://stackoverflow.com/questions/80017366/why-does-filtering-an-int64-field-named-iso-fail-in-milvusclient-query",
+   "desc": "I am using Milvus 3.0.2 with PyMilvus 3.0.2 . My collection stores camera metadata, including an INT64 field named iso . Creating the collection and inserting d…",
+   "heat": "21 浏览 · 0 赞 · 0 回答",
    "source": "Stack Overflow",
    "board": "需求榜",
    "category": "项目需求",
-   "note": "用户想知道只有 SWD 接口、没有 JTAG 引脚的芯片，出厂时内部硅片测试是怎么做的，想弄清测试通路和原理。",
-   "scene": "嵌入式开发者或芯片测试工程师"
+   "note": "用户想弄清在 Milvus 里按名为 iso 的 INT64 字段过滤查询为何失败，可能涉及字段命名或类型用法问题，需要定位原因并给出可用的查询写法。",
+   "scene": "使用 Milvus 做向量检索、被字段过滤问题卡住的开发者"
   },
   {
    "rank": 1,
    "title": "DomainRating",
    "url": "https://w2solo.com/topics/8737",
    "desc": "我的作品 · 作者 AIVaded",
-   "heat": "14 浏览 · 新作品",
+   "heat": "15 浏览 · 新作品",
    "source": "w2solo",
    "board": "作品榜",
    "category": "热门产品",
@@ -407,7 +421,7 @@
    "title": "抖音生活服务负责人调整：浦燕子转任公司顾问，莫少君接任｜独家",
    "url": "https://www.36kr.com/p/4073876110677121",
    "desc": "36氪商业科技热文",
-   "heat": "20 收藏 · 肖思佳 · 36氪",
+   "heat": "22 收藏 · 肖思佳 · 36氪",
    "source": "36氪",
    "board": "热榜",
    "category": "热门话题",
@@ -416,15 +430,27 @@
   },
   {
    "rank": 1,
-   "title": "航班、微软、NSA接连故障，万斯澄清有关美国将遭遇90天大停电传言，并回应“需要囤食物和水吗”：目前并未看到有任何危机即将来临的迹象",
-   "url": "https://www.huxiu.com/moment/1297875",
-   "desc": "当地时间11月16日，美国副总统万斯（JD Vance）澄清有关美国将遭遇90天大停电的传言。“很多朋友来问我：‘我们是不是该建个地堡，多囤点食物和水？’我的回答是：不必如此。我们并未看到什么迫在眉睫的危机，但无论如何，做好各种准备总是必要的。”万斯说。 万斯这番表态的背后，是近期美国的社交媒体上充斥着各种传言与警告。比如声称美国将面临一…",
-   "heat": "虎嗅",
+   "title": "华为麒麟9050系列更多信息公开",
+   "url": "https://www.huxiu.com/moment/1297904",
+   "desc": "华为官方今日继续揭秘首款“逻辑折叠”技术 τ 芯片——麒麟9050系列更多配置信息，今日最新公开了新一代芯片级安全架构的情报。据介绍，麒麟9050系列芯片是首批获权威检测的抗量子攻击移动SoC，也是首个芯片级隐私安全平台，支持MSP安全处理器与eSE安全芯片双芯协同，并获CCRC EAL5+安全认证。IT之家了解到，麒麟9050系列进一步…",
+   "heat": "1 赞 · 虎嗅",
    "source": "虎嗅",
    "board": "热榜",
    "category": "热门话题",
-   "note": "美国近期航班、微软服务接连出故障，网上流传90天大停电传言，副总统万斯出面澄清称无迫在眉睫的危机，反映谣言对公众情绪的扰动。",
-   "scene": "关注美国社会动态与网络谣言的国际新闻读者"
+   "note": "华为公开麒麟9050系列更多配置，主打抗量子攻击与芯片级安全，反映移动芯片竞争正转向安全能力。",
+   "scene": "关注国产芯片与手机安全的科技从业者"
+  },
+  {
+   "rank": 1,
+   "title": "Lexington Themes",
+   "url": "https://www.uneed.best/product/lexington-themes",
+   "desc": "Premium themes crafted with Astro and Tailwind CSS",
+   "heat": "46 票 · Tailwindcss / Templates · Uneed",
+   "source": "Uneed",
+   "board": "新品榜",
+   "category": "热门产品",
+   "note": "一套基于 Astro 和 Tailwind CSS 打造的高品质网站主题，买来就能套用，省去从零搭页面。",
+   "scene": "需要快速上线官网的前端开发者"
   },
   {
    "rank": 1,
@@ -440,18 +466,6 @@
   },
   {
    "rank": 1,
-   "title": "ProspectAPIs",
-   "url": "https://www.uneed.best/product/prospectapis",
-   "desc": "Prospect data for AI agents: funding, LinkedIn and email data. $1 free.",
-   "heat": "76 票 · Funding / API & Data · Uneed",
-   "source": "Uneed",
-   "board": "新品榜",
-   "category": "热门产品",
-   "note": "给 AI 代理提供融资、领英和邮箱等潜在客户数据，方便自动做销售线索挖掘。",
-   "scene": "开发 AI 销售工具的团队"
-  },
-  {
-   "rank": 1,
    "title": "给娃开发的奥特曼识别小程序，现在整个光之国都在用",
    "url": "https://w2solo.com/topics/5735",
    "desc": "奇思妙想 · 作者 3排3号",
@@ -464,15 +478,15 @@
   },
   {
    "rank": 2,
-   "title": "GatherHQ Agent Research",
-   "url": "https://www.producthunt.com/products/gatherhq-agent-research",
-   "desc": "Let your agent take surveys for you",
-   "heat": "发布于 11-16",
+   "title": "worldinmotion",
+   "url": "https://www.producthunt.com/products/worldinmotion",
+   "desc": "Encrypted messages between AI agents, across vendors",
+   "heat": "发布于 11-17",
    "source": "Product Hunt",
    "board": "日榜",
    "category": "热门产品",
-   "note": "让 AI 代理代替人去填写问卷和调研，省去人工逐题作答的麻烦。相比手动填表，它把重复的问卷流程交给代理完成。",
-   "scene": "需要批量收集或填写问卷的调研人员"
+   "note": "让不同厂商的 AI 智能体之间互发加密消息，解决跨平台协作时的通信与隐私问题。",
+   "scene": "搭建多智能体系统的开发者"
   },
   {
    "rank": 2,
@@ -503,7 +517,7 @@
    "title": "Java4Shell: RCE in OpenJDK when processing Base64",
    "url": "https://calif.io/java4shell/",
    "desc": "Hacker News 首页",
-   "heat": "802 points · 212 comments",
+   "heat": "908 points · 232 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门话题",
@@ -560,46 +574,46 @@
   },
   {
    "rank": 2,
-   "title": "跟着老板自驾去海南是种什么体验？明日公园 vlog 回顾",
-   "url": "https://sspai.com/post/119193",
-   "desc": "从深圳一路开车到广东最南端的徐闻，再和车分别乘坐渡轮，穿过地理课本里的琼州海峡。终于抵达海南后，老板却告诉我们这趟旅程真正的目的地，竟然是……",
-   "heat": "4 赞",
+   "title": "App+1｜NodLink：AirPods 变鼠标，动动脑就能操作电脑",
+   "url": "https://sspai.com/post/118732",
+   "desc": "转头移动光标，歪头点击，开口说指令。不用摄像头，也不用另外戴什么设备。",
+   "heat": "9 赞",
    "source": "少数派",
    "board": "热榜",
    "category": "热门产品",
-   "note": "记录从深圳自驾到徐闻、再连车一起坐渡轮过琼州海峡去海南的旅程，重点在路上的见闻和意外转折。",
-   "scene": "喜欢公路旅行和自驾 vlog 的观众"
+   "note": "把 AirPods 变成操作电脑的输入设备，靠转头、歪头和语音控制光标与点击，不用摄像头也不用额外设备。",
+   "scene": "手不方便用鼠标键盘、想解放双手操作电脑的人"
   },
   {
    "rank": 2,
-   "title": "泰国总理抵达深圳下机时敬礼回应",
-   "url": "https://www.toutiao.com/trending/7709346116227252746/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2215%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227709346116227252746%22%2C%22hot_board_impr_id%22%3A%222026111815342848590C2507C1BCC9BF8B%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%B3%B0%E5%9B%BD%E6%80%BB%E7%90%86%E6%8A%B5%E8%BE%BE%E6%B7%B1%E5%9C%B3%E4%B8%8B%E6%9C%BA%E6%97%B6%E6%95%AC%E7%A4%BC%E5%9B%9E%E5%BA%94%22%7D&rank=&style_id=40132&topic_id=7709346116227252746",
+   "title": "特朗普抵达深圳",
+   "url": "https://www.toutiao.com/trending/7708919984080420902/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227708919984080420902%22%2C%22hot_board_impr_id%22%3A%22202611181704151F1DE5A7098256CD8E9A%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%89%B9%E6%9C%97%E6%99%AE%E6%8A%B5%E8%BE%BE%E6%B7%B1%E5%9C%B3%22%7D&rank=&style_id=40132&topic_id=7708919984080420902",
    "desc": "hot",
-   "heat": "热度 3556万",
+   "heat": "热度 3810万",
    "source": "今日头条",
    "board": "热榜",
    "category": "热门话题",
-   "note": "泰国总理抵达深圳，下机时以敬礼回应，属于外事访问的礼节细节，折射中泰互动，值得关注东南亚外交的人留意。",
-   "scene": "关注中泰关系与东南亚外交的时政读者"
+   "note": "特朗普到访深圳的消息在网络热传，具体行程与背景尚需核实；从标题看，这属于高关注度的涉外动态。",
+   "scene": "关注中美关系与涉外新闻的媒体从业者"
   },
   {
    "rank": 2,
-   "title": "习近平会见俄罗斯总统普京",
-   "url": "https://m.baidu.com/s?word=%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%BC%9A%E8%A7%81%E4%BF%84%E7%BD%97%E6%96%AF%E6%80%BB%E7%BB%9F%E6%99%AE%E4%BA%AC&sa=fyb_news",
-   "desc": "百度热搜 · 热度飙升",
+   "title": "特朗普抵达深圳",
+   "url": "https://m.baidu.com/s?word=%E7%89%B9%E6%9C%97%E6%99%AE%E6%8A%B5%E8%BE%BE%E6%B7%B1%E5%9C%B3&sa=fyb_news",
+   "desc": "百度热搜 · 直播中",
    "heat": "热搜第 2 名",
    "source": "百度热搜",
    "board": "热榜",
    "category": "热门话题",
-   "note": "中俄领导人会晤是双边关系的重要节点，通常涉及经贸、能源与国际议题，值得关注大国关系走向的人留意。",
-   "scene": "关注中俄关系与国际格局的时政观察者"
+   "note": "相关到访消息正在直播跟进，事件细节以官方发布为准；这类涉外行程容易牵动经贸与外交层面的解读。",
+   "scene": "跟踪涉外行程直播的新闻编辑"
   },
   {
    "rank": 2,
    "title": "【动画】可爱的猫尾草",
    "url": "https://www.bilibili.com/video/BV1LLsT6kESX",
    "desc": "青默ya · 单机游戏",
-   "heat": "133万 播放 · 11万 点赞 · 782 评论",
+   "heat": "151万 播放 · 12万 点赞 · 902 评论",
    "source": "哔哩哔哩",
    "board": "热榜",
    "category": "热门话题",
@@ -611,7 +625,7 @@
    "title": "Java4Shell: Write once, RCE everywhere",
    "url": "https://calif.io/java4shell/",
    "desc": "技术社区热帖",
-   "heat": "32 points · 14 comments · java / security",
+   "heat": "35 points · 15 comments · java / security",
    "source": "Lobsters",
    "board": "热榜",
    "category": "热门话题",
@@ -620,15 +634,15 @@
   },
   {
    "rank": 2,
-   "title": "马克思的按需分配，能实现吗",
-   "url": "https://www.v2ex.com/t/1257906",
-   "desc": "最近读马克思，说社会主义制度下，一切都是按需分配的，不会有人多拿多占么； 有人说是因为物质基础决定人的道德；不知道怎么理解",
-   "heat": "183 回复 · 随想",
+   "title": "想买个折叠车，这领域真的是只有大行和其他吗，求推荐",
+   "url": "https://www.v2ex.com/t/1257918",
+   "desc": "说下相关 - 预算 500-2000 - 需求就是把车折叠后放在后备箱或者后排，出去郊游能更方便的 4+2 旅行 - 的确更在乎车架和折叠机构，担心有些车以后会有异响 - V 刹就行，我只接受 V 刹和油压碟刹。不要机械碟刹 - 我觉得同是 1500 元，大行只有 V 刹，但是有些小众牌子可能给了油压碟刹，这可能在折叠车领域有点本末倒置…",
+   "heat": "95 回复 · 生活",
    "source": "V2EX",
    "board": "热榜",
    "category": "热门话题",
-   "note": "网友讨论马克思设想的按需分配能否落地，焦点在物质条件与人的道德之间的关系，属于理论层面的思辨话题。",
-   "scene": "对政治经济学理论感兴趣的讨论者"
+   "note": "用户求推荐500到2000元折叠车，纠结大行与小众品牌在刹车配置上的取舍，反映入门折叠车选购的真实困惑。",
+   "scene": "想入手折叠车的骑行爱好者"
   },
   {
    "rank": 2,
@@ -644,22 +658,22 @@
   },
   {
    "rank": 2,
-   "title": "Sitecore solr search is not working ja-jp language version but it works fine with all other languages",
-   "url": "https://stackoverflow.com/questions/80017337/sitecore-solr-search-is-not-working-ja-jp-language-version-but-it-works-fine-wit",
-   "desc": "We are using Sitecore 10.4 with Solr as the search provider. We are facing an issue where search functionality works correctly for English content, but searches…",
-   "heat": "15 浏览 · -1 赞 · 0 回答",
+   "title": "How to route HAProxy by subdomain?",
+   "url": "https://stackoverflow.com/questions/80017358/how-to-route-haproxy-by-subdomain",
+   "desc": "I see many examples using path begin or end and they only seem to be concerned with /whatever is in here/ , and for http. For the situation of HTTP or TCP reque…",
+   "heat": "41 浏览 · -6 赞 · 0 回答",
    "source": "Stack Overflow",
    "board": "需求榜",
    "category": "项目需求",
-   "note": "用户遇到 Sitecore 配 Solr 时只有日文内容搜不到、其他语言正常的问题，想找出多语言索引配置哪里出了错。",
-   "scene": "Sitecore 后端开发者"
+   "note": "用户想按子域名把请求分发到不同后端，现有示例多基于路径匹配，需要找到适用于 HTTP 或 TCP 的 HAProxy 子域名路由配置方法。",
+   "scene": "负责运维、需要配置反向代理和流量分发的工程师"
   },
   {
    "rank": 2,
    "title": "Quirk",
    "url": "https://w2solo.com/topics/8736",
    "desc": "我的作品 · 作者 Quirk",
-   "heat": "12 浏览 · 新作品",
+   "heat": "16 浏览 · 新作品",
    "source": "w2solo",
    "board": "作品榜",
    "category": "热门产品",
@@ -671,7 +685,7 @@
    "title": "英伟达季度营收破千亿美金，但昨日的世界已经远去",
    "url": "https://www.36kr.com/p/4074562529645445",
    "desc": "36氪商业科技热文",
-   "heat": "17 收藏 · 邱晓芬 · 36氪",
+   "heat": "22 收藏 · 邱晓芬 · 36氪",
    "source": "36氪",
    "board": "热榜",
    "category": "热门话题",
@@ -680,15 +694,27 @@
   },
   {
    "rank": 2,
-   "title": "女子与退休男子同居并在其患癌期间照料，在其离世前后转走29万余元，被男子亲属起诉，法院：女子返还21万余元，同居关系不同于婚姻关系",
-   "url": "https://www.huxiu.com/moment/1297874",
-   "desc": "11月17日，记者从湖南省岳阳临湘市人民法院获悉，一名女子照料同居患癌的退休男友，在其离世前后转走29万余元，被其亲属起诉。最终，法院判决女子向亲属返还不当得利款21万余元。 李某波系某公司退休职工，按月领取退休金。2020年李某波丧偶后与张某兰同居，双方未办理结婚登记，也未书面约定同居期间财产归属。2024年，李某波确诊肺癌，2024年…",
+   "title": "中信证券：获证监会同意发行不超200亿元科创债",
+   "url": "https://www.huxiu.com/moment/1297903",
+   "desc": "中信证券公告称，公司收到中国证监会批复，同意公司向专业投资者公开发行面值总额不超过200亿元科技创新公司债券。该批复自同意注册之日起24个月内有效，公司可在注册有效期内分期发行。公司将按相关规定及2023年度股东大会授权，实施本次债券发行工作。",
    "heat": "虎嗅",
    "source": "虎嗅",
    "board": "热榜",
    "category": "热门话题",
-   "note": "女子照料同居患癌男友期间转走29万余元，法院判返还21万余元，明确同居关系不同于婚姻，涉及财产归属与法律边界。",
-   "scene": "关注同居财产纠纷与婚姻法实务的读者"
+   "note": "中信证券获批发行不超过200亿元科创债，可在两年内分期发行，为科创领域融资再添一条渠道。",
+   "scene": "关注券商融资与科创债市场的金融从业者"
+  },
+  {
+   "rank": 2,
+   "title": "Cevanos",
+   "url": "https://www.uneed.best/product/cevanos",
+   "desc": "AI customer service agents that resolve, not just replies",
+   "heat": "12 票 · Chatbots / Customer Service · Uneed",
+   "source": "Uneed",
+   "board": "新品榜",
+   "category": "热门产品",
+   "note": "面向客服场景的 AI 代理，强调真正把问题解决掉而不只是回一句话，比只会应答的机器人更进一步。",
+   "scene": "想降低人工客服压力的电商团队"
   },
   {
    "rank": 2,
@@ -704,18 +730,6 @@
   },
   {
    "rank": 2,
-   "title": "kulamail",
-   "url": "https://www.uneed.best/product/kulamail",
-   "desc": "Email marketing, automations and transactional emails from your domain",
-   "heat": "134 票 · AI / Emails · Uneed",
-   "source": "Uneed",
-   "board": "新品榜",
-   "category": "热门产品",
-   "note": "用自有域名发营销邮件、自动化流程和事务性邮件，把邮件触达集中在一处管理。",
-   "scene": "做邮件营销的中小团队"
-  },
-  {
-   "rank": 2,
    "title": "俩个月的兼职看过来！上海地区！",
    "url": "https://w2solo.com/topics/4472",
    "desc": "外包零活 · 作者 zero_lightman",
@@ -728,39 +742,39 @@
   },
   {
    "rank": 3,
-   "title": "Agents API by Recall.ai",
-   "url": "https://www.producthunt.com/products/recall-ai",
-   "desc": "Send your agent to meetings",
-   "heat": "发布于 11-16",
+   "title": "SoreQen Code",
+   "url": "https://www.producthunt.com/products/soreqen-code",
+   "desc": "The coding agent that checks its own work",
+   "heat": "发布于 11-17",
    "source": "Product Hunt",
    "board": "日榜",
    "category": "热门产品",
-   "note": "提供一套接口，让 AI 代理能加入线上会议，代替人参与并处理会议内容。相比只做会议记录的工具有所不同。",
-   "scene": "会议频繁、想用 AI 代参的团队"
+   "note": "一个会自查结果的编程智能体，写完代码自己验证，减少交付前的人工返工。",
+   "scene": "用 AI 辅助写代码的开发者"
   },
   {
    "rank": 3,
-   "title": "Show HN: Solarian – Open-source Python framework for AI robots",
-   "url": "https://solarian.dev",
+   "title": "Show HN: Motif, a tracker thin enough to be a sticker",
+   "url": "https://motif.blog",
    "desc": "Show HN 新品首发",
-   "heat": "6 points · 2 comments",
+   "heat": "6 points · 1 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门产品",
-   "note": "一个开源的 Python 框架，用于开发 AI 机器人，把模型能力接到机器人控制上。相比通用框架，它更聚焦机器人场景。",
-   "scene": "做 AI 机器人原型的开发者"
+   "note": "一款薄到能当贴纸用的追踪器，从标题看主打极致轻薄的外形。",
+   "scene": "想随身追踪物品又嫌普通追踪器太厚的人"
   },
   {
    "rank": 3,
-   "title": "Apple Services Down",
-   "url": "https://developer.apple.com/system-status/",
-   "desc": "Hacker News 首页",
-   "heat": "681 points · 380 comments",
+   "title": "Highly classified US national security communications network goes down",
+   "url": "https://www.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down",
+   "desc": "https://www.reuters.com/technology/highly-classified-us-nati...",
+   "heat": "568 points · 653 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门话题",
-   "note": "苹果服务出现故障，从标题看涉及多项在线服务不可用，影响依赖苹果生态的用户。",
-   "scene": "苹果设备用户与运维从业者"
+   "note": "据路透报道，美国高度机密的国家安全通信网络出现中断，具体原因和影响尚待披露。",
+   "scene": "关注国际安全与通信基础设施的读者"
   },
   {
    "rank": 3,
@@ -800,22 +814,22 @@
   },
   {
    "rank": 3,
-   "title": "兼顾随身阅读与自主开发的 4.7 英寸墨水屏设备：小纸 Pico 现货上架少数派",
-   "url": "https://sspai.com/post/118975",
-   "desc": "想找一台可以随身带着读书的墨水屏设备，也想自己改改界面、不被系统「绑架」？近期思维重置团队上架的小纸 Pico 墨水屏开发板是一个值得留意的选择。",
-   "heat": "16 赞",
+   "title": "跟着老板自驾去海南是种什么体验？明日公园 vlog 回顾",
+   "url": "https://sspai.com/post/119193",
+   "desc": "从深圳一路开车到广东最南端的徐闻，再和车分别乘坐渡轮，穿过地理课本里的琼州海峡。终于抵达海南后，老板却告诉我们这趟旅程真正的目的地，竟然是……",
+   "heat": "5 赞",
    "source": "少数派",
    "board": "热榜",
    "category": "热门产品",
-   "note": "4.7 英寸墨水屏开发板，既能随身读书，也允许自己改界面，不被封闭系统限制。",
-   "scene": "爱读书又想折腾开发板的极客"
+   "note": "记录从深圳自驾到徐闻、再连车一起坐渡轮过琼州海峡去海南的旅程，重点在路上的见闻和意外转折。",
+   "scene": "喜欢公路旅行和自驾 vlog 的观众"
   },
   {
    "rank": 3,
    "title": "中国与亚太经济体合作故事",
-   "url": "https://www.toutiao.com/trending/7709410110090530342/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227709410110090530342%22%2C%22hot_board_impr_id%22%3A%222026111815342848590C2507C1BCC9BF8B%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E5%9B%BD%E4%B8%8E%E4%BA%9A%E5%A4%AA%E7%BB%8F%E6%B5%8E%E4%BD%93%E5%90%88%E4%BD%9C%E6%95%85%E4%BA%8B%22%7D&rank=&style_id=40132&topic_id=7709410110090530342",
+   "url": "https://www.toutiao.com/article/7709347571390579241",
    "desc": "今日头条热榜事件",
-   "heat": "热度 3218万",
+   "heat": "热度 3448万",
    "source": "今日头条",
    "board": "热榜",
    "category": "热门话题",
@@ -824,34 +838,34 @@
   },
   {
    "rank": 3,
-   "title": "李在明随行人员开启“拍拍拍”模式",
-   "url": "https://m.baidu.com/s?word=%E6%9D%8E%E5%9C%A8%E6%98%8E%E9%9A%8F%E8%A1%8C%E4%BA%BA%E5%91%98%E5%BC%80%E5%90%AF%E2%80%9C%E6%8B%8D%E6%8B%8D%E6%8B%8D%E2%80%9D%E6%A8%A1%E5%BC%8F&sa=fyb_news",
-   "desc": "百度热搜实时热点",
+   "title": "习近平会见俄罗斯总统普京",
+   "url": "https://m.baidu.com/s?word=%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%BC%9A%E8%A7%81%E4%BF%84%E7%BD%97%E6%96%AF%E6%80%BB%E7%BB%9F%E6%99%AE%E4%BA%AC&sa=fyb_news",
+   "desc": "百度热搜 · 热度飙升",
    "heat": "热搜第 3 名",
    "source": "百度热搜",
    "board": "热榜",
    "category": "热门话题",
-   "note": "韩国政治人物李在明随行人员在活动中拍照，属于外事场合的花絮细节，从标题看是轻松一幕，反映随行团队的现场状态。",
-   "scene": "关注韩国政局与外交花絮的时政读者"
+   "note": "中俄领导人会晤是双边关系的重要节点，通常涉及经贸、能源与国际议题，值得关注大国关系走向的人留意。",
+   "scene": "关注中俄关系与国际格局的时政观察者"
   },
   {
    "rank": 3,
-   "title": "「幽明志」幽城残梦",
-   "url": "https://www.bilibili.com/video/BV1YvsB6FER9",
-   "desc": "幽明志 · 同人·手书",
-   "heat": "81万 播放 · 3.6万 点赞 · 438 评论",
+   "title": "非凡魔丸",
+   "url": "https://www.bilibili.com/video/BV1LLsr66EC6",
+   "desc": "伊介书生 · 鬼畜剧场",
+   "heat": "68万 播放 · 2.8万 点赞 · 435 评论",
    "source": "哔哩哔哩",
    "board": "热榜",
    "category": "热门话题",
-   "note": "这是《幽明志》相关的同人手书作品，属于粉丝自制内容，从标题看带有古风叙事色彩，适合原作爱好者观看。",
-   "scene": "《幽明志》粉丝与同人手书爱好者"
+   "note": "B站鬼畜区一条以魔丸为主题的剧场向二创视频，延续平台玩梗风格，面向偏好轻松娱乐内容的用户。",
+   "scene": "关注B站鬼畜内容的年轻观众与二创作者"
   },
   {
    "rank": 3,
    "title": "Phrack 73",
    "url": "https://phrack.org/issues/73/introduction_md.html",
    "desc": "技术社区热帖",
-   "heat": "43 points · 2 comments · release / security",
+   "heat": "45 points · 2 comments · release / security",
    "source": "Lobsters",
    "board": "热榜",
    "category": "热门话题",
@@ -860,15 +874,15 @@
   },
   {
    "rank": 3,
-   "title": "我解密了电信光猫里的 m01-b01-inner 插件：它能提取手机号、IMEI，能远程执行命令，还能扫描你家内网",
-   "url": "https://www.v2ex.com/t/1257838",
-   "desc": "## 先说结论 中国电信光猫里预装了一个叫 `m01-b01-inner` 的插件（由 `b01odmv3` 启动），很多人在 `ps` 里见过它，但它真正的业务代码是加密的 Lua 脚本，加载后不落盘，所以过去几年网上的讨论都停留在\"疑似上报 MAC\"。 我从两台电信光猫的进程内存里把解密后的 Lua 源码完整导了出来，逐个模块读了一遍…",
-   "heat": "87 回复 · 宽带症候群",
+   "title": "[送码+抽奖] Fotilo：Mac 的截图+录屏软件（用心打磨了很久）",
+   "url": "https://www.v2ex.com/t/1257886",
+   "desc": "大家好，我是 foam，我又做了一个 Mac app。 前几天刚把 Fotilo 更新到了 1.1.0。这是一个 Mac 上的截图 + 录屏工具：如果你用过 Snipaste、CleanShot X、Shottr 这类截图 App，或者 Screen Studio 这类录屏 App，那么 Fotilo 差不多就是把这两类合在了一起。现在核…",
+   "heat": "80 回复 · 分享创造",
    "source": "V2EX",
    "board": "热榜",
    "category": "热门话题",
-   "note": "有网友称从电信光猫内存中导出加密插件源码，指其可读取手机号、IMEI并远程执行命令，涉及家庭宽带隐私与设备安全，值得宽带用户和运维人员留意。",
-   "scene": "关注家庭宽带设备安全与隐私的网友和技术从业者"
+   "note": "开发者发布Mac端截图录屏二合一工具Fotilo并更新至1.1.0，附带送码抽奖，面向效率工具用户。",
+   "scene": "Mac用户与效率工具爱好者"
   },
   {
    "rank": 3,
@@ -884,22 +898,22 @@
   },
   {
    "rank": 3,
-   "title": "Started my first internship as a QA Intern, but my career goal is Software Engineering. Will this affect my future SE career?",
-   "url": "https://stackoverflow.com/questions/80017334/started-my-first-internship-as-a-qa-intern-but-my-career-goal-is-software-engin",
-   "desc": "I'm a university student who recently started my first internship as a QA Intern. However, my long-term career goal is to become a Software Engineer. I'm the on…",
-   "heat": "81 浏览 · -6 赞 · 0 回答",
+   "title": "How is internal silicon testing performed on SWD-only MCUs (like ATSAMC21N18A) if JTAG pins are absent?",
+   "url": "https://stackoverflow.com/questions/80017340/how-is-internal-silicon-testing-performed-on-swd-only-mcus-like-atsamc21n18a-i",
+   "desc": "I am working with a microcontroller that features only Serial Wire Debug (SWD) support, such as the Microchip ATSAMC21N18A (ARM Cortex-M0+). However, looking at…",
+   "heat": "85 浏览 · -3 赞 · 0 回答",
    "source": "Stack Overflow",
    "board": "需求榜",
    "category": "项目需求",
-   "note": "一名刚入职的 QA 实习生担心测试岗经历会拖累自己转软件工程师，想确认这段经历对职业路径的实际影响。",
-   "scene": "在校生或刚入行的实习生"
+   "note": "用户想知道只有 SWD 接口、没有 JTAG 引脚的芯片，出厂时内部硅片测试是怎么做的，想弄清测试通路和原理。",
+   "scene": "嵌入式开发者或芯片测试工程师"
   },
   {
    "rank": 3,
    "title": "RapVid",
    "url": "https://w2solo.com/topics/8735",
    "desc": "我的作品 · 作者 Alex Carter",
-   "heat": "17 浏览 · 新作品",
+   "heat": "18 浏览 · 新作品",
    "source": "w2solo",
    "board": "作品榜",
    "category": "热门产品",
@@ -911,7 +925,7 @@
    "title": "GPT-6.2 Astra 刚发布即遭大量差评，实测后我觉得它有点冤",
    "url": "https://www.36kr.com/p/4074475449062281",
    "desc": "36氪商业科技热文",
-   "heat": "18 收藏 · 爱范儿 · 36氪",
+   "heat": "19 收藏 · 爱范儿 · 36氪",
    "source": "36氪",
    "board": "热榜",
    "category": "热门话题",
@@ -920,15 +934,27 @@
   },
   {
    "rank": 3,
-   "title": "众信旅游：春节产品报名人数同比增长276%",
-   "url": "https://www.huxiu.com/moment/1297873",
-   "desc": "众信旅游11月18日披露数据，截至目前，2027年春节旅游产品预售报名占比达30%，长线热门目的地报名占比超50%；长线出境游、冰雪体验游、小团度假游三大产品线热度同步走高。春节产品报名人数同比增长276%，订单量同比增长174%，产品丰富度提升47%。",
+   "title": "法国财长：2027年1%的经济增长目标面临下调风险",
+   "url": "https://www.huxiu.com/moment/1297902",
+   "desc": "法国经济与财政部长罗兰·莱斯屈尔11月18日表示，法国2027年1%的经济增长预期有被下调风险。莱斯屈尔称，如果经济增长面临的风险最终被证明是负面的，“我们将不得不加大减赤力度，以实现将预算赤字降至占GDP比例5%的目标”。欧盟委员会当地时间17日对法国的公共财政状况再次发出警告，称随着经济增长乏力以及偿债成本上升，法国今年和明年都将无法…",
    "heat": "虎嗅",
    "source": "虎嗅",
    "board": "热榜",
    "category": "热门话题",
-   "note": "众信旅游披露春节产品报名人数同比增276%，长线出境游和冰雪游热度走高，反映旅游消费回暖，值得从业者关注。",
-   "scene": "旅游行业从业者与关注消费复苏的分析人士"
+   "note": "法国财长称2027年1%增长目标可能下调，若风险兑现需加大减赤力度，欧盟已对其财政状况发出警告。",
+   "scene": "关注欧洲财政与宏观经济的分析人士"
+  },
+  {
+   "rank": 3,
+   "title": "DiskCompanion",
+   "url": "https://www.uneed.best/product/diskcompanion",
+   "desc": "Disk space management and cleanup for Mac",
+   "heat": "33 票 · Productivity / Tracking · Uneed",
+   "source": "Uneed",
+   "board": "新品榜",
+   "category": "热门产品",
+   "note": "Mac 上的磁盘空间管理与清理工具，帮用户找出占地方的文件并腾出容量。",
+   "scene": "Mac 存储快满的用户"
   },
   {
    "rank": 3,
@@ -944,18 +970,6 @@
   },
   {
    "rank": 3,
-   "title": "Remindly",
-   "url": "https://www.uneed.best/product/remindly",
-   "desc": "Notes that remind you, on iPhone, iPad, Mac and web",
-   "heat": "100 票 · MacOS / Productivity · Uneed",
-   "source": "Uneed",
-   "board": "新品榜",
-   "category": "热门产品",
-   "note": "把笔记和提醒合在一起，写下的事到点会主动提醒，覆盖手机、平板、电脑和网页。",
-   "scene": "容易忘事、需要跨设备记事的人"
-  },
-  {
-   "rank": 3,
    "title": "现在的 AI 热潮，恰恰证明了世界就是个草台班子！",
    "url": "https://w2solo.com/topics/7122",
    "desc": "奇思妙想 · 作者 金馋馋",
@@ -968,22 +982,22 @@
   },
   {
    "rank": 4,
-   "title": "pushr",
-   "url": "https://www.producthunt.com/products/pushr",
-   "desc": "iPhone push alerts from any script, server or AI agent",
-   "heat": "发布于 11-16",
+   "title": "Confidential Cloud",
+   "url": "https://www.producthunt.com/products/confidential-cloud",
+   "desc": "Private AI cloud that can't see your stuff",
+   "heat": "发布于 11-17",
    "source": "Product Hunt",
    "board": "日榜",
    "category": "热门产品",
-   "note": "让任意脚本、服务器或 AI 代理向 iPhone 推送通知，把各类事件统一送到手机上。相比专用推送服务，它更强调来源灵活。",
-   "scene": "需要把脚本或服务告警推到手机上的开发者"
+   "note": "主打隐私的 AI 云服务，声称连服务方自己也看不到用户数据，适合对数据敏感的场景。",
+   "scene": "处理敏感数据的企业团队"
   },
   {
    "rank": 4,
    "title": "Lightricks/LTX-2.5",
    "url": "https://huggingface.co/Lightricks/LTX-2.5",
    "desc": "AI 模型 · image-to-video",
-   "heat": "趋势 391 · 12.5k likes · 2.8m 下载 · diffusion-single-file / image-to-video / text-to-video",
+   "heat": "趋势 393 · 12.5k likes · 2.8m 下载 · diffusion-single-file / image-to-video / text-to-video",
    "source": "Hugging Face",
    "board": "热榜",
    "category": "热门产品",
@@ -992,34 +1006,34 @@
   },
   {
    "rank": 4,
-   "title": "Show HN: Motif, a tracker thin enough to be a sticker",
-   "url": "https://motif.blog",
+   "title": "Show HN: Code walkthroughs, maps, and quizzes for pull requests",
+   "url": "https://codeunpacked.san.cx/",
    "desc": "Show HN 新品首发",
-   "heat": "5 points · 1 comments",
+   "heat": "6 points · 1 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门产品",
-   "note": "一款薄到能当贴纸用的追踪器，从标题看主打极致轻薄的外形。",
-   "scene": "想随身追踪物品又嫌普通追踪器太厚的人"
+   "note": "把代码改动做成可浏览的讲解、结构图和随堂小测，帮评审者快速看懂一个拉取请求到底改了什么。相比只靠逐行 diff，更侧重理解而非比对。",
+   "scene": "需要评审陌生代码库拉取请求的开发者"
   },
   {
    "rank": 4,
-   "title": "Highly classified US national security communications network goes down",
-   "url": "https://www.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down",
-   "desc": "https://www.reuters.com/technology/highly-classified-us-nati...",
-   "heat": "555 points · 643 comments",
+   "title": "Quad9's withdrawal from France: A canary in the coal mine",
+   "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
+   "desc": "Hacker News 首页",
+   "heat": "560 points · 175 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门话题",
-   "note": "据路透报道，美国高度机密的国家安全通信网络出现中断，具体原因和影响尚待披露。",
-   "scene": "关注国际安全与通信基础设施的读者"
+   "note": "讨论Quad9退出法国一事，被视为互联网隐私与DNS治理方面的警示信号，涉及网络中立与监管话题。",
+   "scene": "关注网络隐私、DNS与互联网治理的技术人"
   },
   {
    "rank": 4,
    "title": "Ask HN: Aren't the current cyber attacks suspicious?",
    "url": "https://news.ycombinator.com/item?id=50538449",
    "desc": "Just looking at history and having some bayesian mindset the fact that: FAA,NSA,MSFT,APPLE,EQUINOR all got hacked in a week. Isn't it obvious that some nation state or ac…",
-   "heat": "16 points · 15 comments",
+   "heat": "17 points · 15 comments",
    "source": "Hacker News",
    "board": "需求榜",
    "category": "项目需求",
@@ -1064,51 +1078,63 @@
   },
   {
    "rank": 4,
-   "title": "派早报：国区 App Store 将 AIGC 合规设为上架必填、OpenAI 发布 GPT-6.2 Astra 等",
-   "url": "https://sspai.com/post/119210",
-   "desc": "iPhone Duo 测试 2D 人脸解锁功能，松下发布紧凑型电影摄影机 SHX1 等。",
-   "heat": "11 赞",
+   "title": "兼顾随身阅读与自主开发的 4.7 英寸墨水屏设备：小纸 Pico 现货上架少数派",
+   "url": "https://sspai.com/post/118975",
+   "desc": "想找一台可以随身带着读书的墨水屏设备，也想自己改改界面、不被系统「绑架」？近期思维重置团队上架的小纸 Pico 墨水屏开发板是一个值得留意的选择。",
+   "heat": "16 赞",
    "source": "少数派",
    "board": "热榜",
    "category": "热门产品",
-   "note": "汇总当天科技圈几条动态：国区 App Store 把 AIGC 合规设为上架必填，OpenAI 发布新模型，另有新机与摄影机消息。",
-   "scene": "想快速了解科技行业当日要闻的读者"
+   "note": "4.7 英寸墨水屏开发板，既能随身读书，也允许自己改界面，不被封闭系统限制。",
+   "scene": "爱读书又想折腾开发板的极客"
   },
   {
    "rank": 4,
-   "title": "普京说感谢中国",
-   "url": "https://www.toutiao.com/trending/7708956473186930218/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227708956473186930218%22%2C%22hot_board_impr_id%22%3A%222026111815342848590C2507C1BCC9BF8B%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%99%AE%E4%BA%AC%E8%AF%B4%E6%84%9F%E8%B0%A2%E4%B8%AD%E5%9B%BD%22%7D&rank=&style_id=40132&topic_id=7708956473186930218",
+   "title": "中方回应英伟达停止向华供应H200芯片",
+   "url": "https://www.toutiao.com/trending/7709409012864781866/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%225%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227709409012864781866%22%2C%22hot_board_impr_id%22%3A%22202611181704151F1DE5A7098256CD8E9A%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E6%96%B9%E5%9B%9E%E5%BA%94%E8%8B%B1%E4%BC%9F%E8%BE%BE%E5%81%9C%E6%AD%A2%E5%90%91%E5%8D%8E%E4%BE%9B%E5%BA%94H200%E8%8A%AF%E7%89%87%22%7D&rank=&style_id=40132&topic_id=7709409012864781866",
    "desc": "hot",
-   "heat": "热度 2912万",
+   "heat": "热度 3120万",
    "source": "今日头条",
    "board": "热榜",
    "category": "热门话题",
-   "note": "普京公开表达对中国的感谢，通常关联双边合作或外交支持，是观察中俄关系温度的一个信号，值得时政读者留意。",
-   "scene": "关注中俄关系动态的时政观察者"
+   "note": "针对英伟达停止向华供应H200芯片的说法，中方作出回应；芯片供应变动牵动算力与产业链，具体口径以官方表态为准。",
+   "scene": "关注芯片出口管制与算力供应链的从业者"
   },
   {
    "rank": 4,
-   "title": "什么是亚太共同体 如何促进共同繁荣",
-   "url": "https://m.baidu.com/s?word=%E4%BB%80%E4%B9%88%E6%98%AF%E4%BA%9A%E5%A4%AA%E5%85%B1%E5%90%8C%E4%BD%93+%E5%A6%82%E4%BD%95%E4%BF%83%E8%BF%9B%E5%85%B1%E5%90%8C%E7%B9%81%E8%8D%A3&sa=fyb_news",
+   "title": "共绘新图景 共话新机遇",
+   "url": "https://m.baidu.com/s?word=%E5%85%B1%E7%BB%98%E6%96%B0%E5%9B%BE%E6%99%AF+%E5%85%B1%E8%AF%9D%E6%96%B0%E6%9C%BA%E9%81%87&sa=fyb_news",
    "desc": "百度热搜实时热点",
    "heat": "热搜第 4 名",
    "source": "百度热搜",
    "board": "热榜",
    "category": "热门话题",
-   "note": "围绕亚太共同体的概念和共同繁荣路径展开科普，配合会议节点，帮助读者理解区域合作的基本框架。",
-   "scene": "想了解亚太合作背景的普通读者"
+   "note": "标题指向共谋发展与合作的议题，具体内容需结合发布场合理解；从标题看，属于发展与合作主题的宣传性话题。",
+   "scene": "关注宏观政策与发展议题的内容从业者"
   },
   {
    "rank": 4,
-   "title": "想买个折叠车，这领域真的是只有大行和其他吗，求推荐",
-   "url": "https://www.v2ex.com/t/1257918",
-   "desc": "说下相关 - 预算 500-2000 - 需求就是把车折叠后放在后备箱或者后排，出去郊游能更方便的 4+2 旅行 - 的确更在乎车架和折叠机构，担心有些车以后会有异响 - V 刹就行，我只接受 V 刹和油压碟刹。不要机械碟刹 - 我觉得同是 1500 元，大行只有 V 刹，但是有些小众牌子可能给了油压碟刹，这可能在折叠车领域有点本末倒置…",
-   "heat": "78 回复 · 生活",
+   "title": "FreeBSD GUS",
+   "url": "https://gregoire.dev/writing/gus/",
+   "desc": "技术社区热帖",
+   "heat": "9 points · 0 comments · freebsd / mac",
+   "source": "Lobsters",
+   "board": "热榜",
+   "category": "热门话题",
+   "note": "FreeBSD GUS在技术社区引发讨论，从标题看与FreeBSD系统相关，具体内容需看原帖，属开发者圈内话题。",
+   "scene": "关注开源系统动态的技术开发者"
+  },
+  {
+   "rank": 4,
+   "title": "如何合法合规的使用海外模型？",
+   "url": "https://www.v2ex.com/t/1257817",
+   "desc": "打算 12 月回国旅游+过年，远程工作 2-3 个月。 Claude 和 OpenAI 最近都更新了使用政策不允许在中国大陆地区调用模型，甚至 Amazon Bedrock 上的 Claude 现在也是管辖范围没法用了。 Claude 就不想了，有没有什么比较正规的方式可以用其他比如 GPT 模型？ 我现在查下来 Azure 和 GitH…",
+   "heat": "66 回复 · 问与答",
    "source": "V2EX",
    "board": "热榜",
    "category": "热门话题",
-   "note": "用户求推荐500到2000元折叠车，纠结大行与小众品牌在刹车配置上的取舍，反映入门折叠车选购的真实困惑。",
-   "scene": "想入手折叠车的骑行爱好者"
+   "note": "有用户因海外模型限制中国大陆调用，发帖询问回国期间合规使用 GPT 等模型的途径，涉及账号与网络合规问题，远程工作者会关心。",
+   "scene": "有跨境远程办公需求的开发者和自由职业者"
   },
   {
    "rank": 4,
@@ -1124,22 +1150,22 @@
   },
   {
    "rank": 4,
-   "title": "Why does createAsofJoinEngine produce fewer matches when delayedTime is omitted?",
-   "url": "https://stackoverflow.com/questions/80017324/why-does-createasofjoinengine-produce-fewer-matches-when-delayedtime-is-omitted",
-   "desc": "I’m using createAsofJoinEngine to perform an as-of join on two streaming tables. When I omit delayedTime , the results differ significantly from what I expect.…",
-   "heat": "86 浏览 · 0 赞 · 0 回答",
+   "title": "Sitecore solr search is not working ja-jp language version but it works fine with all other languages",
+   "url": "https://stackoverflow.com/questions/80017337/sitecore-solr-search-is-not-working-ja-jp-language-version-but-it-works-fine-wit",
+   "desc": "We are using Sitecore 10.4 with Solr as the search provider. We are facing an issue where search functionality works correctly for English content, but searches…",
+   "heat": "27 浏览 · -3 赞 · 0 回答",
    "source": "Stack Overflow",
    "board": "需求榜",
    "category": "项目需求",
-   "note": "用户发现省略 delayedTime 参数后 as-of join 的匹配结果明显变少，想搞清这个参数在流式关联中的实际作用。",
-   "scene": "使用 DolphinDB 做流数据处理的开发者"
+   "note": "用户遇到 Sitecore 配 Solr 时只有日文内容搜不到、其他语言正常的问题，想找出多语言索引配置哪里出了错。",
+   "scene": "Sitecore 后端开发者"
   },
   {
    "rank": 4,
    "title": "8点1氪丨李飞飞率World Labs正式加入AMD，苏姿丰主导庆祝仪式；360集团副总裁涉及大额贪腐被警方带走调查；高盛预测金价2年后才能重回高位",
    "url": "https://www.36kr.com/p/4074508571104132",
    "desc": "36氪商业科技热文",
-   "heat": "13 收藏 · 8点1氪 · 36氪",
+   "heat": "14 收藏 · 8点1氪 · 36氪",
    "source": "36氪",
    "board": "热榜",
    "category": "热门话题",
@@ -1148,15 +1174,27 @@
   },
   {
    "rank": 4,
-   "title": "英伟达停止向中国供应H200芯片，外交部回应",
-   "url": "https://www.huxiu.com/moment/1297872",
-   "desc": "外交部发言人郭嘉昆主持例行记者会。法新社记者提问，英伟达的临时CEO称，将不再向中国出货H200芯片。中方对此有何评论？郭嘉昆表示，中方此前已经多次阐明在美国输华芯片问题上的原则立场。",
+   "title": "徐国华任广西壮族自治区副主席",
+   "url": "https://www.huxiu.com/moment/1297901",
+   "desc": "据广西日报，2026年11月18日，广西壮族自治区第十四届人民代表大会常务委员会第二十八次会议决定任命徐国华为自治区副主席。",
    "heat": "虎嗅",
    "source": "虎嗅",
    "board": "热榜",
    "category": "热门话题",
-   "note": "英伟达停止向中国供应H200芯片，外交部回应重申既有立场，涉及中美科技博弈，值得关注芯片供应链的人留意。",
-   "scene": "关注半导体供应链与中美科技博弈的从业者"
+   "note": "广西人大常委会决定任命徐国华为自治区副主席，属于地方人事调整，具体分工以官方公布为准。",
+   "scene": "关注地方人事变动的时政编辑"
+  },
+  {
+   "rank": 4,
+   "title": "Waltrack",
+   "url": "https://www.uneed.best/product/waltrack",
+   "desc": "Track Walmart prices, get alerts on drops and restocks",
+   "heat": "30 票 · Investing / Tracking · Uneed",
+   "source": "Uneed",
+   "board": "新品榜",
+   "category": "热门产品",
+   "note": "盯住沃尔玛商品价格，降价或补货时发提醒，帮买家等到合适时机再下单。",
+   "scene": "常在海淘沃尔玛的消费者"
   },
   {
    "rank": 4,
@@ -1172,18 +1210,6 @@
   },
   {
    "rank": 4,
-   "title": "Louez",
-   "url": "https://www.uneed.best/product/louez",
-   "desc": "Manage bookings, payments and contracts in one platform",
-   "heat": "91 票 · Invoicing / Booking & Appointments · Uneed",
-   "source": "Uneed",
-   "board": "新品榜",
-   "category": "热门产品",
-   "note": "把预订、收款和合同放在一个平台里管理，减少来回切换工具。",
-   "scene": "做租赁或预约生意的商家"
-  },
-  {
-   "rank": 4,
    "title": "电脑系统维修的委托单 价格 150",
    "url": "https://w2solo.com/topics/4898",
    "desc": "外包零活 · 作者 zhang",
@@ -1196,34 +1222,34 @@
   },
   {
    "rank": 5,
-   "title": "Bezzle",
-   "url": "https://www.producthunt.com/products/bezzle",
-   "desc": "A whole design studio, free, on your Mac and PC",
-   "heat": "发布于 11-16",
+   "title": "Diagramly 2.0",
+   "url": "https://www.producthunt.com/products/diagramly-2",
+   "desc": "Type a diagram. Get it reviewed. Present it as the deck.",
+   "heat": "发布于 11-17",
    "source": "Product Hunt",
    "board": "日榜",
    "category": "热门产品",
-   "note": "把整套设计工作室能力搬到 Mac 和 PC 上，且免费使用。相比订阅制设计工具，它主打零成本和本地化。",
-   "scene": "预算有限、需要做设计的中小团队或个人"
+   "note": "输入文字就能生成图表，还能自动评审并直接转成演示文稿，把画图和做 PPT 两步并成一步。",
+   "scene": "需要快速做汇报材料的人"
   },
   {
    "rank": 5,
-   "title": "Show HN: I Cannot Let You In",
-   "url": "https://i-cannot-let-you-in.nodolabs.co.uk/",
+   "title": "Show HN: Solarian – Open-source Python framework for AI robots",
+   "url": "https://solarian.dev",
    "desc": "Show HN 新品首发",
-   "heat": "5 points · 2 comments",
+   "heat": "6 points · 2 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门产品",
-   "note": "标题是「我不能让你进来」，简介只有首发标记，具体内容无法判断，可能是一个访问控制或互动类项目。",
-   "scene": "浏览 Hacker News 新项目的技术用户"
+   "note": "一个开源的 Python 框架，用于开发 AI 机器人，把模型能力接到机器人控制上。相比通用框架，它更聚焦机器人场景。",
+   "scene": "做 AI 机器人原型的开发者"
   },
   {
    "rank": 5,
    "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
    "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
    "desc": "Hacker News 首页",
-   "heat": "501 points · 227 comments",
+   "heat": "526 points · 238 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门话题",
@@ -1292,63 +1318,63 @@
   },
   {
    "rank": 5,
-   "title": "央视因信号不好弃播开拓者比赛",
-   "url": "https://www.toutiao.com/trending/7709354536976859698/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%224%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227709354536976859698%22%2C%22hot_board_impr_id%22%3A%222026111815342848590C2507C1BCC9BF8B%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%A4%AE%E8%A7%86%E5%9B%A0%E4%BF%A1%E5%8F%B7%E4%B8%8D%E5%A5%BD%E5%BC%83%E6%92%AD%E5%BC%80%E6%8B%93%E8%80%85%E6%AF%94%E8%B5%9B%22%7D&rank=&style_id=40132&topic_id=7709354536976859698",
-   "desc": "new",
-   "heat": "热度 2635万",
-   "source": "今日头条",
+   "title": "派早报：国区 App Store 将 AIGC 合规设为上架必填、OpenAI 发布 GPT-6.2 Astra 等",
+   "url": "https://sspai.com/post/119210",
+   "desc": "iPhone Duo 测试 2D 人脸解锁功能，松下发布紧凑型电影摄影机 SHX1 等。",
+   "heat": "12 赞",
+   "source": "少数派",
    "board": "热榜",
-   "category": "热门话题",
-   "note": "央视因信号问题放弃转播开拓者比赛，属于转播环节的技术状况，从标题看是赛事播出中的临时变动。",
-   "scene": "关注NBA转播与体育赛事的球迷"
+   "category": "热门产品",
+   "note": "汇总当天科技圈几条动态：国区 App Store 把 AIGC 合规设为上架必填，OpenAI 发布新模型，另有新机与摄影机消息。",
+   "scene": "想快速了解科技行业当日要闻的读者"
   },
   {
    "rank": 5,
-   "title": "文莱领导人握手前 中方安保1秒摘手套",
-   "url": "https://m.baidu.com/s?word=%E6%96%87%E8%8E%B1%E9%A2%86%E5%AF%BC%E4%BA%BA%E6%8F%A1%E6%89%8B%E5%89%8D+%E4%B8%AD%E6%96%B9%E5%AE%89%E4%BF%9D1%E7%A7%92%E6%91%98%E6%89%8B%E5%A5%97&sa=fyb_news",
-   "desc": "百度热搜实时热点",
+   "title": "深圳机场停满各国领导人专机",
+   "url": "https://www.toutiao.com/trending/7709090624632327721/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227709090624632327721%22%2C%22hot_board_impr_id%22%3A%22202611181704151F1DE5A7098256CD8E9A%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%B7%B1%E5%9C%B3%E6%9C%BA%E5%9C%BA%E5%81%9C%E6%BB%A1%E5%90%84%E5%9B%BD%E9%A2%86%E5%AF%BC%E4%BA%BA%E4%B8%93%E6%9C%BA%22%7D&rank=&style_id=40132&topic_id=7709090624632327721",
+   "desc": "hot",
+   "heat": "热度 2823万",
+   "source": "今日头条",
+   "board": "热榜",
+   "category": "热门话题",
+   "note": "多国领导人专机集中停放深圳，通常对应高规格国际会议或外交活动，反映中国与亚太地区互动升温，值得关注区域合作动向的人留意。",
+   "scene": "关注国际外交与区域合作动态的时政观察者"
+  },
+  {
+   "rank": 5,
+   "title": "华强北挤满了外国人",
+   "url": "https://m.baidu.com/s?word=%E5%8D%8E%E5%BC%BA%E5%8C%97%E6%8C%A4%E6%BB%A1%E4%BA%86%E5%A4%96%E5%9B%BD%E4%BA%BA&sa=fyb_news",
+   "desc": "百度热搜 · 新上榜",
    "heat": "热搜第 5 名",
    "source": "百度热搜",
    "board": "热榜",
    "category": "热门话题",
-   "note": "文莱领导人握手前中方安保一秒摘下手套，属于外事礼仪中的细节画面，从标题看是现场花絮，引发网友关注。",
-   "scene": "关注外事礼仪细节的时政读者"
+   "note": "华强北出现大量外国访客，折射出电子元器件集散地的国际吸引力，也反映跨境采购与商贸往来的热度。",
+   "scene": "关注电子供应链与跨境商贸的从业者"
   },
   {
    "rank": 5,
-   "title": "【蜘蛛侠/MJ】非凡之爱真人版",
-   "url": "https://www.bilibili.com/video/BV1xFs36uEvE",
-   "desc": "Crazy-face · 鬼畜剧场",
-   "heat": "280万 播放 · 9.1万 点赞 · 1285 评论",
+   "title": "「幽明志」幽城残梦",
+   "url": "https://www.bilibili.com/video/BV1YvsB6FER9",
+   "desc": "幽明志 · 同人·手书",
+   "heat": "89万 播放 · 4.2万 点赞 · 532 评论",
    "source": "哔哩哔哩",
    "board": "热榜",
    "category": "热门话题",
-   "note": "用真人素材剪辑蜘蛛侠与MJ的鬼畜剧场，属于粉丝二创娱乐内容，喜欢漫威和鬼畜视频的观众会感兴趣。",
-   "scene": "喜欢漫威二创和鬼畜视频的B站观众"
+   "note": "这是《幽明志》相关的同人手书作品，属于粉丝自制内容，从标题看带有古风叙事色彩，适合原作爱好者观看。",
+   "scene": "《幽明志》粉丝与同人手书爱好者"
   },
   {
    "rank": 5,
-   "title": "FreeBSD GUS",
-   "url": "https://gregoire.dev/writing/gus/",
-   "desc": "技术社区热帖",
-   "heat": "7 points · 0 comments · freebsd / mac",
-   "source": "Lobsters",
-   "board": "热榜",
-   "category": "热门话题",
-   "note": "FreeBSD GUS在技术社区引发讨论，从标题看与FreeBSD系统相关，具体内容需看原帖，属开发者圈内话题。",
-   "scene": "关注开源系统动态的技术开发者"
-  },
-  {
-   "rank": 5,
-   "title": "[送码+抽奖] Fotilo：Mac 的截图+录屏软件（用心打磨了很久）",
-   "url": "https://www.v2ex.com/t/1257886",
-   "desc": "大家好，我是 foam，我又做了一个 Mac app。 前几天刚把 Fotilo 更新到了 1.1.0。这是一个 Mac 上的截图 + 录屏工具：如果你用过 Snipaste、CleanShot X、Shottr 这类截图 App，或者 Screen Studio 这类录屏 App，那么 Fotilo 差不多就是把这两类合在了一起。现在核…",
-   "heat": "72 回复 · 分享创造",
+   "title": "Gemini Ultra 免费一个月？有 V 友领到了吗，想核对下条件",
+   "url": "https://www.v2ex.com/t/1257824",
+   "desc": "刷到一个帖子，说 Gemini Ultra 可以免费用一个月，链接放评论区了 原帖提到了先绑卡，但这张截图没截到实际领取入口，也没说明地区、新老用户这些限制，目前还不能确认具体条件。 有 V 友领到过吗？想核对几个信息： - 哪个地区的账号，之前有没有订阅过？ - 页面显示的是 Ultra 哪个档位？ - 免费期结束后，续费金额是多少？…",
+   "heat": "66 回复 · Google",
    "source": "V2EX",
    "board": "热榜",
    "category": "热门话题",
-   "note": "开发者发布Mac端截图录屏二合一工具Fotilo并更新至1.1.0，附带送码抽奖，面向效率工具用户。",
-   "scene": "Mac用户与效率工具爱好者"
+   "note": "有网友发帖称Gemini Ultra可免费用一个月，但领取条件和地区限制尚不明确，发帖者在向其他用户求证。",
+   "scene": "关注AI订阅优惠和海外账号使用的用户"
   },
   {
    "rank": 5,
@@ -1364,22 +1390,22 @@
   },
   {
    "rank": 5,
-   "title": "Elementor Text Edit issue",
-   "url": "https://stackoverflow.com/questions/80017323/elementor-text-edit-issue",
-   "desc": "In Elementor, majorly we face an issue when we click on any textEdit to style it usually takes white space at the very bottom, to overcome that we have to go to…",
-   "heat": "43 浏览 · -6 赞 · 0 回答",
+   "title": "Started my first internship as a QA Intern, but my career goal is Software Engineering. Will this affect my future SE career?",
+   "url": "https://stackoverflow.com/questions/80017334/started-my-first-internship-as-a-qa-intern-but-my-career-goal-is-software-engin",
+   "desc": "I'm a university student who recently started my first internship as a QA Intern. However, my long-term career goal is to become a Software Engineer. I'm the on…",
+   "heat": "118 浏览 · -6 赞 · 0 回答",
    "source": "Stack Overflow",
    "board": "需求榜",
    "category": "项目需求",
-   "note": "用户在 Elementor 里点开文本编辑时底部会多出空白，想找到原因并消除这个多余的间距。",
-   "scene": "用 WordPress 建站的网页制作者"
+   "note": "一名刚入职的 QA 实习生担心测试岗经历会拖累自己转软件工程师，想确认这段经历对职业路径的实际影响。",
+   "scene": "在校生或刚入行的实习生"
   },
   {
    "rank": 5,
    "title": "三大厂内存涨价7倍的锅，AI不背了",
    "url": "https://www.36kr.com/p/4073691017499523",
    "desc": "36氪商业科技热文",
-   "heat": "31 收藏 · 字母榜 · 36氪",
+   "heat": "34 收藏 · 字母榜 · 36氪",
    "source": "36氪",
    "board": "热榜",
    "category": "热门话题",
@@ -1388,15 +1414,27 @@
   },
   {
    "rank": 5,
-   "title": "乘联分会：11月1-15日全国乘用车市场零售61.1万辆，同比去年11月同期下降25%",
-   "url": "https://www.huxiu.com/moment/1297871",
-   "desc": "乘联分会数据显示，11月1-15日，全国乘用车市场零售61.1万辆，同比去年11月同期下降25%，较上月同期下降6%，今年以来累计零售1,558.9万辆，同比下降22%；11月1-15日，全国乘用车厂商批发72.2万辆，同比去年11月同期下降23%，较上月同期增长11%，今年以来累计批发2,309.2万辆，同比下降7%。",
+   "title": "廖林会见越南财政部部长吴文俊",
+   "url": "https://www.huxiu.com/moment/1297900",
+   "desc": "2026年11月17日，在深圳APEC工商领导人峰会举办期间，中国工商银行董事长廖林会见越南财政部部长吴文俊。双方围绕中越金融合作、助力两国经贸投资往来等话题展开会谈，将继续推动双方在项目融资、人民币跨境使用、海外债券承销和熊猫债等领域的合作。总行国际业务部、办公室及河内分行相关负责人参加会见。",
    "heat": "虎嗅",
    "source": "虎嗅",
    "board": "热榜",
    "category": "热门话题",
-   "note": "乘联分会数据显示11月前半月乘用车零售同比降25%，反映车市短期承压，值得关注汽车消费走势的人参考。",
-   "scene": "汽车行业从业者与关注车市走势的分析人士"
+   "note": "工行董事长廖林在深圳APEC工商峰会期间会见越南财政部部长，双方谈及项目融资、人民币跨境使用等金融合作。",
+   "scene": "关注中越金融合作与跨境结算的从业者"
+  },
+  {
+   "rank": 5,
+   "title": "Learngine",
+   "url": "https://www.uneed.best/product/learngine",
+   "desc": "Your slides become flashcards, quizzes, podcasts & an AI study plan. Ad-free.",
+   "heat": "6 票 · Education / Productivity · Uneed",
+   "source": "Uneed",
+   "board": "新品榜",
+   "category": "热门产品",
+   "note": "把已有幻灯片自动转成闪卡、测验、播客和 AI 学习计划，让复习材料从课件里长出来。",
+   "scene": "备考的学生和自学者"
   },
   {
    "rank": 5,
@@ -1412,18 +1450,6 @@
   },
   {
    "rank": 5,
-   "title": "7DayStyle",
-   "url": "https://www.uneed.best/product/7daystyle",
-   "desc": "Upload your photo and see yourself in complete outfits, powered by AI.",
-   "heat": "32 票 · Avatars / AI · Uneed",
-   "source": "Uneed",
-   "board": "新品榜",
-   "category": "热门产品",
-   "note": "上传一张照片，用 AI 生成自己穿上整套搭配的效果，先看再决定买不买。",
-   "scene": "想试穿搭又懒得试衣的人"
-  },
-  {
-   "rank": 5,
    "title": "用 AI 搓了一个奇怪的工具：帮我寻找 “评分低、用户多” 的浏览器插件",
    "url": "https://w2solo.com/topics/7243",
    "desc": "奇思妙想 · 作者 zhangxh1023",
@@ -1436,51 +1462,51 @@
   },
   {
    "rank": 6,
-   "title": "AWS Emulator",
-   "url": "https://www.producthunt.com/products/aws",
-   "desc": "Build and test AWS applications locally without deploying",
-   "heat": "发布于 11-16",
+   "title": "UI Verify",
+   "url": "https://www.producthunt.com/products/ui-verify",
+   "desc": "Visual testing for coding agents",
+   "heat": "发布于 11-17",
    "source": "Product Hunt",
    "board": "日榜",
    "category": "热门产品",
-   "note": "在本地模拟 AWS 服务，让开发者不部署到云端就能构建和测试应用。相比真实上云，它省去部署步骤和费用。",
-   "scene": "本地开发和调试 AWS 应用的工程师"
+   "note": "给编程智能体做界面视觉测试，检查它改出来的页面外观是否真的没问题，补上只看代码的盲区。",
+   "scene": "用 AI 改前端界面的开发者"
   },
   {
    "rank": 6,
-   "title": "Show HN: Hue MD – Markdown that shows status at a glance and stays plain text",
-   "url": "https://spingras.github.io/hue-md/",
+   "title": "Show HN: I Cannot Let You In",
+   "url": "https://i-cannot-let-you-in.nodolabs.co.uk/",
    "desc": "Show HN 新品首发",
-   "heat": "5 points · 0 comments",
+   "heat": "5 points · 4 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门产品",
-   "note": "让 Markdown 文档在保持纯文本的同时直接显示状态信息，不用渲染也能一眼看清进度。",
-   "scene": "用纯文本管理任务和文档的写作者"
+   "note": "标题是「我不能让你进来」，简介只有首发标记，具体内容无法判断，可能是一个访问控制或互动类项目。",
+   "scene": "浏览 Hacker News 新项目的技术用户"
   },
   {
    "rank": 6,
-   "title": "Quad9's withdrawal from France: A canary in the coal mine",
-   "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
+   "title": "Phrack 73 Released",
+   "url": "https://phrack.org/issues/73/introduction_md",
    "desc": "Hacker News 首页",
-   "heat": "491 points · 154 comments",
+   "heat": "371 points · 52 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门话题",
-   "note": "讨论Quad9退出法国一事，被视为互联网隐私与DNS治理方面的警示信号，涉及网络中立与监管话题。",
-   "scene": "关注网络隐私、DNS与互联网治理的技术人"
+   "note": "老牌安全技术杂志Phrack发布第73期，是安全研究和逆向工程圈子的定期读物，值得相关从业者一看。",
+   "scene": "安全研究、逆向工程领域的技术人员"
   },
   {
    "rank": 6,
-   "title": "Ask HN: What do coding interviews look like in the age of AI?",
-   "url": "https://news.ycombinator.com/item?id=50510540",
-   "desc": "I'm a senior Rails/React dev with 13+ years of experience. Recent AI-driven layoffs have me (soon) looking for work again. But I've barely hand-written a line of code in…",
-   "heat": "11 points · 8 comments",
+   "title": "Ask HN: Are We in a Cyberwar?",
+   "url": "https://news.ycombinator.com/item?id=50537206",
+   "desc": "With all of these sites and services going down. are we in the midst of a cyber war?",
+   "heat": "11 points · 19 comments",
    "source": "Hacker News",
    "board": "需求榜",
    "category": "项目需求",
-   "note": "有十多年经验但很久没手写代码，担心 AI 时代的编程面试该怎么准备、考什么。",
-   "scene": "重返求职市场的资深工程师"
+   "note": "面对近期多家网站和服务接连宕机，有人怀疑是否已处于网络战之中，想厘清这些故障之间有没有关联。",
+   "scene": "关注安全态势的技术从业者"
   },
   {
    "rank": 6,
@@ -1532,34 +1558,34 @@
   },
   {
    "rank": 6,
-   "title": "深圳摆下两张桌有何智慧",
-   "url": "https://www.toutiao.com/trending/7709360849001021467/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227709360849001021467%22%2C%22hot_board_impr_id%22%3A%222026111815342848590C2507C1BCC9BF8B%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%B7%B1%E5%9C%B3%E6%91%86%E4%B8%8B%E4%B8%A4%E5%BC%A0%E6%A1%8C%E6%9C%89%E4%BD%95%E6%99%BA%E6%85%A7%22%7D&rank=&style_id=40132&topic_id=7709360849001021467",
-   "desc": "new",
-   "heat": "热度 2384万",
+   "title": "菲律宾民众为何抗议特朗普到访",
+   "url": "https://www.toutiao.com/trending/7709413085252947483/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2213%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227709413085252947483%22%2C%22hot_board_impr_id%22%3A%22202611181704151F1DE5A7098256CD8E9A%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E8%8F%B2%E5%BE%8B%E5%AE%BE%E6%B0%91%E4%BC%97%E4%B8%BA%E4%BD%95%E6%8A%97%E8%AE%AE%E7%89%B9%E6%9C%97%E6%99%AE%E5%88%B0%E8%AE%BF%22%7D&rank=&style_id=40132&topic_id=7709413085252947483",
+   "desc": "interpretation",
+   "heat": "热度 2554万",
    "source": "今日头条",
    "board": "热榜",
    "category": "热门话题",
-   "note": "深圳在对外交往中同时布局两张桌，从标题看指向其外交或合作安排上的策略，值得关注城市国际交往的人留意。",
-   "scene": "关注城市外交与区域合作的研究者"
+   "note": "菲律宾民众抗议特朗普到访，背后涉及当地对外关系与民生诉求；具体诉求与规模需以现场报道为准。",
+   "scene": "关注东南亚时局与涉外抗议的观察者"
   },
   {
    "rank": 6,
-   "title": "上万斤爱媛无人收 博主包下请网友摘",
-   "url": "https://m.baidu.com/s?word=%E4%B8%8A%E4%B8%87%E6%96%A4%E7%88%B1%E5%AA%9B%E6%97%A0%E4%BA%BA%E6%94%B6+%E5%8D%9A%E4%B8%BB%E5%8C%85%E4%B8%8B%E8%AF%B7%E7%BD%91%E5%8F%8B%E6%91%98&sa=fyb_news",
+   "title": "博主回村拍老人涨粉400万",
+   "url": "https://m.baidu.com/s?word=%E5%8D%9A%E4%B8%BB%E5%9B%9E%E6%9D%91%E6%8B%8D%E8%80%81%E4%BA%BA%E6%B6%A8%E7%B2%89400%E4%B8%87&sa=fyb_news",
    "desc": "百度热搜实时热点",
    "heat": "热搜第 6 名",
    "source": "百度热搜",
    "board": "热榜",
    "category": "热门话题",
-   "note": "上万斤爱媛橙滞销无人收，博主包下果园请网友采摘，反映农产品销售困境与网络助农的新方式，引发关注。",
-   "scene": "关注农产品滞销与助农模式的读者"
+   "note": "有博主回村拍摄老人，涨粉约400万，说明乡村题材内容仍有强传播力，也引发对拍摄伦理的讨论。",
+   "scene": "关注短视频内容生态的创作者与运营"
   },
   {
    "rank": 6,
    "title": "⚡ 非凡之畜 ⚡",
    "url": "https://www.bilibili.com/video/BV18DsJ6TEA3",
    "desc": "黄花大长虫 · 鬼畜剧场",
-   "heat": "287万 播放 · 9.9万 点赞 · 2201 评论",
+   "heat": "316万 播放 · 11万 点赞 · 2474 评论",
    "source": "哔哩哔哩",
    "board": "热榜",
    "category": "热门话题",
@@ -1580,15 +1606,15 @@
   },
   {
    "rank": 6,
-   "title": "如何合法合规的使用海外模型？",
-   "url": "https://www.v2ex.com/t/1257817",
-   "desc": "打算 12 月回国旅游+过年，远程工作 2-3 个月。 Claude 和 OpenAI 最近都更新了使用政策不允许在中国大陆地区调用模型，甚至 Amazon Bedrock 上的 Claude 现在也是管辖范围没法用了。 Claude 就不想了，有没有什么比较正规的方式可以用其他比如 GPT 模型？ 我现在查下来 Azure 和 GitH…",
-   "heat": "63 回复 · 问与答",
+   "title": "感叹一下 ai 时代几乎没有啥技术难题了，无论是软硬件",
+   "url": "https://www.v2ex.com/t/1257890",
+   "desc": "## 翻到了 22 年发的一个硬件问题 https://www.v2ex.com/t/881374 ，当时找遍全网也没有解决方案，最后还是用了继电器串联 #### 现在真是随便一个 ai 都能解决，比如豆包 ![image](https://i.mji.rip/2026/11/18/91150f3f37170fe0217f5c2ae3ff…",
+   "heat": "66 回复 · 程序员",
    "source": "V2EX",
    "board": "热榜",
    "category": "热门话题",
-   "note": "有用户因海外模型限制中国大陆调用，发帖询问回国期间合规使用 GPT 等模型的途径，涉及账号与网络合规问题，远程工作者会关心。",
-   "scene": "有跨境远程办公需求的开发者和自由职业者"
+   "note": "有开发者感慨AI时代软硬件难题几乎都能靠工具解决，并对比自己几年前求助无门的经历，折射AI对技术门槛的改写。",
+   "scene": "关注AI工具实际效用的开发者与技术社区用户"
   },
   {
    "rank": 6,
@@ -1604,22 +1630,22 @@
   },
   {
    "rank": 6,
-   "title": "How can I replace the spaces in the output of a bash command",
-   "url": "https://stackoverflow.com/questions/80017322/how-can-i-replace-the-spaces-in-the-output-of-a-bash-command",
-   "desc": "I want to display the output of a bash command seperated by commas instead of spaces. I couldn't see any special option to do that. How can I do this?",
-   "heat": "77 浏览 · -2 赞 · 1 回答",
+   "title": "Why does createAsofJoinEngine produce fewer matches when delayedTime is omitted?",
+   "url": "https://stackoverflow.com/questions/80017324/why-does-createasofjoinengine-produce-fewer-matches-when-delayedtime-is-omitted",
+   "desc": "I’m using createAsofJoinEngine to perform an as-of join on two streaming tables. When I omit delayedTime , the results differ significantly from what I expect.…",
+   "heat": "92 浏览 · 0 赞 · 0 回答",
    "source": "Stack Overflow",
    "board": "需求榜",
    "category": "项目需求",
-   "note": "用户想把 bash 命令输出里的空格换成逗号，但没找到现成选项，实际需要的是用管道加替换命令来实现。",
-   "scene": "写 shell 脚本的运维或开发者"
+   "note": "用户发现省略 delayedTime 参数后 as-of join 的匹配结果明显变少，想搞清这个参数在流式关联中的实际作用。",
+   "scene": "使用 DolphinDB 做流数据处理的开发者"
   },
   {
    "rank": 6,
    "title": "黄仁勋官宣愿意回归，英伟达董事会：不考虑！",
    "url": "https://www.36kr.com/p/4074565412656261",
    "desc": "36氪商业科技热文",
-   "heat": "爱范儿 · 36氪",
+   "heat": "2 收藏 · 爱范儿 · 36氪",
    "source": "36氪",
    "board": "热榜",
    "category": "热门话题",
@@ -1628,15 +1654,27 @@
   },
   {
    "rank": 6,
-   "title": "外交部：中俄美三国元首将就事关全球和平的重要问题深入交换意见",
-   "url": "https://www.huxiu.com/moment/1297870",
-   "desc": "央视新闻消息，11月18日，外交部发言人郭嘉昆主持例行记者会。有记者就中俄美元首会晤提问。郭嘉昆表示，中方此前已经介绍了中俄美元首深圳会晤的有关安排，三国元首将就事关全球和平的重要问题深入交换意见，我们会及时发布会晤的相关消息，请大家保持关注。",
+   "title": "华峰测控：首次回购1.93万股，累计回购金额404.89万元",
+   "url": "https://www.huxiu.com/moment/1297899",
+   "desc": "华峰测控公告称，公司拟以5000万元-1亿元自有资金通过集中竞价方式回购股份，用于员工持股计划或股权激励，回购价格不超250元/股，回购期限为2026年11月11日至2027年11月10日。2026年11月18日，公司首次回购股份1.93万股，占总股本比例0.0096%，回购价格区间为208.93元/股-210.40元/股，累计支付总金额…",
    "heat": "虎嗅",
    "source": "虎嗅",
    "board": "热榜",
    "category": "热门话题",
-   "note": "外交部披露中俄美三国元首将就全球和平等重要问题深入交换意见，属高层外交安排，具体成果待官方发布。",
-   "scene": "关注大国外交动态的时政记者与国际关系研究者"
+   "note": "华峰测控首次回购1.93万股，累计支付约404.89万元，回购股份拟用于员工持股或股权激励。",
+   "scene": "关注上市公司回购与股权激励的投资者"
+  },
+  {
+   "rank": 6,
+   "title": "Motion Fab",
+   "url": "https://www.uneed.best/product/motion-fab",
+   "desc": "AI-powered video animation from text descriptions",
+   "heat": "24 票 · Motion & Animation / AI · Uneed",
+   "source": "Uneed",
+   "board": "新品榜",
+   "category": "热门产品",
+   "note": "根据文字描述自动生成视频动画，省去逐帧制作和手动调关键帧的麻烦。",
+   "scene": "做短视频和宣传片的内容创作者"
   },
   {
    "rank": 6,
@@ -1652,18 +1690,6 @@
   },
   {
    "rank": 6,
-   "title": "epuBear SDK",
-   "url": "https://www.uneed.best/product/epubear-sdk",
-   "desc": "Cross-platform EPUB SDK for modern eBook apps",
-   "heat": "37 票 · Ebook · Uneed",
-   "source": "Uneed",
-   "board": "新品榜",
-   "category": "热门产品",
-   "note": "跨平台的电子书开发工具包，帮开发者更快做出支持 EPUB 格式的阅读应用。",
-   "scene": "开发电子书阅读器的程序员"
-  },
-  {
-   "rank": 6,
    "title": "上班煎熬，于是。。。。",
    "url": "https://w2solo.com/topics/5593",
    "desc": "奇思妙想 · 作者 llbm",
@@ -1676,22 +1702,22 @@
   },
   {
    "rank": 7,
-   "title": "Ballet",
-   "url": "https://www.producthunt.com/products/ballet",
-   "desc": "Deterministic AI workflow automation for Ops teams",
-   "heat": "发布于 11-16",
+   "title": "Incredible Agents",
+   "url": "https://www.producthunt.com/products/incredible",
+   "desc": "Proactive AIs that do work directly on your computer, 24/7",
+   "heat": "发布于 11-17",
    "source": "Product Hunt",
    "board": "日榜",
    "category": "热门产品",
-   "note": "面向运维团队的 AI 工作流自动化工具，强调结果可复现。相比普通自动化脚本，它更看重流程的确定性。",
-   "scene": "需要稳定自动化流程的运维团队"
+   "note": "能主动在你电脑上干活、全天候运行的 AI，不需要每次手动下指令，从标题看偏向自动化执行。",
+   "scene": "想用 AI 处理重复桌面任务的人"
   },
   {
    "rank": 7,
    "title": "sensenova/SenseNova-Loop-9B",
    "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B",
    "desc": "AI 模型 · image-text-to-text",
-   "heat": "趋势 235 · 248 likes · 0 下载 · transformers / safetensors / sensenova_loop",
+   "heat": "趋势 248 · 266 likes · 0 下载 · transformers / safetensors / sensenova_loop",
    "source": "Hugging Face",
    "board": "热榜",
    "category": "热门产品",
@@ -1700,22 +1726,22 @@
   },
   {
    "rank": 7,
-   "title": "Show HN: Moonswing – a Linux desktop environment built with Flutter",
-   "url": "https://github.com/miracle-wm-org/moonswing",
+   "title": "Show HN: Hue MD – Markdown that shows status at a glance and stays plain text",
+   "url": "https://spingras.github.io/hue-md/",
    "desc": "Show HN 新品首发",
-   "heat": "5 points · 1 comments",
+   "heat": "5 points · 0 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门产品",
-   "note": "用 Flutter 构建的 Linux 桌面环境，属于尝试用跨平台框架做系统桌面的项目。相比传统桌面环境，技术栈更偏应用开发。",
-   "scene": "关注 Linux 桌面新方案的爱好者"
+   "note": "让 Markdown 文档在保持纯文本的同时直接显示状态信息，不用渲染也能一眼看清进度。",
+   "scene": "用纯文本管理任务和文档的写作者"
   },
   {
    "rank": 7,
    "title": "What is the best harness for each model?",
    "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
    "desc": "Hacker News 首页",
-   "heat": "362 points · 125 comments",
+   "heat": "369 points · 125 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门话题",
@@ -1724,15 +1750,15 @@
   },
   {
    "rank": 7,
-   "title": "Ask HN: Are We in a Cyberwar?",
-   "url": "https://news.ycombinator.com/item?id=50537206",
-   "desc": "With all of these sites and services going down. are we in the midst of a cyber war?",
-   "heat": "10 points · 18 comments",
+   "title": "Ask HN: What do coding interviews look like in the age of AI?",
+   "url": "https://news.ycombinator.com/item?id=50510540",
+   "desc": "I'm a senior Rails/React dev with 13+ years of experience. Recent AI-driven layoffs have me (soon) looking for work again. But I've barely hand-written a line of code in…",
+   "heat": "11 points · 8 comments",
    "source": "Hacker News",
    "board": "需求榜",
    "category": "项目需求",
-   "note": "面对近期多家网站和服务接连宕机，有人怀疑是否已处于网络战之中，想厘清这些故障之间有没有关联。",
-   "scene": "关注安全态势的技术从业者"
+   "note": "有十多年经验但很久没手写代码，担心 AI 时代的编程面试该怎么准备、考什么。",
+   "scene": "重返求职市场的资深工程师"
   },
   {
    "rank": 7,
@@ -1772,39 +1798,63 @@
   },
   {
    "rank": 7,
-   "title": "特朗普启程前往深圳",
-   "url": "https://www.toutiao.com/video/7709400585245917184",
-   "desc": "hot",
-   "heat": "热度 2157万",
+   "title": "央视因信号不好弃播开拓者比赛",
+   "url": "https://www.toutiao.com/trending/7709354536976859698/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%224%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227709354536976859698%22%2C%22hot_board_impr_id%22%3A%22202611181704151F1DE5A7098256CD8E9A%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%A4%AE%E8%A7%86%E5%9B%A0%E4%BF%A1%E5%8F%B7%E4%B8%8D%E5%A5%BD%E5%BC%83%E6%92%AD%E5%BC%80%E6%8B%93%E8%80%85%E6%AF%94%E8%B5%9B%22%7D&rank=&style_id=40132&topic_id=7709354536976859698",
+   "desc": "今日头条热榜事件",
+   "heat": "热度 2311万",
    "source": "今日头条",
    "board": "热榜",
    "category": "热门话题",
-   "note": "特朗普启程前往深圳，此行与其出席亚太经合组织领导人非正式会议的安排相关，是近期中美互动的重要节点。",
-   "scene": "跟踪中美关系与APEC议程的新闻从业者"
+   "note": "央视因信号问题放弃转播开拓者比赛，属于转播环节的技术状况，从标题看是赛事播出中的临时变动。",
+   "scene": "关注NBA转播与体育赛事的球迷"
   },
   {
    "rank": 7,
-   "title": "深圳宝安机场停满领导人专机",
-   "url": "https://m.baidu.com/s?word=%E6%B7%B1%E5%9C%B3%E5%AE%9D%E5%AE%89%E6%9C%BA%E5%9C%BA%E5%81%9C%E6%BB%A1%E9%A2%86%E5%AF%BC%E4%BA%BA%E4%B8%93%E6%9C%BA&sa=fyb_news",
+   "title": "游客钓到1.88米巨型海鳗",
+   "url": "https://m.baidu.com/s?word=%E6%B8%B8%E5%AE%A2%E9%92%93%E5%88%B01.88%E7%B1%B3%E5%B7%A8%E5%9E%8B%E6%B5%B7%E9%B3%97&sa=fyb_news",
    "desc": "百度热搜实时热点",
    "heat": "热搜第 7 名",
    "source": "百度热搜",
    "board": "热榜",
    "category": "热门话题",
-   "note": "深圳宝安机场出现多架领导人专机，与近期在深圳举行的重要国际会议安排相呼应，属现场画面类热点。",
-   "scene": "关注重大外事活动现场动态的媒体与航空爱好者"
+   "note": "有游客钓到1.88米巨型海鳗，属于少见渔获引发的网络趣闻，具体鱼种与放生情况以原报道为准。",
+   "scene": "关注户外垂钓与网络趣闻的普通读者"
   },
   {
    "rank": 7,
-   "title": "感叹一下 ai 时代几乎没有啥技术难题了，无论是软硬件",
-   "url": "https://www.v2ex.com/t/1257890",
-   "desc": "## 翻到了 22 年发的一个硬件问题 https://www.v2ex.com/t/881374 ，当时找遍全网也没有解决方案，最后还是用了继电器串联 #### 现在真是随便一个 ai 都能解决，比如豆包 ![image](https://i.mji.rip/2026/11/18/91150f3f37170fe0217f5c2ae3ff…",
-   "heat": "58 回复 · 程序员",
+   "title": "《遗忘之海》第三赛季更新前瞻PV「旧日序曲」",
+   "url": "https://www.bilibili.com/video/BV1N1s16iEry",
+   "desc": "遗忘之海 · GMV",
+   "heat": "18万 播放 · 5637 点赞 · 504 评论",
+   "source": "哔哩哔哩",
+   "board": "热榜",
+   "category": "热门话题",
+   "note": "《遗忘之海》公布第三赛季更新前瞻PV，向玩家预告新赛季内容方向，具体玩法改动需看后续公告。",
+   "scene": "关注《遗忘之海》赛季更新的玩家"
+  },
+  {
+   "rank": 7,
+   "title": "Sarasa Gothic Mono",
+   "url": "https://picaq.github.io/sarasa",
+   "desc": "技术社区热帖",
+   "heat": "18 points · 7 comments · design",
+   "source": "Lobsters",
+   "board": "热榜",
+   "category": "热门话题",
+   "note": "Sarasa Gothic Mono在技术社区被讨论，从标题看是一款等宽字体，属开发者工具与排版话题。",
+   "scene": "关注字体与开发工具的开发者"
+  },
+  {
+   "rank": 7,
+   "title": "各位的 vps 还好吗？昨天批量被墙。",
+   "url": "https://www.v2ex.com/t/1257881",
+   "desc": "昨天上午突然网络不通，能 ping 通 ip，带端口就 ping 不通，用搬瓦工的自测看的出来是被 GFW 拦截了。 除了换 ip 还有解决办法吗",
+   "heat": "56 回复 · VPS",
    "source": "V2EX",
    "board": "热榜",
    "category": "热门话题",
-   "note": "有开发者感慨AI时代软硬件难题几乎都能靠工具解决，并对比自己几年前求助无门的经历，折射AI对技术门槛的改写。",
-   "scene": "关注AI工具实际效用的开发者与技术社区用户"
+   "note": "有用户反映VPS批量被墙，能ping通但端口不通，讨论除换IP外的应对办法，涉及网络访问的常见困扰。",
+   "scene": "使用境外服务器的站长与运维技术人员"
   },
   {
    "rank": 7,
@@ -1820,22 +1870,22 @@
   },
   {
    "rank": 7,
-   "title": "Best approach to handling missing levels in a multi-level LOB hierarchy for financial exposure reporting?",
-   "url": "https://stackoverflow.com/questions/80017320/best-approach-to-handling-missing-levels-in-a-multi-level-lob-hierarchy-for-fina",
-   "desc": "I want to handle/ analyze lob levels in finance domain , basically create reporting base data , there are all in all 7 levels but some are terminating at 5th or…",
-   "heat": "40 浏览 · -4 赞 · 0 回答",
+   "title": "Elementor Text Edit issue",
+   "url": "https://stackoverflow.com/questions/80017323/elementor-text-edit-issue",
+   "desc": "In Elementor, majorly we face an issue when we click on any textEdit to style it usually takes white space at the very bottom, to overcome that we have to go to…",
+   "heat": "56 浏览 · -7 赞 · 0 回答",
    "source": "Stack Overflow",
    "board": "需求榜",
    "category": "项目需求",
-   "note": "金融风险敞口报表中业务线层级有的只到第五层就终止，用户想找到处理这种缺失层级的稳妥建模方式。",
-   "scene": "金融数据或报表开发人员"
+   "note": "用户在 Elementor 里点开文本编辑时底部会多出空白，想找到原因并消除这个多余的间距。",
+   "scene": "用 WordPress 建站的网页制作者"
   },
   {
    "rank": 7,
    "title": "旧视频有点糊，先别急着直接拉到 4K",
    "url": "https://w2solo.com/topics/8712",
    "desc": "聊天讨论 · 作者 Carol",
-   "heat": "39 浏览 · 社区热议",
+   "heat": "40 浏览 · 社区热议",
    "source": "w2solo",
    "board": "热榜",
    "category": "热门话题",
@@ -1856,15 +1906,27 @@
   },
   {
    "rank": 7,
-   "title": "印尼央行关键利率上调25基点至6%",
-   "url": "https://www.huxiu.com/moment/1297869",
-   "desc": "印尼央行关键利率上调25基点至6%，市场预估为5.75%。印尼央行会后宣布贷款工具利率为6.75%，原为6.50%。",
+   "title": "通宇通讯：签署股份转让补充协议及股东协议",
+   "url": "https://www.huxiu.com/moment/1297898",
+   "desc": "通宇通讯(002792.SZ)公告称，公司拟以自有资金3亿元受让佳贤通信约25%股份，已签署《股份转让协议补充协议》及《股东协议》。本次交易整体估值、股份数量及定价未发生实质性变化，但交易对方调整为由任恩贤作为唯一转让方，并实行两阶段同步付款、同步交割安排。标的公司2025年度净利润为4990.81万元，2026年1-6月净利润为-398…",
    "heat": "虎嗅",
    "source": "虎嗅",
    "board": "热榜",
    "category": "热门话题",
-   "note": "印尼央行将关键利率上调25个基点至6%，高于市场预期，同时上调贷款工具利率，释放偏紧的货币政策信号。",
-   "scene": "关注东南亚货币政策与新兴市场资金流向的研究者"
+   "note": "通宇通讯拟以3亿元受让佳贤通信约25%股份，并签署补充协议调整转让方与付款交割安排。",
+   "scene": "关注通信行业并购交易的投资者"
+  },
+  {
+   "rank": 7,
+   "title": "AfterLaunch",
+   "url": "https://www.uneed.best/product/afterlaunch",
+   "desc": "The agentic growth engine for SEO and AI search",
+   "heat": "21 票 · SEO / Analytics · Uneed",
+   "source": "Uneed",
+   "board": "新品榜",
+   "category": "热门产品",
+   "note": "面向 SEO 和 AI 搜索的增长引擎，用智能体自动推进上线后的推广与曝光工作。",
+   "scene": "产品上线后要做增长的团队"
   },
   {
    "rank": 7,
@@ -1880,18 +1942,6 @@
   },
   {
    "rank": 7,
-   "title": "Feeny",
-   "url": "https://www.uneed.best/product/feeny",
-   "desc": "Find jobs at top tech & AI firms.",
-   "heat": "60 票 · Business / Hiring · Uneed",
-   "source": "Uneed",
-   "board": "新品榜",
-   "category": "热门产品",
-   "note": "聚合顶尖科技和 AI 公司的招聘信息，帮求职者集中找到对口岗位。",
-   "scene": "想进科技公司的求职者"
-  },
-  {
-   "rank": 7,
    "title": "我做了个二维码美化平台，给想要做出美化二维码的用户提供工具，下一步添加案例模板",
    "url": "https://w2solo.com/topics/6824",
    "desc": "奇思妙想 · 作者 kajian",
@@ -1904,22 +1954,22 @@
   },
   {
    "rank": 8,
-   "title": "Clamor",
-   "url": "https://www.producthunt.com/products/clamor-2",
-   "desc": "Turns social signals into actionable insights",
-   "heat": "发布于 11-16",
+   "title": "Introzy",
+   "url": "https://www.producthunt.com/products/introzy",
+   "desc": "Track referrals from intro to commission",
+   "heat": "发布于 11-17",
    "source": "Product Hunt",
    "board": "日榜",
    "category": "热门产品",
-   "note": "把社交媒体上的各种信号整理成可执行的洞察，帮助判断趋势和舆情。相比只看数据面板，它更强调落到行动。",
-   "scene": "关注社媒舆情和趋势的品牌运营"
+   "note": "追踪推荐关系从引荐到佣金的整个流程，让谁介绍了谁、该付多少一目了然。",
+   "scene": "做推荐返佣业务的运营者"
   },
   {
    "rank": 8,
    "title": "chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
    "url": "https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
    "desc": "AI 模型 · text-to-image",
-   "heat": "趋势 228.2 · 544 likes · 160.7k 下载 · diffusers / safetensors / gguf",
+   "heat": "趋势 234.49999999999997 · 556 likes · 160.7k 下载 · diffusers / safetensors / gguf",
    "source": "Hugging Face",
    "board": "热榜",
    "category": "热门产品",
@@ -1940,15 +1990,15 @@
   },
   {
    "rank": 8,
-   "title": "Phrack 73 Released",
-   "url": "https://phrack.org/issues/73/introduction_md",
+   "title": "Google's AI answers reducing search traffic by 40%",
+   "url": "https://revscope.co/blog/search-seo-geo-2026/",
    "desc": "Hacker News 首页",
-   "heat": "357 points · 51 comments",
+   "heat": "353 points · 271 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门话题",
-   "note": "老牌安全技术杂志Phrack发布第73期，是安全研究和逆向工程圈子的定期读物，值得相关从业者一看。",
-   "scene": "安全研究、逆向工程领域的技术人员"
+   "note": "有讨论称谷歌AI直接给出答案，使搜索流量减少约四成，反映生成式AI对传统搜索入口的分流效应。",
+   "scene": "关注搜索生态与AI产品影响的从业者"
   },
   {
    "rank": 8,
@@ -2000,75 +2050,75 @@
   },
   {
    "rank": 8,
-   "title": "游客在景德镇路边捡免费瑕疵瓷器",
-   "url": "https://www.toutiao.com/trending/7709060304424026121/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%224%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227709060304424026121%22%2C%22hot_board_impr_id%22%3A%222026111815342848590C2507C1BCC9BF8B%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%B8%B8%E5%AE%A2%E5%9C%A8%E6%99%AF%E5%BE%B7%E9%95%87%E8%B7%AF%E8%BE%B9%E6%8D%A1%E5%85%8D%E8%B4%B9%E7%91%95%E7%96%B5%E7%93%B7%E5%99%A8%22%7D&rank=&style_id=40132&topic_id=7709060304424026121",
-   "desc": "new",
-   "heat": "热度 1952万",
+   "title": "普京说感谢中国",
+   "url": "https://www.toutiao.com/trending/7708956473186930218/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227708956473186930218%22%2C%22hot_board_impr_id%22%3A%22202611181704151F1DE5A7098256CD8E9A%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%99%AE%E4%BA%AC%E8%AF%B4%E6%84%9F%E8%B0%A2%E4%B8%AD%E5%9B%BD%22%7D&rank=&style_id=40132&topic_id=7708956473186930218",
+   "desc": "hot",
+   "heat": "热度 2091万",
    "source": "今日头条",
    "board": "热榜",
    "category": "热门话题",
-   "note": "游客在景德镇路边捡到免费瑕疵瓷器，这类见闻走红多因贴近当地陶瓷产业特色，属生活类趣闻。",
-   "scene": "关注文旅见闻与地方产业特色的普通读者"
+   "note": "普京公开表达对中国的感谢，通常关联双边合作或外交支持，是观察中俄关系温度的一个信号，值得时政读者留意。",
+   "scene": "关注中俄关系动态的时政观察者"
   },
   {
    "rank": 8,
-   "title": "魏建军回应于东来复购310辆坦克700",
-   "url": "https://m.baidu.com/s?word=%E9%AD%8F%E5%BB%BA%E5%86%9B%E5%9B%9E%E5%BA%94%E4%BA%8E%E4%B8%9C%E6%9D%A5%E5%A4%8D%E8%B4%AD310%E8%BE%86%E5%9D%A6%E5%85%8B700&sa=fyb_news",
-   "desc": "百度热搜 · 热度飙升",
+   "title": "王传福APEC会议谈可持续发展",
+   "url": "https://m.baidu.com/s?word=%E7%8E%8B%E4%BC%A0%E7%A6%8FAPEC%E4%BC%9A%E8%AE%AE%E8%B0%88%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8F%91%E5%B1%95&sa=fyb_news",
+   "desc": "百度热搜 · 新上榜",
    "heat": "热搜第 8 名",
    "source": "百度热搜",
    "board": "热榜",
    "category": "热门话题",
-   "note": "魏建军就于东来复购310辆坦克700作出回应，涉及企业家之间的购车互动，也带出对国产越野车型的关注。",
-   "scene": "关注车企动态与企业家话题的汽车行业观察者"
+   "note": "王传福在APEC会议谈可持续发展，涉及新能源与绿色转型话题，具体观点以现场发言为准。",
+   "scene": "关注新能源产业与ESG议题的从业者"
   },
   {
    "rank": 8,
-   "title": "非凡魔丸",
-   "url": "https://www.bilibili.com/video/BV1LLsr66EC6",
-   "desc": "伊介书生 · 鬼畜剧场",
-   "heat": "41万 播放 · 1.8万 点赞 · 333 评论",
+   "title": "蚌埠住的时候就抽出七匹狼",
+   "url": "https://www.bilibili.com/video/BV1jgsz6KEWP",
+   "desc": "凶鸭栗 · 同人·手书",
+   "heat": "237万 播放 · 10万 点赞 · 677 评论",
    "source": "哔哩哔哩",
    "board": "热榜",
    "category": "热门话题",
-   "note": "B站鬼畜区一条以魔丸为主题的剧场向二创视频，延续平台玩梗风格，面向偏好轻松娱乐内容的用户。",
-   "scene": "关注B站鬼畜内容的年轻观众与二创作者"
+   "note": "B站同人手书作品，标题是网络梗，内容偏二次元创作，适合想找轻松搞笑视频的观众。",
+   "scene": "关注二次元同人创作的B站用户"
   },
   {
    "rank": 8,
-   "title": "How to Bypass Rust's Orphan Rule",
-   "url": "https://edvong.com/bypass-orphan-rule/",
+   "title": "Codeberg's domain suddenly disappeared from their account, site is unreachable",
+   "url": "https://social.anoxinon.de/@Codeberg/117636454915265360",
    "desc": "技术社区热帖",
-   "heat": "17 points · 7 comments · rust",
+   "heat": "6 points · 1 comments · vcs",
    "source": "Lobsters",
    "board": "热榜",
    "category": "热门话题",
-   "note": "讨论如何绕过Rust孤儿规则的限制，是Rust开发者写库时常碰到的编译约束问题，偏技术向。",
-   "scene": "写Rust库、关注类型系统约束的开发者"
+   "note": "代码托管平台Codeberg的域名突然从账户中消失，网站无法访问，开发者社区正关注原因和后续。",
+   "scene": "使用代码托管服务的开发者与运维人员"
   },
   {
    "rank": 8,
-   "title": "Gemini Ultra 免费一个月？有 V 友领到了吗，想核对下条件",
-   "url": "https://www.v2ex.com/t/1257824",
-   "desc": "刷到一个帖子，说 Gemini Ultra 可以免费用一个月，链接放评论区了 原帖提到了先绑卡，但这张截图没截到实际领取入口，也没说明地区、新老用户这些限制，目前还不能确认具体条件。 有 V 友领到过吗？想核对几个信息： - 哪个地区的账号，之前有没有订阅过？ - 页面显示的是 Ultra 哪个档位？ - 免费期结束后，续费金额是多少？…",
-   "heat": "57 回复 · Google",
+   "title": "公司年假计算规则",
+   "url": "https://www.v2ex.com/t/1257939",
+   "desc": "有的公司是按毕业年限开始计算 | 累计社会工龄 | 法定年假天数 | 依据标准 | | :--- | :---: | :--- | | 累计工作已满 1 年不满 10 年 | 5 天 | 《职工带薪年休假条例》 | | 累计工作已满 10 年不满 20 年 | 10 天 | 《职工带薪年休假条例》 | | 累计工作已满 20 年 | 15…",
+   "heat": "55 回复 · 职场话题",
    "source": "V2EX",
    "board": "热榜",
    "category": "热门话题",
-   "note": "有网友发帖称Gemini Ultra可免费用一个月，但领取条件和地区限制尚不明确，发帖者在向其他用户求证。",
-   "scene": "关注AI订阅优惠和海外账号使用的用户"
+   "note": "帖子梳理法定年假天数与累计社会工龄的对应关系，帮职场人对照自己该休多少天。",
+   "scene": "关心年假权益的职场人士与HR"
   },
   {
    "rank": 8,
-   "title": "Is dereferencing a null pointer undefined behavior?",
-   "url": "https://stackoverflow.com/questions/80017311/is-dereferencing-a-null-pointer-undefined-behavior",
-   "desc": "\"Everyone knows\" that dereferencing a null pointer is undefined behavior in C++. However, I couldn't find any clause in the standard that says so. Where and how…",
-   "heat": "145 浏览 · -1 赞 · 0 回答",
+   "title": "How can I replace the spaces in the output of a bash command",
+   "url": "https://stackoverflow.com/questions/80017322/how-can-i-replace-the-spaces-in-the-output-of-a-bash-command",
+   "desc": "I want to display the output of a bash command seperated by commas instead of spaces. I couldn't see any special option to do that. How can I do this?",
+   "heat": "118 浏览 · -3 赞 · 2 回答",
    "source": "Stack Overflow",
    "board": "需求榜",
    "category": "项目需求",
-   "note": "想搞清楚空指针解引用在 C++ 标准里到底算不算未定义行为，以及依据在哪。",
-   "scene": "抠语言标准的 C++ 开发者"
+   "note": "用户想把 bash 命令输出里的空格换成逗号，但没找到现成选项，实际需要的是用管道加替换命令来实现。",
+   "scene": "写 shell 脚本的运维或开发者"
   },
   {
    "rank": 8,
@@ -2084,15 +2134,27 @@
   },
   {
    "rank": 8,
-   "title": "财付通依托货币桥完成跨境人民币汇出",
-   "url": "https://www.huxiu.com/moment/1297868",
-   "desc": "界面新闻获悉，近日，财付通联合中国工商银行广州分行、渣打香港，依托多边央行数字货币桥（mBridge，以下简称“货币桥”）开展跨境人民币出境业务清算，并完成首笔资金汇出。据了解，货币桥是以央行数字货币为核心的跨境支付基础设施。切换后，跨境资金在工行广州分行与渣打香港之间点对点直接结算，无需经过境外中间行，实现秒级到账、全额到账。",
+   "title": "雷军：明年小米汽车正式出海",
+   "url": "https://www.huxiu.com/moment/1297897",
+   "desc": "11月17日，小米集团创始人、董事长兼首席执行官雷军参加在深圳举行的2026年APEC工商领导人峰会。谈及汽车出海，雷军表示，明年小米汽车正式出海，汽车是很多国家的支柱产业，跟当地的供应链合作，能够使产品更好地为当地的消费者服务。所以小米一直抱着很开放的心态，跟当地的合作伙伴都在深入合作。",
    "heat": "虎嗅",
    "source": "虎嗅",
    "board": "热榜",
    "category": "热门话题",
-   "note": "财付通联合工行与渣打香港，通过多边央行数字货币桥完成首笔跨境人民币汇出，实现点对点秒级结算。",
-   "scene": "关注跨境支付与数字人民币进展的金融从业者"
+   "note": "雷军在APEC峰会透露小米汽车明年正式出海，计划与当地供应链和伙伴合作，关注出海节奏的人可留意。",
+   "scene": "关注新能源汽车出海的行业从业者"
+  },
+  {
+   "rank": 8,
+   "title": "Jatura",
+   "url": "https://www.uneed.best/product/jatura",
+   "desc": "AI applicant tracking that scores every candidate",
+   "heat": "7 票 · CRM / Hiring · Uneed",
+   "source": "Uneed",
+   "board": "新品榜",
+   "category": "热门产品",
+   "note": "用 AI 做招聘筛选，给每位候选人打分，帮招聘方在简历堆里快速排序。",
+   "scene": "简历量大的招聘专员"
   },
   {
    "rank": 8,
@@ -2105,18 +2167,6 @@
    "category": "热门产品",
    "note": "让 AI 扮演买家陪练销售电话，通话后立刻给出改进建议，降低实战试错成本。",
    "scene": "需要练话术的销售新人"
-  },
-  {
-   "rank": 8,
-   "title": "wildlife-dashboard",
-   "url": "https://www.uneed.best/product/wildlife-dashboard",
-   "desc": "AI trail camera management software for wildlife teams",
-   "heat": "36 票 · Dashboards / AI · Uneed",
-   "source": "Uneed",
-   "board": "新品榜",
-   "category": "热门产品",
-   "note": "面向野生动物团队的红外相机管理软件，用 AI 整理相机拍到的素材。",
-   "scene": "做野外监测的生态研究团队"
   },
   {
    "rank": 8,
@@ -2135,7 +2185,7 @@
    "title": "obra/superpowers",
    "url": "https://github.com/obra/superpowers",
    "desc": "An agentic skills framework & software development methodology that works.",
-   "heat": "+1917 today · 总计 319,557★ · Shell",
+   "heat": "+1917 today · 总计 319,612★ · Shell",
    "source": "GitHub",
    "board": "日榜",
    "category": "热门产品",
@@ -2144,34 +2194,46 @@
   },
   {
    "rank": 9,
-   "title": "Lampa Camera",
-   "url": "https://www.producthunt.com/products/lampa-camera",
-   "desc": "iPhone camera with natural processing and an analog feel",
-   "heat": "发布于 11-16",
+   "title": "Microsoft IQ",
+   "url": "https://www.producthunt.com/products/microsoft-365",
+   "desc": "Give AI agents a shared understanding of your business",
+   "heat": "发布于 11-17",
    "source": "Product Hunt",
    "board": "日榜",
    "category": "热门产品",
-   "note": "给 iPhone 相机套上自然成像和胶片质感，让直出照片少点算法味、多点老镜头的感觉。",
-   "scene": "喜欢胶片色调、懒得后期的手机摄影爱好者"
+   "note": "让多个 AI 智能体共享对同一家企业的理解，避免各干各的、信息对不上。",
+   "scene": "在企业内部署多个 AI 助手的团队"
   },
   {
    "rank": 9,
-   "title": "Show HN: Code walkthroughs, maps, and quizzes for pull requests",
-   "url": "https://codeunpacked.san.cx/",
-   "desc": "Show HN 新品首发",
-   "heat": "4 points · 1 comments",
+   "title": "harness-hub/Qwen3.8-27B-pi-adapted",
+   "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
+   "desc": "AI 模型 · image-text-to-text",
+   "heat": "趋势 216 · 230 likes · 0 下载 · peft / safetensors / trl",
+   "source": "Hugging Face",
+   "board": "热榜",
+   "category": "热门产品",
+   "note": "一个支持图文输入转文字输出的 AI 模型，从标题看是经过适配的 Qwen 系列变体。",
+   "scene": "做多模态图文理解任务的开发者"
+  },
+  {
+   "rank": 9,
+   "title": "Show HN: Open-source multi-player artifacts that update themselves",
+   "url": "https://rallywith.ai/",
+   "desc": "Rally is a multi-player platform to build reactive micro-applications together that connects event streams to agents that then update the artifact. We've had pilots build…",
+   "heat": "4 points · 0 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门产品",
-   "note": "把代码改动做成可浏览的讲解、结构图和随堂小测，帮评审者快速看懂一个拉取请求到底改了什么。相比只靠逐行 diff，更侧重理解而非比对。",
-   "scene": "需要评审陌生代码库拉取请求的开发者"
+   "note": "一个多人协作平台，把事件流接到智能体上，让共同搭建的小应用能随数据变化自动更新。从标题看，重点在可自我刷新的协作产物。",
+   "scene": "多人协作搭建实时更新小应用的团队"
   },
   {
    "rank": 9,
    "title": "MAI Code 2 and Code 2 Flash",
    "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
    "desc": "Hacker News 首页",
-   "heat": "338 points · 149 comments",
+   "heat": "353 points · 153 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门话题",
@@ -2228,75 +2290,63 @@
   },
   {
    "rank": 9,
-   "title": "英伟达财报电话会：旧芯片涨租",
-   "url": "https://www.toutiao.com/trending/7709363188492681738/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%224%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227709363188492681738%22%2C%22hot_board_impr_id%22%3A%222026111815342848590C2507C1BCC9BF8B%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E8%8B%B1%E4%BC%9F%E8%BE%BE%E8%B4%A2%E6%8A%A5%E7%94%B5%E8%AF%9D%E4%BC%9A%EF%BC%9A%E6%97%A7%E8%8A%AF%E7%89%87%E6%B6%A8%E7%A7%9F%22%7D&rank=&style_id=40132&topic_id=7709363188492681738",
-   "desc": "hot",
-   "heat": "热度 1766万",
+   "title": "外国人士热议APEC 共话新期待",
+   "url": "https://www.toutiao.com/article/7709315729899799066",
+   "desc": "今日头条热榜事件",
+   "heat": "热度 1892万",
    "source": "今日头条",
    "board": "热榜",
    "category": "热门话题",
-   "note": "英伟达财报电话会提到旧芯片租金上涨，从侧面反映算力供需仍紧，旧代产品也具备持续变现能力。",
-   "scene": "关注算力市场与芯片供需的投资者和从业者"
+   "note": "APEC会议期间，外方人士就合作议题表达看法和期待，属于会议相关的舆论反应。",
+   "scene": "关注APEC会议动态的时政观察者"
   },
   {
    "rank": 9,
-   "title": "包3000个饺子囤够东北猫冬",
-   "url": "https://m.baidu.com/s?word=%E5%8C%853000%E4%B8%AA%E9%A5%BA%E5%AD%90%E5%9B%A4%E5%A4%9F%E4%B8%9C%E5%8C%97%E7%8C%AB%E5%86%AC&sa=fyb_news",
+   "title": "网红“豹警官”胖回原形",
+   "url": "https://m.baidu.com/s?word=%E7%BD%91%E7%BA%A2%E2%80%9C%E8%B1%B9%E8%AD%A6%E5%AE%98%E2%80%9D%E8%83%96%E5%9B%9E%E5%8E%9F%E5%BD%A2&sa=fyb_news",
    "desc": "百度热搜实时热点",
    "heat": "热搜第 9 名",
    "source": "百度热搜",
    "board": "热榜",
    "category": "热门话题",
-   "note": "有家庭包了3000个饺子囤着过冬，是东北猫冬习俗的具象呈现，因数量夸张而引发围观。",
-   "scene": "关注地域生活习俗与生活类热点的普通网友"
+   "note": "此前因体型走红的一只网红警犬又被拍到胖回原样，属于轻松的萌宠类热搜。",
+   "scene": "喜欢萌宠和网络热点的普通网友"
   },
   {
    "rank": 9,
-   "title": "🧠最强健三角洲玩家大脑的一集🧠",
-   "url": "https://www.bilibili.com/video/BV1ncsz6GEhN",
-   "desc": "恶魔小花Hana · 同人·手书",
-   "heat": "37万 播放 · 3.9万 点赞 · 635 评论",
+   "title": "【蜘蛛侠/MJ】非凡之爱真人版",
+   "url": "https://www.bilibili.com/video/BV1xFs36uEvE",
+   "desc": "Crazy-face · 鬼畜剧场",
+   "heat": "312万 播放 · 10万 点赞 · 1393 评论",
    "source": "哔哩哔哩",
    "board": "热榜",
    "category": "热门话题",
-   "note": "B站一条围绕三角洲玩家反应展开的同人手书，属游戏同人创作，靠夸张表现吸引同好观看。",
-   "scene": "关注游戏同人创作的三角洲玩家与二次元用户"
+   "note": "用真人素材剪辑蜘蛛侠与MJ的鬼畜剧场，属于粉丝二创娱乐内容，喜欢漫威和鬼畜视频的观众会感兴趣。",
+   "scene": "喜欢漫威二创和鬼畜视频的B站观众"
   },
   {
    "rank": 9,
-   "title": "Sarasa Gothic Mono",
-   "url": "https://picaq.github.io/sarasa",
-   "desc": "技术社区热帖",
-   "heat": "18 points · 2 comments · design",
-   "source": "Lobsters",
-   "board": "热榜",
-   "category": "热门话题",
-   "note": "Sarasa Gothic Mono在技术社区被讨论，从标题看是一款等宽字体，属开发者工具与排版话题。",
-   "scene": "关注字体与开发工具的开发者"
-  },
-  {
-   "rank": 9,
-   "title": "各位的 vps 还好吗？昨天批量被墙。",
-   "url": "https://www.v2ex.com/t/1257881",
-   "desc": "昨天上午突然网络不通，能 ping 通 ip，带端口就 ping 不通，用搬瓦工的自测看的出来是被 GFW 拦截了。 除了换 ip 还有解决办法吗",
-   "heat": "46 回复 · VPS",
+   "title": "后续：偷头盔的人找到了，头盔耳机拿回，另外赔了 600 元",
+   "url": "https://www.v2ex.com/t/1257941",
+   "desc": "前情：[一年前给小电驴装的监控，终于派上用场了，成功拍到偷头盔的全过程](https://www.v2ex.com/t/1256357) 后续：**头盔和耳机都拿回来了，对方另外赔偿了 600 元。** 不过，人不是帽子叔叔帮我找到的，我自己投诉顺丰同城联系上的（求人不如靠自己）。 我跟顺丰客服表示不及时处理处理，我就把事情经过发出来曝光…",
+   "heat": "51 回复 · 问与答",
    "source": "V2EX",
    "board": "热榜",
    "category": "热门话题",
-   "note": "有用户反映VPS批量被墙，能ping通但端口不通，讨论除换IP外的应对办法，涉及网络访问的常见困扰。",
-   "scene": "使用境外服务器的站长与运维技术人员"
+   "note": "失主靠投诉顺丰同城自行找到偷头盔者，拿回物品并获赔600元，反映维权得靠自己的现实。",
+   "scene": "关注日常维权与快递平台服务的用户"
   },
   {
    "rank": 9,
-   "title": "I would like to know how to tween a float from 0 to 1",
-   "url": "https://stackoverflow.com/questions/80017309/i-would-like-to-know-how-to-tween-a-float-from-0-to-1",
-   "desc": "Here is my problem. How do I tween from zero to one? I am trying to go from 0 to 1 smoothly. I have tried everything including reading the docs.",
-   "heat": "123 浏览 · -5 赞 · 0 回答",
+   "title": "Best approach to handling missing levels in a multi-level LOB hierarchy for financial exposure reporting?",
+   "url": "https://stackoverflow.com/questions/80017320/best-approach-to-handling-missing-levels-in-a-multi-level-lob-hierarchy-for-fina",
+   "desc": "I want to handle/ analyze lob levels in finance domain , basically create reporting base data , there are all in all 7 levels but some are terminating at 5th or…",
+   "heat": "45 浏览 · -4 赞 · 0 回答",
    "source": "Stack Overflow",
    "board": "需求榜",
    "category": "项目需求",
-   "note": "想用代码把数值从0平滑过渡到1，但试了文档也没搞定，需要一份能直接照抄的补间写法。",
-   "scene": "做动画或游戏逻辑的独立开发者"
+   "note": "金融风险敞口报表中业务线层级有的只到第五层就终止，用户想找到处理这种缺失层级的稳妥建模方式。",
+   "scene": "金融数据或报表开发人员"
   },
   {
    "rank": 9,
@@ -2315,7 +2365,7 @@
    "title": "马斯克：“我要去中国了”！",
    "url": "https://www.36kr.com/p/4074455297069953",
    "desc": "36氪商业科技热文",
-   "heat": "智东西 · 36氪",
+   "heat": "2 收藏 · 智东西 · 36氪",
    "source": "36氪",
    "board": "热榜",
    "category": "热门话题",
@@ -2324,15 +2374,27 @@
   },
   {
    "rank": 9,
-   "title": "现场视频：特朗普启程深圳，登机前对着镜头做出标志性挥拳动作",
-   "url": "https://www.huxiu.com/moment/1297867",
-   "desc": "11月18日，特朗普启程深圳，登机前对着镜头做出标志性挥拳动作。现场视频显示，他登机前对着镜头做出标志性挥拳动作。出发前，他曾在马尼拉表示，“我期待访问中国，我们有一些十分重要的议题需要磋商。” 据报道，特朗普预计于11月18日访问中国深圳，参加亚太经合组织领导人非正式会议。 美国《新闻周刊》报道称，根据白宫公布的名单，有15名以上美国政…",
-   "heat": "1 赞 · 虎嗅",
+   "title": "腾讯控股：第三季度收入同比增长8%至2073亿元",
+   "url": "https://www.huxiu.com/moment/1297896",
+   "desc": "11月18日，腾讯控股在港交所公告，第三季度收入同比增长8%至人民币2073亿元。第三季度公司权益持有人应占盈利同比增长0.8%至人民币636亿元。",
+   "heat": "虎嗅",
    "source": "虎嗅",
    "board": "热榜",
    "category": "热门话题",
-   "note": "现场视频显示特朗普启程赴深圳，登机前做出标志性挥拳动作，此行与其出席亚太经合组织会议相关。",
-   "scene": "跟踪中美互动与外事现场画面的新闻从业者"
+   "note": "腾讯三季度收入2073亿元、同比增长8%，净利润微增0.8%，是观察互联网大厂经营状况的数据点。",
+   "scene": "关注互联网公司财报的投资者与从业者"
+  },
+  {
+   "rank": 9,
+   "title": "Miqo",
+   "url": "https://www.uneed.best/product/miqo",
+   "desc": "Learn something new in 2 minutes a day",
+   "heat": "13 票 · Habits / Education · Uneed",
+   "source": "Uneed",
+   "board": "新品榜",
+   "category": "热门产品",
+   "note": "每天花两分钟学点新东西，把碎片时间变成轻量学习，适合坚持不下来的人。",
+   "scene": "想利用碎片时间充电的上班族"
   },
   {
    "rank": 9,
@@ -2348,18 +2410,6 @@
   },
   {
    "rank": 9,
-   "title": "Heardloom",
-   "url": "https://www.uneed.best/product/heardloom",
-   "desc": "Preserve your family's stories with voice-driven storytelling",
-   "heat": "17 票 · Journaling / Writing · Uneed",
-   "source": "Uneed",
-   "board": "新品榜",
-   "category": "热门产品",
-   "note": "用语音引导的方式记录家人的故事和声音，把口述回忆保存下来。",
-   "scene": "想留存长辈回忆的家庭"
-  },
-  {
-   "rank": 9,
    "title": "有一个 JAVA+uniapp 的小程序项目有想接的联系",
    "url": "https://w2solo.com/topics/5919",
    "desc": "外包零活 · 作者 helloworld",
@@ -2372,58 +2422,46 @@
   },
   {
    "rank": 10,
-   "title": "ExtraDock 5",
-   "url": "https://www.producthunt.com/products/extradock",
-   "desc": "Your Mac Dock, on every screen",
-   "heat": "发布于 11-16",
+   "title": "GPT-6.2 Astra",
+   "url": "https://www.producthunt.com/products/openai",
+   "desc": "OpenAI's frontier model for your hardest projects",
+   "heat": "发布于 11-17",
    "source": "Product Hunt",
    "board": "日榜",
    "category": "热门产品",
-   "note": "把 Mac 的 Dock 栏搬到每一块屏幕上，多显示器用户不用再把鼠标挪回主屏找图标。",
-   "scene": "外接多台显示器的 Mac 办公用户"
+   "note": "从标题看是 OpenAI 面向高难度项目推出的前沿模型，主打处理复杂任务的能力。",
+   "scene": "要跑复杂任务的 AI 重度用户"
   },
   {
    "rank": 10,
-   "title": "harness-hub/Qwen3.8-27B-pi-adapted",
-   "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
-   "desc": "AI 模型 · image-text-to-text",
-   "heat": "趋势 199 · 208 likes · 0 下载 · peft / safetensors / trl",
+   "title": "n4ze3m/tiny-voca",
+   "url": "https://huggingface.co/n4ze3m/tiny-voca",
+   "desc": "AI 模型 · text-to-speech",
+   "heat": "趋势 194 · 257 likes · 3.0k 下载 · onnx / gguf / text-to-speech",
    "source": "Hugging Face",
    "board": "热榜",
    "category": "热门产品",
-   "note": "一个支持图文输入转文字输出的 AI 模型，从标题看是经过适配的 Qwen 系列变体。",
-   "scene": "做多模态图文理解任务的开发者"
+   "note": "一个文本转语音的小型模型，能把文字念出来，体积小是它和同类大模型的主要区别。",
+   "scene": "需要给应用或设备加语音朗读、又不想占太多资源的开发者"
   },
   {
    "rank": 10,
-   "title": "Show HN: Open-source multi-player artifacts that update themselves",
-   "url": "https://rallywith.ai/",
-   "desc": "Rally is a multi-player platform to build reactive micro-applications together that connects event streams to agents that then update the artifact. We've had pilots build…",
-   "heat": "4 points · 0 comments",
-   "source": "Hacker News",
-   "board": "热榜",
-   "category": "热门产品",
-   "note": "一个多人协作平台，把事件流接到智能体上，让共同搭建的小应用能随数据变化自动更新。从标题看，重点在可自我刷新的协作产物。",
-   "scene": "多人协作搭建实时更新小应用的团队"
-  },
-  {
-   "rank": 10,
-   "title": "350 years ago, Ole Rømer discovered that light has a finite speed",
-   "url": "https://www.sciencenorway.no/culture-history-history-of-science/350-years-ago-this-man-discovered-that-light-has-a-finite-speed/2737969",
+   "title": "ID.me terms required for IRS sign-in",
+   "url": "https://consumerrights.wiki/w/ID.me_terms_required_for_IRS_sign-in",
    "desc": "Hacker News 首页",
-   "heat": "317 points · 92 comments",
+   "heat": "345 points · 148 comments",
    "source": "Hacker News",
    "board": "热榜",
    "category": "热门话题",
-   "note": "一篇回顾350年前罗默首次测出光速有限的文章，属科学史话题，因讲述人类认知突破而受技术社区关注。",
-   "scene": "对科学史与物理常识感兴趣的技术社区读者"
+   "note": "美国国税局登录将要求使用ID.me身份验证，引发技术社区对身份认证与隐私的讨论。",
+   "scene": "关注身份认证与隐私的技术从业者"
   },
   {
    "rank": 10,
    "title": "Ask HN: What do you think is going on with that many outages coming in a row?",
    "url": "https://news.ycombinator.com/item?id=50525469",
    "desc": "In just four days we have seen: * Outlook exchange server outage for almost 20 hours * FAA communication channels outage * A few US banks outage * United Airlines outage…",
-   "heat": "9 points · 10 comments",
+   "heat": "9 points · 11 comments",
    "source": "Hacker News",
    "board": "需求榜",
    "category": "项目需求",
@@ -2456,70 +2494,58 @@
   },
   {
    "rank": 10,
-   "title": "普京盛赞深圳",
-   "url": "https://www.toutiao.com/trending/7709399994213633545/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227709399994213633545%22%2C%22hot_board_impr_id%22%3A%222026111815342848590C2507C1BCC9BF8B%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%99%AE%E4%BA%AC%E7%9B%9B%E8%B5%9E%E6%B7%B1%E5%9C%B3%22%7D&rank=&style_id=40132&topic_id=7709399994213633545",
-   "desc": "hot",
-   "heat": "热度 1598万",
+   "title": "菲总统深夜给特朗普团队送炸鸡",
+   "url": "https://www.toutiao.com/trending/7709413202123345418/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227709413202123345418%22%2C%22hot_board_impr_id%22%3A%22202611181704151F1DE5A7098256CD8E9A%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E8%8F%B2%E6%80%BB%E7%BB%9F%E6%B7%B1%E5%A4%9C%E7%BB%99%E7%89%B9%E6%9C%97%E6%99%AE%E5%9B%A2%E9%98%9F%E9%80%81%E7%82%B8%E9%B8%A1%22%7D&rank=&style_id=40132&topic_id=7709413202123345418",
+   "desc": "今日头条热榜事件",
+   "heat": "热度 1712万",
    "source": "今日头条",
    "board": "热榜",
    "category": "热门话题",
-   "note": "普京公开称赞深圳，外界关注其释放的信号；对关注中俄关系与城市国际形象的人来说，这条表态值得留意。",
-   "scene": "关注中俄关系与城市国际传播的媒体从业者"
+   "note": "菲律宾总统深夜给特朗普团队送炸鸡，属于外交场合的花絮类热搜，具体背景以官方报道为准。",
+   "scene": "关注国际时政花絮的网友"
   },
   {
    "rank": 10,
-   "title": "从一份议程单看亚太新机遇",
-   "url": "https://m.baidu.com/s?word=%E4%BB%8E%E4%B8%80%E4%BB%BD%E8%AE%AE%E7%A8%8B%E5%8D%95%E7%9C%8B%E4%BA%9A%E5%A4%AA%E6%96%B0%E6%9C%BA%E9%81%87&sa=fyb_news",
+   "title": "三座城、三次APEC会议见证了什么",
+   "url": "https://m.baidu.com/s?word=%E4%B8%89%E5%BA%A7%E5%9F%8E%E3%80%81%E4%B8%89%E6%AC%A1APEC%E4%BC%9A%E8%AE%AE%E8%A7%81%E8%AF%81%E4%BA%86%E4%BB%80%E4%B9%88&sa=fyb_news",
    "desc": "百度热搜实时热点",
    "heat": "热搜第 10 名",
    "source": "百度热搜",
    "board": "热榜",
    "category": "热门话题",
-   "note": "借一份议程单观察亚太合作中的新机会，从会议安排切入解读区域经贸走向。",
-   "scene": "关注亚太经贸与会议议程的读者"
+   "note": "借三座城市与三次APEC会议串联，回顾会议历程与承办变化，属于会议背景梳理。",
+   "scene": "关注APEC会议历史的时政爱好者"
   },
   {
    "rank": 10,
-   "title": "My Emacs 31 contributions",
-   "url": "https://xenodium.com/my-emacs-31-contributions",
+   "title": "How to Bypass Rust's Orphan Rule",
+   "url": "https://edvong.com/bypass-orphan-rule/",
    "desc": "技术社区热帖",
-   "heat": "25 points · 2 comments · emacs",
+   "heat": "16 points · 7 comments · rust",
    "source": "Lobsters",
    "board": "热榜",
    "category": "热门话题",
-   "note": "一位开发者分享自己为 Emacs 31 做的贡献，技术社区热帖；对编辑器生态和开源协作感兴趣的人可从中看到实际参与路径。",
-   "scene": "关注开源编辑器生态的开发者"
+   "note": "讨论如何绕过Rust孤儿规则的限制，是Rust开发者写库时常碰到的编译约束问题，偏技术向。",
+   "scene": "写Rust库、关注类型系统约束的开发者"
   },
   {
    "rank": 10,
-   "title": "6.2 来了，但不好用",
-   "url": "https://www.v2ex.com/t/1257872",
-   "desc": "用 6.2 Astra 问了几轮了 1、审美稍微好点了，但是不按照项目既有视觉修改 2、编程能力感觉和 6 差不多，不过内容简洁了，依然不说人话 3、整体感觉和 6 差距不大，输出少了自然消耗就小了",
-   "heat": "45 回复 · OpenAI",
-   "source": "V2EX",
-   "board": "热榜",
-   "category": "热门话题",
-   "note": "用户实测 6.2 Astra 后觉得提升有限：审美略好但不遵循项目视觉，编程能力与 6 相近，输出更简洁也更省消耗。",
-   "scene": "关注 AI 编程工具迭代的开发者"
-  },
-  {
-   "rank": 10,
-   "title": "VS 2026 C# WinForms - Trying to save forms return the error popup: \"Value cannot be null. Parameter name: value.\"",
-   "url": "https://stackoverflow.com/questions/80017305/vs-2026-c-winforms-trying-to-save-forms-return-the-error-popup-value-cannot",
-   "desc": "Almost all of the other posts related to the \"Value cannot be null\" error are for specific coding problems - this one is different. I have an existing VS Soluti…",
-   "heat": "59 浏览 · -1 赞 · 0 回答",
+   "title": "Is dereferencing a null pointer undefined behavior?",
+   "url": "https://stackoverflow.com/questions/80017311/is-dereferencing-a-null-pointer-undefined-behavior",
+   "desc": "\"Everyone knows\" that dereferencing a null pointer is undefined behavior in C++. However, I couldn't find any clause in the standard that says so. Where and how…",
+   "heat": "169 浏览 · -2 赞 · 0 回答",
    "source": "Stack Overflow",
    "board": "需求榜",
    "category": "项目需求",
-   "note": "在VS里保存WinForms窗体时弹出参数为空的报错，想弄清是环境还是代码问题并找到修复办法。",
-   "scene": "维护老WinForms项目的.NET开发者"
+   "note": "想搞清楚空指针解引用在 C++ 标准里到底算不算未定义行为，以及依据在哪。",
+   "scene": "抠语言标准的 C++ 开发者"
   },
   {
    "rank": 10,
    "title": "长期所谓的冲刺加班让我难受",
    "url": "https://w2solo.com/topics/8733",
    "desc": "聊天讨论 · 作者 Spiral",
-   "heat": "21 浏览 · 社区热议",
+   "heat": "23 浏览 · 社区热议",
    "source": "w2solo",
    "board": "热榜",
    "category": "热门话题",
@@ -2531,7 +2557,7 @@
    "title": "董事会拒绝回归，黄仁勋要打硬仗了",
    "url": "https://www.36kr.com/p/4074624836670339",
    "desc": "36氪商业科技热文",
-   "heat": "9 收藏 · 字母榜 · 36氪",
+   "heat": "11 收藏 · 字母榜 · 36氪",
    "source": "36氪",
    "board": "热榜",
    "category": "热门话题",
@@ -2540,15 +2566,27 @@
   },
   {
    "rank": 10,
-   "title": "亚马逊CEO谈英伟达风波：亚马逊英伟达合作关系将持续",
-   "url": "https://www.huxiu.com/moment/1297866",
-   "desc": "当地时间11月17日，亚马逊首席执行官Andy Jassy（安迪·贾西）在一档节目中提及近期英伟达和黄仁勋的风波。在被问及对英伟达和黄仁勋事件的看法时，安迪·贾西表示英伟达长期以来一直是亚马逊的重要合作伙伴且合作会继续，并表示自己虽然不了解相关事件的所有细节，但是知道对方正在协商解决。当被问及是否有一天亚马逊会不需要英伟达的芯片时，安迪·…",
+   "title": "俄罗斯总统普京到访深圳北理莫斯科大学并发表演讲，与学生们合影留念",
+   "url": "https://www.huxiu.com/moment/1297895",
+   "desc": "11月18日，来华出席亚太经合组织第三十三次领导人非正式会议的俄罗斯总统普京到访深圳北理莫斯科大学，并发表演讲。",
    "heat": "虎嗅",
    "source": "虎嗅",
    "board": "热榜",
    "category": "热门话题",
-   "note": "亚马逊 CEO 表示英伟达长期是重要伙伴、合作会继续，并称相关风波正协商解决；对关注芯片供应链的人有参考价值。",
-   "scene": "关注 AI 芯片供应链的从业者"
+   "note": "普京来华出席APEC会议期间到访深圳北理莫斯科大学并演讲、与学生合影，属会议期间的外事活动。",
+   "scene": "关注中俄关系与APEC动态的时政观察者"
+  },
+  {
+   "rank": 10,
+   "title": "mmory",
+   "url": "https://www.uneed.best/product/mmory",
+   "desc": "Private voice memory app for iPhone. Speak or type thoughts, retrieve by asking",
+   "heat": "5 票 · Productivity / Note-taking · Uneed",
+   "source": "Uneed",
+   "board": "新品榜",
+   "category": "热门产品",
+   "note": "把想法用说话或打字存进手机，之后靠提问就能找回，主打私密不外传。",
+   "scene": "爱随手记灵感、又在意隐私的 iPhone 用户"
   },
   {
    "rank": 10,
@@ -2561,18 +2599,6 @@
    "category": "热门产品",
    "note": "在一个应用里追踪、比较并切换英国家庭账单，帮用户省钱换更划算的服务。",
    "scene": "想比价并更换水电燃气等账单的英国住户"
-  },
-  {
-   "rank": 10,
-   "title": "Fino3D",
-   "url": "https://www.uneed.best/product/fino3d",
-   "desc": "AI-powered 3D model generator from photos and sketches",
-   "heat": "16 票 · AI / 3D · Uneed",
-   "source": "Uneed",
-   "board": "新品榜",
-   "category": "热门产品",
-   "note": "用 AI 把照片和草图生成 3D 模型，省去从零建模的功夫。",
-   "scene": "需要快速出 3D 模型的设计师和创作者"
   },
   {
    "rank": 10,
