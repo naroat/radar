@@ -396,8 +396,27 @@ def src_hackernews(today):
 
 # ---------------------------------------------------------------- Lobsters
 
+def _iso_ts(s):
+    """ISO8601 时间字符串 -> unix 时间戳（按 UTC 解析，失败返回 0）。"""
+    try:
+        dt = datetime.datetime.strptime((s or "")[:19], "%Y-%m-%dT%H:%M:%S")
+        return int(dt.replace(tzinfo=datetime.timezone.utc).timestamp())
+    except ValueError:
+        return 0
+
+
+def _created_cutoff(today, days):
+    """返回「today 往前 days 天」的 unix 时间戳下限。"""
+    return int(datetime.datetime.combine(
+        today, datetime.time.min).timestamp()) - days * 86400
+
+
 def src_lobsters(today):
-    data = get_json("https://lobste.rs/hottest.json")
+    # hottest.json 按活跃度排序，老帖有新评论会重新冒头；
+    # 只保留最近 N 天内「创建」的帖子，防老面孔回锅。
+    cutoff = _created_cutoff(today, LOBSTERS_MAX_AGE_DAYS)
+    data = [p for p in (get_json("https://lobste.rs/hottest.json") or [])
+            if (_iso_ts(p.get("created_at")) or 0) >= cutoff]
     rows = []
     for i, p in enumerate((data or [])[:TOP_N]):
         heat = []
@@ -421,11 +440,14 @@ def src_lobsters(today):
 # ---------------------------------------------------------------- V2EX
 
 def src_v2ex(today):
-    data = get_json("https://www.v2ex.com/api/topics/hot.json")
-    topics = [t for t in (data or [])
-              if ((t.get("node") or {}).get("title") or "") != "推广"]
+    # hot.json 为官方热议榜（算法挑的），但老帖被新回复顶起后也会混进来；
+    # 只保留最近 N 天内创建的帖子，避免老面孔反复入库。
+    cutoff = _created_cutoff(today, V2EX_HOT_MAX_AGE_DAYS)
+    data = [t for t in (get_json("https://www.v2ex.com/api/topics/hot.json") or [])
+            if ((t.get("node") or {}).get("title") or "") != "推广"
+            and (t.get("created") or 0) >= cutoff]
     rows = []
-    for i, t in enumerate(topics[:TOP_N]):
+    for i, t in enumerate(data[:TOP_N]):
         node = (t.get("node") or {}).get("title") or ""
         heat = []
         if t.get("replies") is not None:
@@ -446,25 +468,41 @@ NOISE_WORDS = ("抽奖", "红包", "福利", "赠送", "拼车", "求码", "邀�
 # 只保留「求方案 / 提想法」语义的帖子，过滤掉纯闲聊与引流贴
 IDEA_HINT = re.compile(r"想|有没有|如何|怎么|什么|建议|想法|创意|求|方案|需求|"
                        r"能不能|可不可以|推荐|替代|实现|吗|？")
+# 需求榜只收最近 N 天内创建的帖子，防止老帖被回复顶上来后重复入库
+V2EX_IDEAS_MAX_AGE_DAYS = 21
+# 热议/热榜类板块的防老面孔回火窗口（老帖被新回复顶起时不再收录）
+V2EX_HOT_MAX_AGE_DAYS = 14
+LOBSTERS_MAX_AGE_DAYS = 7
+W2SOLO_MAX_AGE_DAYS = 21
 
 
 def src_v2ex_ideas(today):
     """V2EX 创意节点：把「我想做 / 求建议」类帖子当作需求信号。
 
     创意节点里混有抽奖、送福利等非需求贴，按关键词剔除。
+    注意：V2EX 节点接口按「最后回复时间」排序，老帖一有人回复就会重新冒出来；
+    因此这里按帖子的「创建时间」过滤（只保留最近 N 天新建的）并按创建时间倒序取榜，
+    老帖再怎么被顶也不会重复上榜。
     """
     data = get_json("https://www.v2ex.com/api/topics/show.json?node_name=ideas")
+    # 只保留最近 N 天内「创建」的帖子（不是最后回复时间）
+    cutoff = int(datetime.datetime.combine(
+        today, datetime.time.min).timestamp()) - V2EX_IDEAS_MAX_AGE_DAYS * 86400
     topics = [t for t in (data or [])
               if t.get("title")
               and IDEA_HINT.search(t.get("title") or "")
               and not any(w in (t.get("title") or "") + (t.get("content") or "")
-                          for w in NOISE_WORDS)]
-    topics.sort(key=lambda t: t.get("replies") or 0, reverse=True)
+                          for w in NOISE_WORDS)
+              and (t.get("created") or 0) >= cutoff]
+    topics.sort(key=lambda t: t.get("created") or 0, reverse=True)
+    now_ts = int(datetime.datetime.combine(today, datetime.time.max).timestamp())
     rows = []
     for i, t in enumerate(topics[:TOP_N]):
+        age_days = max(0, int((now_ts - (t.get("created") or now_ts)) / 86400))
         heat = []
         if t.get("replies") is not None:
             heat.append("%s 回复" % t["replies"])
+        heat.append("%d 天前发布" % age_days if age_days else "今天发布")
         heat.append("V2EX 创意")
         rows.append({
             "rank": i + 1,
@@ -865,8 +903,12 @@ def src_sspai(today):
 
 
 def src_stackoverflow(today):
-    """Stack Overflow 热门提问：开发者真实卡住的疑难，是需求富矿。"""
-    data = get_json("https://api.stackexchange.com/2.3/questions?order=desc&sort=hot"
+    """Stack Overflow 最新提问：开发者真实卡住的疑难，是需求富矿。
+
+    原先按 sort=hot（活跃度）取榜，老问题有新回答就会反复上榜；
+    改为 sort=creation 直接取最新创建的提问，天然不会重复。
+    """
+    data = get_json("https://api.stackexchange.com/2.3/questions?order=desc&sort=creation"
                     "&site=stackoverflow&pagesize=15&filter=withbody")
     rows = []
     for q in (data.get("items") or []):
@@ -949,17 +991,23 @@ def src_w2solo(today):
     · 需求榜（项目需求）：奇思妙想 + 开坑 + 外包零活，即开发者真实想做/想找人做的事
     """
     groups = []
+    cutoff = _created_cutoff(today, W2SOLO_MAX_AGE_DAYS)
 
-    # 1）作品榜
-    works = _w2solo_topics(W2SOLO_NODE_WORKS, limit=TOP_N + 5)[:TOP_N]
+    # 1）作品榜：按「创建时间」倒序，只看最近 N 天新发的产品
+    works = [t for t in _w2solo_topics(W2SOLO_NODE_WORKS, limit=TOP_N + 5)
+             if (_iso_ts(t.get("created_at")) or 0) >= cutoff]
+    works.sort(key=lambda t: _iso_ts(t.get("created_at")), reverse=True)
+    works = works[:TOP_N]
     if works:
         groups.append((CAT_PRODUCT, "作品榜",
                        [_w2solo_row(t, i, "新作品") for i, t in enumerate(works)]))
 
-    # 2）热榜：全站最新 60 条里按浏览排序，排除作品/需求节点
+    # 2）热榜：全站最新 60 条里按浏览排序，排除作品/需求节点；
+    #    只保留最近 N 天内创建的帖子，防止老帖被回复顶上来反复上榜
     skip_nodes = {W2SOLO_NODE_WORKS, W2SOLO_NODE_IDEAS,
                   W2SOLO_NODE_KAIKEN, W2SOLO_NODE_OUTSOURCE}
-    feed = [t for t in _w2solo_topics(None, limit=60) if t.get("node_id") not in skip_nodes]
+    feed = [t for t in _w2solo_topics(None, limit=60) if t.get("node_id") not in skip_nodes
+            and (_iso_ts(t.get("created_at")) or 0) >= cutoff]
     feed.sort(key=lambda t: (t.get("hits") or 0, t.get("replies_count") or 0), reverse=True)
     hot = feed[:TOP_N]
     if hot:
@@ -974,6 +1022,8 @@ def src_w2solo(today):
     def _collect(nid, cap):
         got = []
         for t in _w2solo_topics(nid, limit=15):
+            if (_iso_ts(t.get("created_at")) or 0) < cutoff:
+                continue
             title = clean(t.get("title") or "")
             if not title or title in seen:
                 continue
@@ -988,7 +1038,8 @@ def src_w2solo(today):
     needs += _collect(W2SOLO_NODE_IDEAS, TOP_N)
     needs += _collect(W2SOLO_NODE_KAIKEN, TOP_N)
     needs += _collect(W2SOLO_NODE_OUTSOURCE, 4)
-    needs.sort(key=lambda t: (t.get("hits") or 0), reverse=True)
+    # 需求榜按「创建时间」倒序（不是浏览/回复），只看最新提出的需求
+    needs.sort(key=lambda t: _iso_ts(t.get("created_at")), reverse=True)
     needs = needs[:TOP_N]
     if needs:
         groups.append((CAT_DEMAND, BOARD_NEED,
