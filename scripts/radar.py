@@ -134,6 +134,39 @@ def get_json(url, api=True):
     return json.loads(fetch(url, api=api))
 
 
+def post_text(url, body, tries=2):
+    """带代理切换的 curl POST，返回响应文本（2xx 才算成功，失败抛异常）。"""
+    headers = {"Content-Type": "application/json", "Accept": "application/json, */*",
+               "User-Agent": UA, "Origin": "https://www.36kr.com",
+               "Referer": "https://www.36kr.com/"}
+    last_err = None
+    for attempt in range(tries):
+        for proxy in _proxy_candidates():
+            cmd = ["curl", "-sS", "--max-time", str(TIMEOUT), "-X", "POST", "-o", "-",
+                   "-w", "\n__HTTP_CODE__%{http_code}"]
+            if proxy:
+                cmd += ["-x", proxy]
+            for k, v in headers.items():
+                cmd += ["-H", "%s: %s" % (k, v)]
+            cmd += ["-d", body, url]
+            try:
+                proc = subprocess.run(cmd, capture_output=True, timeout=TIMEOUT + 10)
+                out = proc.stdout.decode("utf-8", "ignore")
+                if "__HTTP_CODE__" in out:
+                    body_txt, code = out.rsplit("__HTTP_CODE__", 1)
+                    if code.strip().startswith("2"):
+                        return body_txt
+                    last_err = RuntimeError("POST 失败 HTTP %s" % code.strip())
+            except Exception as e:  # noqa: BLE001
+                last_err = e
+    raise last_err or RuntimeError("POST 失败 %s" % url)
+
+
+def post_json(url, body, tries=2):
+    """POST 并解析 JSON（strict=False 容忍响应里的控制字符）。"""
+    return json.loads(post_text(url, body), strict=False)
+
+
 # ---------------------------------------------------------------- 解析工具
 
 def clean(s):
@@ -1048,6 +1081,172 @@ def src_w2solo(today):
     return groups
 
 
+# ---------------------------------------------------------------- 36氪 / 虎嗅 / Betalist / Uneed
+
+def src_36kr(today):
+    """36氪 人气榜：商业与创投热点，补「国内科技媒体」维度。
+
+    gateway 接口响应常在 ~16KB 处被服务端截断（HTTP 200 但 JSON 不完整），
+    因此用正则从部分响应里提取条目，不依赖完整 JSON。
+    """
+    body = '{"partner_id":"wap","param":{"siteId":1,"platformId":2}}'
+    text = post_text("https://gateway.36kr.com/api/mis/nav/home/nav/rank/hot", body)
+    items = re.findall(
+        r'"itemId":(\d{12,}),"itemType":\d+,"templateMaterial":\{.{0,3000}?'
+        r'"widgetTitle":"((?:[^"\\]|\\.)*)"', text, re.S)
+    rows = []
+    for item_id, title_raw in items:
+        title = json.loads('"%s"' % title_raw, strict=False)  # 还原 \uXXXX 与转义
+        title = clean(title)
+        if not title:
+            continue
+        seg = text[text.find('"widgetTitle":"%s"' % title_raw):][:600] if title_raw in text else ""
+        author = re.search(r'"authorName":"((?:[^"\\]|\\.)*)"', seg)
+        stat = re.search(r'"statCollect":(\d+)', seg)
+        heat = []
+        if stat:
+            heat.append("%s 收藏" % cn_num(int(stat.group(1))))
+        if author:
+            heat.append(clean(json.loads('"%s"' % author.group(1), strict=False)))
+        heat.append("36氪")
+        rows.append({
+            "rank": len(rows) + 1,
+            "title": title,
+            "desc": "36氪商业科技热文",
+            "heat": " · ".join(heat),
+            "url": "https://www.36kr.com/p/%s" % item_id,
+        })
+        if len(rows) >= TOP_N:
+            break
+    return [(CAT_TOPIC, BOARD_HOT, rows)] if rows else []
+
+
+def src_huxiu(today):
+    """虎嗅 24 小时：最新动态流，天然按发布时间排序，无老帖回锅问题。"""
+    data = get_json("https://moment-api.huxiu.com/web-v3/moment/feed?platform=www")
+    items = (((data or {}).get("data") or {}).get("moment_list") or {}).get("datalist") or []
+    rows = []
+    for it in items:
+        content = re.sub(r"<br\s*/?>", "\n", it.get("content") or "")
+        lines = [x.strip() for x in content.split("\n") if x.strip()]
+        if not lines:
+            continue
+        title = re.sub(r"。$", "", lines[0])
+        desc = clip(" ".join(lines[1:]), 170)
+        heat = []
+        ci = it.get("count_info") or {}
+        if ci.get("agree_num"):
+            heat.append("%s 赞" % cn_num(ci["agree_num"]))
+        heat.append("虎嗅")
+        rows.append({
+            "rank": len(rows) + 1,
+            "title": clip(title, 80),
+            "desc": desc or "虎嗅 24 小时动态",
+            "heat": " · ".join(heat),
+            "url": "https://www.huxiu.com/moment/%s" % it.get("object_id"),
+        })
+        if len(rows) >= TOP_N:
+            break
+    return [(CAT_TOPIC, BOARD_HOT, rows)] if rows else []
+
+
+def src_betalist(today):
+    """Betalist 首页精选：海外新品发布社区，Product Hunt 之外的补充。"""
+    html = fetch("https://betalist.com/")
+    pairs = re.findall(
+        r'href="/startups/([a-z0-9-]+)"[^>]*>([^<]{1,120})</a>\s*'
+        r'<p[^>]*>([^<]{1,300})</p>', html or "")
+    seen, rows = set(), []
+    for slug, name, desc in pairs:
+        if slug in seen:
+            continue
+        seen.add(slug)
+        rows.append({
+            "rank": len(rows) + 1,
+            "title": clean(name),
+            "desc": clip(clean(desc), 170) or "Betalist 新品",
+            "heat": "Betalist 新品",
+            "url": "https://betalist.com/startups/%s" % slug,
+        })
+        if len(rows) >= TOP_N:
+            break
+    return [(CAT_PRODUCT, "新品榜", rows)] if rows else []
+
+
+def _nuxt_get(payload, idx, depth=0):
+    """解析 Nuxt3 __NUXT_DATA__（devalue 扁平数组）为普通 Python 对象。"""
+    if depth > 40 or not isinstance(idx, int) or idx >= len(payload):
+        return None
+    v = payload[idx]
+    if isinstance(v, dict):
+        return {k: _nuxt_get(payload, x, depth + 1) if isinstance(x, int) else x
+                for k, x in v.items()}
+    if isinstance(v, list):
+        if (len(v) == 2 and isinstance(v[0], str) and isinstance(v[1], int)
+                and v[0] in ("ShallowReactive", "ShallowRef", "Reactive", "Ref")):
+            return _nuxt_get(payload, v[1], depth + 1)
+        return [_nuxt_get(payload, i, depth + 1) for i in v]
+    return v
+
+
+def src_uneed(today):
+    """Uneed 首页 Daily Ladder：当日获票最高的新品（PH 替代品社区）。"""
+    html = fetch("https://www.uneed.best/")
+    m = re.search(r'<script[^>]*id="__NUXT_DATA__"[^>]*>(.*?)</script>', html or "", re.S)
+    if not m:
+        return []
+    payload = json.loads(m.group(1))
+
+    def find_ladder(o, depth=0):
+        if depth > 12:
+            return None
+        if isinstance(o, dict):
+            for k, v in o.items():
+                if k.startswith("ladder:") and isinstance(v, dict) and "ladder" in v:
+                    return v["ladder"]
+                r = find_ladder(v, depth + 1)
+                if r:
+                    return r
+        elif isinstance(o, list):
+            for v in o:
+                r = find_ladder(v, depth + 1)
+                if r:
+                    return r
+        return None
+
+    root = _nuxt_get(payload, 1)
+    ladder = find_ladder(root) or []
+    rows = []
+    for it in ladder:
+        if not isinstance(it, dict):
+            continue
+        title = clean(it.get("name"))
+        if not title:
+            continue
+        heat = []
+        votes = it.get("votes") or it.get("votesSum")
+        if votes:
+            heat.append("%s 票" % cn_num(votes))
+        tags = it.get("Tags") or []
+        if isinstance(tags, dict):          # 单个标签对象
+            tags = [tags]
+        if isinstance(tags, list) and tags:
+            names = [str(t.get("name")) if isinstance(t, dict) else str(t)
+                     for t in tags[:2]]
+            heat.append(" / ".join(n for n in names if n))
+        heat.append("Uneed")
+        rows.append({
+            "rank": len(rows) + 1,
+            "title": title,
+            "desc": clip(it.get("description") or "", 170) or "Uneed 新品",
+            "heat": " · ".join(heat),
+            "url": "https://www.uneed.best/product/%s" % it.get("slug"),
+        })
+        if len(rows) >= TOP_N:
+            break
+    return [(CAT_PRODUCT, "新品榜", rows)] if rows else []
+
+
 # ---------------------------------------------------------------- 主流程
 
 # (key, 默认类别, 来源, 抓取函数, 是否需要周期参数)
@@ -1070,6 +1269,10 @@ SOURCE_PLAN = [
     ("demand", CAT_DEMAND, "V2EX", "src_v2ex_ideas", False),
     ("stackoverflow", CAT_DEMAND, "Stack Overflow", "src_stackoverflow", False),
     ("w2solo", CAT_TOPIC, "w2solo", "src_w2solo", False),
+    ("kr36", CAT_TOPIC, "36氪", "src_36kr", False),
+    ("huxiu", CAT_TOPIC, "虎嗅", "src_huxiu", False),
+    ("betalist", CAT_PRODUCT, "Betalist", "src_betalist", False),
+    ("uneed", CAT_PRODUCT, "Uneed", "src_uneed", False),
 ]
 
 
