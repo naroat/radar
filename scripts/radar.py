@@ -33,6 +33,7 @@ import subprocess
 import sys
 import time
 import urllib.parse
+import urllib.request
 from concurrent import futures
 
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
@@ -225,98 +226,109 @@ def src_github(today, is_weekend, is_month_end):
 
 # ---------------------------------------------------------------- Product Hunt
 
-def _extract_json_array(text, start_idx):
-    depth = 0
-    in_str = False
-    esc = False
-    for i in range(start_idx, len(text)):
-        ch = text[i]
-        if in_str:
-            if esc:
-                esc = False
-            elif ch == "\\":
-                esc = True
-            elif ch == '"':
-                in_str = False
+def _ph_feed_items(text):
+    """解析官方 Atom feed（/feed）。leaderboard 页被 Cloudflare 403 后的替代通道，
+    只有标题 / tagline / 链接 / 发布时间，没有票数。"""
+    import html as html_mod
+    import xml.etree.ElementTree as ET
+
+    ns = {"a": "http://www.w3.org/2005/Atom"}
+    root = ET.fromstring(text)
+    entries = []
+    for e in root.findall("a:entry", ns):
+        title = (e.findtext("a:title", "", ns) or "").strip()
+        if not title:
             continue
-        if ch == '"':
-            in_str = True
-        elif ch == "[":
-            depth += 1
-        elif ch == "]":
-            depth -= 1
-            if depth == 0:
-                return json.loads(text[start_idx:i + 1])
-    raise ValueError("edges array not balanced")
-
-
-def parse_ph(text, rank_key):
-    idx = text.find('"homefeedItems"')
-    if idx < 0:
-        return []
-    arr_idx = text.find('"edges":[', idx)
-    if arr_idx < 0:
-        return []
-    arr_idx = text.find("[", arr_idx)
-    edges = _extract_json_array(text, arr_idx)
-
-    items = []
-    for edge in edges:
-        node = (edge or {}).get("node") or {}
-        name = node.get("name")
-        if not name:
-            continue
-        rank = num(node.get(rank_key) or node.get("dailyRank")) or 999
-        topics = [t.get("node", {}).get("name", "")
-                  for t in (node.get("topics", {}) or {}).get("edges", [])]
-        topics = [t for t in topics if t][:3]
-        score = node.get("latestScore") or node.get("launchDayScore")
-        heat = []
-        if score is not None:
-            heat.append("%s votes" % score)
-        if node.get("commentsCount") is not None:
-            heat.append("%s comments" % node["commentsCount"])
-        items.append({
-            "rank": rank,
-            "title": name,
-            "desc": clean(node.get("tagline") or "") + (
-                ("　[" + " / ".join(topics) + "]") if topics else ""),
-            "heat": " · ".join(heat) or "-",
-            "url": "https://www.producthunt.com/products/%s" % node.get("slug", ""),
+        link = ""
+        for l in e.findall("a:link", ns):
+            if l.get("rel") in (None, "alternate"):
+                link = l.get("href") or ""
+                break
+        content = html_mod.unescape(e.findtext("a:content", "", ns) or "")
+        published = (e.findtext("a:published", "", ns) or "")[:19]
+        # content 第一个 <p> 就是 tagline；后面是 Discussion | Link 导航，丢掉
+        m = re.search(r"<p[^>]*>(.*?)</p>", content, re.S)
+        tagline = clean(re.sub(r"<[^>]+>", "", m.group(1))) if m else ""
+        entries.append({
+            "published": published,
+            "title": title,
+            "tagline": tagline,
+            "url": link.split("?")[0],
         })
-    items.sort(key=lambda x: x["rank"])
-    return items[:TOP_N]
+    return entries
+
+
+def ph_graphql_posts(token, day, first=TOP_N):
+    """有 API token 时走官方 GraphQL，能拿到票数与评论数（leaderboard 等价物）。"""
+    after = "%sT00:00:00Z" % day.isoformat()
+    before = "%sT23:59:59Z" % day.isoformat()
+    query = (
+        'query { posts(first: %d, order: VOTES, '
+        'postedAfter: "%s", postedBefore: "%s") { edges { node { '
+        'name slug tagline url votesCount commentsCount } } } }'
+    ) % (first, after, before)
+    body = json.dumps({"query": query}).encode()
+    req = urllib.request.Request(
+        "https://api.producthunt.com/v2/api/graphql", data=body,
+        headers={"Content-Type": "application/json",
+                 "Authorization": "Bearer " + token})
+    with urllib.request.urlopen(req, timeout=30) as res:
+        doc = json.loads(res.read().decode())
+    edges = ((doc.get("data") or {}).get("posts") or {}).get("edges") or []
+    items = []
+    for i, edge in enumerate(edges):
+        node = (edge or {}).get("node") or {}
+        if not node.get("name"):
+            continue
+        heat = "%d votes" % (node.get("votesCount") or 0)
+        if node.get("commentsCount"):
+            heat += " · %d comments" % node["commentsCount"]
+        items.append({
+            "rank": i + 1,
+            "title": node["name"],
+            "desc": clean(node.get("tagline") or ""),
+            "heat": heat,
+            "url": node.get("url") or "https://www.producthunt.com/posts/%s"
+                                      % node.get("slug", ""),
+        })
+    return items
 
 
 def src_producthunt(today, is_weekend, is_month_end):
     out = []
     pt_day = today - datetime.timedelta(days=1)
-    plans = [(BOARD_DAY,
-              ["/leaderboard/daily/%d/%02d/%02d" % (pt_day.year, pt_day.month, pt_day.day)],
-              "dailyRank")]
-    if is_weekend:
-        iso = pt_day.isocalendar()
-        prev = (pt_day - datetime.timedelta(days=7)).isocalendar()
-        plans.append((BOARD_WEEK, [
-            "/leaderboard/weekly/%d/%d" % (iso[0], iso[1]),
-            "/leaderboard/weekly/%d/%d" % (prev[0], prev[1]),
-        ], "weeklyRank"))
-    if is_month_end:
-        plans.append((BOARD_MONTH,
-                      ["/leaderboard/monthly/%d/%02d" % (pt_day.year, pt_day.month)],
-                      "monthlyRank"))
+    rows = []
 
-    for board, paths, rank_key in plans:
+    # 1) 有官方 API token 时走 GraphQL（真实日榜 + 票数）
+    token = os.environ.get("PH_API_TOKEN")
+    if token:
+        try:
+            rows = ph_graphql_posts(token, pt_day)
+        except Exception:  # noqa: BLE001
+            rows = []
+
+    # 2) 没有 token（或 GraphQL 失败）时退回 Atom feed：按发布时间倒序取最新 TOP_N
+    if not rows:
+        try:
+            entries = _ph_feed_items(fetch("https://www.producthunt.com/feed"))
+        except Exception:  # noqa: BLE001
+            entries = []
+        entries.sort(key=lambda x: x["published"], reverse=True)
         rows = []
-        for path in paths:
-            try:
-                rows = parse_ph(fetch("https://www.producthunt.com" + path), rank_key)
-            except Exception:  # noqa: BLE001
-                rows = []
-            if rows:
-                break
-        if rows:
-            out.append((board, rows))
+        for i, e in enumerate(entries[:TOP_N]):
+            heat = ""
+            if e["published"]:
+                heat = "发布于 " + e["published"][5:10].replace("-", "-")
+            rows.append({
+                "rank": i + 1,
+                "title": e["title"],
+                "desc": e["tagline"],
+                "heat": heat or "-",
+                "url": e["url"] or "https://www.producthunt.com/",
+            })
+
+    if rows:
+        out.append((BOARD_DAY, rows))
     return out
 
 

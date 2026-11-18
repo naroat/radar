@@ -201,7 +201,10 @@ NODE_PATH=/path/to/node_modules node scripts/test_render.js
   已写好的 `note` / `scene` 不会丢；榜单变化产生的新条目会缺解读，需要补。
 - **w2solo**：只有 `/api/v3/topics.json` 可用（支持 `node_id` / `limit` / `offset`）。
   需求榜以外包节点最多 4 条为限，否则整榜会变成「找人接活」的招募贴。
-- **Product Hunt** 偶发返回空，重跑一次即可。
+- **Product Hunt**：leaderboard 页已被 Cloudflare 403（换 UA 也没用），改走官方 Atom feed
+  （`https://www.producthunt.com/feed`），按发布时间倒序取最新 TOP_N，口径从「日榜 Top 10」
+  变成「最新发布 Top 10」，没有票数；配了 `PH_API_TOKEN`（Secrets）后会优先走官方
+  GraphQL API，恢复带票数的真实日榜。周榜 / 月榜仅在 API 模式下才有。
 - 已下线的来源：Reddit、Steam（用户明确不要游戏内容），不要再加回。
 
 ## 已知抓不到的平台
