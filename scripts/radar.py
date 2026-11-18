@@ -1231,7 +1231,7 @@ def item_key(it):
 # 同一个榜单每天都会出现大量老面孔（GitHub trending 尤其明显）。写入当天数据前，
 # 先跟最近若干天的同类周期文件比对，把出现过的条目剔除，只留「今天新上榜的」。
 
-DEDUPE_DAYS = {"daily": 7, "weekly": 28, "monthly": 90}   # CLI 可覆盖
+DEDUPE_DAYS = {"daily": 30, "weekly": 90, "monthly": 180}   # CLI 可覆盖
 
 
 def _norm_url(u):

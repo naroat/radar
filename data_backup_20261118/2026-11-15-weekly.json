@@ -1,0 +1,57 @@
+{
+ "date": "2026-11-15",
+ "period": "weekly",
+ "generated_at": "2026-11-15T18:37:26+08:00",
+ "count": 2,
+ "sources": {
+  "GitHub": 2
+ },
+ "errors": [
+  "GreasyFork: 抓取失败 https://greasyfork.org/en/scripts?sort=hot (HTTP 403 (len=5807))"
+ ],
+ "summaries": [
+  {
+   "category": "热门产品",
+   "source": "GitHub",
+   "count": 2,
+   "text": "2 条 · 榜首「meta/astryx」+13660 this week · 总计 28,416★ · TypeScript · 高频：agent(1)、annotate(1)、astryx(1)"
+  },
+  {
+   "category": "热门产品",
+   "source": "全部",
+   "count": 2,
+   "text": "2 条 · 榜首「meta/astryx」+13660 this week · 总计 28,416★ · TypeScript · 高频：agent(1)、annotate(1)、astryx(1) · 覆盖 GitHub"
+  }
+ ],
+ "items": [
+  {
+   "rank": 1,
+   "title": "meta/astryx",
+   "url": "https://github.com/meta/astryx",
+   "desc": "An open source design system that's fully customizable and agent ready",
+   "heat": "+13660 this week · 总计 28,416★ · TypeScript",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "开源设计系统，强调可深度定制，并针对智能体使用做了适配。",
+   "scene": "搭建产品界面的前端与设计团队"
+  },
+  {
+   "rank": 9,
+   "title": "backnotprop/plannotator",
+   "url": "https://github.com/backnotprop/plannotator",
+   "desc": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+   "heat": "+818 this week · 总计 11,485★ · TypeScript",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "面向智能体协作的工作台，可规划、标注、审查代码，并把反馈一键回传给代理。",
+   "scene": "与 AI 代理协同写代码的开发者"
+  }
+ ],
+ "dedupe": {
+  "window_days": 28,
+  "removed": 8,
+  "backfilled": true
+ }
+}

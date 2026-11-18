@@ -1,0 +1,279 @@
+{
+ "updated_at": "2026-11-17T19:38:53+08:00",
+ "days": [
+  {
+   "date": "2026-11-17",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 140
+   },
+   "total": 140
+  },
+  {
+   "date": "2026-11-16",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 171
+   },
+   "total": 171
+  },
+  {
+   "date": "2026-11-15",
+   "periods": [
+    "daily",
+    "weekly"
+   ],
+   "counts": {
+    "daily": 158,
+    "weekly": 2
+   },
+   "total": 160
+  },
+  {
+   "date": "2026-11-14",
+   "periods": [
+    "daily",
+    "weekly"
+   ],
+   "counts": {
+    "daily": 143,
+    "weekly": 8
+   },
+   "total": 151
+  },
+  {
+   "date": "2026-11-13",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 164
+   },
+   "total": 164
+  },
+  {
+   "date": "2026-11-12",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 159
+   },
+   "total": 159
+  },
+  {
+   "date": "2026-11-11",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 156
+   },
+   "total": 156
+  },
+  {
+   "date": "2026-11-10",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 161
+   },
+   "total": 161
+  },
+  {
+   "date": "2026-11-09",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 163
+   },
+   "total": 163
+  },
+  {
+   "date": "2026-11-08",
+   "periods": [
+    "daily",
+    "weekly"
+   ],
+   "counts": {
+    "weekly": 2,
+    "daily": 156
+   },
+   "total": 158
+  },
+  {
+   "date": "2026-11-07",
+   "periods": [
+    "daily",
+    "weekly"
+   ],
+   "counts": {
+    "weekly": 6,
+    "daily": 157
+   },
+   "total": 163
+  },
+  {
+   "date": "2026-11-06",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 152
+   },
+   "total": 152
+  },
+  {
+   "date": "2026-11-05",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 161
+   },
+   "total": 161
+  },
+  {
+   "date": "2026-11-04",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 154
+   },
+   "total": 154
+  },
+  {
+   "date": "2026-11-03",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 149
+   },
+   "total": 149
+  },
+  {
+   "date": "2026-11-02",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 146
+   },
+   "total": 146
+  },
+  {
+   "date": "2026-11-01",
+   "periods": [
+    "daily",
+    "weekly"
+   ],
+   "counts": {
+    "weekly": 1,
+    "daily": 140
+   },
+   "total": 141
+  },
+  {
+   "date": "2026-10-31",
+   "periods": [
+    "daily",
+    "weekly",
+    "monthly"
+   ],
+   "counts": {
+    "monthly": 10,
+    "daily": 151,
+    "weekly": 10
+   },
+   "total": 171
+  },
+  {
+   "date": "2026-10-30",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 160
+   },
+   "total": 160
+  },
+  {
+   "date": "2026-10-29",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 156
+   },
+   "total": 156
+  },
+  {
+   "date": "2026-10-28",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 90
+   },
+   "total": 90
+  },
+  {
+   "date": "2026-10-27",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 98
+   },
+   "total": 98
+  },
+  {
+   "date": "2026-10-26",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 128
+   },
+   "total": 128
+  },
+  {
+   "date": "2026-10-23",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 101
+   },
+   "total": 101
+  },
+  {
+   "date": "2026-10-22",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 85
+   },
+   "total": 85
+  },
+  {
+   "date": "2026-10-21",
+   "periods": [
+    "daily"
+   ],
+   "counts": {
+    "daily": 226
+   },
+   "total": 226
+  }
+ ]
+}
