@@ -1,7 +1,7 @@
 {
  "date": "2026-11-21",
  "period": "weekly",
- "generated_at": "2026-11-21T15:14:38+08:00",
+ "generated_at": "2026-11-21T16:44:36+08:00",
  "count": 8,
  "sources": {
   "GitHub": 8
@@ -19,13 +19,13 @@
    "category": "热门产品",
    "source": "GitHub",
    "count": 8,
-   "text": "8 条 · 榜首「google-labs-code/stitch-skills」+2152 this week · 总计 11,132★ · TypeScript · 高频：agent(5)、agents(3)、code(3)"
+   "text": "8 条 · 榜首「google-labs-code/stitch-skills」+2152 this week · 总计 11,154★ · TypeScript · 高频：agent(5)、agents(3)、code(3)"
   },
   {
    "category": "热门产品",
    "source": "全部",
    "count": 8,
-   "text": "8 条 · 榜首「google-labs-code/stitch-skills」+2152 this week · 总计 11,132★ · TypeScript · 高频：agent(5)、agents(3)、code(3) · 覆盖 GitHub"
+   "text": "8 条 · 榜首「google-labs-code/stitch-skills」+2152 this week · 总计 11,154★ · TypeScript · 高频：agent(5)、agents(3)、code(3) · 覆盖 GitHub"
   }
  ],
  "items": [
@@ -34,7 +34,7 @@
    "title": "google-labs-code/stitch-skills",
    "url": "https://github.com/google-labs-code/stitch-skills",
    "desc": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-   "heat": "+2152 this week · 总计 11,132★ · TypeScript",
+   "heat": "+2152 this week · 总计 11,154★ · TypeScript",
    "source": "GitHub",
    "board": "周榜",
    "category": "热门产品",
@@ -46,7 +46,7 @@
    "title": "GoogleChrome/modern-web-guidance-src",
    "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
    "desc": "Keep your coding agent up to date with the latest web best practices",
-   "heat": "+5224 this week · 总计 9,610★ · TypeScript",
+   "heat": "+5224 this week · 总计 9,624★ · TypeScript",
    "source": "GitHub",
    "board": "周榜",
    "category": "热门产品",
@@ -58,7 +58,7 @@
    "title": "alibaba/open-code-review",
    "url": "https://github.com/alibaba/open-code-review",
    "desc": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-   "heat": "+4457 this week · 总计 54,876★ · Go",
+   "heat": "+4457 this week · 总计 54,895★ · Go",
    "source": "GitHub",
    "board": "周榜",
    "category": "热门产品",
@@ -70,7 +70,7 @@
    "title": "mvanhorn/last30days-skill",
    "url": "https://github.com/mvanhorn/last30days-skill",
    "desc": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-   "heat": "+3788 this week · 总计 71,588★ · Python",
+   "heat": "+3788 this week · 总计 71,621★ · Python",
    "source": "GitHub",
    "board": "周榜",
    "category": "热门产品",
@@ -82,7 +82,7 @@
    "title": "ChromeDevTools/chrome-devtools-mcp",
    "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
    "desc": "Chrome DevTools for coding agents",
-   "heat": "+3306 this week · 总计 58,581★ · TypeScript",
+   "heat": "+3306 this week · 总计 58,588★ · TypeScript",
    "source": "GitHub",
    "board": "周榜",
    "category": "热门产品",
@@ -94,7 +94,7 @@
    "title": "tradermonty/claude-trading-skills",
    "url": "https://github.com/tradermonty/claude-trading-skills",
    "desc": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
-   "heat": "+3471 this week · 总计 7,479★ · Python",
+   "heat": "+3471 this week · 总计 7,490★ · Python",
    "source": "GitHub",
    "board": "周榜",
    "category": "热门产品",
@@ -106,7 +106,7 @@
    "title": "ag-ui-protocol/ag-ui",
    "url": "https://github.com/ag-ui-protocol/ag-ui",
    "desc": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
-   "heat": "+3621 this week · 总计 20,857★ · TypeScript",
+   "heat": "+3621 this week · 总计 20,868★ · TypeScript",
    "source": "GitHub",
    "board": "周榜",
    "category": "热门产品",
@@ -118,7 +118,7 @@
    "title": "pookjw/HermesEnabler",
    "url": "https://github.com/pookjw/HermesEnabler",
    "desc": "Enable Hermès Watch Faces on any Apple Watch devices",
-   "heat": "+582 this week · 总计 2,315★ · Objective-C",
+   "heat": "+582 this week · 总计 2,320★ · Objective-C",
    "source": "GitHub",
    "board": "周榜",
    "category": "热门产品",
