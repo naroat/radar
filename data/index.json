@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-22T14:56:00+08:00",
+ "updated_at": "2026-11-22T16:47:21+08:00",
  "days": [
   {
    "date": "2026-11-22",
@@ -8,10 +8,10 @@
     "weekly"
    ],
    "counts": {
-    "weekly": 0,
-    "daily": 98
+    "daily": 121,
+    "weekly": 0
    },
-   "total": 98
+   "total": 121
   },
   {
    "date": "2026-11-21",
@@ -94,8 +94,8 @@
     "weekly"
    ],
    "counts": {
-    "weekly": 8,
-    "daily": 72
+    "daily": 72,
+    "weekly": 8
    },
    "total": 80
   },
@@ -230,8 +230,8 @@
     "weekly"
    ],
    "counts": {
-    "weekly": 1,
-    "daily": 82
+    "daily": 82,
+    "weekly": 1
    },
    "total": 83
   },
@@ -243,8 +243,8 @@
     "monthly"
    ],
    "counts": {
-    "weekly": 10,
     "daily": 92,
+    "weekly": 10,
     "monthly": 10
    },
    "total": 112
