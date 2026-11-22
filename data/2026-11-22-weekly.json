@@ -1,0 +1,17 @@
+{
+ "date": "2026-11-22",
+ "period": "weekly",
+ "generated_at": "2026-11-22T14:55:18+08:00",
+ "count": 0,
+ "sources": {},
+ "dedupe": {
+  "window_days": 28,
+  "checked": 37,
+  "removed": 10
+ },
+ "errors": [
+  "GreasyFork: 抓取失败 https://greasyfork.org/en/scripts?sort=hot (HTTP 403 (len=5807))"
+ ],
+ "summaries": [],
+ "items": []
+}
