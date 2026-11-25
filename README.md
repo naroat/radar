@@ -17,20 +17,17 @@ radar/
 ├── scripts/            所有脚本
 │   ├── radar.py              抓取（17 来源 / 23 板块）+ 增量去重落盘
 │   ├── dedupe_history.py     对历史数据补做增量去重（默认预演）
-│   ├── monitor.py            自家插件运营数据（Chrome Web Store 官方 API）
 │   ├── annotate.py           为条目补「解读 / 场景」（人工/Agent 写回）
 │   ├── annotate_llm.py       为条目补「解读 / 场景」（调大模型，CI 用）
 │   ├── sync_site.py          把 web/ 与 data/ 同步到 site/
 │   ├── remove_source.py      下线某个来源并清理其历史数据
 │   └── test_render.js        jsdom 渲染自测
 ├── web/
-│   ├── index.html      雷达页面源码（单文件，原生 JS，fetch 读取 data/）
-│   └── monitor.html    数据监控页面（自家插件运营数据）
+│   └── index.html     雷达页面源码（单文件，原生 JS，fetch 读取 data/）
 ├── data/               数据（唯一数据源）
 │   ├── 2026-10-23-daily.json     日榜 / 热榜 / 需求榜
 │   ├── 2026-10-23-weekly.json    周榜（周末才生成）
 │   ├── 2026-10-23-monthly.json   月榜（月末才生成）
-│   ├── monitor.json              自家插件运营数据（数据监控页）
 │   └── index.json                日期清单，页面据此刻画历史
 └── site/               发布产物（由 sync_site.py 生成，不入库）
     ├── index.html
@@ -107,43 +104,6 @@ radar/
 > （实测提示词全被 reasoning 吃掉，正文为空）。所以解读必须有一把自己的 Key。
 > 想省钱可以用 DeepSeek（每天 200 多条约几分钱），或用 Groq / Gemini 的免费额度，
 > 都是 OpenAI 兼容接口，改 `LLM_BASE_URL` + `LLM_MODEL` 即可。
-
-## 数据监控（自家 Chrome 插件运营）
-
-除外部榜单外，雷达还监控自家上架 Chrome Web Store 的插件运营数据，走官方 API v2
-（`publishers.items.queryMetrics`）：安装、卸载、日活、7 日活、曝光、详情页浏览。
-数据落盘到 `data/monitor.json`，页面入口：首页右上角「数据监控」→ `monitor.html`。
-
-本地配置（`scripts/monitor_config.json`，已 gitignore 不入库）：
-
-```json
-{
-  "publisher": "publishers/C0xxxxxx",
-  "extensions": [{ "id": "插件ID", "name": "插件名" }],
-  "oauth": {
-    "client_id": "xxx.apps.googleusercontent.com",
-    "client_secret": "GOCSPX-...",
-    "refresh_token": "1//0g..."
-  }
-}
-```
-
-CI 配置（仓库 Settings）：
-
-| 项目 | 位置 | 说明 |
-|---|---|---|
-| `CWS_CLIENT_ID` / `CWS_CLIENT_SECRET` / `CWS_REFRESH_TOKEN` | Secrets | OAuth 三件套，scope `chromewebstore.readonly` |
-| `CWS_PUBLISHER` | Variables | `publishers/{发布者ID}`（只填 ID 也行） |
-| `CWS_EXTENSIONS` | Variables | `插件ID:名称,插件ID2:名称2`，逗号分隔 |
-
-未配置凭据时脚本自动跳过（`{"skipped": true}`），不影响榜单流水线。手动跑：
-
-```bash
-$PY scripts/monitor.py            # 追加写入 data/monitor.json（默认拉最近 30 天）
-$PY scripts/monitor.py --days 60  # 回补更多天
-```
-
-注意：官方接口 T+1，当天的数据要到次日才有；每日流水线会自动去重合并。
 
 ## 日常使用（本地）
 

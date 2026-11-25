@@ -44,7 +44,7 @@ def main():
     site_data = os.path.join(args.site, "data")
     os.makedirs(site_data, exist_ok=True)
 
-    # 复制 web/ 下全部页面（index.html、monitor.html 等）
+    # 复制 web/ 下全部页面（index.html）
     pages = []
     web_dir = os.path.dirname(args.page)
     for f in sorted(glob.glob(os.path.join(web_dir, "*.html"))):
