@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-25T18:27:26+08:00",
+ "updated_at": "2026-11-25T20:24:43+08:00",
  "window_days": 30,
  "since": "2026-10-27",
  "switches": {
@@ -29,7 +29,7 @@
  "totals": {
   "sources": 22,
   "enabled": 22,
-  "collected": 2714,
+  "collected": 2716,
   "error_sources": 2
  },
  "sources": [
@@ -210,14 +210,14 @@
    "name": "Hugging Face",
    "category": "热门产品",
    "enabled": true,
-   "collected": 45,
+   "collected": 46,
    "days_active": 25,
    "last_date": "2026-11-25",
-   "last_count": 1,
+   "last_count": 2,
    "recent": [
     {
      "date": "2026-11-25",
-     "count": 1
+     "count": 2
     },
     {
      "date": "2026-11-24",
@@ -841,14 +841,14 @@
    "name": "今日头条",
    "category": "热门话题",
    "enabled": true,
-   "collected": 295,
+   "collected": 296,
    "days_active": 30,
    "last_date": "2026-11-25",
-   "last_count": 9,
+   "last_count": 10,
    "recent": [
     {
      "date": "2026-11-25",
-     "count": 9
+     "count": 10
     },
     {
      "date": "2026-11-24",
@@ -997,14 +997,14 @@
    "name": "哔哩哔哩",
    "category": "热门话题",
    "enabled": true,
-   "collected": 290,
+   "collected": 291,
    "days_active": 30,
    "last_date": "2026-11-25",
-   "last_count": 9,
+   "last_count": 10,
    "recent": [
     {
      "date": "2026-11-25",
-     "count": 9
+     "count": 10
     },
     {
      "date": "2026-11-24",
@@ -1941,14 +1941,14 @@
    "name": "Betalist",
    "category": "热门产品",
    "enabled": true,
-   "collected": 25,
+   "collected": 24,
    "days_active": 8,
    "last_date": "2026-11-25",
-   "last_count": 2,
+   "last_count": 1,
    "recent": [
     {
      "date": "2026-11-25",
-     "count": 2
+     "count": 1
     },
     {
      "date": "2026-11-24",
