@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-25T16:42:33+08:00",
+ "updated_at": "2026-11-25T18:27:26+08:00",
  "window_days": 30,
  "since": "2026-10-27",
  "switches": {
@@ -29,7 +29,7 @@
  "totals": {
   "sources": 22,
   "enabled": 22,
-  "collected": 2713,
+  "collected": 2714,
   "error_sources": 2
  },
  "sources": [
@@ -705,14 +705,14 @@
    "name": "少数派",
    "category": "热门产品",
    "enabled": true,
-   "collected": 107,
+   "collected": 108,
    "days_active": 30,
    "last_date": "2026-11-25",
-   "last_count": 3,
+   "last_count": 4,
    "recent": [
     {
      "date": "2026-11-25",
-     "count": 3
+     "count": 4
     },
     {
      "date": "2026-11-24",
