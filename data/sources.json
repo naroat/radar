@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-25T11:55:22+08:00",
+ "updated_at": "2026-11-25T11:56:38+08:00",
  "window_days": 30,
  "since": "2026-10-27",
  "switches": {
@@ -29,7 +29,7 @@
  "totals": {
   "sources": 22,
   "enabled": 22,
-  "collected": 2598,
+  "collected": 2682,
   "error_sources": 2
  },
  "sources": [
@@ -38,11 +38,15 @@
    "name": "GitHub",
    "category": "热门产品",
    "enabled": true,
-   "collected": 145,
-   "days_active": 26,
-   "last_date": "2026-11-24",
-   "last_count": 1,
+   "collected": 147,
+   "days_active": 27,
+   "last_date": "2026-11-25",
+   "last_count": 2,
    "recent": [
+    {
+     "date": "2026-11-25",
+     "count": 2
+    },
     {
      "date": "2026-11-24",
      "count": 1
@@ -314,11 +318,15 @@
    "name": "Hacker News",
    "category": "热门产品",
    "enabled": true,
-   "collected": 278,
-   "days_active": 29,
-   "last_date": "2026-11-24",
+   "collected": 288,
+   "days_active": 30,
+   "last_date": "2026-11-25",
    "last_count": 10,
    "recent": [
+    {
+     "date": "2026-11-25",
+     "count": 10
+    },
     {
      "date": "2026-11-24",
      "count": 10
@@ -575,9 +583,9 @@
    "last_date": null,
    "last_count": 0,
    "recent": [],
-   "last_error": "抓取失败 https://greasyfork.org/en/scripts?sort=hot (HTTP 403 (len=5807))",
-   "last_error_date": "2026-11-24",
-   "error_count": 38,
+   "last_error": "抓取失败 https://greasyfork.org/en/scripts?sort=hot (HTTP 403 (len=5786))",
+   "last_error_date": "2026-11-25",
+   "error_count": 39,
    "carried": 0
   },
   {
@@ -585,11 +593,15 @@
    "name": "App Store",
    "category": "热门产品",
    "enabled": true,
-   "collected": 54,
-   "days_active": 20,
-   "last_date": "2026-11-24",
+   "collected": 55,
+   "days_active": 21,
+   "last_date": "2026-11-25",
    "last_count": 1,
    "recent": [
+    {
+     "date": "2026-11-25",
+     "count": 1
+    },
     {
      "date": "2026-11-24",
      "count": 1
@@ -681,11 +693,15 @@
    "name": "少数派",
    "category": "热门产品",
    "enabled": true,
-   "collected": 104,
-   "days_active": 29,
-   "last_date": "2026-11-24",
-   "last_count": 4,
+   "collected": 106,
+   "days_active": 30,
+   "last_date": "2026-11-25",
+   "last_count": 2,
    "recent": [
+    {
+     "date": "2026-11-25",
+     "count": 2
+    },
     {
      "date": "2026-11-24",
      "count": 4
@@ -813,11 +829,15 @@
    "name": "今日头条",
    "category": "热门话题",
    "enabled": true,
-   "collected": 286,
-   "days_active": 29,
-   "last_date": "2026-11-24",
-   "last_count": 10,
+   "collected": 295,
+   "days_active": 30,
+   "last_date": "2026-11-25",
+   "last_count": 9,
    "recent": [
+    {
+     "date": "2026-11-25",
+     "count": 9
+    },
     {
      "date": "2026-11-24",
      "count": 10
@@ -965,11 +985,15 @@
    "name": "哔哩哔哩",
    "category": "热门话题",
    "enabled": true,
-   "collected": 281,
-   "days_active": 29,
-   "last_date": "2026-11-24",
-   "last_count": 10,
+   "collected": 287,
+   "days_active": 30,
+   "last_date": "2026-11-25",
+   "last_count": 6,
    "recent": [
+    {
+     "date": "2026-11-25",
+     "count": 6
+    },
     {
      "date": "2026-11-24",
      "count": 10
@@ -1097,11 +1121,15 @@
    "name": "掘金",
    "category": "热门话题",
    "enabled": true,
-   "collected": 177,
-   "days_active": 29,
-   "last_date": "2026-11-24",
-   "last_count": 5,
+   "collected": 179,
+   "days_active": 30,
+   "last_date": "2026-11-25",
+   "last_count": 2,
    "recent": [
+    {
+     "date": "2026-11-25",
+     "count": 2
+    },
     {
      "date": "2026-11-24",
      "count": 5
@@ -1229,11 +1257,15 @@
    "name": "Lobsters",
    "category": "热门话题",
    "enabled": true,
-   "collected": 251,
-   "days_active": 29,
-   "last_date": "2026-11-24",
+   "collected": 259,
+   "days_active": 30,
+   "last_date": "2026-11-25",
    "last_count": 8,
    "recent": [
+    {
+     "date": "2026-11-25",
+     "count": 8
+    },
     {
      "date": "2026-11-24",
      "count": 8
@@ -1361,11 +1393,15 @@
    "name": "V2EX",
    "category": "热门话题",
    "enabled": true,
-   "collected": 254,
-   "days_active": 29,
-   "last_date": "2026-11-24",
+   "collected": 262,
+   "days_active": 30,
+   "last_date": "2026-11-25",
    "last_count": 8,
    "recent": [
+    {
+     "date": "2026-11-25",
+     "count": 8
+    },
     {
      "date": "2026-11-24",
      "count": 8
@@ -1493,11 +1529,15 @@
    "name": "V2EX",
    "category": "项目需求",
    "enabled": true,
-   "collected": 17,
-   "days_active": 9,
-   "last_date": "2026-11-23",
+   "collected": 18,
+   "days_active": 10,
+   "last_date": "2026-11-25",
    "last_count": 1,
    "recent": [
+    {
+     "date": "2026-11-25",
+     "count": 1
+    },
     {
      "date": "2026-11-23",
      "count": 1
@@ -1545,11 +1585,15 @@
    "name": "Stack Overflow",
    "category": "项目需求",
    "enabled": true,
-   "collected": 290,
-   "days_active": 29,
-   "last_date": "2026-11-24",
+   "collected": 300,
+   "days_active": 30,
+   "last_date": "2026-11-25",
    "last_count": 10,
    "recent": [
+    {
+     "date": "2026-11-25",
+     "count": 10
+    },
     {
      "date": "2026-11-24",
      "count": 10
@@ -1677,11 +1721,15 @@
    "name": "w2solo",
    "category": "热门话题",
    "enabled": true,
-   "collected": 40,
-   "days_active": 23,
-   "last_date": "2026-11-24",
-   "last_count": 1,
+   "collected": 43,
+   "days_active": 24,
+   "last_date": "2026-11-25",
+   "last_count": 3,
    "recent": [
+    {
+     "date": "2026-11-25",
+     "count": 3
+    },
     {
      "date": "2026-11-24",
      "count": 1
@@ -1785,11 +1833,15 @@
    "name": "36氪",
    "category": "热门话题",
    "enabled": true,
-   "collected": 70,
-   "days_active": 7,
-   "last_date": "2026-11-24",
-   "last_count": 10,
+   "collected": 79,
+   "days_active": 8,
+   "last_date": "2026-11-25",
+   "last_count": 9,
    "recent": [
+    {
+     "date": "2026-11-25",
+     "count": 9
+    },
     {
      "date": "2026-11-24",
      "count": 10
@@ -1829,11 +1881,15 @@
    "name": "虎嗅",
    "category": "热门话题",
    "enabled": true,
-   "collected": 70,
-   "days_active": 7,
-   "last_date": "2026-11-24",
+   "collected": 80,
+   "days_active": 8,
+   "last_date": "2026-11-25",
    "last_count": 10,
    "recent": [
+    {
+     "date": "2026-11-25",
+     "count": 10
+    },
     {
      "date": "2026-11-24",
      "count": 10
@@ -1873,11 +1929,15 @@
    "name": "Betalist",
    "category": "热门产品",
    "enabled": true,
-   "collected": 23,
-   "days_active": 7,
-   "last_date": "2026-11-24",
-   "last_count": 1,
+   "collected": 25,
+   "days_active": 8,
+   "last_date": "2026-11-25",
+   "last_count": 2,
    "recent": [
+    {
+     "date": "2026-11-25",
+     "count": 2
+    },
     {
      "date": "2026-11-24",
      "count": 1
@@ -1917,11 +1977,15 @@
    "name": "Uneed",
    "category": "热门产品",
    "enabled": true,
-   "collected": 70,
-   "days_active": 7,
-   "last_date": "2026-11-24",
-   "last_count": 10,
+   "collected": 71,
+   "days_active": 8,
+   "last_date": "2026-11-25",
+   "last_count": 1,
    "recent": [
+    {
+     "date": "2026-11-25",
+     "count": 1
+    },
     {
      "date": "2026-11-24",
      "count": 10
