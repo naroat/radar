@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-25T11:56:38+08:00",
+ "updated_at": "2026-11-25T16:42:33+08:00",
  "window_days": 30,
  "since": "2026-10-27",
  "switches": {
@@ -29,7 +29,7 @@
  "totals": {
   "sources": 22,
   "enabled": 22,
-  "collected": 2682,
+  "collected": 2713,
   "error_sources": 2
  },
  "sources": [
@@ -162,11 +162,15 @@
    "name": "Product Hunt",
    "category": "热门产品",
    "enabled": true,
-   "collected": 62,
-   "days_active": 7,
-   "last_date": "2026-11-24",
-   "last_count": 10,
+   "collected": 71,
+   "days_active": 8,
+   "last_date": "2026-11-25",
+   "last_count": 9,
    "recent": [
+    {
+     "date": "2026-11-25",
+     "count": 9
+    },
     {
      "date": "2026-11-24",
      "count": 10
@@ -206,11 +210,15 @@
    "name": "Hugging Face",
    "category": "热门产品",
    "enabled": true,
-   "collected": 44,
-   "days_active": 24,
-   "last_date": "2026-11-24",
-   "last_count": 2,
+   "collected": 45,
+   "days_active": 25,
+   "last_date": "2026-11-25",
+   "last_count": 1,
    "recent": [
+    {
+     "date": "2026-11-25",
+     "count": 1
+    },
     {
      "date": "2026-11-24",
      "count": 2
@@ -482,11 +490,15 @@
    "name": "Firefox 插件",
    "category": "热门产品",
    "enabled": true,
-   "collected": 54,
-   "days_active": 20,
-   "last_date": "2026-11-24",
-   "last_count": 1,
+   "collected": 59,
+   "days_active": 21,
+   "last_date": "2026-11-25",
+   "last_count": 5,
    "recent": [
+    {
+     "date": "2026-11-25",
+     "count": 5
+    },
     {
      "date": "2026-11-24",
      "count": 1
@@ -583,7 +595,7 @@
    "last_date": null,
    "last_count": 0,
    "recent": [],
-   "last_error": "抓取失败 https://greasyfork.org/en/scripts?sort=hot (HTTP 403 (len=5786))",
+   "last_error": "抓取失败 https://greasyfork.org/en/scripts?sort=hot (HTTP 403 (len=5807))",
    "last_error_date": "2026-11-25",
    "error_count": 39,
    "carried": 0
@@ -693,14 +705,14 @@
    "name": "少数派",
    "category": "热门产品",
    "enabled": true,
-   "collected": 106,
+   "collected": 107,
    "days_active": 30,
    "last_date": "2026-11-25",
-   "last_count": 2,
+   "last_count": 3,
    "recent": [
     {
      "date": "2026-11-25",
-     "count": 2
+     "count": 3
     },
     {
      "date": "2026-11-24",
@@ -985,14 +997,14 @@
    "name": "哔哩哔哩",
    "category": "热门话题",
    "enabled": true,
-   "collected": 287,
+   "collected": 290,
    "days_active": 30,
    "last_date": "2026-11-25",
-   "last_count": 6,
+   "last_count": 9,
    "recent": [
     {
      "date": "2026-11-25",
-     "count": 6
+     "count": 9
     },
     {
      "date": "2026-11-24",
@@ -1257,14 +1269,14 @@
    "name": "Lobsters",
    "category": "热门话题",
    "enabled": true,
-   "collected": 259,
+   "collected": 260,
    "days_active": 30,
    "last_date": "2026-11-25",
-   "last_count": 8,
+   "last_count": 9,
    "recent": [
     {
      "date": "2026-11-25",
-     "count": 8
+     "count": 9
     },
     {
      "date": "2026-11-24",
@@ -1393,14 +1405,14 @@
    "name": "V2EX",
    "category": "热门话题",
    "enabled": true,
-   "collected": 262,
+   "collected": 264,
    "days_active": 30,
    "last_date": "2026-11-25",
-   "last_count": 8,
+   "last_count": 10,
    "recent": [
     {
      "date": "2026-11-25",
-     "count": 8
+     "count": 10
     },
     {
      "date": "2026-11-24",
@@ -1721,14 +1733,14 @@
    "name": "w2solo",
    "category": "热门话题",
    "enabled": true,
-   "collected": 43,
+   "collected": 42,
    "days_active": 24,
    "last_date": "2026-11-25",
-   "last_count": 3,
+   "last_count": 2,
    "recent": [
     {
      "date": "2026-11-25",
-     "count": 3
+     "count": 2
     },
     {
      "date": "2026-11-24",
@@ -1833,14 +1845,14 @@
    "name": "36氪",
    "category": "热门话题",
    "enabled": true,
-   "collected": 79,
+   "collected": 80,
    "days_active": 8,
    "last_date": "2026-11-25",
-   "last_count": 9,
+   "last_count": 10,
    "recent": [
     {
      "date": "2026-11-25",
-     "count": 9
+     "count": 10
     },
     {
      "date": "2026-11-24",
@@ -1977,14 +1989,14 @@
    "name": "Uneed",
    "category": "热门产品",
    "enabled": true,
-   "collected": 71,
+   "collected": 80,
    "days_active": 8,
    "last_date": "2026-11-25",
-   "last_count": 1,
+   "last_count": 10,
    "recent": [
     {
      "date": "2026-11-25",
-     "count": 1
+     "count": 10
     },
     {
      "date": "2026-11-24",
