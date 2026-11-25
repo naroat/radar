@@ -1284,11 +1284,16 @@ def build_records(today=None, only=None):
 
     records = []
     summary = {"date": date_str, "weekend": is_weekend, "month_end": is_month_end,
-               "sources": {}, "errors": []}
+               "sources": {}, "errors": [], "skipped": []}
 
+    switches = load_switches()
     g = globals()
     for key, category, source, fn_name, needs_period in SOURCE_PLAN:
         if only and key not in only:
+            continue
+        # 显式 --only 指定的来源不受开关限制（明确意图优先）
+        if not only and switches.get(key, True) is False:
+            summary["skipped"].append("%s(%s)" % (source, key))
             continue
         fn = g.get(fn_name)
         if not fn:
@@ -1323,7 +1328,151 @@ def build_records(today=None, only=None):
     return records, summary
 
 
-# ---------------------------------------------------------------- 摘要
+# ---------------------------------------------------------------- 数据源开关与统计
+
+SWITCH_FILE = os.path.join(DATA_DIR, "sources.json")
+SOURCE_HISTORY_DAYS = 30
+
+
+def _read_json_file(path):
+    try:
+        with open(path, encoding="utf-8") as f:
+            doc = json.load(f)
+        return doc if isinstance(doc, dict) else None
+    except (OSError, ValueError):
+        return None
+
+
+def load_switches():
+    """读 data/sources.json 里的开关；未配置的来源默认开启。"""
+    doc = _read_json_file(SWITCH_FILE)
+    sw = (doc or {}).get("switches")
+    return sw if isinstance(sw, dict) else {}
+
+
+def parse_error_line(line):
+    """把 errors 里的字符串拆成（来源名, 原因）；无冒号前缀的行（如「沿用上次」）返回 (None, 原文)。"""
+    line = (line or "").strip()
+    if not line:
+        return None, None
+    name, sep, reason = line.partition(": ")
+    if not sep:
+        return None, line
+    return name.strip(), reason.strip()
+
+
+def scan_source_history(window_days=SOURCE_HISTORY_DAYS):
+    """扫 data/ 最近 N 天的周期文件，聚合每个（类别, 来源）的收集条数与失败记录。"""
+    today = datetime.date.today()
+    cutoff = (today - datetime.timedelta(days=window_days - 1)).strftime("%Y-%m-%d")
+    by_pair = {}   # (category, source) -> {date: count}
+    by_name = {}   # source -> {date: count}
+    errors = {}    # source -> [{date, reason}]
+    for name in sorted(os.listdir(DATA_DIR)):
+        if not name.endswith(".json") or name in ("index.json", "sources.json") \
+                or name.endswith(".tmp"):
+            continue
+        m = re.match(r"^(\d{4}-\d{2}-\d{2})-(daily|weekly|monthly)\.json$", name)
+        if not m or m.group(1) < cutoff:
+            continue
+        date_str = m.group(1)
+        doc = _read_json_file(os.path.join(DATA_DIR, name)) or {}
+        for it in doc.get("items") or []:
+            if not isinstance(it, dict):
+                continue
+            src = it.get("source") or ""
+            if not src:
+                continue
+            cat = it.get("category") or ""
+            d = by_pair.setdefault((cat, src), {})
+            d[date_str] = d.get(date_str, 0) + 1
+            n = by_name.setdefault(src, {})
+            n[date_str] = n.get(date_str, 0) + 1
+        for line in doc.get("errors") or []:
+            if not isinstance(line, str):
+                continue
+            src, reason = parse_error_line(line)
+            if not src:
+                continue
+            errors.setdefault(src, []).append({"date": date_str, "reason": reason or line})
+    return by_pair, by_name, errors, cutoff
+
+
+def build_sources_doc(window_days=SOURCE_HISTORY_DAYS, switches=None):
+    """生成 data/sources.json：全部来源 + 近 N 天收集情况 + 开关状态（数据源页的数据源）。"""
+    if switches is None:
+        switches = load_switches()
+    by_pair, by_name, errors, cutoff = scan_source_history(window_days)
+
+    rows = []
+    for key, cat, name, _fn, _np in SOURCE_PLAN:
+        days = by_pair.get((cat, name)) or by_name.get(name) or {}
+        recent = [{"date": d, "count": c} for d, c in sorted(days.items(), reverse=True)]
+        errs = sorted(errors.get(name) or [], key=lambda e: e["date"], reverse=True)
+        fails = [e for e in errs if "沿用上次" not in (e["reason"] or "")]
+        carried = [e for e in errs if "沿用上次" in (e["reason"] or "")]
+        rows.append({
+            "key": key,
+            "name": name,
+            "category": cat,
+            "enabled": switches.get(key, True) is not False,
+            "collected": sum(days.values()),
+            "days_active": len(days),
+            "last_date": recent[0]["date"] if recent else None,
+            "last_count": recent[0]["count"] if recent else 0,
+            "recent": recent,
+            "last_error": fails[0]["reason"] if fails else None,
+            "last_error_date": fails[0]["date"] if fails else None,
+            "error_count": len(fails),
+            "carried": len(carried),
+        })
+
+    doc = {
+        "updated_at": datetime.datetime.now().astimezone().isoformat(timespec="seconds"),
+        "window_days": window_days,
+        "since": cutoff,
+        "switches": {key: switches.get(key, True) is not False for key, _c, _n, _f, _p in SOURCE_PLAN},
+        "totals": {
+            "sources": len(rows),
+            "enabled": sum(1 for r in rows if r["enabled"]),
+            "collected": sum(r["collected"] for r in rows),
+            "error_sources": sum(1 for r in rows if r["error_count"]),
+        },
+        "sources": rows,
+    }
+    tmp = SWITCH_FILE + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(doc, f, ensure_ascii=False, indent=1)
+    os.replace(tmp, SWITCH_FILE)
+    return doc
+
+
+def apply_switch_changes(expr):
+    """解析并应用 key=on|off 开关表达式，返回（开关字典, 非法项列表）。"""
+    valid_keys = {p[0] for p in SOURCE_PLAN}
+    sw = load_switches()
+    bad = []
+    for part in expr.split(","):
+        part = part.strip()
+        if not part:
+            continue
+        k, _, v = part.partition("=")
+        k = k.strip()
+        v = v.strip().lower()
+        if k not in valid_keys or v not in ("on", "off"):
+            bad.append(part)
+            continue
+        sw[k] = (v == "on")
+    return sw, bad
+
+
+def is_source_enabled_name(name, switches=None):
+    """按来源显示名判断是否开启（同一名字可能对应多个 key，全部开启才算开）。"""
+    sw = load_switches() if switches is None else switches
+    keys = [k for k, _c, n, _f, _p in SOURCE_PLAN if n == name]
+    if not keys:
+        return True
+    return all(sw.get(k, True) is not False for k in keys)
 
 STOPWORDS = set("""the and for with this that from your you are was were has have had not but
 into out over under new using use used how what why when who which will can app show hacker
@@ -1598,6 +1747,8 @@ def write_period_file(date_str, period, records, summary):
         have = set((it.get("source"), it.get("board")) for it in items)
         for pair in sorted(set((i.get("source"), i.get("board"))
                               for i in old["items"] if isinstance(i, dict)) - have):
+            if not is_source_enabled_name(pair[0]):
+                continue  # 已关闭的来源不再沿用旧数据，让开关真正生效
             rows = [i for i in old["items"]
                     if isinstance(i, dict) and (i.get("source"), i.get("board")) == pair]
             if rows:
@@ -1698,7 +1849,23 @@ def main():
                                                "hackernews,chrome,firefox,greasyfork,appstore,"
                                                "sspai,toutiao,baidu,bilibili,juejin,"
                                                "lobsters,v2ex,demand,stackoverflow,w2solo")
+    ap.add_argument("--switch", default="", dest="switch_expr", metavar="KEY=on|off",
+                    help="更新数据源开关（不抓取），逗号分隔；"
+                         "如 --switch greasyfork=off,demand=on，key 见 SOURCE_PLAN")
     args = ap.parse_args()
+
+    if args.switch_expr:
+        sw, bad = apply_switch_changes(args.switch_expr)
+        if bad:
+            print(json.dumps({"error": "无效的开关: %s" % ", ".join(bad),
+                              "valid_keys": sorted({p[0] for p in SOURCE_PLAN})},
+                             ensure_ascii=False))
+            return 2
+        doc = build_sources_doc(switches=sw)
+        off = [k for k, on in doc["switches"].items() if not on]
+        print(json.dumps({"switches_updated": True, "off": off,
+                          "file": os.path.basename(SWITCH_FILE)}, ensure_ascii=False))
+        return 0
 
     TOP_N = args.top
     DEDUPE_DAYS["daily"] = args.dedupe_days
@@ -1717,7 +1884,12 @@ def main():
 
     if not args.no_save:
         saved = save_json(records, summary)
-        print(json.dumps({"saved": saved}, ensure_ascii=False))
+        src_doc = build_sources_doc()
+        print(json.dumps({"saved": saved,
+                          "sources_doc": {"file": os.path.basename(SWITCH_FILE),
+                                          "sources": src_doc["totals"]["sources"],
+                                          "enabled": src_doc["totals"]["enabled"]}},
+                         ensure_ascii=False))
     elif not args.out:
         print(payload)
 

@@ -44,6 +44,18 @@ radar/
 | 热门话题 | Hacker News / 今日头条 / 百度热搜 / 哔哩哔哩 / 掘金 / Lobsters / V2EX / w2solo 热议 |
 | 项目需求 | Hacker News Ask HN / V2EX 创意节点 / Stack Overflow / w2solo 点子 |
 
+## 数据源管理
+
+首页右上角「数据源」→ `sources.html`：展示全部来源近 30 天的收集情况（收集条数、
+有数据天数、最近收集、失败原因）与开关状态（开启 / 关闭）。
+
+- 统计与状态由 `radar.py` 每次落盘后写入 `data/sources.json`，每日流水线自动提交；
+  也可本地单独执行 `python3 scripts/radar.py --switch github=on` 重新生成（不抓取）。
+- **开关**：页面点击开关后复制提示命令本地执行，或直接改 `data/sources.json` 的
+  `switches` 字段，下次抓取即生效；已关闭的来源当天不再沿用旧数据。
+- 命令方式：`python3 scripts/radar.py --switch greasyfork=off,demand=on`（key 见 SOURCE_PLAN）。
+- `--only` 显式指定来源时不受开关限制（明确意图优先）。
+
 每条记录字段：
 
 ```json

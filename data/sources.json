@@ -1,0 +1,1960 @@
+{
+ "updated_at": "2026-11-25T11:55:22+08:00",
+ "window_days": 30,
+ "since": "2026-10-27",
+ "switches": {
+  "github": true,
+  "producthunt": true,
+  "huggingface": true,
+  "hackernews": true,
+  "chrome": true,
+  "firefox": true,
+  "greasyfork": true,
+  "appstore": true,
+  "sspai": true,
+  "toutiao": true,
+  "baidu": true,
+  "bilibili": true,
+  "juejin": true,
+  "lobsters": true,
+  "v2ex": true,
+  "demand": true,
+  "stackoverflow": true,
+  "w2solo": true,
+  "kr36": true,
+  "huxiu": true,
+  "betalist": true,
+  "uneed": true
+ },
+ "totals": {
+  "sources": 22,
+  "enabled": 22,
+  "collected": 2598,
+  "error_sources": 2
+ },
+ "sources": [
+  {
+   "key": "github",
+   "name": "GitHub",
+   "category": "热门产品",
+   "enabled": true,
+   "collected": 145,
+   "days_active": 26,
+   "last_date": "2026-11-24",
+   "last_count": 1,
+   "recent": [
+    {
+     "date": "2026-11-24",
+     "count": 1
+    },
+    {
+     "date": "2026-11-21",
+     "count": 8
+    },
+    {
+     "date": "2026-11-20",
+     "count": 6
+    },
+    {
+     "date": "2026-11-19",
+     "count": 1
+    },
+    {
+     "date": "2026-11-18",
+     "count": 4
+    },
+    {
+     "date": "2026-11-17",
+     "count": 3
+    },
+    {
+     "date": "2026-11-16",
+     "count": 4
+    },
+    {
+     "date": "2026-11-15",
+     "count": 6
+    },
+    {
+     "date": "2026-11-14",
+     "count": 8
+    },
+    {
+     "date": "2026-11-13",
+     "count": 7
+    },
+    {
+     "date": "2026-11-12",
+     "count": 7
+    },
+    {
+     "date": "2026-11-10",
+     "count": 4
+    },
+    {
+     "date": "2026-11-09",
+     "count": 4
+    },
+    {
+     "date": "2026-11-08",
+     "count": 6
+    },
+    {
+     "date": "2026-11-07",
+     "count": 14
+    },
+    {
+     "date": "2026-11-06",
+     "count": 3
+    },
+    {
+     "date": "2026-11-05",
+     "count": 5
+    },
+    {
+     "date": "2026-11-04",
+     "count": 6
+    },
+    {
+     "date": "2026-11-03",
+     "count": 5
+    },
+    {
+     "date": "2026-11-02",
+     "count": 4
+    },
+    {
+     "date": "2026-11-01",
+     "count": 3
+    },
+    {
+     "date": "2026-10-31",
+     "count": 23
+    },
+    {
+     "date": "2026-10-30",
+     "count": 3
+    },
+    {
+     "date": "2026-10-29",
+     "count": 2
+    },
+    {
+     "date": "2026-10-28",
+     "count": 4
+    },
+    {
+     "date": "2026-10-27",
+     "count": 4
+    }
+   ],
+   "last_error": "抓取失败 https://github.com/trending?since=daily (HTTP 504 (len=92))",
+   "last_error_date": "2026-11-08",
+   "error_count": 1,
+   "carried": 0
+  },
+  {
+   "key": "producthunt",
+   "name": "Product Hunt",
+   "category": "热门产品",
+   "enabled": true,
+   "collected": 62,
+   "days_active": 7,
+   "last_date": "2026-11-24",
+   "last_count": 10,
+   "recent": [
+    {
+     "date": "2026-11-24",
+     "count": 10
+    },
+    {
+     "date": "2026-11-23",
+     "count": 10
+    },
+    {
+     "date": "2026-11-22",
+     "count": 6
+    },
+    {
+     "date": "2026-11-21",
+     "count": 6
+    },
+    {
+     "date": "2026-11-20",
+     "count": 10
+    },
+    {
+     "date": "2026-11-19",
+     "count": 10
+    },
+    {
+     "date": "2026-11-18",
+     "count": 10
+    }
+   ],
+   "last_error": null,
+   "last_error_date": null,
+   "error_count": 0,
+   "carried": 0
+  },
+  {
+   "key": "huggingface",
+   "name": "Hugging Face",
+   "category": "热门产品",
+   "enabled": true,
+   "collected": 44,
+   "days_active": 24,
+   "last_date": "2026-11-24",
+   "last_count": 2,
+   "recent": [
+    {
+     "date": "2026-11-24",
+     "count": 2
+    },
+    {
+     "date": "2026-11-22",
+     "count": 2
+    },
+    {
+     "date": "2026-11-21",
+     "count": 3
+    },
+    {
+     "date": "2026-11-20",
+     "count": 1
+    },
+    {
+     "date": "2026-11-19",
+     "count": 5
+    },
+    {
+     "date": "2026-11-18",
+     "count": 6
+    },
+    {
+     "date": "2026-11-16",
+     "count": 2
+    },
+    {
+     "date": "2026-11-15",
+     "count": 1
+    },
+    {
+     "date": "2026-11-14",
+     "count": 1
+    },
+    {
+     "date": "2026-11-13",
+     "count": 1
+    },
+    {
+     "date": "2026-11-11",
+     "count": 1
+    },
+    {
+     "date": "2026-11-10",
+     "count": 1
+    },
+    {
+     "date": "2026-11-09",
+     "count": 1
+    },
+    {
+     "date": "2026-11-08",
+     "count": 1
+    },
+    {
+     "date": "2026-11-07",
+     "count": 2
+    },
+    {
+     "date": "2026-11-05",
+     "count": 2
+    },
+    {
+     "date": "2026-11-04",
+     "count": 1
+    },
+    {
+     "date": "2026-11-03",
+     "count": 1
+    },
+    {
+     "date": "2026-11-02",
+     "count": 2
+    },
+    {
+     "date": "2026-10-31",
+     "count": 2
+    },
+    {
+     "date": "2026-10-30",
+     "count": 2
+    },
+    {
+     "date": "2026-10-29",
+     "count": 2
+    },
+    {
+     "date": "2026-10-28",
+     "count": 1
+    },
+    {
+     "date": "2026-10-27",
+     "count": 1
+    }
+   ],
+   "last_error": null,
+   "last_error_date": null,
+   "error_count": 0,
+   "carried": 0
+  },
+  {
+   "key": "hackernews",
+   "name": "Hacker News",
+   "category": "热门产品",
+   "enabled": true,
+   "collected": 278,
+   "days_active": 29,
+   "last_date": "2026-11-24",
+   "last_count": 10,
+   "recent": [
+    {
+     "date": "2026-11-24",
+     "count": 10
+    },
+    {
+     "date": "2026-11-23",
+     "count": 10
+    },
+    {
+     "date": "2026-11-22",
+     "count": 10
+    },
+    {
+     "date": "2026-11-21",
+     "count": 10
+    },
+    {
+     "date": "2026-11-20",
+     "count": 10
+    },
+    {
+     "date": "2026-11-19",
+     "count": 10
+    },
+    {
+     "date": "2026-11-18",
+     "count": 9
+    },
+    {
+     "date": "2026-11-17",
+     "count": 10
+    },
+    {
+     "date": "2026-11-16",
+     "count": 10
+    },
+    {
+     "date": "2026-11-15",
+     "count": 10
+    },
+    {
+     "date": "2026-11-14",
+     "count": 10
+    },
+    {
+     "date": "2026-11-13",
+     "count": 9
+    },
+    {
+     "date": "2026-11-12",
+     "count": 10
+    },
+    {
+     "date": "2026-11-11",
+     "count": 10
+    },
+    {
+     "date": "2026-11-10",
+     "count": 8
+    },
+    {
+     "date": "2026-11-09",
+     "count": 9
+    },
+    {
+     "date": "2026-11-08",
+     "count": 10
+    },
+    {
+     "date": "2026-11-07",
+     "count": 9
+    },
+    {
+     "date": "2026-11-06",
+     "count": 10
+    },
+    {
+     "date": "2026-11-05",
+     "count": 9
+    },
+    {
+     "date": "2026-11-04",
+     "count": 10
+    },
+    {
+     "date": "2026-11-03",
+     "count": 9
+    },
+    {
+     "date": "2026-11-02",
+     "count": 9
+    },
+    {
+     "date": "2026-11-01",
+     "count": 10
+    },
+    {
+     "date": "2026-10-31",
+     "count": 9
+    },
+    {
+     "date": "2026-10-30",
+     "count": 9
+    },
+    {
+     "date": "2026-10-29",
+     "count": 9
+    },
+    {
+     "date": "2026-10-28",
+     "count": 10
+    },
+    {
+     "date": "2026-10-27",
+     "count": 10
+    }
+   ],
+   "last_error": null,
+   "last_error_date": null,
+   "error_count": 0,
+   "carried": 0
+  },
+  {
+   "key": "chrome",
+   "name": "Chrome 应用商店",
+   "category": "热门产品",
+   "enabled": true,
+   "collected": 18,
+   "days_active": 3,
+   "last_date": "2026-11-22",
+   "last_count": 4,
+   "recent": [
+    {
+     "date": "2026-11-22",
+     "count": 4
+    },
+    {
+     "date": "2026-11-18",
+     "count": 10
+    },
+    {
+     "date": "2026-10-31",
+     "count": 4
+    }
+   ],
+   "last_error": null,
+   "last_error_date": null,
+   "error_count": 0,
+   "carried": 0
+  },
+  {
+   "key": "firefox",
+   "name": "Firefox 插件",
+   "category": "热门产品",
+   "enabled": true,
+   "collected": 54,
+   "days_active": 20,
+   "last_date": "2026-11-24",
+   "last_count": 1,
+   "recent": [
+    {
+     "date": "2026-11-24",
+     "count": 1
+    },
+    {
+     "date": "2026-11-21",
+     "count": 5
+    },
+    {
+     "date": "2026-11-20",
+     "count": 2
+    },
+    {
+     "date": "2026-11-19",
+     "count": 3
+    },
+    {
+     "date": "2026-11-18",
+     "count": 3
+    },
+    {
+     "date": "2026-11-17",
+     "count": 2
+    },
+    {
+     "date": "2026-11-13",
+     "count": 2
+    },
+    {
+     "date": "2026-11-12",
+     "count": 3
+    },
+    {
+     "date": "2026-11-11",
+     "count": 5
+    },
+    {
+     "date": "2026-11-10",
+     "count": 1
+    },
+    {
+     "date": "2026-11-09",
+     "count": 2
+    },
+    {
+     "date": "2026-11-07",
+     "count": 3
+    },
+    {
+     "date": "2026-11-06",
+     "count": 3
+    },
+    {
+     "date": "2026-11-05",
+     "count": 2
+    },
+    {
+     "date": "2026-11-04",
+     "count": 5
+    },
+    {
+     "date": "2026-11-03",
+     "count": 2
+    },
+    {
+     "date": "2026-10-30",
+     "count": 3
+    },
+    {
+     "date": "2026-10-29",
+     "count": 2
+    },
+    {
+     "date": "2026-10-28",
+     "count": 4
+    },
+    {
+     "date": "2026-10-27",
+     "count": 1
+    }
+   ],
+   "last_error": null,
+   "last_error_date": null,
+   "error_count": 0,
+   "carried": 0
+  },
+  {
+   "key": "greasyfork",
+   "name": "GreasyFork",
+   "category": "热门产品",
+   "enabled": true,
+   "collected": 0,
+   "days_active": 0,
+   "last_date": null,
+   "last_count": 0,
+   "recent": [],
+   "last_error": "抓取失败 https://greasyfork.org/en/scripts?sort=hot (HTTP 403 (len=5807))",
+   "last_error_date": "2026-11-24",
+   "error_count": 38,
+   "carried": 0
+  },
+  {
+   "key": "appstore",
+   "name": "App Store",
+   "category": "热门产品",
+   "enabled": true,
+   "collected": 54,
+   "days_active": 20,
+   "last_date": "2026-11-24",
+   "last_count": 1,
+   "recent": [
+    {
+     "date": "2026-11-24",
+     "count": 1
+    },
+    {
+     "date": "2026-11-23",
+     "count": 1
+    },
+    {
+     "date": "2026-11-22",
+     "count": 3
+    },
+    {
+     "date": "2026-11-21",
+     "count": 2
+    },
+    {
+     "date": "2026-11-20",
+     "count": 2
+    },
+    {
+     "date": "2026-11-19",
+     "count": 3
+    },
+    {
+     "date": "2026-11-18",
+     "count": 19
+    },
+    {
+     "date": "2026-11-17",
+     "count": 1
+    },
+    {
+     "date": "2026-11-16",
+     "count": 2
+    },
+    {
+     "date": "2026-11-15",
+     "count": 2
+    },
+    {
+     "date": "2026-11-14",
+     "count": 2
+    },
+    {
+     "date": "2026-11-08",
+     "count": 1
+    },
+    {
+     "date": "2026-11-07",
+     "count": 1
+    },
+    {
+     "date": "2026-11-04",
+     "count": 2
+    },
+    {
+     "date": "2026-11-02",
+     "count": 2
+    },
+    {
+     "date": "2026-11-01",
+     "count": 4
+    },
+    {
+     "date": "2026-10-31",
+     "count": 2
+    },
+    {
+     "date": "2026-10-30",
+     "count": 2
+    },
+    {
+     "date": "2026-10-28",
+     "count": 1
+    },
+    {
+     "date": "2026-10-27",
+     "count": 1
+    }
+   ],
+   "last_error": null,
+   "last_error_date": null,
+   "error_count": 0,
+   "carried": 0
+  },
+  {
+   "key": "sspai",
+   "name": "少数派",
+   "category": "热门产品",
+   "enabled": true,
+   "collected": 104,
+   "days_active": 29,
+   "last_date": "2026-11-24",
+   "last_count": 4,
+   "recent": [
+    {
+     "date": "2026-11-24",
+     "count": 4
+    },
+    {
+     "date": "2026-11-23",
+     "count": 5
+    },
+    {
+     "date": "2026-11-22",
+     "count": 1
+    },
+    {
+     "date": "2026-11-21",
+     "count": 1
+    },
+    {
+     "date": "2026-11-20",
+     "count": 4
+    },
+    {
+     "date": "2026-11-19",
+     "count": 5
+    },
+    {
+     "date": "2026-11-18",
+     "count": 5
+    },
+    {
+     "date": "2026-11-17",
+     "count": 4
+    },
+    {
+     "date": "2026-11-16",
+     "count": 4
+    },
+    {
+     "date": "2026-11-15",
+     "count": 1
+    },
+    {
+     "date": "2026-11-14",
+     "count": 1
+    },
+    {
+     "date": "2026-11-13",
+     "count": 4
+    },
+    {
+     "date": "2026-11-12",
+     "count": 4
+    },
+    {
+     "date": "2026-11-11",
+     "count": 4
+    },
+    {
+     "date": "2026-11-10",
+     "count": 4
+    },
+    {
+     "date": "2026-11-09",
+     "count": 6
+    },
+    {
+     "date": "2026-11-08",
+     "count": 1
+    },
+    {
+     "date": "2026-11-07",
+     "count": 1
+    },
+    {
+     "date": "2026-11-06",
+     "count": 5
+    },
+    {
+     "date": "2026-11-05",
+     "count": 5
+    },
+    {
+     "date": "2026-11-04",
+     "count": 4
+    },
+    {
+     "date": "2026-11-03",
+     "count": 3
+    },
+    {
+     "date": "2026-11-02",
+     "count": 4
+    },
+    {
+     "date": "2026-11-01",
+     "count": 1
+    },
+    {
+     "date": "2026-10-31",
+     "count": 3
+    },
+    {
+     "date": "2026-10-30",
+     "count": 6
+    },
+    {
+     "date": "2026-10-29",
+     "count": 5
+    },
+    {
+     "date": "2026-10-28",
+     "count": 4
+    },
+    {
+     "date": "2026-10-27",
+     "count": 5
+    }
+   ],
+   "last_error": null,
+   "last_error_date": null,
+   "error_count": 0,
+   "carried": 0
+  },
+  {
+   "key": "toutiao",
+   "name": "今日头条",
+   "category": "热门话题",
+   "enabled": true,
+   "collected": 286,
+   "days_active": 29,
+   "last_date": "2026-11-24",
+   "last_count": 10,
+   "recent": [
+    {
+     "date": "2026-11-24",
+     "count": 10
+    },
+    {
+     "date": "2026-11-23",
+     "count": 10
+    },
+    {
+     "date": "2026-11-22",
+     "count": 10
+    },
+    {
+     "date": "2026-11-21",
+     "count": 9
+    },
+    {
+     "date": "2026-11-20",
+     "count": 9
+    },
+    {
+     "date": "2026-11-19",
+     "count": 9
+    },
+    {
+     "date": "2026-11-18",
+     "count": 10
+    },
+    {
+     "date": "2026-11-17",
+     "count": 10
+    },
+    {
+     "date": "2026-11-16",
+     "count": 10
+    },
+    {
+     "date": "2026-11-15",
+     "count": 10
+    },
+    {
+     "date": "2026-11-14",
+     "count": 10
+    },
+    {
+     "date": "2026-11-13",
+     "count": 10
+    },
+    {
+     "date": "2026-11-12",
+     "count": 10
+    },
+    {
+     "date": "2026-11-11",
+     "count": 10
+    },
+    {
+     "date": "2026-11-10",
+     "count": 10
+    },
+    {
+     "date": "2026-11-09",
+     "count": 10
+    },
+    {
+     "date": "2026-11-08",
+     "count": 10
+    },
+    {
+     "date": "2026-11-07",
+     "count": 10
+    },
+    {
+     "date": "2026-11-06",
+     "count": 10
+    },
+    {
+     "date": "2026-11-05",
+     "count": 10
+    },
+    {
+     "date": "2026-11-04",
+     "count": 10
+    },
+    {
+     "date": "2026-11-03",
+     "count": 10
+    },
+    {
+     "date": "2026-11-02",
+     "count": 10
+    },
+    {
+     "date": "2026-11-01",
+     "count": 9
+    },
+    {
+     "date": "2026-10-31",
+     "count": 10
+    },
+    {
+     "date": "2026-10-30",
+     "count": 10
+    },
+    {
+     "date": "2026-10-29",
+     "count": 10
+    },
+    {
+     "date": "2026-10-28",
+     "count": 10
+    },
+    {
+     "date": "2026-10-27",
+     "count": 10
+    }
+   ],
+   "last_error": null,
+   "last_error_date": null,
+   "error_count": 0,
+   "carried": 0
+  },
+  {
+   "key": "baidu",
+   "name": "百度热搜",
+   "category": "热门话题",
+   "enabled": true,
+   "collected": 10,
+   "days_active": 1,
+   "last_date": "2026-11-18",
+   "last_count": 10,
+   "recent": [
+    {
+     "date": "2026-11-18",
+     "count": 10
+    }
+   ],
+   "last_error": null,
+   "last_error_date": null,
+   "error_count": 0,
+   "carried": 0
+  },
+  {
+   "key": "bilibili",
+   "name": "哔哩哔哩",
+   "category": "热门话题",
+   "enabled": true,
+   "collected": 281,
+   "days_active": 29,
+   "last_date": "2026-11-24",
+   "last_count": 10,
+   "recent": [
+    {
+     "date": "2026-11-24",
+     "count": 10
+    },
+    {
+     "date": "2026-11-23",
+     "count": 10
+    },
+    {
+     "date": "2026-11-22",
+     "count": 9
+    },
+    {
+     "date": "2026-11-21",
+     "count": 10
+    },
+    {
+     "date": "2026-11-20",
+     "count": 10
+    },
+    {
+     "date": "2026-11-19",
+     "count": 9
+    },
+    {
+     "date": "2026-11-18",
+     "count": 8
+    },
+    {
+     "date": "2026-11-17",
+     "count": 10
+    },
+    {
+     "date": "2026-11-16",
+     "count": 10
+    },
+    {
+     "date": "2026-11-15",
+     "count": 10
+    },
+    {
+     "date": "2026-11-14",
+     "count": 10
+    },
+    {
+     "date": "2026-11-13",
+     "count": 9
+    },
+    {
+     "date": "2026-11-12",
+     "count": 10
+    },
+    {
+     "date": "2026-11-11",
+     "count": 10
+    },
+    {
+     "date": "2026-11-10",
+     "count": 10
+    },
+    {
+     "date": "2026-11-09",
+     "count": 10
+    },
+    {
+     "date": "2026-11-08",
+     "count": 10
+    },
+    {
+     "date": "2026-11-07",
+     "count": 9
+    },
+    {
+     "date": "2026-11-06",
+     "count": 10
+    },
+    {
+     "date": "2026-11-05",
+     "count": 9
+    },
+    {
+     "date": "2026-11-04",
+     "count": 10
+    },
+    {
+     "date": "2026-11-03",
+     "count": 9
+    },
+    {
+     "date": "2026-11-02",
+     "count": 9
+    },
+    {
+     "date": "2026-11-01",
+     "count": 10
+    },
+    {
+     "date": "2026-10-31",
+     "count": 10
+    },
+    {
+     "date": "2026-10-30",
+     "count": 10
+    },
+    {
+     "date": "2026-10-29",
+     "count": 10
+    },
+    {
+     "date": "2026-10-28",
+     "count": 10
+    },
+    {
+     "date": "2026-10-27",
+     "count": 10
+    }
+   ],
+   "last_error": null,
+   "last_error_date": null,
+   "error_count": 0,
+   "carried": 0
+  },
+  {
+   "key": "juejin",
+   "name": "掘金",
+   "category": "热门话题",
+   "enabled": true,
+   "collected": 177,
+   "days_active": 29,
+   "last_date": "2026-11-24",
+   "last_count": 5,
+   "recent": [
+    {
+     "date": "2026-11-24",
+     "count": 5
+    },
+    {
+     "date": "2026-11-23",
+     "count": 10
+    },
+    {
+     "date": "2026-11-22",
+     "count": 8
+    },
+    {
+     "date": "2026-11-21",
+     "count": 6
+    },
+    {
+     "date": "2026-11-20",
+     "count": 5
+    },
+    {
+     "date": "2026-11-19",
+     "count": 6
+    },
+    {
+     "date": "2026-11-18",
+     "count": 1
+    },
+    {
+     "date": "2026-11-17",
+     "count": 8
+    },
+    {
+     "date": "2026-11-16",
+     "count": 8
+    },
+    {
+     "date": "2026-11-15",
+     "count": 7
+    },
+    {
+     "date": "2026-11-14",
+     "count": 4
+    },
+    {
+     "date": "2026-11-13",
+     "count": 6
+    },
+    {
+     "date": "2026-11-12",
+     "count": 6
+    },
+    {
+     "date": "2026-11-11",
+     "count": 3
+    },
+    {
+     "date": "2026-11-10",
+     "count": 6
+    },
+    {
+     "date": "2026-11-09",
+     "count": 10
+    },
+    {
+     "date": "2026-11-08",
+     "count": 10
+    },
+    {
+     "date": "2026-11-07",
+     "count": 5
+    },
+    {
+     "date": "2026-11-06",
+     "count": 5
+    },
+    {
+     "date": "2026-11-05",
+     "count": 8
+    },
+    {
+     "date": "2026-11-04",
+     "count": 3
+    },
+    {
+     "date": "2026-11-03",
+     "count": 3
+    },
+    {
+     "date": "2026-11-02",
+     "count": 8
+    },
+    {
+     "date": "2026-11-01",
+     "count": 7
+    },
+    {
+     "date": "2026-10-31",
+     "count": 7
+    },
+    {
+     "date": "2026-10-30",
+     "count": 6
+    },
+    {
+     "date": "2026-10-29",
+     "count": 7
+    },
+    {
+     "date": "2026-10-28",
+     "count": 1
+    },
+    {
+     "date": "2026-10-27",
+     "count": 8
+    }
+   ],
+   "last_error": null,
+   "last_error_date": null,
+   "error_count": 0,
+   "carried": 0
+  },
+  {
+   "key": "lobsters",
+   "name": "Lobsters",
+   "category": "热门话题",
+   "enabled": true,
+   "collected": 251,
+   "days_active": 29,
+   "last_date": "2026-11-24",
+   "last_count": 8,
+   "recent": [
+    {
+     "date": "2026-11-24",
+     "count": 8
+    },
+    {
+     "date": "2026-11-23",
+     "count": 9
+    },
+    {
+     "date": "2026-11-22",
+     "count": 10
+    },
+    {
+     "date": "2026-11-21",
+     "count": 7
+    },
+    {
+     "date": "2026-11-20",
+     "count": 10
+    },
+    {
+     "date": "2026-11-19",
+     "count": 8
+    },
+    {
+     "date": "2026-11-18",
+     "count": 8
+    },
+    {
+     "date": "2026-11-17",
+     "count": 8
+    },
+    {
+     "date": "2026-11-16",
+     "count": 9
+    },
+    {
+     "date": "2026-11-15",
+     "count": 9
+    },
+    {
+     "date": "2026-11-14",
+     "count": 7
+    },
+    {
+     "date": "2026-11-13",
+     "count": 9
+    },
+    {
+     "date": "2026-11-12",
+     "count": 10
+    },
+    {
+     "date": "2026-11-11",
+     "count": 10
+    },
+    {
+     "date": "2026-11-10",
+     "count": 8
+    },
+    {
+     "date": "2026-11-09",
+     "count": 10
+    },
+    {
+     "date": "2026-11-08",
+     "count": 5
+    },
+    {
+     "date": "2026-11-07",
+     "count": 10
+    },
+    {
+     "date": "2026-11-06",
+     "count": 9
+    },
+    {
+     "date": "2026-11-05",
+     "count": 8
+    },
+    {
+     "date": "2026-11-04",
+     "count": 8
+    },
+    {
+     "date": "2026-11-03",
+     "count": 9
+    },
+    {
+     "date": "2026-11-02",
+     "count": 8
+    },
+    {
+     "date": "2026-11-01",
+     "count": 8
+    },
+    {
+     "date": "2026-10-31",
+     "count": 8
+    },
+    {
+     "date": "2026-10-30",
+     "count": 10
+    },
+    {
+     "date": "2026-10-29",
+     "count": 9
+    },
+    {
+     "date": "2026-10-28",
+     "count": 9
+    },
+    {
+     "date": "2026-10-27",
+     "count": 10
+    }
+   ],
+   "last_error": null,
+   "last_error_date": null,
+   "error_count": 0,
+   "carried": 0
+  },
+  {
+   "key": "v2ex",
+   "name": "V2EX",
+   "category": "热门话题",
+   "enabled": true,
+   "collected": 254,
+   "days_active": 29,
+   "last_date": "2026-11-24",
+   "last_count": 8,
+   "recent": [
+    {
+     "date": "2026-11-24",
+     "count": 8
+    },
+    {
+     "date": "2026-11-23",
+     "count": 7
+    },
+    {
+     "date": "2026-11-22",
+     "count": 10
+    },
+    {
+     "date": "2026-11-21",
+     "count": 8
+    },
+    {
+     "date": "2026-11-20",
+     "count": 10
+    },
+    {
+     "date": "2026-11-19",
+     "count": 9
+    },
+    {
+     "date": "2026-11-18",
+     "count": 8
+    },
+    {
+     "date": "2026-11-17",
+     "count": 8
+    },
+    {
+     "date": "2026-11-16",
+     "count": 10
+    },
+    {
+     "date": "2026-11-15",
+     "count": 10
+    },
+    {
+     "date": "2026-11-14",
+     "count": 8
+    },
+    {
+     "date": "2026-11-13",
+     "count": 9
+    },
+    {
+     "date": "2026-11-12",
+     "count": 7
+    },
+    {
+     "date": "2026-11-11",
+     "count": 9
+    },
+    {
+     "date": "2026-11-10",
+     "count": 8
+    },
+    {
+     "date": "2026-11-09",
+     "count": 7
+    },
+    {
+     "date": "2026-11-08",
+     "count": 10
+    },
+    {
+     "date": "2026-11-07",
+     "count": 10
+    },
+    {
+     "date": "2026-11-06",
+     "count": 9
+    },
+    {
+     "date": "2026-11-05",
+     "count": 10
+    },
+    {
+     "date": "2026-11-04",
+     "count": 9
+    },
+    {
+     "date": "2026-11-03",
+     "count": 6
+    },
+    {
+     "date": "2026-11-02",
+     "count": 9
+    },
+    {
+     "date": "2026-11-01",
+     "count": 9
+    },
+    {
+     "date": "2026-10-31",
+     "count": 10
+    },
+    {
+     "date": "2026-10-30",
+     "count": 9
+    },
+    {
+     "date": "2026-10-29",
+     "count": 9
+    },
+    {
+     "date": "2026-10-28",
+     "count": 9
+    },
+    {
+     "date": "2026-10-27",
+     "count": 9
+    }
+   ],
+   "last_error": null,
+   "last_error_date": null,
+   "error_count": 0,
+   "carried": 0
+  },
+  {
+   "key": "demand",
+   "name": "V2EX",
+   "category": "项目需求",
+   "enabled": true,
+   "collected": 17,
+   "days_active": 9,
+   "last_date": "2026-11-23",
+   "last_count": 1,
+   "recent": [
+    {
+     "date": "2026-11-23",
+     "count": 1
+    },
+    {
+     "date": "2026-11-20",
+     "count": 1
+    },
+    {
+     "date": "2026-11-18",
+     "count": 7
+    },
+    {
+     "date": "2026-11-08",
+     "count": 1
+    },
+    {
+     "date": "2026-11-03",
+     "count": 2
+    },
+    {
+     "date": "2026-11-02",
+     "count": 1
+    },
+    {
+     "date": "2026-10-31",
+     "count": 1
+    },
+    {
+     "date": "2026-10-30",
+     "count": 2
+    },
+    {
+     "date": "2026-10-29",
+     "count": 1
+    }
+   ],
+   "last_error": null,
+   "last_error_date": null,
+   "error_count": 0,
+   "carried": 0
+  },
+  {
+   "key": "stackoverflow",
+   "name": "Stack Overflow",
+   "category": "项目需求",
+   "enabled": true,
+   "collected": 290,
+   "days_active": 29,
+   "last_date": "2026-11-24",
+   "last_count": 10,
+   "recent": [
+    {
+     "date": "2026-11-24",
+     "count": 10
+    },
+    {
+     "date": "2026-11-23",
+     "count": 10
+    },
+    {
+     "date": "2026-11-22",
+     "count": 10
+    },
+    {
+     "date": "2026-11-21",
+     "count": 10
+    },
+    {
+     "date": "2026-11-20",
+     "count": 10
+    },
+    {
+     "date": "2026-11-19",
+     "count": 10
+    },
+    {
+     "date": "2026-11-18",
+     "count": 10
+    },
+    {
+     "date": "2026-11-17",
+     "count": 10
+    },
+    {
+     "date": "2026-11-16",
+     "count": 10
+    },
+    {
+     "date": "2026-11-15",
+     "count": 10
+    },
+    {
+     "date": "2026-11-14",
+     "count": 10
+    },
+    {
+     "date": "2026-11-13",
+     "count": 10
+    },
+    {
+     "date": "2026-11-12",
+     "count": 10
+    },
+    {
+     "date": "2026-11-11",
+     "count": 10
+    },
+    {
+     "date": "2026-11-10",
+     "count": 10
+    },
+    {
+     "date": "2026-11-09",
+     "count": 10
+    },
+    {
+     "date": "2026-11-08",
+     "count": 10
+    },
+    {
+     "date": "2026-11-07",
+     "count": 10
+    },
+    {
+     "date": "2026-11-06",
+     "count": 10
+    },
+    {
+     "date": "2026-11-05",
+     "count": 10
+    },
+    {
+     "date": "2026-11-04",
+     "count": 10
+    },
+    {
+     "date": "2026-11-03",
+     "count": 10
+    },
+    {
+     "date": "2026-11-02",
+     "count": 10
+    },
+    {
+     "date": "2026-11-01",
+     "count": 10
+    },
+    {
+     "date": "2026-10-31",
+     "count": 10
+    },
+    {
+     "date": "2026-10-30",
+     "count": 10
+    },
+    {
+     "date": "2026-10-29",
+     "count": 10
+    },
+    {
+     "date": "2026-10-28",
+     "count": 10
+    },
+    {
+     "date": "2026-10-27",
+     "count": 10
+    }
+   ],
+   "last_error": null,
+   "last_error_date": null,
+   "error_count": 0,
+   "carried": 0
+  },
+  {
+   "key": "w2solo",
+   "name": "w2solo",
+   "category": "热门话题",
+   "enabled": true,
+   "collected": 40,
+   "days_active": 23,
+   "last_date": "2026-11-24",
+   "last_count": 1,
+   "recent": [
+    {
+     "date": "2026-11-24",
+     "count": 1
+    },
+    {
+     "date": "2026-11-22",
+     "count": 1
+    },
+    {
+     "date": "2026-11-21",
+     "count": 1
+    },
+    {
+     "date": "2026-11-20",
+     "count": 1
+    },
+    {
+     "date": "2026-11-19",
+     "count": 4
+    },
+    {
+     "date": "2026-11-18",
+     "count": 4
+    },
+    {
+     "date": "2026-11-17",
+     "count": 2
+    },
+    {
+     "date": "2026-11-16",
+     "count": 3
+    },
+    {
+     "date": "2026-11-15",
+     "count": 1
+    },
+    {
+     "date": "2026-11-13",
+     "count": 1
+    },
+    {
+     "date": "2026-11-12",
+     "count": 1
+    },
+    {
+     "date": "2026-11-11",
+     "count": 1
+    },
+    {
+     "date": "2026-11-09",
+     "count": 1
+    },
+    {
+     "date": "2026-11-08",
+     "count": 1
+    },
+    {
+     "date": "2026-11-06",
+     "count": 2
+    },
+    {
+     "date": "2026-11-05",
+     "count": 5
+    },
+    {
+     "date": "2026-11-03",
+     "count": 1
+    },
+    {
+     "date": "2026-11-01",
+     "count": 1
+    },
+    {
+     "date": "2026-10-31",
+     "count": 1
+    },
+    {
+     "date": "2026-10-30",
+     "count": 1
+    },
+    {
+     "date": "2026-10-29",
+     "count": 1
+    },
+    {
+     "date": "2026-10-28",
+     "count": 2
+    },
+    {
+     "date": "2026-10-27",
+     "count": 3
+    }
+   ],
+   "last_error": null,
+   "last_error_date": null,
+   "error_count": 0,
+   "carried": 0
+  },
+  {
+   "key": "kr36",
+   "name": "36氪",
+   "category": "热门话题",
+   "enabled": true,
+   "collected": 70,
+   "days_active": 7,
+   "last_date": "2026-11-24",
+   "last_count": 10,
+   "recent": [
+    {
+     "date": "2026-11-24",
+     "count": 10
+    },
+    {
+     "date": "2026-11-23",
+     "count": 10
+    },
+    {
+     "date": "2026-11-22",
+     "count": 10
+    },
+    {
+     "date": "2026-11-21",
+     "count": 10
+    },
+    {
+     "date": "2026-11-20",
+     "count": 10
+    },
+    {
+     "date": "2026-11-19",
+     "count": 10
+    },
+    {
+     "date": "2026-11-18",
+     "count": 10
+    }
+   ],
+   "last_error": null,
+   "last_error_date": null,
+   "error_count": 0,
+   "carried": 0
+  },
+  {
+   "key": "huxiu",
+   "name": "虎嗅",
+   "category": "热门话题",
+   "enabled": true,
+   "collected": 70,
+   "days_active": 7,
+   "last_date": "2026-11-24",
+   "last_count": 10,
+   "recent": [
+    {
+     "date": "2026-11-24",
+     "count": 10
+    },
+    {
+     "date": "2026-11-23",
+     "count": 10
+    },
+    {
+     "date": "2026-11-22",
+     "count": 10
+    },
+    {
+     "date": "2026-11-21",
+     "count": 10
+    },
+    {
+     "date": "2026-11-20",
+     "count": 10
+    },
+    {
+     "date": "2026-11-19",
+     "count": 10
+    },
+    {
+     "date": "2026-11-18",
+     "count": 10
+    }
+   ],
+   "last_error": null,
+   "last_error_date": null,
+   "error_count": 0,
+   "carried": 0
+  },
+  {
+   "key": "betalist",
+   "name": "Betalist",
+   "category": "热门产品",
+   "enabled": true,
+   "collected": 23,
+   "days_active": 7,
+   "last_date": "2026-11-24",
+   "last_count": 1,
+   "recent": [
+    {
+     "date": "2026-11-24",
+     "count": 1
+    },
+    {
+     "date": "2026-11-23",
+     "count": 1
+    },
+    {
+     "date": "2026-11-22",
+     "count": 1
+    },
+    {
+     "date": "2026-11-21",
+     "count": 3
+    },
+    {
+     "date": "2026-11-20",
+     "count": 3
+    },
+    {
+     "date": "2026-11-19",
+     "count": 4
+    },
+    {
+     "date": "2026-11-18",
+     "count": 10
+    }
+   ],
+   "last_error": null,
+   "last_error_date": null,
+   "error_count": 0,
+   "carried": 0
+  },
+  {
+   "key": "uneed",
+   "name": "Uneed",
+   "category": "热门产品",
+   "enabled": true,
+   "collected": 70,
+   "days_active": 7,
+   "last_date": "2026-11-24",
+   "last_count": 10,
+   "recent": [
+    {
+     "date": "2026-11-24",
+     "count": 10
+    },
+    {
+     "date": "2026-11-23",
+     "count": 10
+    },
+    {
+     "date": "2026-11-22",
+     "count": 10
+    },
+    {
+     "date": "2026-11-21",
+     "count": 10
+    },
+    {
+     "date": "2026-11-20",
+     "count": 10
+    },
+    {
+     "date": "2026-11-19",
+     "count": 10
+    },
+    {
+     "date": "2026-11-18",
+     "count": 10
+    }
+   ],
+   "last_error": null,
+   "last_error_date": null,
+   "error_count": 0,
+   "carried": 0
+  }
+ ]
+}
