@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-26T16:26:03+08:00",
+ "updated_at": "2026-11-26T18:00:58+08:00",
  "window_days": 30,
  "since": "2026-10-28",
  "switches": {
@@ -29,7 +29,7 @@
  "totals": {
   "sources": 22,
   "enabled": 22,
-  "collected": 2790,
+  "collected": 2789,
   "error_sources": 2
  },
  "sources": [
@@ -713,14 +713,14 @@
    "name": "少数派",
    "category": "热门产品",
    "enabled": true,
-   "collected": 106,
+   "collected": 107,
    "days_active": 30,
    "last_date": "2026-11-26",
-   "last_count": 3,
+   "last_count": 4,
    "recent": [
     {
      "date": "2026-11-26",
-     "count": 3
+     "count": 4
     },
     {
      "date": "2026-11-25",
@@ -1009,14 +1009,14 @@
    "name": "哔哩哔哩",
    "category": "热门话题",
    "enabled": true,
-   "collected": 290,
+   "collected": 289,
    "days_active": 30,
    "last_date": "2026-11-26",
-   "last_count": 9,
+   "last_count": 8,
    "recent": [
     {
      "date": "2026-11-26",
-     "count": 9
+     "count": 8
     },
     {
      "date": "2026-11-25",
@@ -1145,14 +1145,14 @@
    "name": "掘金",
    "category": "热门话题",
    "enabled": true,
-   "collected": 177,
+   "collected": 178,
    "days_active": 30,
    "last_date": "2026-11-26",
-   "last_count": 6,
+   "last_count": 7,
    "recent": [
     {
      "date": "2026-11-26",
-     "count": 6
+     "count": 7
     },
     {
      "date": "2026-11-25",
@@ -1417,14 +1417,14 @@
    "name": "V2EX",
    "category": "热门话题",
    "enabled": true,
-   "collected": 264,
+   "collected": 265,
    "days_active": 30,
    "last_date": "2026-11-26",
-   "last_count": 9,
+   "last_count": 10,
    "recent": [
     {
      "date": "2026-11-26",
-     "count": 9
+     "count": 10
     },
     {
      "date": "2026-11-25",
@@ -1965,14 +1965,14 @@
    "name": "Betalist",
    "category": "热门产品",
    "enabled": true,
-   "collected": 32,
+   "collected": 29,
    "days_active": 9,
    "last_date": "2026-11-26",
-   "last_count": 8,
+   "last_count": 5,
    "recent": [
     {
      "date": "2026-11-26",
-     "count": 8
+     "count": 5
     },
     {
      "date": "2026-11-25",
