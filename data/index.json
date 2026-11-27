@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-27T18:07:44+08:00",
+ "updated_at": "2026-11-27T19:57:07+08:00",
  "days": [
   {
    "date": "2026-11-27",
@@ -7,9 +7,9 @@
     "daily"
    ],
    "counts": {
-    "daily": 134
+    "daily": 135
    },
-   "total": 134
+   "total": 135
   },
   {
    "date": "2026-11-26",
@@ -58,8 +58,8 @@
     "weekly"
    ],
    "counts": {
-    "weekly": 0,
-    "daily": 124
+    "daily": 124,
+    "weekly": 0
    },
    "total": 124
   },
@@ -70,8 +70,8 @@
     "weekly"
    ],
    "counts": {
-    "daily": 121,
-    "weekly": 8
+    "weekly": 8,
+    "daily": 121
    },
    "total": 129
   },
@@ -132,8 +132,8 @@
     "weekly"
    ],
    "counts": {
-    "weekly": 2,
-    "daily": 87
+    "daily": 87,
+    "weekly": 2
    },
    "total": 89
   },
@@ -206,8 +206,8 @@
     "weekly"
    ],
    "counts": {
-    "weekly": 2,
-    "daily": 85
+    "daily": 85,
+    "weekly": 2
    },
    "total": 87
   },
@@ -218,8 +218,8 @@
     "weekly"
    ],
    "counts": {
-    "daily": 89,
-    "weekly": 6
+    "weekly": 6,
+    "daily": 89
    },
    "total": 95
   },
@@ -294,8 +294,8 @@
    ],
    "counts": {
     "weekly": 10,
-    "daily": 92,
-    "monthly": 10
+    "monthly": 10,
+    "daily": 92
    },
    "total": 112
   },

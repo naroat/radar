@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-27T18:07:28+08:00",
+ "updated_at": "2026-11-27T19:56:50+08:00",
  "window_days": 30,
  "since": "2026-10-29",
  "switches": {
@@ -30,7 +30,7 @@
   "sources": 22,
   "enabled": 22,
   "collected": 2837,
-  "error_sources": 2
+  "error_sources": 3
  },
  "sources": [
   {
@@ -2019,9 +2019,9 @@
      "count": 10
     }
    ],
-   "last_error": null,
-   "last_error_date": null,
-   "error_count": 0,
+   "last_error": "抓取失败 https://betalist.com/ (HTTP 403 (len=5712))",
+   "last_error_date": "2026-11-27",
+   "error_count": 1,
    "carried": 0
   },
   {
