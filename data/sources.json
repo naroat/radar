@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-28T15:54:54+08:00",
+ "updated_at": "2026-11-28T17:25:47+08:00",
  "window_days": 30,
  "since": "2026-10-30",
  "switches": {
@@ -29,7 +29,7 @@
  "totals": {
   "sources": 22,
   "enabled": 22,
-  "collected": 2863,
+  "collected": 2877,
   "error_sources": 3
  },
  "sources": [
@@ -158,11 +158,15 @@
    "name": "Product Hunt",
    "category": "热门产品",
    "enabled": true,
-   "collected": 89,
-   "days_active": 10,
-   "last_date": "2026-11-27",
-   "last_count": 9,
+   "collected": 94,
+   "days_active": 11,
+   "last_date": "2026-11-28",
+   "last_count": 5,
    "recent": [
+    {
+     "date": "2026-11-28",
+     "count": 5
+    },
     {
      "date": "2026-11-27",
      "count": 9
@@ -1013,14 +1017,14 @@
    "name": "哔哩哔哩",
    "category": "热门话题",
    "enabled": true,
-   "collected": 290,
+   "collected": 291,
    "days_active": 30,
    "last_date": "2026-11-28",
-   "last_count": 9,
+   "last_count": 10,
    "recent": [
     {
      "date": "2026-11-28",
-     "count": 9
+     "count": 10
     },
     {
      "date": "2026-11-27",
@@ -1421,14 +1425,14 @@
    "name": "V2EX",
    "category": "热门话题",
    "enabled": true,
-   "collected": 264,
+   "collected": 263,
    "days_active": 30,
    "last_date": "2026-11-28",
-   "last_count": 9,
+   "last_count": 8,
    "recent": [
     {
      "date": "2026-11-28",
-     "count": 9
+     "count": 8
     },
     {
      "date": "2026-11-27",
@@ -1985,14 +1989,14 @@
    "name": "Betalist",
    "category": "热门产品",
    "enabled": true,
-   "collected": 37,
+   "collected": 39,
    "days_active": 11,
    "last_date": "2026-11-28",
-   "last_count": 2,
+   "last_count": 4,
    "recent": [
     {
      "date": "2026-11-28",
-     "count": 2
+     "count": 4
     },
     {
      "date": "2026-11-27",
@@ -2045,14 +2049,14 @@
    "name": "Uneed",
    "category": "热门产品",
    "enabled": true,
-   "collected": 103,
+   "collected": 110,
    "days_active": 11,
    "last_date": "2026-11-28",
-   "last_count": 3,
+   "last_count": 10,
    "recent": [
     {
      "date": "2026-11-28",
-     "count": 3
+     "count": 10
     },
     {
      "date": "2026-11-27",

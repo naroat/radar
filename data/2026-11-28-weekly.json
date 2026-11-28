@@ -1,7 +1,7 @@
 {
  "date": "2026-11-28",
  "period": "weekly",
- "generated_at": "2026-11-28T15:54:54+08:00",
+ "generated_at": "2026-11-28T17:25:47+08:00",
  "count": 1,
  "sources": {
   "GitHub": 1
@@ -19,13 +19,13 @@
    "category": "热门产品",
    "source": "GitHub",
    "count": 1,
-   "text": "1 条 · 榜首「n8n-io/nod」+1424 this week · 总计 4,490★ · TypeScript · 高频：acts.(1)、agent(1)、asks(1)"
+   "text": "1 条 · 榜首「n8n-io/nod」+1424 this week · 总计 4,525★ · TypeScript · 高频：acts.(1)、agent(1)、asks(1)"
   },
   {
    "category": "热门产品",
    "source": "全部",
    "count": 1,
-   "text": "1 条 · 榜首「n8n-io/nod」+1424 this week · 总计 4,490★ · TypeScript · 高频：acts.(1)、agent(1)、asks(1) · 覆盖 GitHub"
+   "text": "1 条 · 榜首「n8n-io/nod」+1424 this week · 总计 4,525★ · TypeScript · 高频：acts.(1)、agent(1)、asks(1) · 覆盖 GitHub"
   }
  ],
  "items": [
@@ -34,7 +34,7 @@
    "title": "n8n-io/nod",
    "url": "https://github.com/n8n-io/nod",
    "desc": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.",
-   "heat": "+1424 this week · 总计 4,490★ · TypeScript",
+   "heat": "+1424 this week · 总计 4,525★ · TypeScript",
    "source": "GitHub",
    "board": "周榜",
    "category": "热门产品",
