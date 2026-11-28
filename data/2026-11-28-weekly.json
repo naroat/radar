@@ -1,0 +1,45 @@
+{
+ "date": "2026-11-28",
+ "period": "weekly",
+ "generated_at": "2026-11-28T15:54:54+08:00",
+ "count": 1,
+ "sources": {
+  "GitHub": 1
+ },
+ "dedupe": {
+  "window_days": 28,
+  "checked": 37,
+  "removed": 9
+ },
+ "errors": [
+  "GreasyFork: 抓取失败 https://greasyfork.org/en/scripts?sort=hot (HTTP 403 (len=5807))"
+ ],
+ "summaries": [
+  {
+   "category": "热门产品",
+   "source": "GitHub",
+   "count": 1,
+   "text": "1 条 · 榜首「n8n-io/nod」+1424 this week · 总计 4,490★ · TypeScript · 高频：acts.(1)、agent(1)、asks(1)"
+  },
+  {
+   "category": "热门产品",
+   "source": "全部",
+   "count": 1,
+   "text": "1 条 · 榜首「n8n-io/nod」+1424 this week · 总计 4,490★ · TypeScript · 高频：acts.(1)、agent(1)、asks(1) · 覆盖 GitHub"
+  }
+ ],
+ "items": [
+  {
+   "rank": 4,
+   "title": "n8n-io/nod",
+   "url": "https://github.com/n8n-io/nod",
+   "desc": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.",
+   "heat": "+1424 this week · 总计 4,490★ · TypeScript",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "n8n 出的开源个人智能体，有自己的电脑环境，能真的上网站催发票、备会议、退订阅，动手前会先问你。",
+   "scene": "想用本地模型自动处理琐碎事务的个人用户"
+  }
+ ]
+}
