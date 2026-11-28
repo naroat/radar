@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据源 · 信息雷达</title>
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --panel: #ffffff;
+    --ink: #14181f;
+    --ink-2: #4b5565;
+    --ink-3: #8b95a5;
+    --line: #e6e9ef;
+    --accent: #3355e8;
+    --accent-soft: #eef1ff;
+    --ok: #1f8a5b;
+    --ok-soft: #eaf7ef;
+    --bad: #c0392b;
+    --bad-soft: #fdf0ee;
+    --radius: 14px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                 "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 20px 56px; }
+
+  /* ---------- hero ---------- */
+  .hero {
+    background: linear-gradient(135deg, #1b2440 0%, #26365f 48%, #33477d 100%);
+    color: #fff;
+    padding: 28px 0 24px;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    right: -120px; top: -160px;
+    width: 420px; height: 420px;
+    background: radial-gradient(circle, rgba(102,138,255,.42) 0%, rgba(102,138,255,0) 68%);
+  }
+  .hero .wrap { position: relative; padding-bottom: 0; }
+  .title-row { display: flex; align-items: center; gap: 12px; }
+  .radar-dot {
+    width: 11px; height: 11px; border-radius: 50%;
+    background: #6ee7a8;
+    box-shadow: 0 0 0 4px rgba(110,231,168,.18);
+    animation: pulse 2.4s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 4px rgba(110,231,168,.18); }
+    50% { box-shadow: 0 0 0 9px rgba(110,231,168,.05); }
+  }
+  h1 { font-size: 24px; font-weight: 700; margin: 0; letter-spacing: .4px; }
+  .sub { color: rgba(255,255,255,.62); font-size: 13px; margin: 6px 0 0; }
+  .hero-meta { display: flex; gap: 26px; flex-wrap: wrap; }
+  .stat-num { font-size: 22px; font-weight: 700; line-height: 1.2; }
+  .stat-num.warn { color: #ffb4a2; }
+  .stat-lab { font-size: 11px; color: rgba(255,255,255,.58); letter-spacing: .6px; }
+  .back-link {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 12.5px; color: rgba(255,255,255,.72);
+    border: 1px solid rgba(255,255,255,.25); border-radius: 9px;
+    padding: 5px 12px; margin-bottom: 14px; transition: all .16s ease;
+  }
+  .back-link:hover { background: rgba(255,255,255,.12); color: #fff; }
+
+  /* ---------- toolbar ---------- */
+  .toolbar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+  .btn {
+    border: 1px solid var(--line); background: var(--panel); color: var(--ink-2);
+    border-radius: 9px; padding: 7px 13px; font-size: 12.5px; cursor: pointer;
+    font-family: inherit; transition: all .16s ease; display: inline-flex; align-items: center;
+  }
+  .btn:hover { border-color: #c9d1e6; color: var(--ink); }
+  .range-note { font-size: 12px; color: var(--ink-3); }
+  .spacer { flex: 1; }
+
+  /* ---------- 待生效提示 ---------- */
+  .pending {
+    display: none;
+    background: #fff8e6; border: 1px solid #f0ddab; border-radius: 12px;
+    padding: 12px 16px; margin-bottom: 16px;
+  }
+  .pending.show { display: block; }
+  .pending .p-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .pending .p-title { font-weight: 650; font-size: 13px; color: #8a6d1a; }
+  .pending .p-note { font-size: 11.5px; color: #a08a45; }
+  .pending .p-actions { margin-left: auto; display: flex; gap: 8px; }
+  .pending .p-btn {
+    border: 1px solid #e3cf96; background: #fffdf6; color: #8a6d1a;
+    border-radius: 8px; padding: 4px 11px; font-size: 12px; cursor: pointer; font-family: inherit;
+  }
+  .pending .p-btn:hover { background: #fff3d0; }
+  .pending pre {
+    margin: 9px 0 0; padding: 10px 12px; background: #fffdf6;
+    border: 1px dashed #e3cf96; border-radius: 8px;
+    font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 11.5px;
+    color: #6b5615; white-space: pre-wrap; overflow-wrap: anywhere;
+  }
+
+  /* ---------- 来源区块 ---------- */
+  .cat-head {
+    display: flex; align-items: baseline; gap: 10px;
+    margin: 22px 0 10px 2px;
+  }
+  .cat-head .lab { font-size: 14.5px; font-weight: 700; letter-spacing: .3px; }
+  .cat-head .cnt { font-size: 12px; color: var(--ink-3); }
+  .src-block {
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: var(--radius); overflow: hidden; margin-bottom: 14px;
+  }
+  .src-row {
+    display: flex; align-items: center; gap: 14px;
+    padding: 12px 16px; border-bottom: 1px solid #f2f4f8;
+  }
+  .src-row:last-child { border-bottom: none; }
+  .src-row.off { background: #fafbfc; }
+  .logo-dot { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+  .s-main { min-width: 0; flex: 1.2; }
+  .s-name-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .s-name { font-weight: 650; font-size: 13.5px; }
+  .s-key {
+    font-size: 10px; font-family: "SF Mono", Menlo, Consolas, monospace;
+    background: #f0f2f6; color: var(--ink-3); border-radius: 5px; padding: 0 6px;
+  }
+  .s-sub { font-size: 11px; color: var(--ink-3); margin-top: 1px; }
+  .s-stats { flex: 1; min-width: 150px; }
+  .s-line1 { font-size: 12.5px; color: var(--ink-2); font-weight: 600; }
+  .s-line1 b { font-size: 13.5px; }
+  .s-line2 { font-size: 11px; color: var(--ink-3); margin-top: 2px; }
+  .spark { flex: none; width: 132px; height: 34px; }
+  .spark rect.bar { fill: #7f97e8; rx: 1.5; }
+  .spark rect.bar.zero { fill: #e3e7ef; }
+  .spark text { font-size: 8.5px; fill: var(--ink-3); }
+  .s-side { flex: none; width: 190px; font-size: 11px; color: var(--ink-3); text-align: right; }
+  .err-line { color: var(--bad); line-height: 1.45; overflow-wrap: anywhere; }
+  .err-none { color: var(--ok); }
+  .err-none::before, .err-line::before { content: "● "; font-size: 8px; }
+  .err-none::before { color: var(--ok); }
+  .err-line::before { color: var(--bad); }
+  .err-more { color: var(--ink-3); }
+  .carried { color: #b8672a; }
+
+  /* ---------- 开关 ---------- */
+  .switch { position: relative; flex: none; width: 36px; height: 21px; cursor: pointer; }
+  .switch input { display: none; }
+  .switch .track {
+    position: absolute; inset: 0; border-radius: 999px;
+    background: #cfd6e0; transition: background .18s ease;
+  }
+  .switch .thumb {
+    position: absolute; top: 2px; left: 2px; width: 17px; height: 17px;
+    border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.22);
+    transition: transform .18s ease;
+  }
+  .switch input:checked + .track { background: var(--ok); }
+  .switch input:checked + .track .thumb { transform: translateX(15px); }
+  .switch.pending .track { outline: 2px dashed #d9a53a; outline-offset: 2px; }
+  .switch.off-src .track { background: #e0a9a1; }
+  .switch.off-src input:checked + .track { background: var(--ok); }
+
+  .state { padding: 56px 24px; text-align: center; color: var(--ink-3); font-size: 13px; }
+  .state b { display: block; color: var(--ink-2); font-size: 14px; margin-bottom: 6px; font-weight: 600; }
+  .spin {
+    width: 22px; height: 22px; border-radius: 50%;
+    border: 2px solid #dfe3ec; border-top-color: var(--accent);
+    animation: rot .8s linear infinite; margin: 0 auto 12px;
+  }
+  @keyframes rot { to { transform: rotate(360deg); } }
+  .foot { text-align: center; color: var(--ink-3); font-size: 11.5px; margin-top: 26px; line-height: 1.8; }
+  .foot code {
+    font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 11px;
+    background: #f0f2f6; border-radius: 5px; padding: 1px 6px; color: var(--ink-2);
+  }
+  @media (max-width: 720px) {
+    .s-side { width: auto; flex: 1; text-align: left; }
+    .spark { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <a class="back-link" href="index.html">← 返回雷达</a>
+    <div class="title-row">
+      <span class="radar-dot"></span>
+      <h1>数据源</h1>
+    </div>
+    <p class="sub">各来源的历史收集情况与开关状态 · 统计窗口近 <span id="winDays">30</span> 天</p>
+    <div class="hero-meta" style="margin-top:14px;">
+      <div>
+        <div class="stat-num" id="statSources">—</div>
+        <div class="stat-lab">数据源</div>
+      </div>
+      <div>
+        <div class="stat-num" id="statEnabled">—</div>
+        <div class="stat-lab">已开启</div>
+      </div>
+      <div>
+        <div class="stat-num" id="statCollected">—</div>
+        <div class="stat-lab" id="statCollectedLab">近30天收集</div>
+      </div>
+      <div>
+        <div class="stat-num warn" id="statError">—</div>
+        <div class="stat-lab">有失败记录</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="pending" id="pendingBar">
+    <div class="p-head">
+      <span class="p-title">⏳ 有待生效的开关变更</span>
+      <span class="p-note">静态页面无法直接写回，本地执行以下命令后，下次抓取即生效</span>
+      <div class="p-actions">
+        <button class="p-btn" id="copyBtn" type="button">复制命令</button>
+        <button class="p-btn" id="resetBtn" type="button">撤销变更</button>
+      </div>
+    </div>
+    <pre id="pendingCmd"></pre>
+  </div>
+
+  <div class="toolbar">
+    <span class="range-note" id="rangeNote"></span>
+    <span class="spacer"></span>
+    <button class="btn" id="refreshBtn" type="button">刷新</button>
+  </div>
+
+  <div id="content">
+    <div class="src-block">
+      <div class="state"><div class="spin"></div>正在读取数据源状态…</div>
+    </div>
+  </div>
+
+  <div class="foot">
+    开关说明：关闭的来源不再参与每日抓取，已抓到的历史数据仍可回看；<br>
+    在页面点击开关后，复制命令到本地执行（或改仓库 <code>data/sources.json</code>），由每日流水线自动提交生效。<br>
+    统计口径：近 30 天内日榜 / 周榜 / 月榜的实际收集条数；「沿用历史」表示当日抓取失败但自动沿用了同日上一次结果。
+  </div>
+</div>
+
+<script>
+(function () {
+  var CAT_ORDER = ['热门产品', '热门话题', '项目需求'];
+  var CAT_DESC = {
+    '热门产品': '正在被市场验证的新产品与模型',
+    '热门话题': '技术圈与开发者社区在聊什么',
+    '项目需求': '真实用户说出的「我想要一个…」'
+  };
+  var SOURCE_META = {
+    'GitHub':           { sub: '趋势仓库', color: '#24292f' },
+    'Product Hunt':     { sub: '新品投票', color: '#da552f' },
+    'Hugging Face':     { sub: '模型趋势', color: '#e0a300' },
+    'Hacker News':      { sub: '技术社区', color: '#ff6600' },
+    'Chrome 应用商店':   { sub: 'Chrome 扩展', color: '#4285f4' },
+    'Firefox 插件':      { sub: 'Firefox 扩展', color: '#ff7139' },
+    'GreasyFork':       { sub: '油猴脚本', color: '#5a8f3d' },
+    'App Store':        { sub: 'iOS 免费榜', color: '#007aff' },
+    '少数派':            { sub: '好物与效率', color: '#d0021b' },
+    '今日头条':          { sub: '中文热榜', color: '#f04142' },
+    '百度热搜':          { sub: '搜索热度', color: '#2932e1' },
+    '哔哩哔哩':          { sub: '热门视频', color: '#fb7299' },
+    '掘金':             { sub: '技术热文', color: '#1e80ff' },
+    'Lobsters':         { sub: '极客热帖', color: '#b3202c' },
+    'V2EX':             { sub: '中文社区', color: '#77808c' },
+    'Stack Overflow':   { sub: '开发者难题', color: '#f48024' },
+    'w2solo':           { sub: '独立开发者', color: '#f5a623' },
+    '36氪':             { sub: '科技商业', color: '#3c76e8' },
+    '虎嗅':             { sub: '商业资讯', color: '#e33d3d' },
+    'Betalist':         { sub: '早期产品', color: '#6b46c1' },
+    'Uneed':            { sub: '新品精选', color: '#0ea5a4' }
+  };
+  var PENDING_KEY = 'radar-source-pending';
+
+  var doc = null;
+  var pending = readPending();
+  var content = document.getElementById('content');
+  var pendingBar = document.getElementById('pendingBar');
+  var pendingCmd = document.getElementById('pendingCmd');
+
+  function readPending() {
+    try {
+      var v = JSON.parse(localStorage.getItem(PENDING_KEY) || '{}');
+      return (v && typeof v === 'object') ? v : {};
+    } catch (e) { return {}; }
+  }
+  function savePending() {
+    try { localStorage.setItem(PENDING_KEY, JSON.stringify(pending)); } catch (e) {}
+  }
+  // 服务端状态已与待生效一致的，自动销账
+  function prunePending() {
+    var changed = false;
+    Object.keys(pending).forEach(function (k) {
+      var row = (doc.sources || []).find(function (r) { return r.key === k; });
+      if (row && row.enabled === pending[k]) {
+        delete pending[k];
+        changed = true;
+      }
+    });
+    if (changed) savePending();
+  }
+
+  function esc(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function sparkSvg(recent, days) {
+    // recent 是「新日期在前」，画图转成时间正序；补齐空档为 0
+    var map = {};
+    (recent || []).forEach(function (r) { map[r.date] = r.count; });
+    var series = [];
+    for (var i = days - 1; i >= 0; i--) {
+      var d = new Date();
+      d.setDate(d.getDate() - i);
+      var iso = d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2);
+      series.push({ date: iso, count: map[iso] || 0 });
+    }
+    var max = Math.max.apply(null, series.map(function (s) { return s.count; }).concat([1]));
+    var W = 132, H = 34, bw = W / series.length;
+    var bars = series.map(function (s, i) {
+      var h = Math.max(s.count > 0 ? 3 : 1.5, (s.count / max) * (H - 5));
+      var cls = s.count > 0 ? 'bar' : 'bar zero';
+      return '<rect class="' + cls + '" x="' + (i * bw + 0.6).toFixed(1) + '" y="' +
+             (H - h).toFixed(1) + '" width="' + (bw - 1.2).toFixed(1) + '" height="' + h.toFixed(1) + '"/>';
+    }).join('');
+    var first = series[0].date.slice(5).replace('-', '/'),
+        last = series[series.length - 1].date.slice(5).replace('-', '/');
+    return '<svg class="spark" viewBox="0 0 ' + W + ' ' + (H + 10) + '" xmlns="http://www.w3.org/2000/svg">' +
+           bars +
+           '<text x="0" y="' + (H + 9) + '">' + first + '</text>' +
+           '<text x="' + W + '" y="' + (H + 9) + '" text-anchor="end">' + last + '</text></svg>';
+  }
+
+  function effectiveOn(row) {
+    return pending.hasOwnProperty(row.key) ? pending[row.key] : row.enabled;
+  }
+
+  function renderRow(row) {
+    var meta = SOURCE_META[row.name] || { sub: '', color: '#8b95a5' };
+    var on = effectiveOn(row);
+    var isPending = pending.hasOwnProperty(row.key) && pending[row.key] !== row.enabled;
+    var checked = on ? ' checked' : '';
+    var pendingCls = isPending ? ' pending' : '';
+    var offCls = row.enabled ? '' : ' off-src';
+    var offRow = row.enabled ? '' : ' off';
+
+    var stat1 = '<b>' + row.collected + '</b> 条';
+    var stat2 = row.days_active + '/' + doc.window_days + ' 天有数据';
+    if (row.last_date) {
+      stat2 += ' · 最近 ' + row.last_date.slice(5).replace('-', '/') + '（' + row.last_count + ' 条）';
+    } else {
+      stat2 += ' · 窗口内无收集记录';
+    }
+
+    var errHtml;
+    if (row.last_error) {
+      var more = row.error_count > 1 ? '<div class="err-more">窗口内失败 ' + row.error_count + ' 次' +
+        (row.carried ? '，另有 ' + row.carried + ' 次沿用历史' : '') + '</div>' : '';
+      errHtml = '<div class="err-line" title="' + esc(row.last_error) + '">' +
+                esc(row.last_error_date) + ' ' + esc(row.last_error.slice(0, 64)) +
+                (row.last_error.length > 64 ? '…' : '') + '</div>' + more;
+    } else {
+      errHtml = '<div class="err-none">正常 · 无失败记录</div>' +
+                (row.carried ? '<div class="carried">沿用历史 ' + row.carried + ' 次</div>' : '');
+    }
+
+    return '<div class="src-row' + offRow + '">' +
+      '<label class="switch' + pendingCls + offCls + '" data-key="' + esc(row.key) + '" title="' +
+        (on ? '点击关闭' : '点击开启') + '">' +
+        '<input type="checkbox"' + checked + '><span class="track"><span class="thumb"></span></span>' +
+      '</label>' +
+      '<span class="logo-dot" style="background:' + meta.color + '"></span>' +
+      '<div class="s-main">' +
+        '<div class="s-name-row"><span class="s-name">' + esc(row.name) + '</span>' +
+        '<span class="s-key">' + esc(row.key) + '</span>' +
+        (isPending ? '<span class="s-key" style="background:#fff3d0;color:#8a6d1a;">待生效</span>' : '') +
+        (row.enabled ? '' : '<span class="s-key" style="background:var(--bad-soft);color:var(--bad);">已关闭</span>') +
+        '</div>' +
+        '<div class="s-sub">' + esc(meta.sub) + '</div>' +
+      '</div>' +
+      '<div class="s-stats">' +
+        '<div class="s-line1">' + stat1 + '</div>' +
+        '<div class="s-line2">' + stat2 + '</div>' +
+      '</div>' +
+      sparkSvg(row.recent, doc.window_days) +
+      '<div class="s-side">' + errHtml + '</div>' +
+    '</div>';
+  }
+
+  function renderPending() {
+    var keys = Object.keys(pending);
+    if (!keys.length) {
+      pendingBar.classList.remove('show');
+      return;
+    }
+    var cmds = keys.map(function (k) {
+      return 'python3 scripts/radar.py --switch ' + k + '=' + (pending[k] ? 'on' : 'off');
+    }).join('\n');
+    pendingCmd.textContent = cmds;
+    pendingBar.classList.add('show');
+  }
+
+  function render() {
+    prunePending();
+    var rows = doc.sources || [];
+    var totals = doc.totals || {};
+    document.getElementById('statSources').textContent = totals.sources != null ? totals.sources : rows.length;
+    document.getElementById('statEnabled').textContent = totals.enabled != null ? totals.enabled : rows.filter(function (r) { return r.enabled; }).length;
+    document.getElementById('statCollected').textContent = totals.collected != null ? totals.collected.toLocaleString() : '—';
+    document.getElementById('statError').textContent = totals.error_sources != null ? totals.error_sources : '—';
+    document.getElementById('winDays').textContent = doc.window_days;
+    document.getElementById('statCollectedLab').textContent = '近' + doc.window_days + '天收集';
+    document.getElementById('rangeNote').textContent =
+      '统计窗口：' + doc.since + ' 起 · 数据更新于 ' + (doc.updated_at || '').replace('T', ' ').slice(0, 16);
+
+    var html = '';
+    CAT_ORDER.forEach(function (cat) {
+      var list = rows.filter(function (r) { return r.category === cat; });
+      if (!list.length) return;
+      var onCnt = list.filter(function (r) { return effectiveOn(r); }).length;
+      html += '<div class="cat-head"><span class="lab">' + cat + '</span>' +
+              '<span class="cnt">' + esc(CAT_DESC[cat] || '') + ' · ' + onCnt + '/' + list.length + ' 开启</span></div>';
+      html += '<div class="src-block">' + list.map(renderRow).join('') + '</div>';
+    });
+    // 计划外类别（如未来新增）也兜底展示
+    var rest = rows.filter(function (r) { return CAT_ORDER.indexOf(r.category) < 0; });
+    if (rest.length) {
+      html += '<div class="cat-head"><span class="lab">其他</span></div>' +
+              '<div class="src-block">' + rest.map(renderRow).join('') + '</div>';
+    }
+    content.innerHTML = html;
+    renderPending();
+  }
+
+  // 点击开关：只记录「待生效」，由本地命令 / CI 落盘
+  content.addEventListener('change', function (ev) {
+    var label = ev.target.closest('.switch');
+    if (!label) return;
+    var key = label.getAttribute('data-key');
+    var row = (doc.sources || []).find(function (r) { return r.key === key; });
+    if (!row) return;
+    var want = !ev.target.checked ? false : true; // checkbox 状态即目标状态
+    if (row.enabled === want) {
+      delete pending[key];
+    } else {
+      pending[key] = want;
+    }
+    savePending();
+    render();
+  });
+
+  document.getElementById('copyBtn').addEventListener('click', function () {
+    var cmds = pendingCmd.textContent;
+    function done() {
+      this.textContent = '已复制 ✓';
+      var b = this;
+      setTimeout(function () { b.textContent = '复制命令'; }, 1600);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(cmds).then(done.bind(this), function () {});
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = cmds; document.body.appendChild(ta);
+      ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
+      done.call(this);
+    }
+  });
+  document.getElementById('resetBtn').addEventListener('click', function () {
+    pending = {};
+    savePending();
+    render();
+  });
+  document.getElementById('refreshBtn').addEventListener('click', load);
+
+  function load() {
+    fetch('data/sources.json?t=' + Date.now())
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(function (d) {
+        doc = d;
+        render();
+      })
+      .catch(function () {
+        content.innerHTML = '<div class="src-block"><div class="state"><b>暂时读不到数据源状态</b>' +
+          '缺少 data/sources.json，请先运行 <code>python3 scripts/radar.py --switch github=on</code> 生成</div></div>';
+      });
+  }
+  load();
+})();
+</script>
+</body>
+</html>

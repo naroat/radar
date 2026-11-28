@@ -1,0 +1,129 @@
+{
+ "date": "2026-11-21",
+ "period": "weekly",
+ "generated_at": "2026-11-21T18:49:29+08:00",
+ "count": 8,
+ "sources": {
+  "GitHub": 8
+ },
+ "dedupe": {
+  "window_days": 28,
+  "checked": 29,
+  "removed": 2
+ },
+ "errors": [
+  "GreasyFork: 抓取失败 https://greasyfork.org/en/scripts?sort=hot (HTTP 403 (len=5807))"
+ ],
+ "summaries": [
+  {
+   "category": "热门产品",
+   "source": "GitHub",
+   "count": 8,
+   "text": "8 条 · 榜首「google-labs-code/stitch-skills」+2152 this week · 总计 11,182★ · TypeScript · 高频：agent(5)、agents(3)、code(3)"
+  },
+  {
+   "category": "热门产品",
+   "source": "全部",
+   "count": 8,
+   "text": "8 条 · 榜首「google-labs-code/stitch-skills」+2152 this week · 总计 11,182★ · TypeScript · 高频：agent(5)、agents(3)、code(3) · 覆盖 GitHub"
+  }
+ ],
+ "items": [
+  {
+   "rank": 2,
+   "title": "google-labs-code/stitch-skills",
+   "url": "https://github.com/google-labs-code/stitch-skills",
+   "desc": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+   "heat": "+2152 this week · 总计 11,182★ · TypeScript",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "一组配合 Stitch 服务使用的代理技能，遵循开放标准，能接入多种主流编程代理。",
+   "scene": "用 Gemini CLI、Cursor 等工具写代码的开发者"
+  },
+  {
+   "rank": 3,
+   "title": "GoogleChrome/modern-web-guidance-src",
+   "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+   "desc": "Keep your coding agent up to date with the latest web best practices",
+   "heat": "+5224 this week · 总计 9,666★ · TypeScript",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "把最新的网页开发最佳实践整理成资料，让编程代理写前端时跟上当前规范。",
+   "scene": "用 AI 代理写前端代码的开发者"
+  },
+  {
+   "rank": 4,
+   "title": "alibaba/open-code-review",
+   "url": "https://github.com/alibaba/open-code-review",
+   "desc": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+   "heat": "+4457 this week · 总计 54,922★ · Go",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "阿里开源的代码审查工具，规则流水线加 LLM 代理配合，能定位到具体代码行并给出多语言安全规则提示。",
+   "scene": "需要规模化代码审查的研发团队"
+  },
+  {
+   "rank": 5,
+   "title": "mvanhorn/last30days-skill",
+   "url": "https://github.com/mvanhorn/last30days-skill",
+   "desc": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+   "heat": "+3788 this week · 总计 71,666★ · Python",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "一个代理技能，能跨 Reddit、X、YouTube 等平台搜集某个话题的近期信息并汇总成有依据的摘要。",
+   "scene": "做选题调研的内容创作者和研究者"
+  },
+  {
+   "rank": 6,
+   "title": "ChromeDevTools/chrome-devtools-mcp",
+   "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+   "desc": "Chrome DevTools for coding agents",
+   "heat": "+3306 this week · 总计 58,599★ · TypeScript",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "把 Chrome 开发者工具接给编程代理，让代理能直接查看和调试浏览器里的页面。",
+   "scene": "做网页调试的前端开发者"
+  },
+  {
+   "rank": 7,
+   "title": "tradermonty/claude-trading-skills",
+   "url": "https://github.com/tradermonty/claude-trading-skills",
+   "desc": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+   "heat": "+3471 this week · 总计 7,511★ · Python",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "面向股票投资者和交易者的 Claude Code 技能集，覆盖行情分析、技术图表、经济日历和选股等环节。",
+   "scene": "用 AI 辅助研究的美股投资者"
+  },
+  {
+   "rank": 8,
+   "title": "ag-ui-protocol/ag-ui",
+   "url": "https://github.com/ag-ui-protocol/ag-ui",
+   "desc": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+   "heat": "+3621 this week · 总计 20,896★ · TypeScript",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "一套让 AI 代理与前端界面交互的协议，方便把代理能力接进网页应用里。",
+   "scene": "开发 AI 应用前端界面的工程师"
+  },
+  {
+   "rank": 10,
+   "title": "pookjw/HermesEnabler",
+   "url": "https://github.com/pookjw/HermesEnabler",
+   "desc": "Enable Hermès Watch Faces on any Apple Watch devices",
+   "heat": "+582 this week · 总计 2,323★ · Objective-C",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "让任意 Apple Watch 都能用上爱马仕表盘，绕开官方的机型限制。",
+   "scene": "想换爱马仕表盘的 Apple Watch 用户"
+  }
+ ]
+}

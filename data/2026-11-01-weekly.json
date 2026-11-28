@@ -1,0 +1,45 @@
+{
+ "date": "2026-11-01",
+ "period": "weekly",
+ "generated_at": "2026-11-01T18:18:14+08:00",
+ "count": 1,
+ "sources": {
+  "GitHub": 1
+ },
+ "errors": [
+  "GreasyFork: 抓取失败 https://greasyfork.org/en/scripts?sort=hot (HTTP 403 (len=5722))"
+ ],
+ "summaries": [
+  {
+   "category": "热门产品",
+   "source": "GitHub",
+   "count": 1,
+   "text": "1 条 · 榜首「Nutlope/hallmark」+12062 this week · 总计 44,277★ · CSS · 高频：anti-ai-slop(1)、claude(1)、code(1)"
+  },
+  {
+   "category": "热门产品",
+   "source": "全部",
+   "count": 1,
+   "text": "1 条 · 榜首「Nutlope/hallmark」+12062 this week · 总计 44,277★ · CSS · 高频：anti-ai-slop(1)、claude(1)、code(1) · 覆盖 GitHub"
+  }
+ ],
+ "items": [
+  {
+   "rank": 1,
+   "title": "Nutlope/hallmark",
+   "url": "https://github.com/Nutlope/hallmark",
+   "desc": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+   "heat": "+12062 this week · 总计 44,277★ · CSS",
+   "source": "GitHub",
+   "board": "周榜",
+   "category": "热门产品",
+   "note": "给编码代理用的设计技能包，专门防止生成那种一眼假的 AI 风格页面，让产出更接近真人设计。",
+   "scene": "用 Claude Code 或 Cursor 写前端页面的开发者"
+  }
+ ],
+ "dedupe": {
+  "window_days": 28,
+  "removed": 9,
+  "backfilled": true
+ }
+}
